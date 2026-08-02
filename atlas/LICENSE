@@ -21,5 +21,5 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 Note : cette licence couvre le code de `atlas/` (générateur et front).
-Le contenu documentaire du dépôt (`base/`, `jugement/`, `METHODE.md`) est
-sous licence CC BY 4.0 : voir le fichier LICENSE à la racine.
+Le contenu documentaire du dépôt (`base/`, `jugement/`, `atelier/`,
+`METHODE.md`) est sous licence CC BY 4.0 : voir le fichier LICENSE à la racine.

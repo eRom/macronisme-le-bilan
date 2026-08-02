@@ -142,12 +142,25 @@ qui correspond à ce que la source établit réellement.
 
 ## Licence
 
-Contenu (`base/`, `jugement/`, `METHODE.md`) sous
-[CC BY 4.0](LICENSE) : réutilisation libre, y compris commerciale, avec
-attribution. Code (`atlas/`) sous [MIT](atlas/LICENSE).
+Le contenu rédigé (`base/`, `jugement/`, `atelier/`, `METHODE.md`, ce fichier)
+est sous [**CC BY 4.0**](LICENSE) : partage et adaptation libres, y compris à
+des fins commerciales, sous la seule condition de créditer l'auteur, de fournir
+un lien vers la licence et d'indiquer si des modifications ont été faites.
 
-Citation suggérée : Romain Ecarnot, « Macronisme : le bilan » (2026),
-https://macronisme-le-bilan.netlify.app
+Le code du site (`atlas/`) est sous [**MIT**](atlas/LICENSE).
+
+Citation suggérée :
+
+> Romain Ecarnot, « Macronisme : le bilan » (2026),
+> https://macronisme-le-bilan.netlify.app (CC BY 4.0)
+
+**Portée de l'attribution.** La licence couvre la rédaction, la structuration,
+la gradation des preuves et les jugements de ce dépôt. Elle **ne couvre pas les
+documents-sources cités** (textes officiels, articles de presse, rapports
+publics), qui restent régis par leurs propres régimes de droits. Les URL des
+sources sont fournies pour permettre la vérification, pas la redistribution.
+C'est la raison pour laquelle l'annexe de vérification tirée d'un article du
+Guardian est réduite aux seuls verbatims cités par la fiche correspondante.
 
 ## Auteur
 
