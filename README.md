@@ -1,3 +1,5 @@
+![Macronisme 2017-2027 : bilan factuel. 531 fiches sourcées, 879 sources, 15 domaines instruits, synthèse défavorable.](reseaux-sociaux/bilan-macron-image.jpg)
+
 # Macronisme : le bilan
 
 Dossier documentaire sur les deux quinquennats d'Emmanuel Macron, mai 2017 à
