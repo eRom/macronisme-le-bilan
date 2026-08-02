@@ -1,0 +1,13 @@
+{
+  "name": "atlas",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "flexsearch": "^0.8.212",
+    "graphology": "^0.26.0",
+    "graphology-layout": "^0.6.1",
+    "graphology-layout-forceatlas2": "^0.10.1",
+    "marked": "^18.0.7",
+    "sigma": "^3.0.3"
+  }
+}

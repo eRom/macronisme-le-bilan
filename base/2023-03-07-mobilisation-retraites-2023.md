@@ -1,0 +1,21 @@
+---
+titre: Mobilisation record contre la réforme des retraites 2023 (guerre des chiffres)
+type: mesure
+domaines: [retraites-social, libertes-publiques]
+date: 2023-03-07
+date_fin: 2023-05-03
+acteurs:
+  president: Emmanuel Macron
+  ministres: [Élisabeth Borne (Première ministre)]
+  gouvernement: Borne
+grade: B
+sources:
+  - https://fr.wikipedia.org/wiki/Mouvement_social_contre_la_r%C3%A9forme_des_retraites_en_France_de_2023
+  - https://www.assemblee-nationale.fr/dyn/16/rapports/cion_lois/l16b1891-t1_rapport-fond
+---
+
+Le mouvement intersyndical (première fois unis depuis 2010) organise 14 journées d'action de janvier à mai 2023. Le 07/03/2023, journée la plus suivie, le ministère de l'Intérieur compte 1,28 million de manifestants, la CGT 3,5 millions ; à Paris, l'écart est massif (préfecture 81 000, cabinet indépendant Occurrence 68 000, CGT 700 000). Le 23/03/2023 : ministère 1 089 000, CGT 3,5 millions.
+
+Volet répression (grade A) : un rapport parlementaire (29/11/2023) recense 546 manifestants blessés selon le ministère de l'Intérieur entre le 19/01 et le 03/05/2023.
+
+Grade B pour l'ampleur (chiffres de foule structurellement divergents police/syndicats ; le comptage indépendant Occurrence, le plus proche de la police, doit toujours être cité en regard). Liens : [[2023-03-16-49-3-retraites-motion-liot]], [[2023-04-14-retraite-64-ans-au-lieu-de-65]].

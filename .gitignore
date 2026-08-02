@@ -1,1 +1,19 @@
+# ------------------------------------------------------------------ atelier
+# Matière première et suivi interne du chantier. Jamais publiés, par décision
+# assumée : rapports de recherche bruts (non validés, angles échoués inclus),
+# chronologie de travail, méthodes d'origine, notes de session, prompts de run.
+# Le motif est expliqué dans README.md, section « Ce qui n'est pas publié ».
+atelier/
+
+# ------------------------------------------------------------------ agent
 _memory_/
+
+# ------------------------------------------------------------------ build
+# Intégralement régénérable depuis base/ et jugement/ : voir atlas/CLAUDE.md
+atlas/node_modules/
+atlas/dist/
+atlas/build-report.md
+atlas/.netlify/
+
+# ------------------------------------------------------------------ os
+.DS_Store

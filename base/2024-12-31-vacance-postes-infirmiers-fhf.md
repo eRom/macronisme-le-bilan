@@ -1,0 +1,22 @@
+---
+titre: Recul du taux de postes vacants d'infirmiers après les revalorisations
+type: affaire
+domaines: [sante]
+date: 2024-12-31
+acteurs:
+  president: Emmanuel Macron
+  ministres: [Catherine Vautrin (Travail, Santé et Solidarités)]
+  gouvernement: Barnier
+grade: B
+statut: null
+sources:
+  - https://www.fhf.fr/actualites-presse/communiques-de-presse/conference-de-presse-de-rentree-de-la-fhf-situation-financiere-et-rh-des-hopitaux
+---
+
+Selon la Fédération hospitalière de France, le taux de postes vacants d'infirmiers est revenu à 3 % en 2023, contre 5,7 % en avril 2022.
+
+Élément à décharge sur l'attractivité des métiers : la revalorisation salariale du Ségur, quelles que soient ses limites de périmètre, coïncide avec une amélioration mesurable de la couverture des postes soignants, alors même que les capacités en lits continuaient de baisser.
+
+Grade B : source d'une fédération d'employeurs hospitaliers, non statistique publique. Corrélation temporelle et non causalité établie ; aucune série DREES de vacance de postes n'a été retrouvée pour corroborer.
+
+Liens : [[2020-07-13-accords-segur-revalorisations]], [[2024-12-31-solde-net-lits-hopital]].
