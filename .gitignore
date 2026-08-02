@@ -1,6 +1,14 @@
 # ------------------------------------------------------------------ agent
-# Mémoire de session, propre à la machine.
+# Mémoire de session et notes de travail en cours, propres à la machine.
+#
+# Distinction à ne pas confondre avec atelier/notes/ : ces dernières sont les
+# notes ARCHIVÉES d'un chantier terminé, relues et publiées à ce titre. Ce qui
+# est ici est du brouillon vivant, non relu, et ne doit jamais partir tel quel.
+# Une note qui mérite d'être publiée passe d'abord par une relecture, puis
+# rejoint atelier/notes/.
 _memory_/
+.claude/notes/
+.claude/settings.local.json
 
 # ------------------------------------------------------------------ build
 # Intégralement régénérable depuis base/ et jugement/ : voir atlas/CLAUDE.md
