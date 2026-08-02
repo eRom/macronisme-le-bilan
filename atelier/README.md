@@ -54,6 +54,7 @@ plutôt que laissé à découvrir.
 | `notes/` | 44 Ko | notes de session : le raisonnement en cours de route, y compris les impasses |
 | `conception/` | 16 Ko | la conception du site en un document : brief initial, plan d'exécution, amendements, pivot publication |
 | `runs/` | 16 Ko | le script de lancement d'un run et deux sujets de recherche complets |
+| `gotchas.md` | 8 Ko | les pièges rencontrés en construisant le dossier, et ce qui a marché |
 | `plan-jugement.md` | 8 Ko | tableau de bord du chantier jugement, avec les prompts de séance |
 | `CLAUDE-poste-origine.md` | 8 Ko | le contrat d'origine du dossier, tel qu'il était quand il était privé |
 

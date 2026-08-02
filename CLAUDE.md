@@ -22,6 +22,11 @@ vérification, `atelier/` ce qui a servi à y arriver. Ne jamais promouvoir une
 affirmation de l'atelier vers une fiche sans repasser par le sondage des
 sources et l'attribution d'un grade.
 
+**Avant une séance de fond, lire [`atelier/gotchas.md`](atelier/gotchas.md)** : les
+pièges déjà rencontrés et ce qui a marché (récupération de sources bloquées,
+identifiants Légifrance fabriqués par les moteurs, pièges du build et de l'audit).
+Chacun a coûté du temps une première fois.
+
 ## Les six invariants
 
 À ne casser sous aucun prétexte. Chacun a été payé par une leçon.
