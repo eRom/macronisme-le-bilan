@@ -51,7 +51,7 @@ export function viewMethode(): HTMLElement {
       P("La recherche documentaire a été menée avec des agents d'intelligence artificielle : <strong>Antigravity</strong> (Google) pour quatorze domaines, <strong>Grok</strong> (SpaceXAI) pour l'international. Puis l'essentiel : chaque référence porteuse a été <strong>re-sondée à la source primaire</strong> (Légifrance, Journal officiel, Cour des comptes, INSEE, décisions de justice) en session pilotée avec <strong>Claude</strong> (Anthropic) ; les identifiants inventés par les moteurs de recherche ont été corrigés à la main, les pièces invérifiables dégradées ou écartées, et des passes contradictoires (« red team ») ont attaqué les conclusions avant qu'elles ne soient retenues. L'IA cherche et met en forme ; l'humain vérifie, arbitre et signe."),
 
       h("hr", { class: "sep" }),
-      P(`<strong>Romain</strong>, avec l'aide de Claude (Anthropic), Antigravity (Google) et Grok (SpaceXAI). Dossier arrêté au ${A.buildDate}.`),
+      P(`<strong>Romain Ecarnot</strong>, avec l'aide de Claude (Anthropic), Antigravity (Google) et Grok (SpaceXAI). Dossier arrêté au ${A.buildDate}.`),
     ),
     footer(),
   );

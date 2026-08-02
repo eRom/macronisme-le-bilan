@@ -124,6 +124,21 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 }
 .search-btn:hover { box-shadow: var(--elevate-1) 0 0 0 1px, var(--elevate-2) 0 4px 8px; transform: translateY(-1px); }
 .search-btn kbd { font-family: var(--mono); font-size: 10px; border: 1px solid var(--border); border-radius: 3px; padding: 1px 4px; }
+.topbar-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.gh-link {
+  display: flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px;
+  border: 1px solid var(--border); border-radius: var(--radius);
+  color: var(--muted-foreground);
+  transition: box-shadow 150ms ease, transform 150ms ease, color 150ms ease;
+  flex-shrink: 0;
+}
+.gh-link:hover {
+  color: var(--foreground);
+  box-shadow: var(--elevate-1) 0 0 0 1px, var(--elevate-2) 0 4px 8px;
+  transform: translateY(-1px);
+}
+.gh-link svg { display: block; }
 @media (max-width: 700px) {
   .search-btn .sb-label, .search-btn kbd { display: none; }
   .brand-dates { display: none; }

@@ -137,7 +137,7 @@ export function backtop(href: string, label: string): HTMLElement {
 
 export function footer(): HTMLElement {
   return h("div", { class: "footer" },
-    h("span", {}, "Romain, avec l'aide de Claude (Anthropic), Antigravity (Google) et Grok (SpaceXAI)."),
+    h("span", {}, "Romain Ecarnot, avec l'aide de Claude (Anthropic), Antigravity (Google) et Grok (SpaceXAI)."),
     h("span", { class: "mono" }, `dossier arrêté au ${A.buildDate}`),
   );
 }
