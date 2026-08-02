@@ -55,6 +55,7 @@ plutôt que laissé à découvrir.
 | `conception/` | 16 Ko | la conception du site en un document : brief initial, plan d'exécution, amendements, pivot publication |
 | `runs/` | 16 Ko | le script de lancement d'un run et deux sujets de recherche complets |
 | `gotchas.md` | 8 Ko | les pièges rencontrés en construisant le dossier, et ce qui a marché |
+| `audit-publiabilite.ts` | 6 Ko | garde à jouer avant tout commit : vérifie qu'aucun chemin machine ni vocabulaire de chantier ne part |
 | `plan-jugement.md` | 8 Ko | tableau de bord du chantier jugement, avec les prompts de séance |
 | `CLAUDE-poste-origine.md` | 8 Ko | le contrat d'origine du dossier, tel qu'il était quand il était privé |
 

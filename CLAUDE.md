@@ -278,3 +278,19 @@ de travail sont publiés, y compris les échecs. Un rapport dont la couverture a
 cours de route ont plus de valeur publiés que cachés. Ne jamais nettoyer une
 archive de ses erreurs : `atelier/README.md` explique pourquoi, et son statut
 de mise en garde est ce qui rend cette transparence tenable.
+
+### Vérifier avant de committer
+
+```bash
+bun run atelier/audit-publiabilite.ts
+```
+
+Sort en erreur sur toute fuite technique (chemin machine, arborescence de
+travail) et sur tout vocabulaire de chantier qui se serait glissé dans `base/`
+ou `jugement/`. Complète l'audit du build sans le doubler : `atlas/build.ts`
+scanne le rendu du site, celui-ci scanne les sources markdown, c'est-à-dire ce
+que GitHub publie tel quel. Seul le second voit les fichiers que le site ne rend
+pas.
+
+Ajouter un motif à ses tables plutôt que de corriger une occurrence à la main :
+une correction manuelle ne protège que du cas d'aujourd'hui.
