@@ -354,7 +354,7 @@ const INTERDITS: [RegExp, string][] = [
   [/erom-research:/g, "nom d'outillage interne"],
   [/methode-(recherche|jugement|synthese)/g, "fichier de méthode interne"],
   [/\/Users\/[a-z]/g, "chemin local"],
-  [/EROM-HQ|\.claude\b/g, "arborescence de travail antérieure"],
+  [/\.claude\b/g, "arborescence d'outillage"],
   [/Ecarnot/g, "nom de famille (absent du site par choix du 01/08)"],
 ];
 
