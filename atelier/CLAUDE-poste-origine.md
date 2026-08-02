@@ -30,7 +30,7 @@ Construire un bilan documenté et sourcé des deux quinquennats Macron (2017-202
   6 angles a consommé environ 1,4 million de tokens de sous-agents le 30/07. Ne jamais
   présenter un run erom-research:agy comme gratuit côté Claude, et vérifier les deux quotas avant
   de lancer.
-- **Atlas (site public)** : `atlas/` contient le mini-site statique du dossier, PUBLIÉ le 01/08/2026 sur https://macronisme-le-bilan.netlify.app (Netlify, deploy CLI du seul `atlas/dist/` généré, jamais le repo). Plans : `atelier/conception/plan-kimi.md` + `atelier/conception/plan-fable-amendements.md` ; commandes : `atlas/CLAUDE.md`. Le pipeline lit `base/` et `jugement/` en lecture seule ; `research/`, `methodes/` et `chronologie.md` ne sont jamais publiés ; audit de publiabilité obligatoire avant chaque mise en ligne.
+- **Atlas (site public)** : `atlas/` contient le mini-site statique du dossier, PUBLIÉ le 01/08/2026 sur https://macronisme-le-bilan.netlify.app (Netlify, deploy CLI du seul `atlas/dist/` généré, jamais le repo). Plans : `atelier/conception/plan-atlas.md` ; commandes : `atlas/CLAUDE.md`. Le pipeline lit `base/` et `jugement/` en lecture seule ; `research/`, `methodes/` et `chronologie.md` ne sont jamais publiés ; audit de publiabilité obligatoire avant chaque mise en ligne.
 - **Mettre à jour le site en prod** (src -> build -> prod), depuis `atlas/` :
 
   ```bash
