@@ -8,12 +8,19 @@ de fond.
 ## Structure
 
 ```
-base/         531 fiches factuelles, AAAA-MM-JJ-slug.md      <- la matière
+base/         531 fiches factuelles, AAAA-MM-JJ-slug.md      <- ce qui fait foi
 jugement/     15 pièces de domaine + synthese.md             <- les verdicts
 atlas/        générateur + front du site (TypeScript, Bun)
 METHODE.md    méthode publique, destinée au lecteur
-atelier/      matière première et suivi interne, JAMAIS commité (.gitignore)
+atelier/      matière première : rapports bruts, chronologie de travail,
+              méthodes d'origine, notes de session, prompts de run
 ```
+
+Tout est publié, atelier compris. Mais la frontière entre `base/` et `atelier/`
+est la colonne vertébrale du dossier : `base/` contient ce qui a survécu à la
+vérification, `atelier/` ce qui a servi à y arriver. Ne jamais promouvoir une
+affirmation de l'atelier vers une fiche sans repasser par le sondage des
+sources et l'attribution d'un grade.
 
 ## Les six invariants
 
@@ -137,8 +144,9 @@ Format de sortie : liste de pièces, chacune structurée ainsi :
 Pour un domaine de type `promesses`, ajouter : « pour chaque promesse, indiquer
 le statut final (tenue / partielle / abandonnée) avec la preuve du statut ».
 
-3. Déposer le rapport brut dans `atelier/research/<slug>.md`. **Il n'est jamais
-   publié.**
+3. Déposer le rapport brut dans `atelier/research/<slug>.md`, tel quel. Ne
+   jamais le corriger après coup : c'est une archive de ce que la recherche a
+   réellement produit, y compris ses erreurs.
 4. Ingérer à la main : découper en fiches, revérifier chaque grade, sonder
    chaque URL, écrire dans `base/`.
 5. Écrire la pièce de jugement du domaine (section suivante).
@@ -219,37 +227,49 @@ Détail du pipeline dans `atlas/CLAUDE.md`.
 
 ## Le corpus doit être autonome
 
-Règle posée le 02/08/2026, à l'ouverture du dépôt public, et qui remplace la
-précédente.
+Règle posée le 02/08/2026, qui remplace la précédente.
 
-Le corpus markdown est publié **tel quel**. Il n'y a plus de rendu entre lui et
-le lecteur : une fiche qui renvoie à un fichier de travail non publié produit
-une référence dans le vide sur GitHub, même si le site l'affiche correctement.
+Une fiche est lue dans deux contextes qui n'offrent pas la même chose : le
+dépôt, où tout est présent, et le site, qui ne rend que `base/` et `jugement/`.
+Une fiche qui s'appuie sur son environnement de travail pour être comprise est
+donc bancale dans l'un des deux, et l'ancienne parade (réparer au rendu) ne
+protégeait que le site. Elle a été retirée de `build.ts` avec la table qui la
+portait.
 
 En conséquence :
 
-- **Jamais de renvoi vers `atelier/` dans une fiche ou une pièce.** Ni vers un
-  rapport de recherche, ni vers la chronologie, ni vers une note de session.
+- **Jamais de renvoi vers `atelier/` depuis une fiche ou une pièce.** Ces
+  fichiers existent dans le dépôt mais pas sur le site : le renvoi y serait
+  mort. Une fiche se tient seule, avec ses sources.
 - **Jamais de nom d'outillage dans le corpus.** Écrire « la recherche du
   30/07/2026 », pas le nom du moteur employé. Ces mentions ont leur place dans
-  `METHODE.md`, où elles sont assumées et expliquées, pas au détour d'une
-  fiche.
+  `METHODE.md` et dans `atelier/`, où elles sont assumées et expliquées, pas au
+  détour d'une fiche.
 - **Jamais de source pointant vers un fichier local.** Une source est une URL
-  publique, ou elle n'est pas citée. Les copies d'archive locales vivent dans
-  `atelier/` et ne s'écrivent pas dans le frontmatter.
+  publique, ou elle n'est pas citée. Les copies d'archive vivent dans
+  `atelier/research/annexes/` et ne s'écrivent pas dans un frontmatter.
 - **Renvois à la méthode en clair**, pas par numéro de section : écrire
   « METHODE.md, « le grade commande la force » » plutôt que « méthode §5 ». Les
   numéros pourrissent à la première réorganisation.
 
-L'ancienne doctrine (réparer au rendu, ne jamais toucher au corpus) valait tant
-que seul le site était publié. Elle a été retirée de `build.ts` avec la table
-qui la portait.
+Le sens de la règle : `atelier/` peut renvoyer à `base/`, jamais l'inverse.
 
 ## Ce qui ne sort jamais
 
-`atelier/` est gitignoré et le reste : rapports de recherche bruts, chronologie
-de travail, méthodes d'origine, notes de session, prompts de run. Ce sont des
-sorties avant tri, contenant des angles échoués et des pistes abandonnées.
+Le dépôt est intégralement public. Trois choses n'y entrent pas :
 
-Avant tout commit, vérifier que `git status` ne propose aucun fichier de
-`atelier/`. Si un fichier de travail doit être créé, il va dans `atelier/`.
+- **`_memory_/`** : mémoire de session, propre à la machine. Gitignoré.
+- **Les artefacts de build** (`atlas/dist/`, `node_modules/`, `build-report.md`) :
+  régénérables en deux commandes.
+- **Tout chemin machine, identifiant de compte ou copie intégrale d'un contenu
+  sous droit d'auteur.** Une source est une URL publique, ou elle n'est pas
+  citée. Si une copie d'archive est nécessaire pour vérifier un verbatim, elle
+  se réduit aux passages effectivement cités (voir
+  `atelier/research/annexes/` pour le précédent).
+
+Pour le reste, la règle est inverse de la prudence habituelle : les documents
+de travail sont publiés, y compris les échecs. Un rapport dont la couverture a
+échoué, une note qui documente une impasse, un run dont le quota a sauté en
+cours de route ont plus de valeur publiés que cachés. Ne jamais nettoyer une
+archive de ses erreurs : `atelier/README.md` explique pourquoi, et son statut
+de mise en garde est ce qui rend cette transparence tenable.

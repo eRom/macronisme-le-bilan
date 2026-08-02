@@ -38,8 +38,10 @@ La première source de presse généraliste arrive en seizième position.
 ```
 base/         531 fiches factuelles, une par pièce, AAAA-MM-JJ-slug.md
 jugement/     15 pièces de jugement (une par domaine) + synthese.md
-atlas/        générateur et front du site (TypeScript, Bun)
 METHODE.md    comment ce dossier est construit et ce que vaut chaque affirmation
+atlas/        générateur et front du site (TypeScript, Bun)
+atelier/      la matière première : rapports de recherche bruts, chronologie
+              de travail, méthodes d'origine, notes de session, prompts de run
 ```
 
 Les renvois entre fiches utilisent la syntaxe `[[slug]]`. Ces liens ne sont pas
@@ -98,16 +100,24 @@ Les limites connues sont dites en clair : déséquilibre de couverture entre
 2017-2022 et 2024-2026, corpus international mince, instruments sans série
 comparative, et une origine à charge déclarée plutôt que dissimulée.
 
-## Ce qui n'est pas publié
+## L'atelier est publié aussi, et rien n'y fait foi
 
-Les rapports de recherche bruts, la chronologie de travail et les notes de
-session ne sont pas dans ce dépôt. Ce sont des sorties avant tri, contenant des
-angles qui ont échoué et des pistes abandonnées ; les publier reviendrait à
-présenter la matière première comme du travail. Les faits qu'ils contenaient et
-qui ont survécu à la vérification sont tous dans `base/`, avec leur source.
+`atelier/` contient la matière première : les 15 rapports de recherche bruts,
+la chronologie de travail, les méthodes d'origine, les notes de session et les
+prompts de run. Tout est là pour que la méthode soit vérifiable jusqu'à sa
+source.
 
-Toute affirmation du dossier est vérifiable par ses sources, qui sont toutes
-publiées.
+Une mise en garde, qui vaut d'être lue avant d'en citer quoi que ce soit. Ces
+rapports sont des sorties **avant tri**. Ils contiennent des affirmations qui
+n'ont pas survécu à la vérification, des identifiants de loi et des URL
+inventés par les moteurs de recherche, des angles d'investigation qui ont
+échoué, et des inférences étiquetées comme telles. **Neuf des quinze rapports
+déclarent explicitement une couverture non convergée.**
+
+Ce qui fait foi est dans `base/`, fiche par fiche, avec sa source et son grade.
+Le reste dit comment le travail a été fait, pas ce qu'il conclut. Le détail est
+dans [`atelier/README.md`](atelier/README.md), y compris la liste complète des
+retouches faites avant publication.
 
 ## Reprendre ce travail
 

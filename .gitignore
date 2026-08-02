@@ -1,11 +1,5 @@
-# ------------------------------------------------------------------ atelier
-# Matière première et suivi interne du chantier. Jamais publiés, par décision
-# assumée : rapports de recherche bruts (non validés, angles échoués inclus),
-# chronologie de travail, méthodes d'origine, notes de session, prompts de run.
-# Le motif est expliqué dans README.md, section « Ce qui n'est pas publié ».
-atelier/
-
 # ------------------------------------------------------------------ agent
+# Mémoire de session, propre à la machine.
 _memory_/
 
 # ------------------------------------------------------------------ build
@@ -17,3 +11,8 @@ atlas/.netlify/
 
 # ------------------------------------------------------------------ os
 .DS_Store
+
+# Note : atelier/ EST publié (décision du 02/08/2026). Rapports de recherche
+# bruts, chronologie de travail, méthodes d'origine, notes de session et
+# prompts de run. Lire atelier/README.md avant d'en citer quoi que ce soit :
+# rien de ce qui s'y trouve ne fait foi, le dossier est dans base/.

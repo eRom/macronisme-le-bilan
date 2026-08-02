@@ -1,6 +1,7 @@
 /**
  * Atlas - pipeline de données.
- * Lecture SEULE sur ../base et ../jugement (jamais research/, methodes/, plan.md).
+ * Lecture SEULE sur ../base et ../jugement. Jamais ../atelier : le site rend le
+ * dossier, pas la matière première qui a servi à le construire.
  * Sorties : dist/data.js (window.ATLAS) + build-report.md.
  * Contrat : 531/531 fiches parsées ou échec du build ; tout lien cassé listé.
  */
@@ -348,7 +349,7 @@ function renderDomainLinks(text: string): string {
 
 const INTERDITS: [RegExp, string][] = [
   [/chronologie\.md/g, "renvoi au suivi interne"],
-  [/(?<![\w-])atelier\//g, "chemin vers l'atelier non publié"],
+  [/(?<![\w-])atelier\//g, "renvoi à l'atelier, hors du périmètre rendu par le site"],
   [/(?<![\w-])agy(?![\w-])/gi, "nom d'outillage brut"],
   [/erom-research:/g, "nom d'outillage interne"],
   [/methode-(recherche|jugement|synthese)/g, "fichier de méthode interne"],

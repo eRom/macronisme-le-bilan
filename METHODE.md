@@ -293,24 +293,36 @@ Elles sont énoncées dans la synthèse elle-même et répétées ici.
 - **Arrêt au 2026-08-02.** Le socle factuel est clos au 30/07/2026, les
   verdicts sont datés du 31/07/2026.
 
-## 10. Ce qui n'est pas publié
+## 10. L'atelier, et pourquoi rien n'y fait foi
 
-Trois ensembles de fichiers existent mais ne sont pas dans ce dépôt, par
-décision assumée :
+Tout est publié, y compris la matière première. `atelier/` contient les 15
+rapports de recherche bruts, la chronologie de travail, les méthodes d'origine,
+les notes de session et les prompts de run exacts qui ont servi.
 
-- **Les rapports de recherche bruts** (environ 1,4 Mo). Ce sont les sorties de
-  recherche avant tri, contenant des angles qui ont échoué, des inférences non
-  confirmées et des pistes abandonnées. Les publier reviendrait à présenter
-  comme travail ce qui en est la matière première, et à offrir des citations
-  hors contexte que le dossier lui-même a écartées. Les faits qu'ils
-  contenaient et qui ont survécu à la vérification sont dans `base/`, avec leur
-  source.
-- **La chronologie de travail** : un fichier de suivi d'avancement, sans
-  intérêt pour un lecteur.
-- **Les notes de session et les prompts de run** : documents de travail.
+Cette transparence a une contrepartie qu'il vaut mieux énoncer soi-même. Un
+rapport brut est une sortie **avant tri**. Il contient :
 
-Cette limite est un choix, pas une contrainte. Toute affirmation du dossier est
-vérifiable par ses sources, qui sont toutes publiées.
+- des affirmations qui n'ont pas survécu à la vérification et ne figurent dans
+  aucune fiche ;
+- des identifiants de loi, des numéros de décision et des URL inventés par les
+  moteurs de recherche, dont l'apparence est parfaitement plausible (c'est
+  l'origine de la règle du §5 : tout identifiant non sondé est présumé faux) ;
+- des angles d'investigation qui ont échoué, parfois sur des sujets entiers ;
+- des inférences étiquetées comme telles.
+
+**Neuf des quinze rapports déclarent `converged: false`**, c'est-à-dire une
+couverture non exhaustive. Sur `securite-civile`, 18 angles sur 27 ont échoué.
+Ce chiffre est donné ici plutôt que laissé à découvrir : il est la raison
+d'être du tri manuel, et il explique les limites de couverture énoncées au §9.
+
+Le tri est justement ce qui sépare l'atelier du dossier. Ce qui fait foi est
+dans `base/`, fiche par fiche, avec sa source et son grade. L'atelier dit
+comment le travail a été fait, pas ce qu'il conclut.
+
+`atelier/README.md` détaille le contenu, le statut d'archive de ces documents
+(plusieurs énoncent des règles qui ne valent plus, notamment un verrou de
+non-publication levé depuis, laissées telles quelles plutôt que réécrites) et
+la liste complète des retouches faites avant publication.
 
 ## 11. Mise à jour
 
