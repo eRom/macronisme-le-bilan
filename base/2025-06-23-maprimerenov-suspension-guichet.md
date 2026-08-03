@@ -12,7 +12,7 @@ grade: A
 statut: null
 sources:
   - https://www.publicsenat.fr/actualites/politique/ma-prime-renov-suspension-temporaire-de-laide-dampleur
-  - https://www.ecologie.gouv.fr/presse/anah-presente-son-bilan-dactivite-2025-et-perspectives-2026
+  - https://www.anil.org/aj-prime-renov/
 ---
 
 Le guichet du « parcours accompagné » (rénovations d'ampleur) est suspendu du 23/06 au 30/09/2025. Motifs officiels : afflux de demandes dépassant l'enveloppe disponible, et lutte contre la fraude. À la réouverture, les conditions sont durcies : le montant maximal de subvention pour les ménages très modestes passe de 63 000 € à 32 000 €.

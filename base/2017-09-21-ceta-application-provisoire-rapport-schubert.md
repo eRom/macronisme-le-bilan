@@ -11,7 +11,7 @@ grade: A
 statut: null
 sources:
   - https://www.info.gouv.fr/actualite/remise-du-rapport-de-levaluation-de-limpact-du-ceta
-  - https://www.economie.gouv.fr/entreprises/entree-vigueur-ceta-21-septembre-2017
+  - https://www.info.gouv.fr/upload/media/default/0001/01/2017_09_rapport_de_la_commission_devaluation_du_ceta_-_08.09.2017.pdf
   - https://www.info.gouv.fr/actualite/plan-daction-ceta
 ---
 

@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.elysee.fr/emmanuel-macron/2020/06/29/presentation-des-propositions-de-la-convention-citoyenne-pour-le-climat
+  - https://www.la-croix.com/environnement/reponse-dEmmanuel-Macron-convention-climat-2020-06-29-1201102487
 ---
 
 Recevant les 150 membres de la Convention à l'Élysée le 29/06/2020, Emmanuel Macron écarte explicitement trois propositions sur 149 : la taxe de 4 % sur les dividendes, la limitation à 110 km/h sur autoroute et la réécriture du préambule de la Constitution. Il emploie lui-même le terme de « jokers » et annonce reprendre les 146 autres.

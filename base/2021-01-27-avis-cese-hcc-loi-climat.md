@@ -11,8 +11,8 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.lecese.fr/travaux-publies/climat-neutralite-carbone-et-justice-sociale
-  - https://www.hautconseilclimat.fr/publications/avis-sur-le-projet-de-loi-climat-et-resilience/
+  - https://www.lecese.fr/travaux-publies/climat-neutralite-carbone-et-justice-sociale-avis-du-cese-sur-le-projet-de-loi-portant-lutte-contre-le
+  - https://www.hautconseilclimat.fr/publications/avis-portant-sur-le-projet-de-loi-climat-et-resilience/
 ---
 
 Saisi par le Premier ministre Jean Castex, le CESE adopte le 27/01/2021 son avis sur le projet de loi Climat et résilience : les mesures sont jugées « souvent limitées, différées ou soumises à des conditions de nature à rendre incertaine leur mise en œuvre effective à court terme », et le texte « ne paraît pas en mesure de redresser la trajectoire pour atteindre les objectifs climatiques ».

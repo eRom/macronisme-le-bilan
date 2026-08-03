@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.ecologie.gouv.fr/comite-ministeriel-qualite-lair-ville-zfe
+  - https://www.ecologie.gouv.fr/sites/default/files/documents/DP-ZFE_accessible.pdf
 ---
 
 À l'issue du comité ministériel sur la qualité de l'air en ville du 10/07/2023, le ministère annonce que seules 5 agglomérations en dépassement régulier des valeurs limites restent soumises au calendrier légal d'interdiction (Paris, Lyon, Marseille, Rouen, Strasbourg). Les 38 autres sont requalifiées en « territoires de vigilance » et n'ont plus à appliquer de calendrier au-delà de l'interdiction des véhicules non classés immatriculés avant le 31/12/1996.
