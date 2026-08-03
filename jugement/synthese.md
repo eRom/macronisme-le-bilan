@@ -311,7 +311,11 @@ au juge, pas au censuré ; la seule persistance documentée après condamnation
 est le rattachement arbitraire de mineurs à des adultes tiers à Mayotte,
 constaté par le CGLPL trois ans après l'arrêt Moustahi de la CEDH
 ([[2023-04-24-operation-wuambushu]], grade A), exception frontale au fil, sur
-le terrain le plus grave ; l'exécution n'a pas toujours été complète dans le
+le terrain le plus grave, et aggravée par ce que le même document rapporte :
+le gouvernement avait assuré au Comité des ministres du Conseil de l'Europe, en
+mars 2024, au titre du suivi de l'exécution de cet arrêt, qu'« en aucun cas les
+mineurs non accompagnés ne font l'objet d'un rattachement arbitraire à un
+adulte » ; l'exécution n'a pas toujours été complète dans le
 délai que le juge avait fixé, le tribunal administratif de Paris constatant le
 22/12/2023 que l'État n'avait pas entièrement réparé au 31/12/2022 le préjudice
 écologique qu'il lui avait enjoint de réparer, et n'écartant l'astreinte

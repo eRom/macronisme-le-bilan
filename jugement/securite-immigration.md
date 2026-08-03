@@ -76,11 +76,18 @@ traitement inhumain, rétention irrégulière et expulsion collective
 d'urgence non exécutées, l'État n'exécutant pas les décisions de ses propres
 juridictions ([[2022-12-08-cedh-mk-hebergement]]). Le fait le plus lourd n'est
 pas la condamnation, c'est la persistance : en octobre 2023, trois ans après
-l'arrêt Moustahi, le CGLPL constate la poursuite du rattachement arbitraire de
-mineurs à des adultes tiers lors de l'opération Wuambushu, ainsi qu'un refus
-formel d'accès opposé aux contrôleurs pour les interceptions en mer ; le
-Défenseur des droits (décision 2023-102) constate l'absence d'évaluation sociale
-individuelle avant démolition ([[2023-04-24-operation-wuambushu]], grade A).
+l'arrêt Moustahi, le CGLPL constate que les enfants voyageant sans leurs parents
+sont « systématiquement rattachés à des adultes, en vue de leur éloignement et
+sans vérification de la réalité de leur lien », et que ses contrôleurs ont été
+« empêchés d'assister » aux opérations d'interception en mer bien qu'ayant
+expressément demandé à le faire. Ce point est plus lourd qu'une simple
+persistance de fait : le gouvernement avait déclaré au Comité des ministres du
+Conseil de l'Europe, en mars 2024, au titre du suivi de l'exécution de l'arrêt,
+qu'« en aucun cas les mineurs non accompagnés ne font l'objet d'un rattachement
+arbitraire à un adulte ». La Défenseure des droits retient de son côté, par sa
+décision n° 2025-102 du 03/06/2025 et après vérification sur place, une
+évaluation sociale préalable à l'évacuation défaillante et un parc d'hébergement
+saturé ([[2023-04-24-operation-wuambushu]], grade A).
 S'y ajoute, en appoint, le manquement reconnu par l'IGPN lors de l'évacuation de
 la place de la République en novembre 2020
 ([[2020-11-23-demantelements-campements-paris]], grade B, rapport primaire à
