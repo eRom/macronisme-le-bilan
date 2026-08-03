@@ -50,7 +50,25 @@ Onze pièces sur seize citent une fiche dont le **fond** a bougé. Les autres
 ne citent que des fiches dont seule l'URL a été réparée : elles ne sont pas
 concernées par cette passe.
 
-### ecologie-energie — 7 points, la pièce la plus touchée
+### ecologie-energie — FAIT le 03/08/2026, commit `80ca9a1`
+
+Verdict inchangé (défavorable), huit points bougés, `date_verdict` avancé au
+03/08. La décharge 3 versait un « préjudice regardé comme réparé » qui
+n'existe pas ; elle est rectifiée et une charge apparaît en charge 3, avec
+quatre limites dont la plus sérieuse : le constat d'inexécution figure dans
+les motifs d'un jugement de rejet, pas dans son dispositif. Plan vélo et
+police de l'eau passent de B à A et leurs constats sont attribués à la Cour
+des comptes ; la limite d'entrée qui disait l'inverse tombe.
+
+**Le huitième point n'était pas dans le tableau ci-dessous, et c'est la leçon
+de la séance.** Croiser les fiches modifiées avec les fiches citées a fait
+apparaître `2019-08-30-abandon-astrid-quatrieme-generation`, fiche de
+grade A ajoutée au domaine par le rattrapage ciblé du 03/08 et que la pièce
+du 31/07 ne pouvait pas connaître. Le contrat d'intégrité ne couvrait que les
+références réparées ; la campagne de couverture avait ajouté de la matière en
+parallèle. Voir plus bas « Le contrôle qui manquait ».
+
+### ecologie-energie — les 7 points annoncés (traités)
 
 | Fiche | Ce qui a changé, et ce qu'il faut vérifier dans la pièce |
 |---|---|
@@ -84,12 +102,45 @@ concernées par cette passe.
 | libertes-publiques | `2026-03-20-vsa-prorogee-2027` | Fiche **rehaussée B → A** au rattrapage du 03/08, la prorogation au 31/12/2027 étant confirmée par l'article 47 de la loi et par la décision du Conseil constitutionnel. |
 | synthese | `2021-10-01-boucliers-tarifaires-energie`, `2024-06-09-dissolution-caducite-chantiers` | Voir ci-dessus. **En dernier**, après les quinze. |
 
+## Le contrôle qui manquait
+
+Le tableau ci-dessus vient de la campagne d'intégrité : il ne connaît que les
+fiches dont une **référence** a été réparée. Or la branche portait aussi un
+rattrapage ciblé qui a **ajouté** de la matière. Une pièce peut donc être
+périmée sans qu'aucune de ses citations n'ait bougé.
+
+Deux commandes à passer sur chaque pièce avant de la réviser. La première
+croise les fiches modifiées et les fiches citées, la seconde compare le
+périmètre annoncé au périmètre réel.
+
+```bash
+git diff --name-only ba312c4..HEAD -- base/ | sed 's|base/||;s|\.md$||' > /tmp/mod.txt
+grep -oFf /tmp/mod.txt jugement/<domaine>.md | sort -u
+
+for f in base/*.md; do awk '/^domaines:/{print; exit}' "$f"; done | grep -c "\b<domaine>\b"
+grep -oE "sur les [0-9]+ fiches" jugement/<domaine>.md
+```
+
+Résultat du passage du 03/08 sur les quinze : quatre écarts de périmètre, de
+deux natures différentes.
+
+| Pièce | Annoncé | Réel | Cause |
+|---|---|---|---|
+| education-recherche | 23 | 25 | matière ajoutée : `2019-07-26-loi-ecole-de-la-confiance` et `2023-12-05-pisa-2022-chute-mathematiques`, **grade A, non citées** |
+| industrie | 69 | 70 | matière ajoutée : `2019-08-30-abandon-astrid-quatrieme-generation`, **grade A, non citée** |
+| institutions | 82 | 84 | rien n'a bougé sur la branche : **le compte était faux au 31/07** |
+| justice-affaires | 53 | 54 | idem, compte faux au 31/07 |
+
+Les onze autres pièces annoncent juste. Pour les deux premières lignes, la
+question est de fond : citer la fiche ou dire pourquoi on ne la cite pas.
+Pour les deux dernières, c'est une correction de chiffre.
+
 ## Ordre de travail
 
-1. **`ecologie-energie`** en premier : sept points, dont l'unique inversion de
-   sens de la séance.
+1. ~~**`ecologie-energie`** en premier~~ **FAIT** le 03/08, commit `80ca9a1`.
 2. Puis les dix autres pièces, en passe groupée. Chacune n'a qu'un à trois
-   points.
+   points du tableau, **plus le contrôle de périmètre** de la section
+   précédente, qui en ajoute sur quatre d'entre elles.
 3. **La synthèse en dernier**, une fois les quinze arrêtées : re-tester les
    fils transverses qui citent un domaine révisé, re-motiver le verdict
    d'ensemble si besoin.

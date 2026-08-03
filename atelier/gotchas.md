@@ -237,3 +237,30 @@ coûte du réseau : il se lance par campagne, pas à chaque commit.
 il est revérifié, et en cas de doute c'est le grade inférieur qui est retenu.
 Une allégation mal sourcée posée au milieu de faits établis ne renforce pas le
 dossier, elle le fragilise.
+
+**Une note de reprise ne connaît que le périmètre de la campagne qui l'a
+produite.** Le contrat de révision des jugements listait, pièce par pièce, les
+fiches dont une référence avait été réparée. Il était exact et il était
+incomplet : en parallèle, un rattrapage ciblé avait **ajouté** des fiches de
+grade A aux domaines. Une pièce de jugement peut donc être périmée sans
+qu'aucune de ses citations n'ait bougé, et aucune relecture de ses renvois ne
+le montre. Deux commandes le montrent, elles :
+
+```bash
+# 1. fiches modifiées ET citées par la pièce
+git diff --name-only <base>..HEAD -- base/ | sed 's|base/||;s|\.md$||' > /tmp/mod.txt
+grep -oFf /tmp/mod.txt jugement/<domaine>.md | sort -u
+
+# 2. périmètre annoncé contre périmètre réel
+for f in base/*.md; do awk '/^domaines:/{print; exit}' "$f"; done | grep -c "\b<domaine>\b"
+grep -oE "sur les [0-9]+ fiches" jugement/<domaine>.md
+```
+
+Le second contrôle a payé deux fois : il a trouvé la matière ajoutée sur deux
+domaines, et **deux comptes de périmètre déjà faux** au moment où les pièces
+ont été écrites, que rien d'autre n'aurait signalés. Le compte de fiches
+annoncé par une pièce est une affirmation vérifiable comme les autres.
+
+> La règle : **le contrat de reprise dit où regarder, il ne dit pas où ne pas
+> regarder.** Avant de réviser une pièce, recalculer son périmètre plutôt que
+> de le lire dans la note.

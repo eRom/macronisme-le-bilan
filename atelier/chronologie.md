@@ -38,7 +38,7 @@ avant le sondage général, soit 95 au total sur le dossier.
 | 2 | `ecologie-energie` et `education-recherche`, soldés en entier | ✔ 03/08/2026, 31 entrées, 24 fiches |
 | 3 | `justice-affaires`, `promesses`, `libertes-publiques`, `economie`, soldés en entier | ✔ 03/08/2026, 34 entrées, 26 fiches |
 | 4 | la traîne : `europe`, `industrie`, `securite-immigration`, `finances-publiques`, `retraites-social` | ✔ 03/08/2026, 10 entrées, 9 fiches |
-| 5 | **révision des pièces de jugement**, onze sur seize concernées | ouvert, débloqué, `notes/revision-jugements-post-integrite.md` |
+| 5 | **révision des pièces de jugement**, onze sur seize concernées | en cours, `notes/revision-jugements-post-integrite.md` — `ecologie-energie` ✔ 03/08/2026 |
 | 6 | 262 sources mortes, 16 déplacées (mesure du 03/08/2026 après réparation) | ouvert, après la révision |
 
 Les deux derniers lots ont été **intervertis** le soir du 03/08. L'ordre
@@ -85,6 +85,25 @@ que les garder pour soi a permis de les solder deux mois plus tard sans rien
 redécouvrir. C'est la contrepartie utile d'un dossier qui publie ses échecs.
 Mode opératoire et pièges dans `notes/campagne-integrite-sources.md`,
 inventaire dans `references-fabriquees.md`.
+
+### Révision des jugements, première pièce (03/08/2026)
+
+`ecologie-energie` est révisée, verdict inchangé, huit points bougés. La
+décharge qui s'appuyait sur le jugement d'exécution de l'Affaire du Siècle
+disait « préjudice regardé comme réparé » quand le tribunal a constaté
+l'inverse : réparation incomplète à l'échéance qu'il avait lui-même fixée,
+astreinte écartée seulement sur la projection de la tendance 2023. La décharge
+est rectifiée, une charge apparaît, le verdict tient.
+
+Un huitième point n'était dans aucun contrat : la campagne de couverture avait
+**ajouté** des fiches de grade A aux domaines pendant que la campagne
+d'intégrité en réparait les références. Une pièce peut donc être périmée sans
+qu'aucune de ses citations n'ait bougé. Le contrôle de périmètre ajouté à cette
+occasion (compte réel des fiches du domaine contre compte annoncé par la pièce)
+a trouvé trois fiches de grade A non citées sur deux domaines, et **deux
+comptes déjà faux au 31/07** sur deux autres. Procédé versé aux
+`gotchas.md`, tableau des écarts dans
+`notes/revision-jugements-post-integrite.md`.
 
 ## À re-vérifier (points ouverts hérités des recherches)
 
