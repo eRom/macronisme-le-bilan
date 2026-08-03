@@ -1,8 +1,13 @@
 #!/usr/bin/env bun
 /**
- * Sondage des sources d'un domaine (campagne intégrité).
+ * Sondage des sources (campagne intégrité).
  *
- *   bun run atelier/audit-sources.ts <slug-domaine> [--all]
+ *   bun run atelier/audit-sources.ts             tout le corpus
+ *   bun run atelier/audit-sources.ts <slug>      un domaine
+ *
+ * Sans argument, le corpus entier est sondé et les URL sont dédoublonnées :
+ * les fiches sont transverses, une même source peut être citée par dix
+ * d'entre elles et n'a pas à être ouverte dix fois.
  *
  * Ouvre réellement chaque URL citée en source par les fiches du domaine et
  * classe le résultat. C'est le seul contrôle qui tranche : l'audit
@@ -35,10 +40,6 @@ const ROOT = resolve(import.meta.dir, "..");
 const BASE = join(ROOT, "base");
 
 const slug = process.argv[2];
-if (!slug) {
-  console.error("Usage : bun run atelier/audit-sources.ts <slug-domaine>");
-  process.exit(1);
-}
 
 const UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36";
@@ -51,18 +52,33 @@ const MARQUEURS_ERREUR = [
   "cette page n'existe pas",
 ];
 
-type Source = { fiche: string; url: string; grade: string };
-const sources: Source[] = [];
+// Interstitiels anti-robot servis en 200. Sans cette table, un défi Cloudflare
+// serait compté VIVANTE : le pire des faux négatifs, puisqu'il déclare vérifiée
+// une source que personne n'a vue.
+const MARQUEURS_DEFI = [
+  "just a moment",
+  "enable javascript and cookies to continue",
+  "vérification que vous êtes bien un humain",
+];
+
+type Source = { fiches: string[]; url: string; grades: string[] };
+const parUrl = new Map<string, Source>();
 
 for (const nom of readdirSync(BASE).filter((f) => f.endsWith(".md")).sort()) {
   const texte = readFileSync(join(BASE, nom), "utf8");
   const fin = texte.indexOf("\n---", 3);
   const fm = fin === -1 ? texte : texte.slice(0, fin);
-  if (!new RegExp(`^domaines:.*\\b${slug}\\b`, "m").test(fm)) continue;
+  if (slug && !new RegExp(`^domaines:.*\\b${slug}\\b`, "m").test(fm)) continue;
   const grade = fm.match(/^grade:\s*(\w)/m)?.[1] ?? "?";
-  for (const m of fm.matchAll(/^\s*-\s*(https?:\/\/\S+)\s*$/gm))
-    sources.push({ fiche: nom, url: m[1], grade });
+  for (const m of fm.matchAll(/^\s*-\s*(https?:\/\/\S+)\s*$/gm)) {
+    const url = m[1];
+    const s = parUrl.get(url) ?? { fiches: [], url, grades: [] };
+    s.fiches.push(nom);
+    s.grades.push(grade);
+    parUrl.set(url, s);
+  }
 }
+const sources = [...parUrl.values()];
 
 type Verdict = "PIEGE" | "MORTE" | "BLOQUEE" | "DEPLACEE" | "VIVANTE";
 type Resultat = Source & { verdict: Verdict; detail: string };
@@ -89,6 +105,9 @@ async function sonder(s: Source): Promise<Resultat> {
     if (!r.ok) return { ...s, verdict: "MORTE", detail: `HTTP ${r.status}` };
 
     const corps = (await r.text()).slice(0, 200_000).toLowerCase();
+    const defi = MARQUEURS_DEFI.find((m) => corps.includes(m));
+    if (defi)
+      return { ...s, verdict: "BLOQUEE", detail: `200 mais défi anti-robot` };
     const marqueur = MARQUEURS_ERREUR.find((m) => corps.includes(m));
     if (marqueur)
       return { ...s, verdict: "PIEGE", detail: `200 mais « ${marqueur} »` };
@@ -119,14 +138,22 @@ for (let i = 0; i < sources.length; i += PARALLELE) {
 process.stderr.write("\n\n");
 
 const ordre: Verdict[] = ["PIEGE", "MORTE", "DEPLACEE", "BLOQUEE", "VIVANTE"];
-console.log(`Domaine ${slug} : ${sources.length} sources sondées\n`);
+console.log(
+  `${slug ? `Domaine ${slug}` : "Corpus entier"} : ${sources.length} sources distinctes sondées\n`,
+);
 
 for (const v of ordre) {
   const lot = resultats.filter((r) => r.verdict === v);
   console.log(`${v} : ${lot.length}`);
   if (v === "VIVANTE") continue;
-  for (const r of lot)
-    console.log(`  ${r.fiche} [${r.grade}]\n    ${r.url}\n    ${r.detail}`);
+  for (const r of lot) {
+    const gradeMax = r.grades.sort()[0];
+    const ou =
+      r.fiches.length === 1
+        ? r.fiches[0]
+        : `${r.fiches[0]} (+${r.fiches.length - 1} autres)`;
+    console.log(`  ${ou} [${gradeMax}]\n    ${r.url}\n    ${r.detail}`);
+  }
   if (lot.length) console.log();
 }
 
