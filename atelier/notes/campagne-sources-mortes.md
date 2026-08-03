@@ -451,7 +451,59 @@ la date du 22/11/2023 de la fiche décarbonation n'est pas fausse, c'est celle
 de la signature des contrats. Un agent qui signale une erreur se vérifie comme
 un agent qui propose une source.
 
-### Ce qui reste ouvert sur ces deux lots
+### Les six lignes ouvertes, et comment elles se sont soldées
+
+Reprises dans la foulée. Quatre trouvent une source, deux sont bornées dans la
+fiche. Trois enseignements, dont un à mes dépens.
+
+**Une erreur de ma part, à consigner comme les autres.** J'avais écarté la page
+du TA de Montreuil comme « mauvais document » parce qu'elle porte un jugement du
+8 avril 2026 quand la fiche est datée d'avril 2025. La fiche porte
+`date_fin: 2026-04-08` : la page est exactement la source de son dernier maillon,
+« recours CGT rejeté », qui figure dans son titre. Le lot 01 avait raison de la
+coter OUI. Le défaut réel était plus petit et différent : le communiqué
+n'établit ni les 608 postes ni la validation administrative, qui demandaient une
+seconde source.
+
+> Vérifier une source contre ce que la fiche affirme suppose de lire la fiche en
+> entier, `date_fin` comprise. Une fiche qui couvre une séquence a plusieurs
+> maillons, et une source qui n'en établit qu'un n'est pas pour autant la
+> mauvaise source.
+
+**Le résumé d'un moteur attribue des chiffres à des pages qui ne les portent
+pas.** Cherchant le bilan Anah 2025, la recherche a rendu deux communiqués de
+l'Agence en affirmant qu'ils contenaient « 307 731 rénovations énergétiques,
+120 306 rénovations d'ampleur ». Les deux pages ont été ouvertes : l'une, du
+16/12/2025, porte sur le budget 2026 ; l'autre, du 10/03/2026, sur la lutte
+contre la fraude. Aucune ne contient ces chiffres. C'est la même leçon que sur
+les citations du moteur, à un cran de plus : la rédaction ne fabrique pas
+seulement des URL, elle fabrique aussi l'appariement entre un chiffre et une
+page réelle.
+
+**Une fiche qu'on ne peut pas sourcer se borne, elle ne se vide pas.** Deux cas.
+Le « -82,5 Md€ hors énergie » du commerce extérieur 2022, dont la source INSEE
+répond 404, n'a été retrouvé nulle part ; la présentation officielle du
+07/02/2023 donne -164 Md€ de solde des biens et -74 Md€ hors énergie et hors
+matériel militaire. La fiche et les deux pièces qui le reprenaient disent
+désormais cela : la charge est intacte, sa mesure change. Les 307 731 logements
+MaPrimeRénov' n'ont pas d'équivalent publié ; la fiche est réécrite sur les
+chiffres clés de l'Agence et **nomme dans son corps** ce qui n'est plus adossé,
+plutôt que de garder un chiffre orphelin ou de le supprimer en silence.
+
+| Fiche | Sortie |
+|---|---|
+| `2025-04-23-arcelormittal-pse-react` | réparée : communiqué du TA pour le jugement, presse régionale pour les 608 postes et la validation |
+| `2021-02-28-convention-citoyenne-note-gouvernement` | réparée : compte rendu de session, les deux questions au mot près, 3,3/10 et 2,5/10 |
+| `2023-02-07-deficit-commercial-record-2022` | réparée et corrigée : -164 Md€ à la publication, -74 Md€ hors énergie ; la révision à -162,7 est distinguée |
+| `2025-12-17-cloud-confiance-s3ns-bleu` | réparée et corrigée : rapport n° 3054, 1,5 Md€/an, 79 % du top 50 UGAP et non « ~80 % des dépenses » |
+| `2026-02-12-bilan-anah-maprimerenov` | bornée : réécrite sur les chiffres clés, la décomposition MaPrimeRénov' est déclarée non adossée |
+| `2024-11-01-minima-sociaux-effet-pauvrete-drees` | bornée : les effectifs 2024 ne sont pas dans le panorama cité, la réserve est écrite |
+
+Répercussions : `economie`, `industrie` et `ecologie-energie` reprises sur les
+chiffres re-sondés, note de méthode de la synthèse corrigée. Aucun verdict
+déplacé.
+
+### État initial de ces six lignes, au moment où elles ont été mises de côté
 
 - `2025-04-23-arcelormittal-pse-react` : orpheline, et elle le reste. Le seul
   document trouvé est un autre jugement.

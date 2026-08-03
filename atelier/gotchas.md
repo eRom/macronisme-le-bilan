@@ -423,3 +423,25 @@ le glyphosate, je n'ai pas réussi », absente de la page. La vidéo d'origine a
 disparu, le verbatim n'est plus vérifiable nulle part. Avant de citer un
 président entre guillemets sur la foi d'une page élyséenne, vérifier que la page
 cite et ne résume pas.
+
+**Le résumé d'un moteur apparie un chiffre à une page qui ne le porte pas.**
+Variante aggravée du piège des citations, constatée le 03/08/2026 en cherchant
+le bilan d'activité 2025 de l'Anah. La recherche a rendu deux communiqués de
+l'Agence en affirmant qu'ils contenaient « 307 731 rénovations énergétiques,
+120 306 rénovations d'ampleur ». Les deux URL sont réelles et répondent 200. Ni
+l'une ni l'autre ne contient ces chiffres : la première, du 16/12/2025, porte
+sur le budget 2026, la seconde, du 10/03/2026, sur la lutte contre la fraude.
+
+> La rédaction d'un moteur ne fabrique pas seulement des URL : elle fabrique
+> l'appariement entre un chiffre vrai et une page réelle. Un chiffre juste et
+> une URL vivante ne prouvent rien tant que le chiffre n'a pas été lu **dans**
+> la page.
+
+**Lire la fiche en entier avant de juger une source, `date_fin` comprise.**
+Erreur commise le 03/08/2026 : une page du TA de Montreuil a été écartée comme
+« mauvais document » parce qu'elle portait un jugement d'avril 2026 quand la
+fiche était datée d'avril 2025. La fiche portait `date_fin: 2026-04-08` et son
+titre annonçait « recours CGT rejeté » : la page était exactement la source de
+son dernier maillon. Une fiche qui couvre une séquence a plusieurs maillons, et
+une source qui n'en établit qu'un n'est pas la mauvaise source, elle est une
+source partielle qui en appelle une autre.
