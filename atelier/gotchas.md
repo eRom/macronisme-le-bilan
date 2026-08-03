@@ -445,3 +445,19 @@ titre annonçait « recours CGT rejeté » : la page était exactement la source
 son dernier maillon. Une fiche qui couvre une séquence a plusieurs maillons, et
 une source qui n'en établit qu'un n'est pas la mauvaise source, elle est une
 source partielle qui en appelle une autre.
+
+**Un échec de sondage isolé n'est pas une mort. [candidat 1x - re-sondage du
+03/08/2026]** Sur un contrôle final de 55 sources en parallèle, le compte rendu
+de séance de l'Assemblée du 06/07/2021 est ressorti mort, ce qui aurait classé
+sa fiche orpheline. Sondé seul, il répond 200 trois fois de suite, 2 Mo, avec le
+motif attendu. L'hypothèse d'une limitation de débit a été testée et **écartée**
+: le même hôte encaisse dix requêtes simultanées sans une seule erreur, et le
+sondeur de la campagne travaille déjà par lots bornés. C'était donc un
+transitoire, pas un biais de méthode.
+
+> Avant de déclarer une fiche orpheline sur la foi d'un sondage, re-sonder seule
+> l'unique source qui a échoué. Le coût est d'une requête, l'erreur inverse est
+> une fiche réécrite pour rien.
+
+Statut de cette entrée : observation unique, à promouvoir si elle se reproduit,
+à purger sinon.
