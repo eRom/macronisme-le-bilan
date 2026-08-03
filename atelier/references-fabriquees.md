@@ -40,10 +40,15 @@ vérifié sur un élément de contenu.
 |---|---|---|---|
 | 1 | fiches citées par la synthèse | 9 (10 références, l'une servant à deux fiches) | 75 |
 | 2 | `ecologie-energie` et `education-recherche`, soldés en entier | 31 | 44 |
+| 3 | `justice-affaires`, `promesses`, `libertes-publiques`, `economie`, soldés en entier | 34 | 10 |
 
-Reste par domaine : `justice-affaires` 10, `promesses` 8,
-`libertes-publiques` 8, `economie` 8, `europe` 3, `industrie` 3,
-`securite-immigration` 2, `finances-publiques` 1, `retraites-social` 1.
+Reste la seule traîne : `europe` 3, `industrie` 3, `securite-immigration` 2,
+`finances-publiques` 1, `retraites-social` 1.
+
+Deux références du lot 3 n'existent pas sur le portail et ne peuvent pas y
+être retrouvées : l'arrêt de cassation Ferrand du 05/10/2022 et le jugement
+Benalla de première instance. Elles sont remplacées par des sources publiques
+non législatives, et les fiches disent laquelle établit quoi.
 
 ## Inventaire
 

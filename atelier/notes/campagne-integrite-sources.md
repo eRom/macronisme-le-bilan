@@ -142,11 +142,17 @@ la fiche.
   seuil de prix attribué à une loi qui ne le contient pas, deux NOR non
   sondés retirés. Un seul grade a bougé, et il n'a pas bougé : le versement
   nucléaire universel reste en B, mais sa réserve change d'objet.
-- **À faire : 44 entrées d'inventaire restantes**, par
-  [`../references-fabriquees.md`](../references-fabriquees.md). Reste par
-  domaine : `justice-affaires` 10, `promesses` 8, `libertes-publiques` 8,
-  `economie` 8, `europe` 3, `industrie` 3, `securite-immigration` 2,
-  `finances-publiques` 1, `retraites-social` 1.
+- Fait : **lot 3**, `justice-affaires`, `promesses`, `libertes-publiques` et
+  `economie` soldés en entier. 34 entrées, 26 fiches. Quatre corrections de
+  fond, dont une erreur répandue reprise telle quelle par le corpus : le
+  barème prud'homal a été validé par la chambre sociale de la Cour de
+  cassation, non par son assemblée plénière. Deux décisions de justice se
+  sont révélées absentes du portail et sont désormais sourcées ailleurs, en
+  le disant.
+- **À faire : 10 entrées d'inventaire restantes**, la seule traîne, par
+  [`../references-fabriquees.md`](../references-fabriquees.md) : `europe` 3,
+  `industrie` 3, `securite-immigration` 2, `finances-publiques` 1,
+  `retraites-social` 1.
 - À faire ensuite : 264 sources mortes, 15 déplacées.
 - À faire en dernier : la révision des pièces de jugement, groupée, une fois le
   corpus assaini. Aucun verdict n'a bougé à ce jour et aucun ne doit bouger

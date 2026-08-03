@@ -87,6 +87,33 @@ le texte ouvert a donné raison à la fiche (1,8 jusqu'au 31/12/2024, 0,7
 ensuite). Le résumé se trompe dans les deux sens : il peut valider une erreur
 comme en inventer une.
 
+**Un numéro de pourvoi trouvé en base tierce peut désigner une autre
+affaire.** En cherchant l'arrêt de cassation Ferrand du 05/10/2022, un moteur
+a servi un numéro de pourvoi rendu par une base juridique libre à la même
+date : ouverture faite, il s'agissait d'une affaire sans rapport, jugée à
+Riom. Le piège que ce dossier répare, reconstitué par la réparation
+elle-même. **Ouvrir avant de citer vaut aussi pour les sources de secours.**
+
+**La formation d'une juridiction est un fait à vérifier, pas à supposer.** Le
+barème des indemnités prud'homales a été validé par la chambre sociale de la
+Cour de cassation, non par son assemblée plénière : la confusion est répandue
+parce que les avis de 2019, eux, venaient de l'assemblée plénière. De même,
+la nature de l'acte se vérifie : la nomination au Conseil constitutionnel est
+une décision du Président de la République, pas un décret.
+
+**La version consolidée n'est pas le texte publié.** Interrogée sur la loi du
+24/12/2018, la version `loda` a répondu que les articles sur les heures
+supplémentaires et la CSG n'y figuraient pas ; la version `jorf`, celle du
+Journal officiel, les porte bien aux articles 2 et 3. Les dispositions
+codifiées disparaissent de la consolidation. **Pour établir ce qu'une loi
+contenait à sa promulgation, citer le `jorf`, pas le `loda`.**
+
+**Un acte individuel relatif à l'état des personnes est publié sans être
+lisible.** Le décret suspendant un ministre de la Légion d'honneur existe,
+est daté et opposable, mais son contenu est en accès protégé : il ne nomme
+publiquement ni l'intéressé ni la sanction. Le citer seul ne prouve rien ; il
+faut le doubler de la source qui identifie, et dire laquelle établit quoi.
+
 **Un rapport de commission porte les chiffres du projet, la loi ceux du texte
 voté.** Sur le Fonds vert, le rapport sénatorial donne 650 M€ d'autorisations
 d'engagement au PLF 2026 quand la loi promulguée en retient 837. Les deux

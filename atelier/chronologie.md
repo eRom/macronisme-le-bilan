@@ -36,24 +36,32 @@ avant le sondage général, soit 95 au total sur le dossier.
 | — | 2 P0 isolés (vidéosurveillance algorithmique, ministre de la Culture) | ✔ 03/08/2026, 3 références |
 | 1 | les 8 fiches citées par `jugement/synthese.md` | ✔ 03/08/2026, 9 entrées, 10 références, 9 fiches |
 | 2 | `ecologie-energie` et `education-recherche`, soldés en entier | ✔ 03/08/2026, 31 entrées, 24 fiches |
-| 3 | `justice-affaires` (10), `promesses` (8), `libertes-publiques` (8), `economie` (8) | ouvert |
+| 3 | `justice-affaires`, `promesses`, `libertes-publiques`, `economie`, soldés en entier | ✔ 03/08/2026, 34 entrées, 26 fiches |
 | 4 | traîne : `europe` 3, `industrie` 3, `securite-immigration` 2, `finances-publiques` 1, `retraites-social` 1 | ouvert |
 | 5 | 264 sources mortes, 15 déplacées | ouvert |
 | 6 | révision groupée des pièces de jugement | bloqué tant que le corpus n'est pas assaini |
 
-Sur les 55 références traitées à ce jour, un seul grade a bougé, et vers le
+Sur les 89 références traitées à ce jour, un seul grade a bougé, et vers le
 haut : la fiche vidéosurveillance algorithmique passe de B à A, le doute qui
 la tenait en B portant précisément sur l'URL retrouvée. C'est la mesure du
 défaut : l'appareil de sourçage était cassé, pas le dossier.
 
-Cela dit, le lot 2 a nuancé ce constat rassurant. Ouvrir les textes, et non
-seulement retrouver leur adresse, a fait apparaître sept erreurs de fond dans
-les fiches : deux dates de décret fausses, une mesure attribuée au mauvais
-texte du même jour, un jugement dont le résumé inversait le sens du
-dispositif, un seuil de prix imputé à une loi qui ne le contient pas. Aucune
-n'était visible depuis l'URL. **Le sondage des sources n'est donc pas
-seulement un contrôle d'adresses : c'est une relecture des fiches sur pièces**,
-et c'est là que se trouve sa vraie valeur.
+Cela dit, les lots 2 et 3 ont nuancé ce constat rassurant. Ouvrir les textes,
+et non seulement retrouver leur adresse, a fait apparaître onze erreurs de
+fond dans les fiches : quatre dates de décret ou de texte fausses, deux
+mesures attribuées au mauvais texte du même jour, un jugement dont le résumé
+inversait le sens du dispositif, un seuil de prix imputé à une loi qui ne le
+contient pas, une formation de juridiction erronée, une nature d'acte
+erronée, un montant présenté comme un total alors qu'il n'était qu'une part.
+Aucune n'était visible depuis l'URL. **Le sondage des sources n'est donc pas
+seulement un contrôle d'adresses : c'est une relecture des fiches sur
+pièces**, et c'est là que se trouve sa vraie valeur.
+
+Deuxième acquis, plus inconfortable : deux décisions de justice citées par le
+corpus ne sont pas publiées sur le portail législatif, et aucun identifiant
+n'aurait pu les y désigner. Le dossier avait donc des sources qui ne
+pouvaient pas exister. Elles vivent désormais sur les sites des juridictions
+ou sur ceux des parties, et les fiches disent laquelle établit quoi.
 Mode opératoire et pièges dans `notes/campagne-integrite-sources.md`,
 inventaire dans `references-fabriquees.md`.
 
