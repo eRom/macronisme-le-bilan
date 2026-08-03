@@ -12,7 +12,7 @@ grade: A
 statut: null
 sources:
   - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000042430554
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043681729
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043677747
 ---
 
 Entre le 17/10/2020 et le 20/06/2021, l'exécutif module par décrets successifs le couvre-feu métropolitain sur six paliers horaires (21h, 20h, 18h, 19h, 21h, 23h). Le décret n° 2021-782 du 18/06/2021 met fin au dispositif, ses dispositions n'étant applicables que jusqu'au 19/06/2021 inclus.

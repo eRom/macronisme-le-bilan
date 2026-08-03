@@ -10,8 +10,8 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000042219768
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000042219777
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000042219376
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000042219373
   - https://www.vie-publique.fr/loi/274438-loi-7-aout-2020-dette-sociale-et-autonomie-cades-remboursement
 ---
 

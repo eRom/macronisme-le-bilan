@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048669460
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048668665
 ---
 
 L'article 49 de la loi n° 2023-1250 du 26/12/2023 de financement de la sécurité sociale pour 2024 met fin à l'exclusivité de la tarification à l'activité pour le financement des activités de médecine, chirurgie et obstétrique. Il instaure un modèle à trois compartiments : tarifs à l'activité, dotations liées à des objectifs de santé publique et aux caractéristiques de la population du territoire, dotations pour missions spécifiques.

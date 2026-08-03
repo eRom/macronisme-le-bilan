@@ -11,7 +11,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043422047
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043421566
 ---
 
 L'article 33 de la loi n° 2021-502 du 26/04/2021 rétablit l'article L. 6146-4 du code de la santé publique et interdit au comptable public de payer une facture d'entreprise de travail temporaire excédant les plafonds réglementaires.
