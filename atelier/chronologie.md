@@ -38,7 +38,7 @@ avant le sondage général, soit 95 au total sur le dossier.
 | 2 | `ecologie-energie` et `education-recherche`, soldés en entier | ✔ 03/08/2026, 31 entrées, 24 fiches |
 | 3 | `justice-affaires`, `promesses`, `libertes-publiques`, `economie`, soldés en entier | ✔ 03/08/2026, 34 entrées, 26 fiches |
 | 4 | la traîne : `europe`, `industrie`, `securite-immigration`, `finances-publiques`, `retraites-social` | ✔ 03/08/2026, 10 entrées, 9 fiches |
-| 5 | **révision des pièces de jugement** | ✔ 03/08/2026, treize pièces sur quinze, aucun verdict déplacé ; synthèse à part |
+| 5 | **révision des pièces de jugement**, synthèse comprise | ✔ 03/08/2026, treize pièces sur quinze plus la synthèse, aucun verdict déplacé |
 | 6 | 262 sources mortes, 16 déplacées (mesure du 03/08/2026 après réparation) | ouvert, après la révision |
 
 Les deux derniers lots ont été **intervertis** le soir du 03/08. L'ordre
@@ -128,6 +128,16 @@ PISA 2022, qui fermait un trou nommé servant de motif au verdict
 d'`education-recherche` ; l'abandon d'ASTRID, qui borne la décharge nucléaire
 d'`industrie` ; la loi école de la confiance, qui rejoint la décharge sur la
 priorité au primaire.
+
+La synthèse a été reprise en dernier, comme le veut le contrat de réouverture.
+Verdict d'ensemble inchangé, trois fils sur neuf portant la trace de la
+révision. Le contrôle y a aussi trouvé une erreur qui datait de la fondation du
+dépôt et qui était donc publique depuis le 02/08 : le périmètre annonçait un
+socle de 511 fiches quand `base/` en contenait 531 au commit d'origine et 534
+aujourd'hui. Le fil « l'État de droit a tenu » a par ailleurs perdu son
+universel, il affirmait une soumission à « chaque » décision du juge alors que
+sa propre section de limites nommait déjà une exception, et il en compte
+désormais deux.
 
 ## À re-vérifier (points ouverts hérités des recherches)
 

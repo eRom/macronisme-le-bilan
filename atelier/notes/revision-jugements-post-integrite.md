@@ -160,18 +160,17 @@ on voit lesquelles renversent une affirmation.
 2. ~~Puis les dix autres pièces~~ **FAIT** le 03/08. Douze pièces révisées au
    total, pas dix : le contrôle de périmètre en a ajouté deux que ce contrat
    déclarait hors périmètre (`retraites-social` et `sante`).
-3. **La synthèse en dernier**, une fois les quinze arrêtées : re-tester les
-   fils transverses qui citent un domaine révisé, re-motiver le verdict
-   d'ensemble si besoin.
+3. ~~**La synthèse en dernier**~~ **FAIT** le 03/08, commit `a05ee43`. Verdict
+   d'ensemble inchangé ; trois fils sur neuf portent la trace de la révision.
 
 Commit dédié par pièce, convention du dépôt : `jugement <domaine> (<verdict>)`.
 **Lire le `verdict:` au frontmatter avant d'écrire le sujet**, il ne se devine
 pas : `promesses` et `europe` ont été committées avec le mauvais verdict au
 sujet le 03/08, et il a fallu réécrire l'historique local pour les corriger.
 
-## État au 03/08/2026
+## État au 03/08/2026 : chantier clos
 
-Treize pièces sur quinze révisées, aucun verdict déplacé. Deux gardent le
+Treize pièces sur quinze révisées plus la synthèse, aucun verdict déplacé. Deux gardent le
 31/07 parce qu'aucune de leurs fiches n'a bougé au fond et que leur périmètre
 annoncé était juste : `international` et `securite-civile`. La date fait
 désormais signal.
@@ -191,6 +190,7 @@ désormais signal.
 | finances-publiques | défavorable | Fonds vert : 650 M€ au projet, 837 M€ au vote ; réserve PNRR |
 | retraites-social | défavorable | contra-cyclicité : condition de réouverture et non de maintien ; barème et garde-fou familial du décret RSA |
 | sante | défavorable | le fondement de l'opacité est le secret des délibérations, pas une classification défense |
+| **synthese** | défavorable | périmètre annonçant 511 fiches pour 534 ; fil 1 à décharge privé de son universel et doté d'une seconde exception ; grade des boucliers ; Fonds vert au projet contre au vote |
 
 Aucune charge déterminante n'est tombée, aucune décharge n'a disparu. Les
 corrections ont surtout resserré des qualifications juridiques (formation de
