@@ -22,6 +22,34 @@ Index chronologique des fiches de `base/`. Tenu à la main à chaque ingestion.
 | 14 | industrie | ✔ 2026-07-21 (depth H, 3 rounds, run nocturne programmé) | ✔ 2026-07-21 (42 fiches) | ✔ 2026-07-31 (défavorable) |
 | 15 | securite-civile | ✔ 2026-07-30 (depth H, 4 rounds, NON convergé, 9/27 angles aboutis, 66 sources, 41 pièces, red-team complète ; relancé en session après échec du run programmé du 29/07 22h20, API Claude 529) + rattrapage manuel du 30/07 sans agy : 4 trous sur 5 comblés, dont le lien causal établi par la Cour des comptes et la réponse ministérielle au référé | ✔ 2026-07-30 (42 fiches, 30 en A et 12 en B, aucune en C ni D + 2 fiches finances-publiques enrichies ; 5 pièces écartées faute de source vivante ou par non-pertinence, 3 pièces nouvelles trouvées à l'ingestion) | ✔ 2026-07-31 (défavorable) |
 
+## Campagne d'intégrité des sources (ouverte le 03/08/2026)
+
+Transverse aux quinze domaines, donc hors du tableau ci-dessus. Le sondage
+réel des 887 sources distinctes du corpus a établi que **84 références
+officielles ne mènent à aucun texte** : elles répondent HTTP 200 en affichant
+la page d'erreur du portail. S'y ajoutent les onze de `sante`, corrigées
+avant le sondage général, soit 95 au total sur le dossier.
+
+| Lot | Périmètre | État |
+|---|---|---|
+| — | `sante` | ✔ 03/08/2026, 11 références |
+| — | 2 P0 isolés (vidéosurveillance algorithmique, ministre de la Culture) | ✔ 03/08/2026, 3 références |
+| 1 | les 8 fiches citées par `jugement/synthese.md` | ✔ 03/08/2026, 9 entrées, 10 références, 9 fiches |
+| 2 | `ecologie-energie` (16), `education-recherche` (15) | ouvert |
+| 3 | `justice-affaires` (10), `promesses` (8), `libertes-publiques` (8), `economie` (8) | ouvert |
+| 4 | traîne : `europe` 3, `industrie` 3, `securite-immigration` 2, `finances-publiques` 1, `retraites-social` 1 | ouvert |
+| 5 | 264 sources mortes, 15 déplacées | ouvert |
+| 6 | révision groupée des pièces de jugement | bloqué tant que le corpus n'est pas assaini |
+
+Sur les 24 références traitées à ce jour, un seul grade a bougé, et vers le
+haut : la fiche vidéosurveillance algorithmique passe de B à A, le doute qui
+la tenait en B portant précisément sur l'URL retrouvée. Partout ailleurs les
+faits, les dates et les numéros étaient exacts et seules les URL étaient
+inventées. C'est la mesure du défaut : l'appareil de sourçage était cassé,
+pas le dossier.
+Mode opératoire et pièges dans `notes/campagne-integrite-sources.md`,
+inventaire dans `references-fabriquees.md`.
+
 ## À re-vérifier (points ouverts hérités des recherches)
 
 ### International (2 runs Grok du 31/07/2026, statut partial)

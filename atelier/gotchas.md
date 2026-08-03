@@ -60,6 +60,21 @@ personne n'a vue. Les deux marqueurs sont dans les tables de l'outil.
 Il faut lire ce qu'elle contient. Sonder une URL, ce n'est pas vérifier qu'elle
 répond, c'est vérifier qu'elle désigne le texte annoncé.
 
+**Dédoublonner les URL fait perdre l'information de la cible.** Deux fiches
+peuvent citer la même référence fabriquée en visant deux textes différents.
+Rencontré sur la loi pouvoir d'achat du 16/08/2022 : une fiche visait
+l'article 10, l'autre l'article 1er. Réparer d'un seul remplacement aurait
+produit une source valide pointant vers le mauvais article, soit le piège
+précédent creusé de sa propre main. **Une réparation groupée par URL doit
+rouvrir chaque fiche qui la cite.**
+
+**Un rapport de commission porte les chiffres du projet, la loi ceux du texte
+voté.** Sur le Fonds vert, le rapport sénatorial donne 650 M€ d'autorisations
+d'engagement au PLF 2026 quand la loi promulguée en retient 837. Les deux
+chiffres sont exacts et ne disent pas la même chose. Pour un montant
+budgétaire définitif, la source est la loi ; le rapport sert à documenter
+l'écart, qui est lui-même un fait.
+
 ## Les moteurs de recherche
 
 **Ils ne se valent pas sur la fabrication de références.** Sur ce dossier, le

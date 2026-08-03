@@ -13,6 +13,9 @@ affichant la page d'erreur du portail. 67 fiches touchées, 11 domaines, 79 des
 84 sur des fiches de grade A, et les 67 fiches sont citées par au moins une
 pièce de jugement, 8 par la synthèse.
 
+Ces 84 s'ajoutent aux onze de `sante`, corrigées avant le sondage général et
+donc absentes de l'inventaire : le total établi sur le dossier est de 95.
+
 S'y ajoutent 264 sources mortes (adresses de portails qui ont bougé) et 15
 déplacées, d'un registre moins grave, à traiter ensuite.
 
@@ -80,14 +83,54 @@ aucune route n'a jamais désigné de texte. Inutile de refaire ce test.
 qui est parfaitement valide. Seule la lecture de ce que la page contient le
 révèle. C'est pourquoi l'étape 3 de la recette demande un élément de contenu.
 
+**Une entrée « source partagée » peut cacher deux cibles distinctes.**
+L'inventaire dédoublonne les URL, si bien qu'une même référence fabriquée
+citée par deux fiches n'y figure qu'une fois — et rien n'indique que les deux
+fiches visaient le même texte. Sur la loi pouvoir d'achat du 16/08/2022, une
+fiche visait l'article 10 (AAH déconjugalisée) et l'autre l'article 1er
+(prime de partage de la valeur). Solder l'entrée d'un seul remplacement aurait
+donné une source valide pointant vers le mauvais article, c'est-à-dire le
+piège précédent, creusé de sa propre main. **Ouvrir chaque fiche partageant
+l'URL avant de solder.**
+
+**Un rapport parlementaire porte les chiffres du projet, pas de la loi.** Sur
+le Fonds vert, le rapport sénatorial donne 650 M€ d'autorisations
+d'engagement pour le PLF 2026, quand le texte voté en retient 837. Les deux
+chiffres sont exacts, ils ne disent pas la même chose. Citer un rapport de
+commission pour établir un montant budgétaire définitif est une erreur de
+nature ; il faut la loi promulguée, et si l'écart est notable, le dire dans
+la fiche.
+
 ## État au 03/08/2026
 
 - Fait : `sante`, onze références corrigées et commitées.
 - Fait : les deux P0 découverts en amont (vidéosurveillance algorithmique,
   fiche de la ministre de la Culture), corrigés.
-- À faire : les 73 références fabriquées restantes, par
-  [`../references-fabriquees.md`](../references-fabriquees.md).
+- Fait : **lot 1**, les 8 fiches citées par la synthèse. Neuf entrées de
+  l'inventaire soldées, dix références remplacées, neuf fiches touchées.
+  Aucun grade n'a bougé. Deux fiches ont gagné une précision de fond au
+  passage, parce que le texte réel disait autre chose que la fiche : le gel
+  des tarifs du gaz court du 31/10/2021 et non du 01/10, et le décret du
+  30/06/2024 suspend la réforme de l'assurance chômage en prolongeant les
+  règles antérieures plutôt qu'en la suspendant directement.
+- **À faire : 75 entrées d'inventaire restantes** (84 moins les neuf du lot 1),
+  par [`../references-fabriquees.md`](../references-fabriquees.md). Reste par
+  domaine : `ecologie-energie` 16, `education-recherche` 15,
+  `justice-affaires` 10, `promesses` 8, `libertes-publiques` 8, `economie` 8,
+  `europe` 3, `industrie` 3, `securite-immigration` 2, `finances-publiques` 1,
+  `retraites-social` 1.
 - À faire ensuite : 264 sources mortes, 15 déplacées.
 - À faire en dernier : la révision des pièces de jugement, groupée, une fois le
   corpus assaini. Aucun verdict n'a bougé à ce jour et aucun ne doit bouger
   avant que les fiches soient sûres.
+
+## Lacunes de sourçage repérées en chemin, hors périmètre de la campagne
+
+Elles ne relèvent pas de la référence fabriquée mais de l'affirmation non
+sourcée. À traiter en campagne de couverture, pas ici.
+
+- `2025-06-13-loi-narcotrafic` affirme que les décrets d'application ont été
+  pris (26/12/2025, 30/03/2026) sans citer aucun des deux.
+- `2026-02-20-fonds-vert-dotation-divisee` attribue une critique à l'AMF et
+  une analyse de méthode de cotation à la Cour des comptes et à I4CE, sans
+  source pour l'une ni pour l'autre.

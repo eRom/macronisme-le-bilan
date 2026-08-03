@@ -31,10 +31,23 @@ eu à bouger. C'est l'appareil de sourçage qui est cassé, et c'est déjà
 disqualifiant pour un dossier qui fait du sondage des sources sa règle
 première.
 
+## Avancement
+
+Les entrées marquées `[FAIT]` ont été remplacées par le texte réel, ouvert et
+vérifié sur un élément de contenu. Le lot 1 (03/08/2026) a traité les fiches
+citées par la synthèse : **9 entrées soldées sur 84**, soit 10 références
+puisque l'une servait à deux fiches.
+
 ## Inventaire
 
 Le domaine indiqué est le premier slug de la fiche. Une fiche transverse
 apparaît une seule fois.
+
+Attention à une entrée qui compte pour deux : l'inventaire dédoublonne les
+URL, mais deux fiches peuvent citer la même référence fabriquée en visant
+deux textes différents. C'est arrivé sur la loi pouvoir d'achat du 16/08/2022,
+où une fiche visait l'article 10 et l'autre l'article 1er. **Avant de solder
+une entrée « source partagée », vérifier ce que chaque fiche visait.**
 
 ### ecologie-energie — 18 références
 
@@ -58,8 +71,9 @@ apparaît une seule fois.
   https://www.legifrance.gouv.fr/ceta/id/CETATEXT000047535565
 - `2023-05-23-vols-interieurs-trois-liaisons.md` [A]
   https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047573429
-- `2023-11-09-conseil-etat-annule-dissolution-soulevements.md` [A]
+- `2023-11-09-conseil-etat-annule-dissolution-soulevements.md` [A] **[FAIT]**
   https://www.legifrance.gouv.fr/ceta/id/CETATEXT000048375836
+  → CETATEXT000048384891 (CE Section, 09/11/2023, n° 476384)
 - `2023-12-22-affaire-du-siecle-astreinte-rejetee.md` [A]
   https://www.legifrance.gouv.fr/ceta/id/CETATEXT000050779774
 - `2024-03-21-maprimerenov-retropedalage-monogestes.md` [A]
@@ -72,8 +86,10 @@ apparaît une seule fois.
   https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051151600
 - `2025-10-24-conseil-etat-cloture-grande-synthe.md` [A]
   https://www.legifrance.gouv.fr/ceta/id/CETATEXT000052309825
-- `2026-02-20-fonds-vert-dotation-divisee.md` [A]
+- `2026-02-20-fonds-vert-dotation-divisee.md` [A] **[FAIT]**
   https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051325608
+  → JORFTEXT000053508155 (LFI 2026, loi n° 2026-103 du 19/02/2026), plus deux
+  sources non-Légifrance : c'était la seule source de la fiche
 
 ### education-recherche — 17 références
 
@@ -99,10 +115,12 @@ apparaît une seule fois.
   https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048063007
 - `2023-08-11-reforme-voie-professionnelle-allocation-stage.md` [A]
   https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048063059
-- `2024-02-21-annulations-credits-recherche-decrochage-lpr.md` [A]
+- `2024-02-21-annulations-credits-recherche-decrochage-lpr.md` [A] **[FAIT]**
   https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049181180
-- `2024-02-21-annulations-credits-recherche-decrochage-lpr.md` [A]
+  → JORFTEXT000049180270 (décret n° 2024-124 du 21/02/2024)
+- `2024-02-21-annulations-credits-recherche-decrochage-lpr.md` [A] **[FAIT]**
   https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000050136270
+  → JORFTEXT000051520782 (décret n° 2025-374 du 25/04/2025)
 - `2024-03-15-choc-des-savoirs-groupes-de-besoins.md` [A]
   https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049286438
 - `2024-03-15-choc-des-savoirs-groupes-de-besoins.md` [A]
@@ -139,8 +157,12 @@ apparaît une seule fois.
 
 - `2017-09-22-prelevement-a-la-source.md` [A]
   https://www.legifrance.gouv.fr/loda/id/JORFTEXT000035607374
-- `2022-08-16-aah-deconjugalisee.md` [A] (source partagée avec 1 autre fiche)
+- `2022-08-16-aah-deconjugalisee.md` [A] (source partagée avec 1 autre fiche) **[FAIT]**
   https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000046186638
+  → JORFARTI000046186750 (article 10 de la loi n° 2022-1158) pour l'AAH, et
+  JORFARTI000046186741 (article 1er) pour
+  `2022-08-16-prime-partage-valeur-triplee.md` : deux articles distincts
+  derrière une seule URL fabriquée
 - `2022-08-16-suppression-redevance-tv.md` [A]
   https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000046186419
 - `2023-04-14-retraite-64-ans-au-lieu-de-65.md` [A]
@@ -155,8 +177,9 @@ apparaît une seule fois.
   https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048566270
 - `2024-02-12-leasing-social-suspendu.md` [A]
   https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049130761
-- `2024-06-09-dissolution-caducite-chantiers.md` [A]
+- `2024-06-09-dissolution-caducite-chantiers.md` [A] **[FAIT]**
   https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049858349
+  → JORFTEXT000049849562 (décret n° 2024-648 du 30/06/2024)
 
 ### libertes-publiques — 9 références
 
@@ -164,8 +187,9 @@ apparaît une seule fois.
   https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000035931950
 - `2020-02-20-gendnotes.md` [A]
   https://www.legifrance.gouv.fr/loda/id/JORFTEXT000041610486/
-- `2020-06-18-loi-avia-censuree.md` [A]
+- `2020-06-18-loi-avia-censuree.md` [A] **[FAIT]**
   https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000042031804
+  → JORFTEXT000042031970 (loi n° 2020-766 du 24/06/2020)
 - `2020-12-02-fichiers-pasp-elargis.md` [A]
   https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000042607035/
 - `2021-07-30-loi-patr-boites-noires.md` [A]
@@ -222,13 +246,15 @@ apparaît une seule fois.
   https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048307044
 - `2025-05-12-droit-du-sol-mayotte-deux-parents.md` [A]
   https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000050478125
-- `2025-06-13-loi-narcotrafic.md` [A]
+- `2025-06-13-loi-narcotrafic.md` [A] **[FAIT]**
   https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000050835478
+  → JORFTEXT000051734851 (loi n° 2025-532 du 13/06/2025)
 
 ### finances-publiques — 2 références
 
-- `2021-10-01-boucliers-tarifaires-energie.md` [B]
+- `2021-10-01-boucliers-tarifaires-energie.md` [B] **[FAIT]**
   https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044244249
+  → JORFTEXT000044239204 (décret n° 2021-1380 du 23/10/2021)
 - `2025-09-08-chute-bayrou-confiance.md` [A]
   https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052329482
 
