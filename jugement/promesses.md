@@ -1,14 +1,14 @@
 ---
 domaine: promesses
 verdict: mitige
-date_verdict: 2026-07-31
+date_verdict: 2026-08-03
 ---
 
 # Jugement : promesses
 
 ## Périmètre
 
-Ce jugement se rend sur les 57 fiches portant le slug `promesses` au 31/07/2026,
+Ce jugement se rend sur les 57 fiches portant le slug `promesses` au 03/08/2026,
 et sur les points restés à vérifier, recensés pour ce domaine. Le cœur du
 domaine : la parole présidentielle et de campagne, engagements 2017 et 2022,
 annonces à cible chiffrée ou à échéance, et leur sort documenté. Il juge la tenue
@@ -97,7 +97,10 @@ par être suivi ([[2026-07-15-loi-fin-de-vie-readoptee]]).
 **4. L'écart entre l'annonce et la réalisation persiste au cœur même des
 promesses « tenues » : moitiés, tenues comptables et droits sans usagers.** La
 hausse « inconditionnelle de 10 % » des enseignants produit 4 à 5,5 % de hausse
-effective ([[2023-07-19-enseignants-hausse-partielle]], grade A). Les 10 000
+effective, et le montant le plus cité tient à une condition : sur les 3 800 €
+annuels affichés, 2 550 € forment la part fixe et 1 250 € une part
+fonctionnelle que seuls perçoivent ceux qui exercent une mission
+complémentaire ([[2023-07-19-enseignants-hausse-partielle]], grade A). Les 10 000
 policiers sont créés en ETP, mais la Cour des comptes documente une attrition
 record, une présence sur la voie publique qui n'a pas augmenté et un taux
 d'élucidation en recul ([[2023-05-01-10000-policiers-attrition]], grade B).
@@ -110,7 +113,7 @@ cibles de Ma santé 2022 (4 000 assistants médicaux, 1 000 CPTS) ne sont pas
 atteintes dans le calendrier ([[2018-09-18-ma-sante-2022]], grade A), la cible
 relevée à 10 000 assistants plafonne à 72 % au terme
 ([[2024-10-31-assistants-medicaux-partiel]], grade A), la LOPJ budgète 10 000
-postes de justice que les annulations de crédits et la vacance rongent
+emplois nets de justice que les annulations de crédits et la vacance rongent
 ([[2023-11-20-lopj-10000-postes-justice]], grade A), et le dédoublement des
 CP/CE1, tenu, voit ses bénéfices « ne pas se maintenir de façon significative à
 l'entrée en sixième » selon la DEPP elle-même
@@ -143,7 +146,9 @@ nucléaire en 2025, repris au programme 2017, est reporté puis abrogé
 ([[2023-06-22-nucleaire-50-pourcent-abandonne]], grade A). Ce qui limite la
 charge : l'objectif nucléaire est hérité de 2015 et son abrogation est un
 revirement de politique assumé dont le bien-fondé se juge dans
-`ecologie-energie` ; le maintien du charbon s'explique par la crise énergétique ;
+`ecologie-energie` ; le maintien du charbon s'explique par la crise énergétique,
+le relèvement du plafond d'émissions à 1,8 kt eq CO2 par MW installé n'ayant
+duré que du 01/04/2023 au 31/12/2024 avant de redescendre à 0,7 kt ;
 et l'échéance manquée de la loi de programmation précède la dissolution, ce qui
 interdit d'invoquer l'absence de majorité de 2024 pour l'excuser, mais date la
 faute d'une période de majorité relative où le texte n'a même pas été déposé.
