@@ -800,7 +800,7 @@ Securite-civile (run du 30/07, depth H, 4 rounds, NON convergé, 9 angles abouti
 | 2024-11-01 | [minima sociaux : pauvreté réduite, minima sous le seuil](base/2024-11-01-minima-sociaux-effet-pauvrete-drees.md) | mesure | A | retraites-social, economie |
 | 2024-11-01 | [pauvreté à 15,4 % (record 1996) et hausse du Gini](base/2024-11-01-taux-pauvrete-record-gini.md) | mesure | A | economie |
 | 2024-11-05 | [Michelin ferme Cholet et Vannes : 1 254 suppressions](base/2024-11-05-michelin-cholet-vannes.md) | affaire | A | industrie |
-| 2024-11-19 | [Cour des comptes : dix ans de politiques industrielles « fragiles »](base/2024-11-19-cour-comptes-dix-ans-industrie.md) | mesure | A | industrie, finances-publiques |
+| 2024-11-28 | [Cour des comptes : dix ans de politiques industrielles « fragiles »](base/2024-11-28-cour-comptes-dix-ans-industrie.md) | mesure | A | industrie, finances-publiques |
 | 2024-11-28 | [« choc des savoirs » annulé (Conseil d'État) puis abandonné](base/2024-11-28-choc-des-savoirs-annulation-abandon.md) | affaire | A | education-recherche |
 | 2024-11-29 | [Suppression de la prime à la conversion pour l'achat de véhicules](base/2024-11-29-suppression-prime-conversion.md) | mesure | A | ecologie-energie |
 | 2024-12-04 | [censure du gouvernement Barnier sur le budget](base/2024-12-04-censure-barnier-budget.md) | affaire | A | finances-publiques, institutions, libertes-publiques |
