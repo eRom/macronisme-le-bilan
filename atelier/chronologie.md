@@ -38,8 +38,16 @@ avant le sondage général, soit 95 au total sur le dossier.
 | 2 | `ecologie-energie` et `education-recherche`, soldés en entier | ✔ 03/08/2026, 31 entrées, 24 fiches |
 | 3 | `justice-affaires`, `promesses`, `libertes-publiques`, `economie`, soldés en entier | ✔ 03/08/2026, 34 entrées, 26 fiches |
 | 4 | la traîne : `europe`, `industrie`, `securite-immigration`, `finances-publiques`, `retraites-social` | ✔ 03/08/2026, 10 entrées, 9 fiches |
-| 5 | 262 sources mortes, 16 déplacées (mesure du 03/08/2026 après réparation) | ouvert |
-| 6 | révision groupée des pièces de jugement | bloqué tant que le corpus n'est pas assaini |
+| 5 | **révision des pièces de jugement**, onze sur seize concernées | ouvert, débloqué, `notes/revision-jugements-post-integrite.md` |
+| 6 | 262 sources mortes, 16 déplacées (mesure du 03/08/2026 après réparation) | ouvert, après la révision |
+
+Les deux derniers lots ont été **intervertis** le soir du 03/08. L'ordre
+initial plaçait les sources mortes avant les jugements ; il reposait sur la
+règle « aucun verdict ne bouge avant que les fiches soient sûres ». Or ce qui
+rendait les fiches incertaines, c'étaient les références fabriquées, pas les
+adresses périmées : une URL morte ne rend aucun fait faux. La révision des
+jugements est donc le seul chantier ouvert qui touche à ce que le lecteur
+voit, et elle passe devant.
 
 **Les 95 références sont traitées, et le résultat est mesuré.** Le corpus
 entier a été re-sondé après réparation : 895 sources distinctes ouvertes une

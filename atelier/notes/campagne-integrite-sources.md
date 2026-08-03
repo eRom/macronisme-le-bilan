@@ -170,9 +170,15 @@ la fiche.
   > d'honneur, déplacée de `francebleu.fr` vers `ici.fr` : re-pointée dans la
   > foulée.
 - À faire ensuite : 264 sources mortes, 15 déplacées.
-- À faire en dernier : la révision des pièces de jugement, groupée, une fois le
-  corpus assaini. Aucun verdict n'a bougé à ce jour et aucun ne doit bouger
-  avant que les fiches soient sûres.
+- **Suite immédiate : la révision des pièces de jugement**, désormais
+  débloquée puisque le corpus est sûr. Périmètre chiffré, table des
+  changements de fond par pièce et ordre de travail dans
+  [`revision-jugements-post-integrite.md`](revision-jugements-post-integrite.md).
+  Onze pièces sur seize sont concernées ; `ecologie-energie` en premier.
+- Les sources mortes passent **après** cette révision, et non avant comme
+  cette note l'annonçait le matin du 03/08. L'ordre a été revu le soir même :
+  ce qui bloquait les jugements, c'étaient les références fabriquées, pas les
+  adresses périmées. Une URL morte ne rend aucun fait faux.
 
 ## Lacunes de sourçage repérées en chemin, hors périmètre de la campagne
 
