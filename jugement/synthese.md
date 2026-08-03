@@ -1,18 +1,27 @@
 ---
 domaine: synthese
 verdict: defavorable
-date_verdict: 2026-07-31
+date_verdict: 2026-08-03
 ---
 
 # Synthèse faîtière : les deux quinquennats (2017-2026)
 
 ## Périmètre et limites
 
-Cette synthèse se rend sur les quinze pièces de jugement de `jugement/`, toutes
-rendues le 31/07/2026, elles-mêmes rendues sur le socle clos au 30/07/2026
-(511 fiches). Elle n'instruit pas : aucune charge ni décharge nouvelle n'y
-naît, et les fiches de `base/` n'y sont citées que comme pièces maîtresses des
-fils, aux grades établis par les pièces de domaine.
+Cette synthèse se rend sur les quinze pièces de jugement de `jugement/`,
+arrêtées au 03/08/2026, elles-mêmes rendues sur un socle de 534 fiches. Elle
+n'instruit pas : aucune charge ni décharge nouvelle n'y naît, et les fiches de
+`base/` n'y sont citées que comme pièces maîtresses des fils, aux grades
+établis par les pièces de domaine.
+
+Les quinze pièces ont d'abord été rendues le 31/07/2026. Treize ont été
+révisées le 03/08/2026, à l'issue d'une vérification des sources du socle qui a
+corrigé une douzaine de faits, et leur `date_verdict` porte cette date ;
+`international` et `securite-civile` gardent le 31/07, aucune de leurs fiches
+n'ayant bougé au fond. Aucun verdict de domaine n'a été déplacé par cette
+révision. Les neuf fils ci-dessous ont été re-testés sur les pièces révisées,
+et trois en portent la trace : le cinquième à charge, les premier et deuxième à
+décharge.
 
 Limites dites d'entrée, une fois pour toutes.
 
@@ -64,20 +73,20 @@ Ordre de la grille v0, sans commentaire et sans classement.
 
 | # | Domaine | Verdict | Date |
 |---|---------|---------|------|
-| 1 | finances-publiques | [défavorable](finances-publiques.md) | 2026-07-31 |
-| 2 | promesses | [mitigé](promesses.md) | 2026-07-31 |
-| 3 | justice-affaires | [défavorable](justice-affaires.md) | 2026-07-31 |
-| 4 | libertes-publiques | [défavorable](libertes-publiques.md) | 2026-07-31 |
-| 5 | sante | [défavorable](sante.md) | 2026-07-31 |
-| 6 | retraites-social | [défavorable](retraites-social.md) | 2026-07-31 |
-| 7 | economie | [défavorable](economie.md) | 2026-07-31 |
-| 8 | securite-immigration | [défavorable](securite-immigration.md) | 2026-07-31 |
-| 9 | ecologie-energie | [défavorable](ecologie-energie.md) | 2026-07-31 |
-| 10 | education-recherche | [défavorable](education-recherche.md) | 2026-07-31 |
+| 1 | finances-publiques | [défavorable](finances-publiques.md) | 2026-08-03 |
+| 2 | promesses | [mitigé](promesses.md) | 2026-08-03 |
+| 3 | justice-affaires | [défavorable](justice-affaires.md) | 2026-08-03 |
+| 4 | libertes-publiques | [défavorable](libertes-publiques.md) | 2026-08-03 |
+| 5 | sante | [défavorable](sante.md) | 2026-08-03 |
+| 6 | retraites-social | [défavorable](retraites-social.md) | 2026-08-03 |
+| 7 | economie | [défavorable](economie.md) | 2026-08-03 |
+| 8 | securite-immigration | [défavorable](securite-immigration.md) | 2026-08-03 |
+| 9 | ecologie-energie | [défavorable](ecologie-energie.md) | 2026-08-03 |
+| 10 | education-recherche | [défavorable](education-recherche.md) | 2026-08-03 |
 | 11 | international | [mitigé](international.md) | 2026-07-31 |
-| 12 | institutions | [défavorable](institutions.md) | 2026-07-31 |
-| 13 | europe | [défavorable](europe.md) | 2026-07-31 |
-| 14 | industrie | [défavorable](industrie.md) | 2026-07-31 |
+| 12 | institutions | [défavorable](institutions.md) | 2026-08-03 |
+| 13 | europe | [défavorable](europe.md) | 2026-08-03 |
+| 14 | industrie | [défavorable](industrie.md) | 2026-08-03 |
 | 15 | securite-civile | [défavorable](securite-civile.md) | 2026-07-31 |
 
 ## Les fils transverses à charge
@@ -259,7 +268,9 @@ grade A), la recherche décrochée de sa loi de programmation (904 M€,
 renoncement à deux Canadair optionnels dont le lien causal avec l'annulation
 est établi par la Cour des comptes elle-même
 ([[2025-04-01-neb-2024-cour-comptes-securite-civile]], grade A). La suite est
-une séquence, pas un accident : Fonds vert divisé par trois en deux ans
+une séquence, pas un accident : Fonds vert divisé par trois en deux ans, le
+projet du gouvernement pour 2026 portant même 650 M€ avant que le débat
+parlementaire ne relève la dotation à 837 M€
 ([[2026-02-20-fonds-vert-dotation-divisee]], grade A), écart à la trajectoire
 LPR creusé en 2025 puis 2026, et l'objectif de déficit que la coupe de 2024
 visait (4,4 %) manqué en exécution (5,8 %). Ce qui limite le fil :
@@ -274,9 +285,8 @@ venait de documenter le besoin, et il a manqué son propre objectif.
 
 ## Les fils transverses à décharge
 
-**1. L'État de droit a tenu sur toute la période, et l'exécutif s'est soumis à
-chaque décision du juge, jusqu'à installer lui-même une partie de ses
-contrôleurs.** Porté par [libertes-publiques](libertes-publiques.md)
+**1. L'État de droit a tenu sur toute la période, l'exécutif s'est soumis aux
+décisions du juge, et il a installé lui-même une partie de ses contrôleurs.** Porté par [libertes-publiques](libertes-publiques.md)
 (défavorable), [institutions](institutions.md) (défavorable),
 [retraites-social](retraites-social.md) (défavorable), [sante](sante.md)
 (défavorable), [economie](economie.md) (défavorable),
@@ -287,8 +297,8 @@ juridictionnellement établie (le blocage de TikTok), et aucune persistance dans
 une illégalité constatée par le juge national : le Conseil constitutionnel a
 censuré le cœur de la loi Avia ([[2020-06-18-loi-avia-censuree]], grade A),
 les drones de la loi Sécurité globale, l'extension du passe vaccinal aux
-réunions politiques ; le Conseil d'État a annulé la dissolution des
-Soulèvements de la Terre ([[2023-11-09-conseil-etat-annule-dissolution-soulevements]],
+réunions politiques ; le Conseil d'État, statuant en Section, a annulé la
+dissolution des Soulèvements de la Terre ([[2023-11-09-conseil-etat-annule-dissolution-soulevements]],
 grade A), le cœur de la réforme de l'assurance chômage, réécrit ensuite
 ([[2020-11-25-conseil-etat-annulation-decret-chomage]], grade A),
 l'enregistrement global des opinions dans les fichiers ; et chaque censure a
@@ -301,8 +311,13 @@ au juge, pas au censuré ; la seule persistance documentée après condamnation
 est le rattachement arbitraire de mineurs à des adultes tiers à Mayotte,
 constaté par le CGLPL trois ans après l'arrêt Moustahi de la CEDH
 ([[2023-04-24-operation-wuambushu]], grade A), exception frontale au fil, sur
-le terrain le plus grave ; et la légalité borne les charges sans les
-compenser : tout ce que les fils 1 et 2 à charge décrivent est légal, c'est
+le terrain le plus grave ; l'exécution n'a pas toujours été complète dans le
+délai que le juge avait fixé, le tribunal administratif de Paris constatant le
+22/12/2023 que l'État n'avait pas entièrement réparé au 31/12/2022 le préjudice
+écologique qu'il lui avait enjoint de réparer, et n'écartant l'astreinte
+demandée que parce que la tendance de 2023 achèverait la réparation
+([[2023-12-22-affaire-du-siecle-astreinte-rejetee]], grade A) ; et la légalité
+borne les charges sans les compenser : tout ce que les fils 1 et 2 à charge décrivent est légal, c'est
 précisément pourquoi ce fil ne les renverse pas.
 
 **2. Les deux chocs exogènes mondiaux ont été absorbés avec des résultats
@@ -315,7 +330,8 @@ coûte » : sinistralité des prêts garantis de 3,0 % contre 10 % anticipés,
 rebond de 6,9 % en 2021, environ 1,12 million d'emplois regagnés
 ([[2020-03-12-quoi-qu-il-en-coute]], grade A) ; les boucliers tarifaires et
 compléments redistributifs face au choc énergétique
-([[2021-10-01-boucliers-tarifaires-energie]], grade A) ; un pouvoir d'achat
+([[2021-10-01-boucliers-tarifaires-energie]], grade A pour les paramètres
+tarifaires, B pour l'agrégat de coût) ; un pouvoir d'achat
 moyen qui ne recule que les deux années de crise. L'issue judiciaire est
 intégrale : annulation de la mise en examen de Buzyn par l'assemblée plénière
 de la Cour de cassation ([[2023-01-20-cassation-annulation-buzyn]], grade A),
