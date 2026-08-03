@@ -1,15 +1,15 @@
 ---
 domaine: ecologie-energie
 verdict: defavorable
-date_verdict: 2026-07-31
+date_verdict: 2026-08-03
 ---
 
 # Jugement : ecologie-energie
 
 ## Périmètre
 
-Ce jugement se rend sur les 95 fiches portant le slug `ecologie-energie` au
-31/07/2026, et sur les points restés à vérifier, recensés pour ce domaine.
+Ce jugement se rend sur les 96 fiches portant le slug `ecologie-energie` au
+03/08/2026, et sur les points restés à vérifier, recensés pour ce domaine.
 Le cœur du domaine : le climat (budgets carbone, émissions, contentieux), le
 système énergétique (nucléaire, renouvelables, prix), les pesticides et la
 biodiversité, l'eau, la rénovation énergétique et les mobilités. Les pièces
@@ -23,17 +23,20 @@ européens d'`europe`.
 Limites héritées de la recherche, dites d'entrée. Le run du domaine n'a pas
 convergé (17 angles aboutis sur 35) : l'échec a surtout frappé les passes de
 vérification documentaire, et quatre identifiants ont dû être corrigés à
-l'ingestion. Deux rapports de la Cour des comptes de 2026 (plan vélo, police de
-l'eau) n'ont jamais été résolus : les fiches correspondantes sont en grade B et
-leurs constats ne sont pas cités ici comme émanant de la juridiction
+l'ingestion. Une vérification des sources conduite le 03/08/2026 a rouvert un
+à un les textes officiels du domaine : elle a corrigé plusieurs faits, dont le
+sens exact du jugement d'exécution de l'Affaire du Siècle, et retrouvé les deux
+rapports de la Cour des comptes de 2026 (plan vélo, police de l'eau) restés
+introuvables au premier passage. Les fiches correspondantes sont passées en
+grade A et leurs constats sont désormais attribués ici à la juridiction
 financière. Les votes nominatifs de la France au Conseil de l'UE sur le
 détricotage du Green Deal ne sont pas documentés. Le décompte gouvernemental de
 146 propositions de la Convention citoyenne reprises sur 149 n'a pas pu être
 établi ni réfuté sur source primaire. Enfin la loi d'urgence agricole du
-21/07/2026 n'est pas promulguée au jour du verdict, décision du Conseil
-constitutionnel pendante : elle est citée comme pièce en cours et n'est pas
-pesée. Le volet feux de forêt est protégé par une note de cadrage
-méthodologique ([[2023-01-01-rupture-bdiff-effis]]) et par la série annuelle
+21/07/2026 n'est toujours pas promulguée au jour du verdict, la décision du
+Conseil constitutionnel étant attendue fin août : elle est citée comme pièce
+en cours et n'est pas pesée. Le volet feux de forêt est protégé par une note
+de cadrage méthodologique ([[2023-01-01-rupture-bdiff-effis]]) et par la série annuelle
 reconstituée ([[2025-12-31-serie-annuelle-feux-foret-2017-2025]]).
 
 ## Les charges qui tiennent
@@ -85,9 +88,11 @@ mission Écologie étant la plus touchée (2,13 Md€ de crédits de paiement), 
 mois après un PLF qui affichait 7 Md€ supplémentaires pour la planification
 écologique ([[2024-02-21-annulation-credits-ecologie]], grade A). La suite est
 une série cohérente : Fonds vert divisé par trois en deux ans, de 2,5 Md€ à
-837 M€, au moment où les associations d'élus documentent l'intensification des
-canicules et inondations ([[2026-02-20-fonds-vert-dotation-divisee]]) ;
-suppression de la prime à la conversion pendant que les ZFE restreignent les
+837 M€, le projet du gouvernement portant même 650 M€ avant que le débat
+parlementaire ne relève la dotation, au moment où les associations d'élus
+documentent l'intensification des canicules et inondations
+([[2026-02-20-fonds-vert-dotation-divisee]]) ; suppression de la prime à la
+conversion pendant que les ZFE restreignent les
 véhicules anciens, l'accompagnement social disparaissant avant la contrainte
 ([[2024-11-29-suppression-prime-conversion]]) ; leasing social suspendu après
 six semaines ([[2024-02-12-leasing-social-suspendu]]) ; MaPrimeRénov' passée
@@ -122,19 +127,32 @@ n'est venue que six ans après le début du quinquennat, sans effet juridique
 contraignant sur les délais et les recours
 ([[2023-03-10-loi-aper-zones-acceleration]]) ; l'éolien terrestre manque
 l'objectif de la PPE 2 d'environ 2,3 GW
-([[2024-02-15-eolien-terrestre-objectif-manque]]) ; la part modale du vélo
-plafonne autour de 4 % contre un objectif légal de 9 % en 2024
-([[2026-04-02-plan-velo-objectif-manque]], grade B). Sur le climat, le deuxième
+([[2024-02-15-eolien-terrestre-objectif-manque]]) ; la part des actifs se
+rendant au travail à vélo atteint 4 % en 2023, l'objectif de 9 % de part modale
+annoncé en 2018 pour 2024 ayant été reporté à 2030 après le gel du fonds
+mobilités actives et la suppression des aides à l'achat
+([[2026-04-02-plan-velo-objectif-manque]], grade A). Sur le climat, le deuxième
 budget carbone n'a été respecté que parce que l'exécutif l'avait lui-même
 relevé de 398 à 422 Mt CO2e par an ([[2020-04-21-deuxieme-budget-carbone-releve]],
 grade A), et la justice administrative a constaté la carence : faute reconnue
 pour le dépassement du premier budget ([[2021-02-03-affaire-du-siecle-carence-fautive]]),
 puis deux constats successifs d'insuffisance des mesures par le Conseil d'État
 ([[2021-07-01-conseil-etat-grande-synthe-ii]],
-[[2023-05-10-conseil-etat-grande-synthe-iii]]). Ce qui limite la charge : le
+[[2023-05-10-conseil-etat-grande-synthe-iii]]). L'injonction elle-même n'a pas
+été exécutée dans son délai : sommé de réparer 15 Mt CO2e au plus tard le
+31/12/2022 ([[2021-10-14-affaire-du-siecle-injonction-15mt]], grade A), l'État
+n'y était pas parvenu à cette date, le tribunal constatant qu'il en restait 3 à
+5 Mt CO2e selon les chiffres retenus et n'écartant l'astreinte demandée que
+parce que le rythme de baisse observé en 2023 achèverait la réparation
+([[2023-12-22-affaire-du-siecle-astreinte-rejetee]], grade A). Manquement
+reconnu, sanction écartée sur une projection. Ce qui limite la charge : le
 retard EnR est structurel et antérieur à 2017 pour l'essentiel de la
-trajectoire manquée, et les contentieux climatiques se sont finalement refermés
-sans sanction (décharge 3).
+trajectoire manquée ; la faute de 2021 porte sur un budget carbone 2015-2018 à
+cheval sur deux quinquennats ; le constat d'inexécution figure dans les motifs
+d'un jugement de rejet et non dans son dispositif, l'État ayant gagné cette
+instance, et le reliquat de 3 à 5 Mt est petit au regard des 15 Mt ordonnées ;
+et les contentieux climatiques se sont finalement refermés sans sanction
+(décharge 3).
 
 **4. La traduction de la Convention citoyenne a été réduite dès l'origine, puis
 l'exécutif a lui-même vidé l'un de ses principaux dispositifs.** Sur le fond,
@@ -176,14 +194,18 @@ de quatre bassines ordonné en 2026 ([[2026-07-23-ta-poitiers-demantelement-bass
 grade B) ; et la dissolution des Soulèvements de la Terre annulée par le
 Conseil d'État comme disproportionnée
 ([[2023-11-09-conseil-etat-annule-dissolution-soulevements]], grade A),
-désaveu juridictionnel direct du ministre de l'Intérieur. En parallèle, 56 %
-des masses d'eau n'atteignent pas le bon état écologique et le débat
-parlementaire de 2026 porte sur le retrait des compétences de police de l'OFB
-plutôt que sur le renforcement des contrôles
-([[2026-05-12-cour-comptes-police-eau]], grade B, constats non attribués à la
-Cour des comptes). Ce qui limite la charge : les annulations sont le signe que
-le contrôle juridictionnel fonctionne, et le volet maintien de l'ordre est jugé
-dans `libertes-publiques`.
+désaveu juridictionnel direct du ministre de l'Intérieur. En parallèle, la Cour
+des comptes constate que 56 % des masses d'eau n'atteignent pas le bon état
+écologique visé par la directive-cadre européenne de 2000, sans amélioration
+significative, et que la police environnementale de l'eau est
+sous-dimensionnée : environ 1 560 équivalents temps plein pour 130 M€ par an,
+en deçà des autres pays européens et souvent absorbés par l'instruction au
+détriment du contrôle des non-conformités. Le débat parlementaire de 2026 porte
+pourtant sur le retrait des compétences de police de l'OFB plutôt que sur le
+renforcement des contrôles ([[2026-05-12-cour-comptes-police-eau]], grade A).
+Ce qui limite la charge : les annulations sont le signe que le contrôle
+juridictionnel fonctionne, et le volet maintien de l'ordre est jugé dans
+`libertes-publiques`.
 
 **6. La politique énergétique a zigzagué à un coût documenté.** Charge bornée
 d'entrée : l'objectif de 50 % de nucléaire en 2025, la fermeture de Fessenheim
@@ -196,9 +218,19 @@ effective de Fessenheim en 2020, 1 800 MW retirés sans capacité nouvelle
 ([[2019-11-08-loi-energie-climat]]), déclaré caduc à Belfort en février 2022
 ([[2022-02-10-discours-belfort-virage-nucleaire]]), abrogé en 2023
 ([[2023-06-22-nucleaire-50-pourcent-abandonne]]) : le virage à 180 degrés
-intervient deux ans après la fermeture, deux mois avant la présidentielle. Au
-creux de la crise, l'État a imposé à EDF un Arenh forcé de 20 TWh, environ
-8 Md€ de perte pour l'opérateur qu'il s'apprêtait à renationaliser
+intervient deux ans après la fermeture, deux mois avant la présidentielle. Le
+même mouvement a fait sortir la France de la quatrième génération : l'arrêt du
+démonstrateur ASTRID, confirmé par le CEA le 30/08/2019, repousse le
+déploiement d'une filière à neutrons rapides à la seconde moitié du siècle et
+fragilise la stratégie de fermeture du cycle, décision que l'Office
+parlementaire d'évaluation des choix scientifiques et technologiques critique
+comme prise sans association du Parlement
+([[2019-08-30-abandon-astrid-quatrieme-generation]], grade A) ; la relance de
+2022 ne la rouvre pas, elle porte sur les EPR2 et les petits réacteurs
+modulaires. À décharge sur ce point, le CEA présente l'arrêt comme un report du
+déploiement industriel, non comme un abandon de la recherche. Au creux de la
+crise, l'État a imposé à EDF un Arenh forcé de 20 TWh, environ 8 Md€ de perte
+pour l'opérateur qu'il s'apprêtait à renationaliser
 ([[2022-03-11-arenh-force-20twh]], grade A), et 2022 s'est soldée par un solde
 importateur net inédit depuis 1980, avec une prime de risque spécifiquement
 française documentée par la CRE ([[2023-02-16-bilan-rte-2022-importateur-net]],
@@ -245,15 +277,20 @@ grade A) ; le deuxième budget carbone brut est respecté, environ 406 Mt/an
 contre 422 ; le Haut Conseil pour le climat écrit lui-même que la loi Climat
 « va dans la bonne direction » ([[2021-01-27-avis-cese-hcc-loi-climat]]). Les
 deux contentieux climatiques emblématiques se sont refermés sans aucune
-sanction financière : astreinte de l'Affaire du Siècle rejetée, préjudice
-regardé comme réparé ([[2023-12-22-affaire-du-siecle-astreinte-rejetee]],
-grade A), et clôture de Grande-Synthe, le Conseil d'État jugeant l'objectif
-2030 « en voie d'être atteint » ([[2025-10-24-conseil-etat-cloture-grande-synthe]],
-grade A). Sur la qualité de l'air, le résultat matériel est acquis : plus
-aucune zone en dépassement PM10 et l'astreinte levée en 2025
+sanction financière : astreinte de l'Affaire du Siècle rejetée, le juge tenant
+la réparation pour acquise à brève échéance
+([[2023-12-22-affaire-du-siecle-astreinte-rejetee]], grade A), et clôture de
+Grande-Synthe, le Conseil d'État déclarant ses propres décisions entièrement
+exécutées et l'objectif 2030 « en voie d'être atteint »
+([[2025-10-24-conseil-etat-cloture-grande-synthe]], grade A). Sur la qualité de
+l'air, le résultat matériel est acquis : plus aucune zone en dépassement PM10
+et l'astreinte levée en 2025
 ([[2021-08-04-astreintes-conseil-etat-qualite-air]], grade A). Portée exacte,
-et elle est décisive : le HCC chiffre la part conjoncturelle de la baisse 2023
-à environ 7,5 Mt sur 22,8 et présente le solde comme un plafond haut ; le
+et elle est décisive : le rejet de l'astreinte de l'Affaire du Siècle ne vaut
+pas quitus, le tribunal ayant d'abord constaté que la réparation n'était pas
+achevée à l'échéance qu'il avait lui-même fixée (charge 3) ; le HCC chiffre la
+part conjoncturelle de la baisse 2023 à environ 7,5 Mt sur 22,8 et présente le
+solde comme un plafond haut ; le
 rythme retombe de moitié dès 2024 ([[2026-06-16-ralentissement-decarbonation]],
 grade A) ; le budget du secteur des terres n'est pas respecté ; et
 l'assainissement de l'air est l'exécution d'une décision de justice de 2017,
@@ -318,7 +355,9 @@ des actes de l'exécutif.
   [[2025-10-24-conseil-etat-cloture-grande-synthe]]). Les 40 M€ effectivement
   payés relèvent du contentieux national de la qualité de l'air, distinct, et
   cette astreinte a été levée en 2025 pour exécution complète
-  ([[2021-08-04-astreintes-conseil-etat-qualite-air]]).
+  ([[2021-08-04-astreintes-conseil-etat-qualite-air]]). Le rejet de l'astreinte
+  n'emporte pas pour autant exécution de l'injonction dans son délai : ce point,
+  distinct, est porté par la charge 3.
 - **« La censure de l'abrogation des ZFE, victoire environnementale. »**
   Écartée : censure de pure procédure, cavalier de l'article 45, qui ne valide
   rien au fond et n'empêche pas une nouvelle abrogation par un véhicule adapté
@@ -341,7 +380,7 @@ des actes de l'exécutif.
   ([[2025-02-26-omnibus-detricotage-green-deal]]). La séquence européenne
   reste citable comme contexte, pas comme acte français.
 - **« Le contournement de la censure acétamipride est consommé. »** Écartée du
-  verdict : la loi d'urgence agricole n'est pas promulguée au 31/07/2026 et la
+  verdict : la loi d'urgence agricole n'est pas promulguée au 03/08/2026 et la
   décision du Conseil constitutionnel est pendante
   ([[2026-07-20-loi-urgence-agricole-acetamipride]]). La charge 1 tient sans
   elle ; à réévaluer à la décision.
@@ -384,8 +423,8 @@ Le verdict n'est pas « gravement défavorable », parce que les décharges ne
 sont pas marginales : trois victoires européennes de premier ordre dont une
 promesse de 2017 tenue sans dilution, une relance nucléaire engagée avec un
 résultat industriel tangible et deux records d'exportation, une baisse
-d'émissions réelle que deux juridictions ont estimée suffisante pour clore
-les contentieux sans sanction, et la création par l'exécutif lui-même du
+d'émissions réelle qui a suffi à faire clore les deux contentieux climatiques
+sans aucune sanction financière, et la création par l'exécutif lui-même du
 contrôleur indépendant qui documente ses manquements. Il n'est pas « mitigé »,
 parce que ces décharges ne compensent pas les charges là où elles portent :
 elles pèsent presque toutes sur le pan énergétique et sur des résultats bruts
