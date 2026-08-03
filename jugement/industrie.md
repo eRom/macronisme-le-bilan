@@ -1,14 +1,14 @@
 ---
 domaine: industrie
 verdict: defavorable
-date_verdict: 2026-07-31
+date_verdict: 2026-08-03
 ---
 
 # Jugement : industrie
 
 ## Périmètre
 
-Ce jugement se rend sur les 69 fiches portant le slug `industrie` au 31/07/2026,
+Ce jugement se rend sur les 70 fiches portant le slug `industrie` au 03/08/2026,
 et sur les points restés à vérifier, recensés pour ce domaine. Le cœur du
 domaine : la politique de réindustrialisation et ses résultats, les aides aux
 entreprises et leur évaluation, les sauvetages de sites, l'État actionnaire, la
@@ -216,7 +216,17 @@ d'accueil des investissements étrangers, sept années consécutives selon EY
 Portée exacte : ces résultats sont réels mais sectoriels, et chacun porte sa
 nuance d'attribution : le redressement électrique traduit d'abord le retour de
 disponibilité du parc, la fibre achève un plan lancé avant 2017, Flamanville
-répare un héritage.
+répare un héritage. S'y ajoute un choix de filière qui va en sens inverse et
+qu'aucun de ces livrables ne compense : l'arrêt du démonstrateur ASTRID,
+confirmé par le CEA le 30/08/2019, repousse le déploiement d'une filière à
+neutrons rapides à la seconde moitié du siècle, interrompt la lignée française
+des réacteurs de ce type et fragilise la stratégie de fermeture du cycle que
+sert le retraitement de La Hague ; l'Office parlementaire d'évaluation des choix
+scientifiques et technologiques critique une décision prise sans association du
+Parlement ([[2019-08-30-abandon-astrid-quatrieme-generation]], grade A). Le CEA
+la présente comme un report du déploiement industriel et non comme un abandon de
+la recherche, mais la relance de 2022 ne rouvre pas cette filière : elle porte
+sur les EPR2 et les petits réacteurs modulaires.
 
 **3. Des instruments européens à retombées industrielles directes ont été
 obtenus, souvent contre la position initiale allemande.** Le classement du
@@ -255,7 +265,10 @@ recours des minoritaires rejetés, [[2022-07-06-renationalisation-edf-opa]],
 grade A), négocie la fin du régime Arenh par l'accord de novembre 2023
 ([[2023-11-14-accord-etat-edf-post-arenh]], grade B) traduit dans la loi de
 finances pour 2025 par le Versement nucléaire universel
-([[2025-02-14-versement-nucleaire-universel]], grade B, article non vérifié),
+([[2025-02-14-versement-nucleaire-universel]], grade B, l'article porteur étant
+désormais ouvert mais le seuil de 78 €/MWh souvent cité ne figurant pas dans la
+loi, qui renvoie le tarif de minoration à un arrêté pris sur proposition de la
+CRE),
 et le rapport annexé au PLF 2025 acte un portefeuille public recentré sur
 défense, aéronautique et énergie à un point haut de dividendes
 ([[2024-10-15-etat-actionnaire-2024]], grade A). Portée exacte de cette
