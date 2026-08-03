@@ -1,5 +1,5 @@
 ---
-titre: Déficit commercial record 2022 : -162,7 Md€, dont -82,5 Md€ hors énergie
+titre: Déficit commercial record 2022 : -164 Md€ à la publication, et un creusement hors énergie
 type: mesure
 domaines: [industrie, economie]
 date: 2023-02-07
@@ -10,10 +10,12 @@ acteurs:
 grade: A
 statut: null
 sources:
+  - https://www.tresor.economie.gouv.fr/Articles/f7b3e557-391b-496a-86c3-a9ba56690aa2/files/39673f0f-1cab-4d09-a6fa-ebb14a99cda8
   - https://www.douane.gouv.fr/actualites/resultats-du-commerce-exterieur-de-la-france-pour-lannee-2023
-  - https://www.insee.fr/fr/statistiques/7650395
 ---
 
-Les douanes publient le 07/02/2023 un déficit des biens de 162,7 Md€ pour 2022 (contre 84,7 Md€ en 2021), record historique absolu. La facture énergétique (115,3 Md€, plus que doublée) explique 86 % de l'aggravation, sur fond de guerre en Ukraine et d'indisponibilité du parc nucléaire. Mais le solde des produits manufacturés hors énergie atteint lui aussi un record : -82,5 Md€ (contre -57,8 Md€ en 2021), signant une faiblesse structurelle indépendante du choc énergétique (INSEE).
+Le 07/02/2023, les douanes et le ministère chargé du Commerce extérieur publient les résultats 2022 : le déficit des biens se dégrade à -164 Md€, contre -86 Md€ en 2021, record historique absolu. La facture énergétique en porte l'essentiel, à -115 Md€ contre -45 Md€ en 2021, sur fond de guerre en Ukraine et d'indisponibilité du parc nucléaire. Mais le creusement n'est pas seulement énergétique : hors énergie et hors matériel militaire, le déficit se dégrade lui aussi, à -74 Md€ contre -63 Md€ en 2021, ce qui signe une faiblesse indépendante du choc des prix.
 
-Établi par les statistiques douanières et INSEE. Suite : [[2026-02-05-balance-commerciale-2025]].
+Précision de chiffre, à ne pas confondre : les -164 Md€ sont le solde tel que publié le 07/02/2023. Le chiffre révisé de -162,7 Md€, qui circule pour 2022, est issu des révisions postérieures ; c'est celui que retiennent les publications douanières ultérieures.
+
+Établi par la présentation officielle des résultats 2022 et les publications douanières. Suite : [[2026-02-05-balance-commerciale-2025]].
