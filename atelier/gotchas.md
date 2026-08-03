@@ -324,3 +324,28 @@ Deux pièges à connaître avec ce mode :
 2. **Sur un portail réorganisé, plusieurs variantes d'URL répondent 200.** Trois
    sur la page Schengen de la Commission, dont deux qui n'étaient pas la bonne
    page. Le code HTTP ne tranche rien, seul l'élément de contenu tranche.
+
+**Une règle de réécriture d'URL qui rend 200 doit être validée sur le CONTENU,
+URL par URL, ou elle corrompt le corpus en silence.** Le 03/08/2026, les URL
+`/dyn/15/rapports/<commission>/l15bNNNN_rapport-<type>` de l'Assemblée nationale
+étaient toutes mortes. L'ancien schéma `/15/rapports/rNNNN.asp` répondait 200 sur
+le premier essai, ce qui ressemblait à la règle cherchée pour dix-huit fiches.
+Vérification faite, `r0842.asp` est un **avis sur le projet de loi pour un
+nouveau pacte ferroviaire**, quand la fiche citait le rapport de la commission
+d'enquête sur General Electric Belfort et Alstom. Appliquée en masse, la règle
+aurait remplacé des sources mortes par des adresses valides pointant vers des
+documents sans aucun rapport, c'est-à-dire le pire état possible : une fiche qui
+a l'air sourcée et ne l'est pas.
+
+> Le raccourci qui traite N URL d'un coup est aussi celui qui introduit N erreurs
+> d'un coup. Sur ce dossier, aucune règle de réécriture n'a survécu à la
+> vérification de contenu.
+
+**Les pages de la CJUE ne sont pas citables directement : préférer EUR-Lex.**
+`curia.europa.eu` redirige vers `infocuria.curia.europa.eu` (d'où un classement
+DEPLACEE en masse) et le contenu y est rendu en JavaScript : la récupération de
+page renvoie un corps réduit à « RPEX », donc invérifiable. L'identifiant CELEX
+donne une adresse stable et un texte lisible :
+`eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:62017CJ0416` pour C-416/17,
+`62018CJ0636` pour C-636/18. Forme générale : `6` + année à 4 chiffres + `CJ` +
+numéro d'affaire sur 4 chiffres.
