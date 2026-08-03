@@ -1,14 +1,14 @@
 ---
 domaine: institutions
 verdict: defavorable
-date_verdict: 2026-07-31
+date_verdict: 2026-08-03
 ---
 
 # Jugement : institutions
 
 ## Périmètre
 
-Ce jugement se rend sur les 82 fiches portant le slug `institutions` au 31/07/2026,
+Ce jugement se rend sur les 84 fiches portant le slug `institutions` au 03/08/2026,
 et sur les points restés à vérifier, recensés pour ce domaine. Le cœur du
 domaine : les rapports entre l'exécutif et le Parlement, le peuple et le juge, la
 formation et la chute des gouvernements, les enceintes de décision. Les pièces
@@ -24,7 +24,12 @@ n'existe pour le vote bloqué (44.3), l'article 47-1 et la procédure accélér�
 ([[2026-07-30-arsenal-parlementaire-ce-qui-nest-pas-mesurable]]) : sur ces
 instruments, seules des affirmations descriptives et bornées dans le temps sont
 tenables. Les deux seules séries comparatives complètes du domaine sont le 49.3
-et les ordonnances, et elles jouent en sens opposés.
+et les ordonnances, et elles jouent en sens opposés. Une reprise des sources
+conduite le 03/08/2026 n'a déplacé aucun grade du domaine, mais elle a réparé
+deux références qui ne menaient à aucun texte, dont la base juridique du conseil
+de défense, sur laquelle repose la charge 4 : cette base est l'article R\* 1122-1
+du code de la défense, et le fondement opposé aux demandes de communication est
+le secret des délibérations du Gouvernement, non une classification défense.
 
 ## Les charges qui tiennent
 
