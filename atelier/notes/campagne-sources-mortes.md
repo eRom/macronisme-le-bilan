@@ -158,7 +158,7 @@ l'adresse morte qu'elle remplace, parce qu'elle a l'air réparée.
 
 Ce n'est pas une campagne de réparation d'adresses. C'est une campagne de
 re-vérification, et le chiffre du 03/08/2026 le dit sans ambiguïté : **sur les
-quinze fiches rouvertes, neuf portaient une erreur de fond**, et quatre pièces
+dix-huit fiches rouvertes, onze portaient une erreur de fond**, et quatre pièces
 de jugement ont dû être reprises, dont la synthèse.
 
 | Fiche | Ce que la relecture du document a montré |
@@ -172,6 +172,8 @@ de jugement ont dû être reprises, dont la synthèse.
 | abrogation des ZFE | mauvais vote, mauvaise date, mauvais chiffres, mauvaise imputation |
 | européennes 2019 | pourcentages du soir du scrutin au lieu de ceux proclamés |
 | Cour des comptes industrie | date de publication fausse de neuf jours, chiffre central attribué à une source qui n'est pas citée |
+| Whirlpool Amiens | le rapport parlementaire d'où venaient date, effectif et montants n'existe pas |
+| Initiative européenne d'intervention | la nature du dispositif attribuée à une page du ministère qui n'a jamais été ouverte |
 
 Aucune de ces erreurs n'était visible depuis le dépôt. Toutes le sont devenues
 au moment précis où quelqu'un a rouvert la source. C'est la vraie raison de
@@ -284,14 +286,49 @@ il n'a rien trouvé plutôt que de proposer une adresse vraisemblable. Les trois
 échecs du 03/08 (rapports de l'Assemblée, communiqué Bercy, page Schengen) sont
 venus d'un moteur qui préférait inventer une réponse plausible au silence.
 
-**Essayé le 03/08, et le résultat est net : six sous-agents lancés en parallèle
-sur six fiches n'ont rien rendu du tout**, ni candidat ni échec déclaré, y
-compris après relance avec une consigne de réponse immédiate. Pendant le même
-intervalle, la voie directe (chercher, ouvrir, vérifier, écrire) a traité huit
-fiches. La conclusion à retenir n'est pas que la parallélisation est mauvaise en
-soi, c'est qu'elle n'a pas été payante ici et que **le travail a avancé quand il
-est resté dans la boucle principale**. Ne pas relancer une flottille avant
-d'avoir compris pourquoi celle-là s'est tue.
+Essayé le 03/08 sur six fiches, et le résultat mérite d'être raconté en entier,
+parce que la première conclusion qu'on en tire est fausse.
+
+**Ce qui a été observé sur le moment.** Rien. Aucun des six n'avait répondu au
+bout d'une heure de travail, ni après deux relances avec consigne de réponse
+immédiate. Pendant ce temps, la voie directe traitait huit fiches. Le constat
+écrit ici était : « la parallélisation n'a pas été payante ».
+
+**Ce qui s'est passé ensuite.** Quatre des six ont rendu, entre soixante et
+quatre-vingt-dix minutes après leur lancement, une fois le travail à la main
+déjà fait. Et leur rendu est bon : consignes respectées, liste de citations,
+échecs déclarés comme tels, pièges de moteur repérés et nommés. Deux d'entre eux
+ont trouvé ce que la voie directe n'avait pas cherché.
+
+> La leçon n'est donc pas « les sous-agents ne servent à rien ». Elle est que
+> **leur latence n'est pas celle de la boucle principale**, et qu'un lot lancé
+> puis attendu dans le fil produit le pire des deux mondes : on attend, puis on
+> refait à la main, puis les réponses arrivent. Il faut soit les lancer et
+> passer à autre chose de non lié, soit ne pas les lancer.
+
+Ce qu'ils ont rapporté, et qu'un rapport d'étape trop rapide aurait perdu :
+
+- **Whirlpool.** Le « rapport d'information AN n° 1386 » sur lequel reposait la
+  fiche n'existe pas : absent des listes de la législature, absent de la Wayback
+  Machine. L'agent a en outre réfuté par lui-même le candidat de remplacement que
+  son moteur lui proposait, en cherchant « Whirlpool » et « Amiens » dans les
+  7,3 Mo du rapport n° 4923 : zéro occurrence. C'est de la réfutation, pas de la
+  suggestion.
+- **Initiative européenne d'intervention.** Le moteur a fabriqué des citations
+  entre guillemets attribuées à une page d'un domaine qui **ne résout même
+  plus** (`NXDOMAIN` vérifié au `dig`), et proposé comme lettre d'intention un
+  PDF qui est un numéro de revue universitaire sans rapport. L'agent a
+  téléchargé, lu, et écarté les deux.
+- **Européennes 2019.** Confirmation indépendante, sur la page vivante du
+  ministère, des chiffres que la voie directe avait recalculés depuis le Journal
+  officiel. Deux chemins, un seul résultat : 23,34 % et 22,42 %.
+- **Guides DGESCO.** Les trois guides retrouvés en PDF sur éduscol, avec leurs
+  mentions d'édition, qui datent la collection au mot près.
+
+**Ce qui ne se parallélise toujours pas** : la validation. Chacun de ces
+candidats a été re-sondé et relu ici avant d'entrer dans une fiche, et c'est ce
+qui a pris le temps. Un agent qui rapporte une URL rapporte un candidat, pas une
+source, même quand il travaille bien.
 
 Ce qui a effectivement marché, dans l'ordre de rendement :
 

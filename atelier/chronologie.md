@@ -420,9 +420,9 @@ Securite-civile (run du 30/07, depth H, 4 rounds, NON convergé, 9 angles abouti
 | 2017-05-29 | [réception de Poutine à Versailles, premier cadrage de la relation russe](base/2017-05-29-versailles-poutine.md) | declaration | A | international |
 | 2017-06-21 | [remaniement, quatre départs sur fond d'enquêtes](base/2017-06-21-remaniement-departs-enquetes.md) | affaire | A | justice-affaires |
 | 2017-06-29 | [audit Cour des comptes, LFI 2017 insincère](base/2017-06-29-audit-cour-comptes-lfi2017.md) | declaration | A | finances-publiques |
+| 2017-07-13 | [Whirlpool : accord de reprise du site d'Amiens par WN (Nicolas Decayeux)](base/2017-07-13-whirlpool-reprise-wn.md) | mesure | B | industrie |
 | 2017-09-04 | [dédoublement CP/CE1, effets contestés](base/2017-09-04-dedoublement-cp-ce1.md) | promesse | A | promesses, education-recherche |
 | 2017-09-05 | [cession de 4,56 % d'Engie (1,53 Md€)](base/2017-09-05-cession-engie.md) | mesure | A | industrie, finances-publiques |
-| 2017-09-14 | [Whirlpool : reprise du site par WN](base/2017-09-14-whirlpool-reprise-wn.md) | mesure | A | industrie |
 | 2017-09-15 | [retraites des parlementaires alignées](base/2017-09-15-retraites-parlementaires-alignees.md) | promesse | A | promesses, institutions |
 | 2017-09-21 | [CETA appliqué 13 jours après le rapport Schubert](base/2017-09-21-ceta-application-provisoire-rapport-schubert.md) | mesure | A | europe, ecologie-energie |
 | 2017-09-22 | [ordonnances Pénicaud : barème prud'homal, CSE](base/2017-09-22-ordonnances-penicaud-code-travail.md) | mesure | A | economie |

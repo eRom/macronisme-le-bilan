@@ -146,6 +146,14 @@ neuf références fabriquées.
 agent utilisateur. Deux mécanismes, deux réponses. Ne jamais conclure à la mort
 d'une source sur un seul.
 
+**Un sous-agent de recherche ne répond pas au rythme de la boucle principale.**
+Six lancés en parallèle le 03/08 n'avaient rien rendu au bout d'une heure, ni
+après deux relances ; quatre ont répondu entre soixante et quatre-vingt-dix
+minutes, quand le travail avait été refait à la main. Leur rendu était bon, dont
+une réfutation qu'aucune recherche directe n'avait produite. **Les lancer et
+attendre dans le fil est le pire des deux mondes.** Soit on les lance et on
+enchaîne sur du travail non lié, soit on ne les lance pas.
+
 **Pour citer un article de code, citer la loi qui le crée.** Un identifiant
 `LEGIARTI` est opaque, invérifiable de tête et périssable. Le texte de la loi
 contient l'article mot pour mot et son adresse se construit à partir de deux
