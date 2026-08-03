@@ -395,3 +395,81 @@ suivant, comptés comme des adresses périmées.
 > Une mesure de clôture borne ce qu'elle a cherché, pas ce qui reste. La bonne
 > question à poser à un indicateur vert n'est pas « est-il juste ? » mais
 > « qu'est-ce qu'il ne peut pas voir ? »
+
+## Les lots rendus par des agents externes, et ce qu'il a fallu en refaire
+
+Séance du 03/08/2026 au soir. Le tableau des 246 lignes restantes a été découpé
+en treize lots de vingt, chacun formulé comme un prompt autoportant : contexte,
+garde-fous, pièges par hôte, format de sortie. Deux lots sont revenus.
+
+**Le re-sondage n'est pas une formalité, et il ne se délègue pas.** Méthode
+retenue ici, plus dure que la lecture : extraction du texte de la page (HTML
+détagué, PDF via `pdftotext -layout`) puis **recherche déterministe** de la
+citation littérale annoncée. Aucun modèle dans la boucle de validation. Soit la
+chaîne est dans la page, soit elle n'y est pas.
+
+| | Lot 01 | Lot 02 |
+|---|---|---|
+| lignes | 20 | 20 |
+| tiennent | 17 | 15 |
+| échecs déclarés, et justes | 2 | 2 |
+| mauvais document | 1 | 0 |
+| citation exacte sur adresse morte | 0 | 2 |
+| invérifiable (403 dur) | 0 | 1 |
+
+Les deux défauts sont de familles différentes, et les deux étaient invisibles
+au code HTTP seul.
+
+- **Lot 01, ligne 3.** Adresse valide, bon nom d'entreprise, bon syndicat, bon
+  contentieux, mais jugement du 8 avril 2026 quand la fiche porte sur avril
+  2025 : ni « 608 postes » ni « plan Réact » dans la page. L'agent avait écrit
+  la réserve **et coté OUI quand même**. La réserve avait raison.
+- **Lot 02, lignes 25 et 29.** Citation exacte, document réel, adresse
+  reconstruite depuis le titre au lieu d'être recopiée. Détail dans
+  [`../gotchas.md`](../gotchas.md).
+
+**Ce que le re-sondage a rapporté et qui n'était sur aucune copie** : le miroir
+`skribi` du Conseil de l'UE, qui lève l'ambiguïté du 403 ; le communiqué du TA
+de Cergy-Pontoise sur Indymedia, jusque-là « non résolu par aucune des trois
+voies » ; le rapport d'enquête AN n° 1824 en source primaire de Sainte-Soline à
+la place d'un article sous péage ; les communiqués ANSES, disparus en français
+et vivants en anglais ; le vrai rapport de la commission d'enquête sur les
+dépendances numériques (n° 3054, le corpus citait un n° 123 inexistant) ; le vrai
+communiqué Destatis (PE26_042_51, le corpus citait un PE26_046_51 qui ne résout
+pas).
+
+**Le taux d'erreur de fond se confirme.** Sur les vingt-sept fiches rouvertes,
+sept portaient une affirmation que leur source n'établit pas : motif de jugement
+attribué aux bénéfices d'un groupe, grenades lacrymogènes données pour
+« lacrymogènes et explosives », verbatim présidentiel absent de la page citée,
+dénominateur implicite sur les places de prison, deux identifiants de rapport
+inexistants, une date de publication laissée « à préciser ». Deux pièces de
+jugement ont dû être reprises pour le seul verbatim glyphosate.
+
+Une correction proposée par la recherche a été **écartée** après vérification :
+la date du 22/11/2023 de la fiche décarbonation n'est pas fausse, c'est celle
+de la signature des contrats. Un agent qui signale une erreur se vérifie comme
+un agent qui propose une source.
+
+### Ce qui reste ouvert sur ces deux lots
+
+- `2025-04-23-arcelormittal-pse-react` : orpheline, et elle le reste. Le seul
+  document trouvé est un autre jugement.
+- `2026-02-12-bilan-anah-maprimerenov` : **les deux** sources sont mortes, la
+  seconde ne figurait sur aucune liste. La page ANAH vivante donne 379 428
+  logements quand la fiche en porte 307 731 : périmètres à trancher avant tout
+  remplacement.
+- `2021-02-28-convention-citoyenne-note-gouvernement` : la note de 3,3/10 n'a
+  d'autre trace trouvée qu'un article RFI qui répond 403 à toute pile. Non
+  vérifiable en l'état.
+- `2023-02-07-deficit-commercial-record-2022` : la source INSEE du « -82,5 Md€
+  hors énergie » répond 404 et ne figurait sur aucune liste.
+- `2024-11-01-minima-sociaux-effet-pauvrete-drees` : les effectifs 2024 (RSA,
+  AAH, ASS) ne sont pas dans le panorama cité, qui s'arrête aux données 2022-2023.
+- `2025-12-17-cloud-confiance-s3ns-bleu` : le rapport n° 3054 est en place, mais
+  les « 1,5 Md€/an » et les « ~80 % UGAP » n'y ont pas été retrouvés sous cette
+  forme. À relire dans le tome 2.
+
+Ces six lignes ont un point commun : elles ont été trouvées **en tirant sur le
+fil** des lignes du lot, pas en lisant la liste des orphelines. Le rendement de
+la campagne tient autant à ce qu'elle révèle qu'à ce qu'elle répare.

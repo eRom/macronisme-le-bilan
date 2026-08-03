@@ -379,3 +379,47 @@ donne une adresse stable et un texte lisible :
 `eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:62017CJ0416` pour C-416/17,
 `62018CJ0636` pour C-636/18. Forme générale : `6` + année à 4 chiffres + `CJ` +
 numéro d'affaire sur 4 chiffres.
+
+**Un slug reconstruit depuis le titre est un identifiant fabriqué, même quand le
+document existe.** Découvert le 03/08/2026 en re-sondant un lot de récupération
+d'URL. Deux lignes annonçaient une adresse « vérifiée » avec citation littérale ;
+les deux répondaient 404, aux deux piles réseau, témoin passé sur le même hôte.
+Le document existait pourtant, et la citation était exacte au mot près.
+
+```
+proposé   ccomptes.fr/fr/publications/les-aides-a-la-decarbonation-de-l-industrie-du-plan-...
+réel      ccomptes.fr/fr/publications/les-aides-la-decarbonation-de-lindustrie-du-plan-...
+proposé   .../20260311-Aides-a-la-decarbonation-de-l-industrie-...pdf
+réel      .../20260311-communique-Aides-a-decarbonation-de-l-industrie-...pdf
+```
+
+Le mécanisme : l'agent lit le bon document, en retient le titre, puis
+**reconstruit l'adresse depuis le titre** au lieu de la recopier. Ce mode
+d'échec est plus vicieux que l'invention pure, parce que tout ce qui l'entoure
+est juste : la citation, le chiffre, la date. Seule l'adresse est fausse.
+
+> Sur une URL rapportée par un tiers, sonder le code HTTP **avant** de lire la
+> citation. Une citation exacte ne garantit pas que l'adresse d'où elle est
+> censée venir existe.
+
+**Le miroir `skribi.consilium.europa.eu` sépare le 403 anti-bot du 404 réel.**
+`www.consilium.europa.eu` refuse tout automate, quelle que soit la pile (`fetch`,
+`curl`, récupération de page) et quels que soient les en-têtes : impossible de
+savoir si une adresse est morte ou seulement gardée. Le Conseil publie le même
+contenu sur `skribi.consilium.europa.eu` (CDN Cloudflare, résolu au `dig`), qui
+répond 200 et se laisse lire. Le 03/08/2026, il a tranché deux cas : les slugs
+cités par le corpus y répondent **404** et les slugs de remplacement **200**. Les
+deux adresses étaient bien mortes, le 403 masquait un 404.
+
+> Devant un hôte qui répond 403 à tout, chercher un miroir avant de conclure.
+> « Le site bloque les automates » couvre indifféremment une page vivante et une
+> page morte, et c'est la seule ambiguïté que le sondeur ne sait pas lever.
+
+**Un communiqué d'institution peut être un compte rendu, pas un verbatim.** La
+page de l'Élysée sur l'interview Brut du 04/12/2020 rapporte au style indirect :
+« le Président de la République a reconnu "un échec collectif" ». Deux fiches et
+deux pièces de jugement en avaient tiré une phrase à la première personne, « Sur
+le glyphosate, je n'ai pas réussi », absente de la page. La vidéo d'origine ayant
+disparu, le verbatim n'est plus vérifiable nulle part. Avant de citer un
+président entre guillemets sur la foi d'une page élyséenne, vérifier que la page
+cite et ne résume pas.
