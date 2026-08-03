@@ -47,17 +47,30 @@ la commission d'enquête ([[2023-03-25-sainte-soline-grenades]], grade A) docume
 plus de 5 000 grenades en quelques heures et deux manifestants plongés dans le coma. La
 pièce qui clôt la série est de la plus haute autorité : la décision n° 2026-158 de la
 Défenseure des droits ([[2026-07-07-sainte-soline-defenseure-des-droits]], grade A, autorité
-constitutionnelle indépendante) conclut à des manquements déontologiques graves, « logique de
-confrontation », usage disproportionné et indifférencié de la force, tirs non réglementaires
-depuis des quads en mouvement, et entrave avérée aux secours sanitaires. Ce qui limite la
-charge : les forces de l'ordre sont aussi blessées (1 518 au printemps 2023, 1 717 à 1 797
-gilets jaunes), la violence est bilatérale, et le juge a validé l'usage du LBD ([[2019-01-17-lbd-defenseur-des-droits-conseil-detat]],
+constitutionnelle indépendante) retient un usage non réglementaire et disproportionné des
+armes, en particulier du lanceur Cougar, et impute à la chaîne de commandement une « logique
+de confrontation ayant conduit à un lourd bilan humain ». Elle saisit le ministre de
+l'Intérieur d'une demande de poursuites disciplinaires visant les auteurs des tirs et
+l'ensemble de la chaîne de commandement, et juge que l'enquête de l'IGGN sur deux tirs de LBD
+depuis des quads en mouvement, qui avait conclu à l'absence de faute, n'a été menée ni de
+manière objective ni de manière effective. Ce qui limite la charge : la décision se borne
+expressément au terrain déontologique, la qualification pénale relevant du seul juge
+judiciaire ; l'entrave aux secours est ce que les saisissants dénoncent et ne figure pas
+parmi les manquements retenus ; la même décision constate que la chaîne de commandement a
+exposé ses propres gendarmes, « souvent jeunes et peu expérimentés », à des risques pour leur
+intégrité physique. Les forces de l'ordre sont aussi blessées (1 518 au printemps 2023,
+1 717 à 1 797 gilets jaunes), la violence est bilatérale, et le juge a validé l'usage du LBD ([[2019-01-17-lbd-defenseur-des-droits-conseil-detat]],
 grade A, le Conseil d'État rejette les référés de suspension tout en rendant obligatoires
 les caméras-piétons). Mais c'est précisément ce dernier point qui fait le poids de la charge
 sur le terrain des libertes-publiques : le juge a protégé les libertés sur les lois et les
 fichiers (voir décharge 1), il n'a pas protégé les manifestants sur la pratique du
-maintien de l'ordre, où l'IGGN a conclu à la légitime défense à Sainte-Soline (conclusion
-contestée par les associations, mais non censurée). Le bilan de blessés, lui, est de grade
+maintien de l'ordre, où l'IGGN a conclu à la légitime défense pour les tirs de LBD depuis des
+quads à Sainte-Soline. Cette conclusion, longtemps seulement contestée par les associations,
+ne tient plus seule : la décision du 07/07/2026 juge que l'enquête qui l'a produite n'a été
+menée ni de manière objective ni de manière effective, et retient un manquement de l'IGGN à
+son obligation de contrôle. Le contrôle interne du maintien de l'ordre est ainsi censuré par
+la seule autorité qui l'ait examiné du dehors, trois ans après les faits, sans que la
+conclusion initiale ait jamais été retirée. Le bilan de blessés, lui, est de grade
 A et ne dépend d'aucune interprétation.
 
 **2. La surveillance s'est étendue et pérennisée, y compris à l'enregistrement des
@@ -72,8 +85,9 @@ n° 2026-201 du 20/03/2026, disposition déclarée conforme par le Conseil const
 19/03/2026 ([[2026-03-20-vsa-prorogee-2027]], grade A) : l'« expérimentation » couvre ainsi
 près de cinq ans. Les algorithmes de détection sur les métadonnées, dits « boîtes noires »,
 expérimentés depuis 2015, sont inscrits définitivement dans le droit commun par la loi PATR
-([[2021-07-30-loi-patr-boites-noires]], grade A), étendus aux URL. Les drones, deux fois
-interdits par le Conseil d'État ([[2020-05-18-drones-interdits-conseil-detat]], grade A), sont
+([[2021-07-30-loi-patr-boites-noires]], grade A), étendus aux URL. Les drones, dont le Conseil d'État a fait
+cesser deux fois l'usage faute d'un texte encadrant le traitement de données
+([[2020-05-18-drones-interdits-conseil-detat]], grade A), sont
 légalisés par la LOPMI ([[2023-01-24-lopmi-amendes-forfaitaires]], grade A). Ce qui limite la
 charge : chaque dispositif a été borné, par son propre texte comme par le juge. Le décret
 GendNotes réserve lui-même la saisie des données sensibles aux cas de « nécessité absolue »,
