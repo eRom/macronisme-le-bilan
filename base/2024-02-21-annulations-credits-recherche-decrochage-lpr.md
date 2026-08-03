@@ -11,8 +11,8 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049181180
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000050136270
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049180270
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051520782
   - https://www.senat.fr/rap/a24-144-324/a24-144-324.html
   - https://www.senat.fr/rap/l24-111-325/l24-111-325.html
 ---

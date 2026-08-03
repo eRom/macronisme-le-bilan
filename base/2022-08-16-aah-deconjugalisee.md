@@ -11,7 +11,7 @@ acteurs:
 grade: A
 statut: tenue
 sources:
-  - https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000046186638
+  - https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000046186750
 ---
 
 Promesse 2022 (longtemps refusée par l'exécutif sous le premier quinquennat, adoptée après pression parlementaire transpartisane) : calculer l'AAH sans les revenus du conjoint. Inscrite à l'article 10 de la loi n° 2022-1158 du 16/08/2022, effective au 01/10/2023 (décret n° 2022-1694 du 28/12/2022).
