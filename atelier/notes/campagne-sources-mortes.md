@@ -525,3 +525,58 @@ déplacé.
 Ces six lignes ont un point commun : elles ont été trouvées **en tirant sur le
 fil** des lignes du lot, pas en lisant la liste des orphelines. Le rendement de
 la campagne tient autant à ce qu'elle révèle qu'à ce qu'elle répare.
+
+## Lots 03 et 04, et le premier renversement de gotcha
+
+Traités le 03/08/2026 au soir, à la même recette. Les deux lots sont sérieux :
+ils déclarent leurs échecs, signalent leurs réserves, et le lot 04 va jusqu'à
+refuser deux lignes en expliquant pourquoi la notice elle-même paraît fautive.
+
+| | Lot 03 | Lot 04 |
+|---|---|---|
+| lignes | 20 | 20 |
+| annoncées OUI | 20 | 15 |
+| NON déclarés | 0 | 5 |
+| confirmées au contenu ici | 10 | 6 |
+| non testables (hôte anti-automate) | 10 | 9 |
+
+**La moitié des lignes n'est pas testable, et ce n'est pas la faute des lots.**
+Dix hôtes opposent un 403 à toute pile : `interieur.gouv.fr`,
+`education.gouv.fr`, `enseignementsup-recherche.gouv.fr`, `info.gouv.fr`,
+`economie.gouv.fr`, `lesechos.fr`, `france24.com`, `ouest-france.fr`,
+`legifrance.gouv.fr`, `politique.pappers.fr`. Sur ces hôtes, ni le sondeur ni
+moi ne savons distinguer une page morte d'une page gardée. C'est la limite dure
+de la campagne, et elle est plus large qu'on ne le croyait.
+
+**Quatre erreurs de fond, dont deux que les lots ont trouvées seuls.**
+
+- Le lot 03 a rapporté sur Whirlpool une dépêche qui **contredit la fiche** :
+  Ageco Agencement n'a pas été liquidée le 31/03/2021, elle a été reprise par
+  Mobidecor, 36 salariés sur 81 conservés, activité déménagée. C'est WN qui
+  avait été liquidée, en 2019. La pièce `industrie` en tirait « zéro emploi
+  industriel au terme », formulation qui tombe.
+- Le lot 04 a refusé la ligne 78 en remarquant que la fiche glyphosate adossait
+  une réitération de l'aveu à un article du *Parisien* consacré aux
+  non-vaccinés. Les deux faits n'ont aucun rapport. L'affirmation est retirée.
+- Le lot 04 a signalé que le cosignataire d'une déclaration du 25/06/2025 ne
+  peut pas être Nancy Faeser, partie de l'Intérieur allemand le 06/05/2025.
+  Vérifié : Dobrindt lui a succédé. Ou la date est juste et le nom est faux, ou
+  l'inverse ; le communiqué refuse les automates, la contradiction est écrite
+  dans la fiche sans être tranchée.
+- Le lot 04 a refusé la ligne 68 pour la même raison que moi une heure plus tôt,
+  par un chemin indépendant : le « -82,5 Md€ hors énergie » n'existe dans aucune
+  source vérifiable. Deux méthodes, une conclusion.
+
+**Le premier gotcha qui se périme dans la même journée.** Le matin, la contre-
+épreuve établissait que Légifrance refuse `curl` mais se laisse lire par `fetch`.
+Le soir, quatre formes d'URL, dont un témoin de janvier 2017 connu bon,
+répondent 403 à `fetch`. Le contournement est mort en quelques heures, ce qui
+oblige à traiter les gotchas de contournement comme périssables et à les
+re-tester avant de s'y fier. Détail dans [`../gotchas.md`](../gotchas.md).
+
+**Ce que ces deux lots ferment, enfin.** Le communiqué de Bercy du 05/09/2017
+sur la cession Engie, porté « non résolu par aucune des trois voies » depuis
+l'ouverture de la campagne, ne sera pas retrouvé : il a disparu et le site le
+refuse aux automates. Le rapport du Sénat prend sa place pour ce qu'il établit,
+et l'écart de calendrier qu'il révèle est consigné dans la fiche plutôt que
+gommé.

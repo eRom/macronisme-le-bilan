@@ -461,3 +461,21 @@ transitoire, pas un biais de méthode.
 
 Statut de cette entrée : observation unique, à promouvoir si elle se reproduit,
 à purger sinon.
+
+**Légifrance refuse `fetch` aussi, désormais.** Le gotcha écrit plus haut disait
+que Légifrance oppose un 403 à `curl` mais se laisse lire par `fetch` avec le
+même agent utilisateur. **Ce n'est plus vrai le 03/08/2026 au soir** : quatre
+formes d'URL testées (`/jorf/id/`, `/loda/id/`, ELI, et un témoin de janvier
+2017 connu bon) répondent toutes 403 à `fetch`. Le témoin est ce qui tranche :
+ce n'est pas un identifiant qui ne résout pas, c'est l'hôte qui ferme.
+
+> Conséquence pour la campagne : une URL Légifrance ne peut plus être vérifiée
+> par ces voies, et le sondeur ne sait plus distinguer une adresse morte d'une
+> adresse gardée sur cet hôte. Trouver un miroir lisible avant de conclure quoi
+> que ce soit sur une source Légifrance. Le miroir tiers essayé le même soir
+> (`politique.pappers.fr`) répond 403 lui aussi.
+
+Ce renversement, à quelques heures d'intervalle, dit aussi quelque chose de plus
+général : **un gotcha de contournement se périme**. Ce qui passait ce matin est
+fermé ce soir. Re-tester le contournement avant de s'y fier, plutôt que de le
+lire comme un acquis.
