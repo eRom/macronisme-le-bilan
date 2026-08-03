@@ -42,7 +42,8 @@ Statuts : `OK` | `partiel` | `TROU` | `hors-périmètre` | `saturé`
 
 | ID | Type | Intitulé | Priorité | Source du signal | Statut |
 |---|---|---|---|---|---|
-| SA-01 | T5 | Intégrité des sources du domaine : environ la moitié des 58 liens sondés par le run étaient morts ou fabriqués ; vingt fiches sont en B pour ce motif | P1 | Alerte de fiabilité de la chronologie. Le précédent de la vidéosurveillance algorithmique (identifiant fabriqué sur une fiche citée par un jugement, corrigé le 03/08/2026) montre ce que ce risque produit quand il n'est pas traité. L'audit d'identifiants ne couvre pas ce domaine, dont les sources sont surtout non légistiques | ouvert |
+| SA-01 | T5 | Intégrité des sources du domaine | **P0** | Campagne du 03/08/2026 : les 96 sources ont été ouvertes une par une. 29 étaient cassées, dont **onze références officielles fabriquées** renvoyant à des pages vides, toutes sur des fiches de grade A, six d'entre elles citées par un jugement et une par la synthèse. Les onze sont corrigées, chaque texte réel ouvert et vérifié sur son contenu | clos pour les références fabriquées ; **17 sources mortes restent** (voir SA-13) |
+| SA-13 | T5 | Dix-sept sources mortes : portails statistiques et institutionnels dont l'adresse a bougé (banque de France, impôts, INSEE, DREES à deux reprises, assurance maladie, Sénat, portail du Gouvernement, Health Data Hub, Cour des comptes européenne, Conseil constitutionnel) et cinq articles de presse | P1 | Re-sondage du 03/08/2026. Mode de défaillance distinct du précédent : les documents existent, ce sont les adresses qui ont pourri. Chaque source doit être re-pointée vers le document, pas vers le portail | ouvert |
 | SA-02 | T1 | Onze vaccins obligatoires du nourrisson (loi du 30/12/2017) et effet sur la couverture vaccinale | P1 | Lacune nommée par le jugement ; mesure de santé publique majeure, et seule année du domaine sans aucune fiche | ouvert |
 | SA-03 | T1 | Urgences, été 2022 : mission flash, 41 recommandations, instruction généralisant la régulation d'accès, décompte des services fermés | P1 | Lacune nommée par le run comme la plus visible du volet hôpital | ouvert |
 | SA-04 | T1 | Allongement du délai légal d'IVG à 14 semaines (loi du 02/03/2022) | P2 | Lacune nommée ; la constitutionnalisation de 2024 est fichée en `institutions`, pas la loi qui l'a précédée | ouvert |
@@ -74,8 +75,24 @@ Non saturé pour la v1 :
 1. Matrice : cinq lignes en TROU, six en partiel. C'est le domaine le plus
    troué du dossier, et il le sait : le jugement nomme lui-même la plupart
    de ces manques.
-2. Aucun P0 identifié, mais SA-01 est la file où le prochain se trouvera :
-   c'est ici que la densité de liens morts ou fabriqués est la plus forte de
-   tout le corpus.
-3. Trois P1. La priorité n'est pas d'ajouter des pièces mais de sécuriser
-   celles qui portent déjà les charges.
+2. Le P0 d'intégrité des sources est traité pour sa part la plus grave. Il
+   restait de loin le plus gros gisement de références fabriquées du corpus :
+   onze en un seul domaine, contre trois pour tout le reste du dossier
+   jusqu'ici.
+3. Trois P1 de fond (SA-02, SA-03) plus SA-13. La priorité reste de sécuriser
+   les pièces qui portent les charges avant d'en ajouter.
+
+## Ce que la campagne d'intégrité a appris ici
+
+Les onze identifiants fabriqués ne tombaient pas au hasard : chacun était à
+quelques centaines d'unités du vrai, soit à quelques jours près dans la bonne
+plage de publication. `atelier/audit-identifiants.ts`, qui juge un identifiant
+sur sa vraisemblance chronologique, ne pouvait structurellement en voir aucun,
+et n'en a effectivement signalé aucun.
+
+C'est la limite d'un contrôle de vraisemblance face à une fabrication
+plausible, et elle a une conséquence de méthode : **seul le sondage réel
+tranche**. `atelier/audit-sources.ts` ouvre les URL et distingue la source
+morte de la source bloquée à l'automate, et surtout du piège — une page qui
+répond 200 en disant « Pas de contenu disponible ». Ce dernier cas est celui
+qui traverse tous les filtres, y compris un contrôle de code HTTP.

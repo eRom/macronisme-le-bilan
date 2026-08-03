@@ -1,0 +1,138 @@
+#!/usr/bin/env bun
+/**
+ * Sondage des sources d'un domaine (campagne intégrité).
+ *
+ *   bun run atelier/audit-sources.ts <slug-domaine> [--all]
+ *
+ * Ouvre réellement chaque URL citée en source par les fiches du domaine et
+ * classe le résultat. C'est le seul contrôle qui tranche : l'audit
+ * d'identifiants trie des candidats par vraisemblance, celui-ci constate.
+ *
+ * Le classement compte plus que le code HTTP, parce que le mode de défaillance
+ * le plus dangereux du dossier ne se voit pas dans le code :
+ *
+ *   PIEGE     200, mais la page dit « Pas de contenu disponible ». C'est la
+ *             signature d'un identifiant Légifrance fabriqué. Trois cas
+ *             confirmés sur ce dossier, dont deux sur des fiches citées par
+ *             une pièce de jugement. Une URL d'apparence parfaite.
+ *   MORTE     404, 410, ou l'hôte ne répond pas. Réparable ou à remplacer.
+ *   BLOQUEE   403 ou 429 : le serveur refuse l'automate, la page peut être
+ *             vivante. À vérifier à la main, jamais à conclure d'ici.
+ *             Connus sur ce dossier : theguardian.com, web.archive.org,
+ *             curia.europa.eu, interieur.gouv.fr.
+ *   DEPLACEE  200 après redirection vers un autre hôte : la source vit
+ *             ailleurs, l'URL du corpus est périmée.
+ *   VIVANTE   200 sur l'hôte attendu.
+ *
+ * Un rendu JavaScript peut répondre 200 avec un corps vide (vie-publique.fr) :
+ * le script le signale en VIVANTE, ce n'est pas une garantie de contenu.
+ */
+
+import { readdirSync, readFileSync } from "node:fs";
+import { join, resolve } from "node:path";
+
+const ROOT = resolve(import.meta.dir, "..");
+const BASE = join(ROOT, "base");
+
+const slug = process.argv[2];
+if (!slug) {
+  console.error("Usage : bun run atelier/audit-sources.ts <slug-domaine>");
+  process.exit(1);
+}
+
+const UA =
+  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36";
+
+// Marqueurs de page d'erreur servie en 200. À enrichir dès qu'un portail
+// nouveau se révèle : c'est la table qui protège, pas la correction manuelle.
+const MARQUEURS_ERREUR = [
+  "pas de contenu disponible",
+  "page introuvable",
+  "cette page n'existe pas",
+];
+
+type Source = { fiche: string; url: string; grade: string };
+const sources: Source[] = [];
+
+for (const nom of readdirSync(BASE).filter((f) => f.endsWith(".md")).sort()) {
+  const texte = readFileSync(join(BASE, nom), "utf8");
+  const fin = texte.indexOf("\n---", 3);
+  const fm = fin === -1 ? texte : texte.slice(0, fin);
+  if (!new RegExp(`^domaines:.*\\b${slug}\\b`, "m").test(fm)) continue;
+  const grade = fm.match(/^grade:\s*(\w)/m)?.[1] ?? "?";
+  for (const m of fm.matchAll(/^\s*-\s*(https?:\/\/\S+)\s*$/gm))
+    sources.push({ fiche: nom, url: m[1], grade });
+}
+
+type Verdict = "PIEGE" | "MORTE" | "BLOQUEE" | "DEPLACEE" | "VIVANTE";
+type Resultat = Source & { verdict: Verdict; detail: string };
+
+const hote = (u: string) => {
+  try {
+    return new URL(u).host.replace(/^www\./, "");
+  } catch {
+    return "?";
+  }
+};
+
+async function sonder(s: Source): Promise<Resultat> {
+  const ctrl = new AbortController();
+  const minuteur = setTimeout(() => ctrl.abort(), 20_000);
+  try {
+    const r = await fetch(s.url, {
+      headers: { "User-Agent": UA, "Accept-Language": "fr-FR,fr;q=0.9" },
+      redirect: "follow",
+      signal: ctrl.signal,
+    });
+    if (r.status === 403 || r.status === 429)
+      return { ...s, verdict: "BLOQUEE", detail: `HTTP ${r.status}` };
+    if (!r.ok) return { ...s, verdict: "MORTE", detail: `HTTP ${r.status}` };
+
+    const corps = (await r.text()).slice(0, 200_000).toLowerCase();
+    const marqueur = MARQUEURS_ERREUR.find((m) => corps.includes(m));
+    if (marqueur)
+      return { ...s, verdict: "PIEGE", detail: `200 mais « ${marqueur} »` };
+
+    if (hote(r.url) !== hote(s.url))
+      return { ...s, verdict: "DEPLACEE", detail: `→ ${hote(r.url)}` };
+
+    return { ...s, verdict: "VIVANTE", detail: `200 (${corps.length} car.)` };
+  } catch (e) {
+    const msg = e instanceof Error ? e.name : String(e);
+    return { ...s, verdict: "MORTE", detail: `injoignable (${msg})` };
+  } finally {
+    clearTimeout(minuteur);
+  }
+}
+
+// Concurrence bornée : on sonde des services publics, pas une cible de charge.
+const PARALLELE = 6;
+const resultats: Resultat[] = [];
+for (let i = 0; i < sources.length; i += PARALLELE) {
+  resultats.push(
+    ...(await Promise.all(sources.slice(i, i + PARALLELE).map(sonder))),
+  );
+  process.stderr.write(
+    `\r  sondé ${Math.min(i + PARALLELE, sources.length)}/${sources.length}`,
+  );
+}
+process.stderr.write("\n\n");
+
+const ordre: Verdict[] = ["PIEGE", "MORTE", "DEPLACEE", "BLOQUEE", "VIVANTE"];
+console.log(`Domaine ${slug} : ${sources.length} sources sondées\n`);
+
+for (const v of ordre) {
+  const lot = resultats.filter((r) => r.verdict === v);
+  console.log(`${v} : ${lot.length}`);
+  if (v === "VIVANTE") continue;
+  for (const r of lot)
+    console.log(`  ${r.fiche} [${r.grade}]\n    ${r.url}\n    ${r.detail}`);
+  if (lot.length) console.log();
+}
+
+console.log(
+  "\nBLOQUEE n'est pas MORTE : le serveur refuse l'automate, la page peut vivre.",
+);
+console.log(
+  "PIEGE est le cas grave : l'URL a l'air valide et ne mène à rien.",
+);
