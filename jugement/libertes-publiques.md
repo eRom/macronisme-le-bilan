@@ -166,7 +166,8 @@ français est victime et non auteur dans l'affaire Pegasus ([[2021-07-20-pegasus
 grade B) ; la France remonte au classement RSF de la 39e place en 2017 à la 25e en 2026
 ([[2026-05-03-classement-rsf-france]], grade B) ; et la loi secret des affaires
 ([[2018-07-30-loi-secret-des-affaires]], grade A) comporte une exception expresse pour
-l'exercice de la liberté de la presse et les lanceurs d'alerte. La charge est portée par du
+l'exercice de la liberté de la presse et les lanceurs d'alerte, exception qui joue
+toutefois en défense au procès et non comme une immunité (voir la décharge 4). La charge est portée par du
 grade B pour sa partie la plus aiguë (convocations, garde à vue) : elle tient comme pression
 documentée, elle n'est pas déterminante au sens du §5.
 
@@ -245,7 +246,11 @@ formulation de rupture à la création.
 **4. La liberté de la presse dispose de protections juridiques et d'une trajectoire de
 fond qui tempèrent la charge.** La loi secret des affaires ([[2018-07-30-loi-secret-des-affaires]],
 grade A) rend le secret inopposable à l'exercice de la liberté de la presse et à la
-protection des lanceurs d'alerte. Le non-lieu du 09/10/2025 dans l'affaire Lavrilleux
+protection des lanceurs d'alerte. Limite à énoncer, sous peine de surestimer la décharge :
+l'article L. 151-8 du code de commerce ouvre cette exception « à l'occasion d'une instance
+relative à une atteinte au secret des affaires », c'est-à-dire en défense devant le juge
+déjà saisi. Ce n'est pas une immunité qui dispense d'être poursuivi, et le coût d'un procès
+est précisément ce que les sociétés de journalistes redoutaient. Le non-lieu du 09/10/2025 dans l'affaire Lavrilleux
 ([[2023-09-19-garde-a-vue-ariane-lavrilleux]], grade B), qui retient que l'intérêt général
 des révélations prime le secret-défense, est une décision de fond qui protège le
 journalisme d'investigation, même si la réouverture de l'instruction le 08/07/2026 la
