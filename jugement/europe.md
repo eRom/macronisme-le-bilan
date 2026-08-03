@@ -1,14 +1,14 @@
 ---
 domaine: europe
 verdict: defavorable
-date_verdict: 2026-07-31
+date_verdict: 2026-08-03
 ---
 
 # Jugement : europe
 
 ## Périmètre
 
-Ce jugement se rend sur les 79 fiches portant le slug `europe` au 31/07/2026, et sur les points restés à vérifier, recensés pour ce domaine. Le cœur du
+Ce jugement se rend sur les 79 fiches portant le slug `europe` au 03/08/2026, et sur les points restés à vérifier, recensés pour ce domaine. Le cœur du
 domaine : la doctrine européenne proclamée (les deux discours de la Sorbonne) et
 son sort, l'influence de la France dans les institutions de l'Union, le rapport
 de l'exécutif à la norme et au juge européens, la présidence française de 2022,
@@ -151,9 +151,10 @@ un régime conçu comme temporaire, dont neuf sous les mandats jugés
 ([[2015-11-13-controles-frontieres-interieures-onze-ans]], grade A). En avril
 2022, la CJUE juge que le droit de l'Union s'oppose à un dépassement de six
 mois sans menace nouvelle ([[2022-04-26-cjue-plafond-six-mois-controles-frontieres]],
-grade A) ; la pratique française n'est pas interrompue, le Conseil d'État la
-valide trois mois plus tard, puis juge en 2025 que le nouveau cadre fait
-repartir les compteurs ([[2022-07-27-conseil-etat-valide-renouvellements-controles]],
+grade A) ; la pratique française n'est pas interrompue, le Conseil d'État jugeant
+trois mois plus tard le renouvellement licite à la condition que la menace soit
+« nouvelle », notion qu'il définit et qu'il tient pour caractérisée, puis jugeant
+en 2025 que le nouveau cadre fait repartir les compteurs ([[2022-07-27-conseil-etat-valide-renouvellements-controles]],
 grade A) ; en 2024, le nouveau code frontières Schengen, dont la France
 comptait parmi les États demandeurs, porte le plafond à deux ans et régularise
 en droit la pratique jugée non conforme
@@ -242,8 +243,10 @@ ne permettent pas d'identifier les bénéficiaires finals, les données de coût
 sont transmises avec plus de six mois de retard, et la liste officielle des 100
 principaux bénéficiaires comportait des organismes intermédiaires présentés
 comme finals ([[2026-05-06-cour-comptes-europeenne-tracabilite-pnrr]], grade
-A), sur une enveloppe portée à 40,3 milliards
-([[2023-12-08-pnrr-repowereu-40-3-milliards]], grade A). Ce qui limite la
+A), sur une enveloppe portée à 40,3 milliards, chapitre REPowerEU compris
+([[2023-12-08-pnrr-repowereu-40-3-milliards]], grade A pour le montant, la date
+d'adoption de la décision d'exécution révisée n'ayant pas pu être confirmée sur
+source primaire). Ce qui limite la
 charge : l'Allemagne est logée à la même enseigne par le même rapport, c'est un
 constat d'audit et non une irrégularité établie, et l'exécution des jalons est
 par ailleurs sans faute (décharge 2). Charge secondaire, qui borne la
