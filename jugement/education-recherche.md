@@ -1,15 +1,15 @@
 ---
 domaine: education-recherche
 verdict: defavorable
-date_verdict: 2026-07-31
+date_verdict: 2026-08-03
 ---
 
 # Jugement : education-recherche
 
 ## Périmètre
 
-Ce jugement se rend sur les 23 fiches portant le slug `education-recherche` au
-31/07/2026, et sur les points restés à vérifier, recensés pour ce domaine. Le domaine couvre l'école primaire et secondaire, le lycée et
+Ce jugement se rend sur les 25 fiches portant le slug `education-recherche` au
+03/08/2026, et sur les points restés à vérifier, recensés pour ce domaine. Le domaine couvre l'école primaire et secondaire, le lycée et
 le baccalauréat, la voie professionnelle, l'accès à l'enseignement supérieur, la
 condition étudiante, la recherche publique et sa programmation budgétaire. Les
 pièces transverses sont jugées ici sous leur seul angle éducatif : l'agrégat
@@ -19,7 +19,7 @@ budgétaire relève de `finances-publiques`, l'interdiction de l'abaya relève d
 mesuré.
 
 Limites héritées de la recherche, dites d'entrée. C'est le plus petit corpus
-actif du dossier, 23 fiches contre 82 pour `institutions` ou
+actif du dossier, 25 fiches contre 84 pour `institutions` et 82 pour
 `finances-publiques` : la couverture est mince au regard du périmètre. Le
 déséquilibre temporel est inverse de celui des autres domaines, et il joue
 fort : le premier quinquennat est bien couvert (ministères Blanquer et Vidal),
@@ -32,12 +32,14 @@ claims sont retenus en fail-open, panne d'infrastructure et non réfutation, et
 traités avec une prudence marginale supérieure.
 
 Trous nommés, parce qu'ils commandent ce que ce jugement n'a pas le droit de
-dire. Le dossier ne possède aucune pièce sur les acquis des élèves mesurés par
-une évaluation internationale ou nationale de niveau (PISA, TIMSS), aucune sur
-le harcèlement scolaire, aucune sur la mixité sociale et l'enseignement privé
-sous contrat, aucune sur l'autonomie et le financement des universités hors la
-dépense moyenne par étudiant. Un verdict sur « le niveau scolaire » n'est donc
-pas rendable ici, et n'est pas rendu. Enfin, les allégations syndicales du
+dire. Sur les acquis des élèves, le dossier ne possède qu'une seule mesure,
+PISA 2022 ([[2023-12-05-pisa-2022-chute-mathematiques]], grade A) : un point
+unique, relevé sur une génération scolarisée pendant la pandémie, dans un
+recul général de l'OCDE. Un point n'est pas une série et ne s'impute pas. Il
+n'existe par ailleurs aucune pièce sur le harcèlement scolaire, aucune sur la
+mixité sociale et l'enseignement privé sous contrat, aucune sur l'autonomie et
+le financement des universités hors la dépense moyenne par étudiant. Un verdict
+sur « le niveau scolaire » n'est donc pas rendable ici, et n'est pas rendu. Enfin, les allégations syndicales du
 corpus sont graduées C et n'entrent jamais dans une charge déterminante
 (METHODE.md, « le grade commande la force de l'affirmation »).
 
@@ -75,9 +77,12 @@ initial de 20,5 %. Le Pacte enseignant, contrepartie conditionnelle de la
 revalorisation, plafonne à 31 % d'adhésion en 2024-2025
 ([[2023-07-19-enseignants-hausse-partielle]], grade A) ; la même pièce établit
 que la hausse « inconditionnelle de 10 % » promise en 2022 produit 4 à 5,5 % de
-hausse effective (décret du 19/07/2023, ISOE et ISAE portées à 2 550 € par an)
-et que le plancher de 2 102 € nets pour un certifié débutant exclut stagiaires
-et contractuels. En amont, le vivier : 3 756 postes non pourvus aux concours
+hausse effective : le décret du 19/07/2023 crée une part fonctionnelle au sein
+de l'ISOE et de l'ISAE sans fixer de montant, et c'est l'arrêté du même jour
+qui les chiffre, 2 550 € par an pour la part fixe et 1 250 € pour la part
+fonctionnelle, soit 3 800 € cumulés pour qui exerce une mission
+complémentaire ; le plancher de 2 102 € nets pour un certifié débutant exclut
+stagiaires et contractuels. En amont, le vivier : 3 756 postes non pourvus aux concours
 2022, soit 16,9 % dans le premier degré et 15,1 % dans le second, avec un CRPE
 de Versailles couvert à 29,65 % et Créteil à 38,83 %, un job dating d'urgence
 pour environ 2 000 contractuels, et un enseignant sur dix désormais contractuel
@@ -90,18 +95,21 @@ qu'aucune de ces nuances n'atténue : 52 % de dépense supplémentaire sur le
 remplacement pour un objectif propre atteint à moins de la moitié, établi par la
 juridiction financière.
 
-**3. Les deux réformes structurantes du domaine ont été défaites, l'une par le
+**3. Les deux réformes structurantes du domaine ont été démontées, l'une par le
 juge puis par ses propres auteurs, l'autre après un effet de genre documenté.**
 Le choc des savoirs impose par arrêté du 15/03/2024 des groupes de besoins en
-français et en mathématiques en 6e et 5e, attribue le redoublement au conseil
-des maîtres, crée une classe prépa-seconde et prévoit de conditionner l'entrée
-en seconde à l'obtention du brevet
+français et en mathématiques en 6e et 5e ; deux décrets du lendemain attribuent
+le redoublement au conseil des maîtres et créent une classe prépa-seconde, en
+phase pilote pour la seule année 2024-2025, destinée aux élèves admis en
+seconde sans avoir obtenu le brevet ; le dispositif prévoit en outre de
+conditionner cette entrée en seconde à l'obtention du brevet
 ([[2024-03-15-choc-des-savoirs-groupes-de-besoins]], grade A). La suite est un
 recul en cascade ([[2024-11-28-choc-des-savoirs-annulation-abandon]], grade A) :
 arrêté annulé par le Conseil d'État pour incompétence le 28/11/2024, effet
 différé au 06/07/2025 ; abandon officiel du brevet-couperet le 17/01/2025 ;
-abrogation réglementaire des groupes de besoins, remplacés par un
-accompagnement optionnel, par décret et arrêté du 10/03/2026. En parallèle, le
+puis, le 10/03/2026, l'arrêté abroge la disposition qui rendait les groupes de
+besoins obligatoires et le décret leur substitue un accompagnement pédagogique
+renforcé dont ils ne sont plus qu'une modalité possible parmi d'autres. En parallèle, le
 retrait des mathématiques du tronc commun de première et terminale générales
 (arrêté du 16/07/2018, effet à la rentrée 2020) provoque un effondrement
 documenté des effectifs féminins : la part des filles suivant au moins six
@@ -110,12 +118,15 @@ DEPP confirme en 2026 un écart persistant, 58,8 % des garçons contre 33,7 % de
 filles en spécialité maths ([[2018-07-16-maths-hors-tronc-commun-effet-filles]],
 grade A). Ce qui limite la charge : l'annulation du 28/11/2024 sanctionne un
 vice de compétence et non le fond, le décret correctif du 04/04/2025 a d'ailleurs
-été validé par le Conseil d'État le 27/02/2026, et les deux corrections sont
-elles-mêmes des décharges (section 3). Ce qui reste : deux réformes annoncées
-comme structurantes, imposées par voie réglementaire, dont l'une a traversé trois
+été validé par le Conseil d'État le 27/02/2026, le démontage n'est pas total
+puisque l'accompagnement renforcé en français et en mathématiques subsiste et
+que la prépa-seconde a été élargie, et les deux corrections sont elles-mêmes des
+décharges (section 3). Ce qui reste : deux réformes annoncées comme
+structurantes, imposées par voie réglementaire, dont l'une a traversé trois
 promotions entrées en première entre 2020 et 2022 avant d'être corrigée, et
-l'autre a été retirée en vingt-quatre mois sans qu'aucun bilan d'efficacité ne
-figure au dossier.
+l'autre a perdu son arrêté fondateur, son brevet-couperet et le caractère
+obligatoire de son dispositif central en vingt-quatre mois, sans qu'aucun bilan
+d'efficacité ne figure au dossier.
 
 **4. Parcoursup : l'indicateur mis en avant ne mesure pas ce qu'il paraît
 mesurer, et les filières les plus fragiles décrochent.** Les chiffres officiels
@@ -152,13 +163,20 @@ grande section d'éducation prioritaire à partir de 2020. Prolongement hors
 rentrée 2025 : plafond de 24 élèves respecté dans 95 % des CP, 92 % des CE1 et
 86 % des GS des écoles publiques. Effet mesuré par la DEPP : réduction de 16 %
 de l'écart en français et de 38 % en mathématiques avec les élèves hors
-éducation prioritaire, au CP en REP+. Ce qui limite la décharge, et qu'il faut
-porter avec elle : l'effet est maximal au CP et s'estompe dès le CE1, l'approche
-descriptive brute le ramène à 9 % et 14 %, les taux de réalisation du plafond de
-24 sont officiels mais mono-source, et la DEPP établit en février 2026 que les
-bénéfices « ne se maintiennent pas de façon significative à l'entrée en
-sixième ». Décharge pleine sur l'exécution et sur l'effet immédiat, muette sur
-la durabilité.
+éducation prioritaire, au CP en REP+. La même priorité au primaire porte le
+principal texte scolaire du premier quinquennat : la loi du 26/07/2019 pour une
+école de la confiance abaisse l'instruction obligatoire de six à trois ans dès
+la rentrée 2019, crée une obligation de formation de seize à dix-huit ans et
+remplace les ESPE par les INSPE, son article organisant la compensation
+financière aux communes ayant été jugé conforme par le Conseil constitutionnel
+([[2019-07-26-loi-ecole-de-la-confiance]], grade A). Ce qui limite la décharge,
+et qu'il faut porter avec elle : l'effet du dédoublement est maximal au CP et
+s'estompe dès le CE1, l'approche descriptive brute le ramène à 9 % et 14 %, les
+taux de réalisation du plafond de 24 sont officiels mais mono-source, la DEPP
+établit en février 2026 que les bénéfices « ne se maintiennent pas de façon
+significative à l'entrée en sixième », et le dossier ne possède aucune mesure de
+l'effet de l'abaissement à trois ans. Décharge pleine sur l'exécution et sur
+l'effet immédiat, muette sur la durabilité.
 
 **2. Le pouvoir a corrigé deux fois, sans attendre d'y être contraint.** Après le
 rapport du comité Mathiot de mars 2022, les mathématiques reviennent en option
@@ -166,9 +184,10 @@ de 1h30 à la rentrée 2022 (arrêté du 06/07/2022) puis en tronc commun
 obligatoire de première à la rentrée 2023 (arrêté du 03/01/2023)
 ([[2018-07-16-maths-hors-tronc-commun-effet-filles]]). Le brevet-couperet est
 abandonné par annonce ministérielle du 17/01/2025 sans attendre de contentieux,
-et la classe prépa-seconde, seul élément du choc des savoirs à ne pas avoir été
-défait, est pérennisée et élargie par décret du 10/07/2026 à tout élève admis
-nécessitant une consolidation ([[2024-11-28-choc-des-savoirs-annulation-abandon]]).
+et la classe prépa-seconde, seul élément du choc des savoirs à sortir renforcé
+du démontage, est pérennisée et élargie par le décret du 10/07/2026 à tout élève
+volontaire admis en seconde, et non plus aux seuls élèves sans brevet
+([[2024-11-28-choc-des-savoirs-annulation-abandon]]).
 Ce qui limite la décharge : la correction des maths intervient après trois
 promotions, et le rétablissement de 1h30 ne restaure pas le volume horaire de
 l'ancienne série S. Décharge sur la capacité de correction, pas sur la
@@ -205,11 +224,24 @@ d'élèves effectivement accompagnés.
 
 ## Ce qui est écarté
 
+- **« La chute de PISA prouve l'échec de la politique éducative. »** Écartée
+  dans son imputation. Le fait est établi et sévère : 474 points en
+  mathématiques en 2022, moins 21 points par rapport à 2018, la plus forte
+  baisse relevée pour la France depuis la première enquête de 2000, la
+  compréhension de l'écrit reculant de 493 à 474 points
+  ([[2023-12-05-pisa-2022-chute-mathematiques]], grade A). Mais le recul est
+  général dans l'OCDE, dont la moyenne en mathématiques perd 15 points, l'OCDE
+  le relie elle-même au contexte de la pandémie, et la France reste dans la
+  moyenne des pays membres pour les trois disciplines. Un point unique, mesuré
+  sur une génération scolarisée pendant les fermetures d'établissements et dans
+  un recul continental, ne date aucune rupture et ne s'impute pas à une
+  politique nationale. Le fait est citable, la charge non.
 - **« La sélection à l'université, c'est ce quinquennat. »** Écartée pour le
   master : la sélection y est instaurée par la loi du 23/12/2016, antérieure à
   la période ([[2023-06-07-selection-master-mon-master]]). Ce qui est propre au
-  quinquennat est sa confirmation (QPC jugée non sérieuse par le Conseil d'État
-  le 07/06/2023) et son outillage. Pour la licence, la loi ORE de 2018 crée bien
+  quinquennat est sa confirmation, QPC jugée ni nouvelle ni sérieuse par le
+  Conseil d'État le 07/06/2023 puis rejet au fond de l'ensemble des recours
+  contre la plateforme le 31/10/2023, et son outillage. Pour la licence, la loi ORE de 2018 crée bien
   un classement des candidats, mais elle remplace un tirage au sort
   ([[2018-03-08-loi-ore-parcoursup]]) : une charge qui tait ce qu'elle remplace
   se réfute en une phrase.
@@ -302,8 +334,9 @@ supplémentaires depuis 2018 pour 10 % d'absences courtes remplacées contre un
 objectif de 20,5 %, et 9 % des heures de cours obligatoires non assurées au
 collège public, 11 % en éducation prioritaire
 ([[2025-12-12-cour-comptes-temps-enseignement-perdu]]). S'y ajoute, sans être
-déterminante seule, la défaite des deux réformes structurantes du domaine,
-l'une annulée par le Conseil d'État puis abrogée par ses propres auteurs,
+déterminante seule, le démontage des deux réformes structurantes du domaine,
+l'une annulée par le Conseil d'État puis privée par ses propres auteurs du
+caractère obligatoire de son dispositif central,
 l'autre corrigée après un effet de genre documenté
 ([[2024-11-28-choc-des-savoirs-annulation-abandon]]).
 
@@ -329,6 +362,7 @@ par les +27,2 % en nominal de la mission Enseignement scolaire, et la baisse de
 la dépense par étudiant commence en 2009, donc avant la période
 ([[2024-06-15-budget-education-nominal-vs-reel]]). Et la couverture interdit
 d'aller plus loin : une seule fiche du domaine est postérieure à novembre 2024,
-aucune ne mesure les acquis des élèves, et un tiers des claims du run n'a pas
-été passé à la contradiction adversariale. Un verdict de gravité supérieure
+la seule mesure d'acquis au dossier est un point isolé, pris en année de
+pandémie dans un recul général de l'OCDE, qui ne s'impute pas, et un tiers des
+claims du run n'a pas été passé à la contradiction adversariale. Un verdict de gravité supérieure
 exigerait une matière que ce domaine n'a pas.
