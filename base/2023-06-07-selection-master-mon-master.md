@@ -12,7 +12,6 @@ statut: null
 sources:
   - https://www.legifrance.gouv.fr/ceta/id/CETATEXT000047656413
   - https://www.legifrance.gouv.fr/ceta/id/CETATEXT000048300416
-  - https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047200720
   - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000033680801
   - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047201189
 ---
