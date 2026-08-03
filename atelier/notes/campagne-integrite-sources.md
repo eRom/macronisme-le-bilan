@@ -157,6 +157,18 @@ la fiche.
 - **L'inventaire des références fabriquées est soldé.** 95 références au
   total sur le dossier, toutes remplacées par un texte réel ouvert et vérifié
   sur son contenu.
+- **Mesure de clôture, et non simple affirmation.** Le corpus entier a été
+  re-sondé après réparation : 895 sources distinctes, **PIEGE : 0**. Le
+  résultat est opposable parce que le portail n'a pas filtré ce run — 10
+  sources bloquées seulement, contre une centaine attendue si l'anti-robot
+  s'était déclenché. Reste 262 mortes, 16 déplacées, 607 vivantes.
+
+  > La leçon de méthode vaut d'être gardée : **une campagne de réparation se
+  > solde par une mesure, pas par un décompte de ses propres commits.** Le
+  > re-sondage a d'ailleurs immédiatement attrapé une source ajoutée le jour
+  > même, celle qui identifie l'ancien ministre suspendu de la Légion
+  > d'honneur, déplacée de `francebleu.fr` vers `ici.fr` : re-pointée dans la
+  > foulée.
 - À faire ensuite : 264 sources mortes, 15 déplacées.
 - À faire en dernier : la révision des pièces de jugement, groupée, une fois le
   corpus assaini. Aucun verdict n'a bougé à ce jour et aucun ne doit bouger

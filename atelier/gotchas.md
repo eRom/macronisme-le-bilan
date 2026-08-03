@@ -42,6 +42,14 @@ donc pas une précaution théorique, c'était une dette. Elle a été soldée le
 jour même, en quatre lots ; mode opératoire et pièges dans
 `notes/campagne-integrite-sources.md`.
 
+**Une campagne de réparation se solde par une mesure, pas par un décompte de
+ses propres commits.** Après avoir remplacé les 95 références, le corpus
+entier a été re-sondé : 895 sources, zéro piège. Le run a immédiatement
+attrapé une source ajoutée le jour même, déplacée d'un hôte de presse à un
+autre. Vérifier que la mesure est valide avant de s'en réjouir : ici, dix
+sources bloquées seulement prouvaient que l'anti-robot ne s'était pas
+déclenché, donc que le zéro portait sur des réponses réelles.
+
 **Écrire ses doutes dans la fiche est ce qui permet de les solder plus tard.**
 Deux fiches portaient, en toutes lettres, une réserve sur leur propre source :
 « l'identifiant cité ne résout vers aucun texte », « le run associait ce

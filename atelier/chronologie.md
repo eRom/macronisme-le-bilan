@@ -38,10 +38,16 @@ avant le sondage général, soit 95 au total sur le dossier.
 | 2 | `ecologie-energie` et `education-recherche`, soldés en entier | ✔ 03/08/2026, 31 entrées, 24 fiches |
 | 3 | `justice-affaires`, `promesses`, `libertes-publiques`, `economie`, soldés en entier | ✔ 03/08/2026, 34 entrées, 26 fiches |
 | 4 | la traîne : `europe`, `industrie`, `securite-immigration`, `finances-publiques`, `retraites-social` | ✔ 03/08/2026, 10 entrées, 9 fiches |
-| 5 | 264 sources mortes, 15 déplacées | ouvert |
+| 5 | 262 sources mortes, 16 déplacées (mesure du 03/08/2026 après réparation) | ouvert |
 | 6 | révision groupée des pièces de jugement | bloqué tant que le corpus n'est pas assaini |
 
-**Les 95 références sont traitées.** Un seul grade a bougé, et vers le haut :
+**Les 95 références sont traitées, et le résultat est mesuré.** Le corpus
+entier a été re-sondé après réparation : 895 sources distinctes ouvertes une
+par une, **zéro piège**. Le chiffre est opposable parce que le portail n'a
+pas filtré ce run, avec dix sources bloquées seulement là où un déclenchement
+de l'anti-robot en aurait produit une centaine.
+
+Un seul grade a bougé, et vers le haut :
 la fiche vidéosurveillance algorithmique passe de B à A, le doute qui la
 tenait en B portant précisément sur l'URL retrouvée. C'est la mesure du
 défaut : l'appareil de sourçage était cassé, pas le dossier.
