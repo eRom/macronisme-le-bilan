@@ -119,10 +119,11 @@ préservés, présenté par le Président lui-même à « autour de 270 salarié
 repris », et 162 réembauches effectives au démarrage
 ([[2017-07-13-whirlpool-reprise-wn]], grade B), liquidation de WN en 2019 avec
 44 emplois repris ([[2019-07-30-whirlpool-liquidation-wn]], grade A), puis
-liquidation du dernier repreneur et licenciements annulés par le juge, la cause
-économique n'étant pas caractérisée
-([[2021-03-31-whirlpool-ageco-liquidation]], grade A) : zéro emploi industriel
-au terme, quatre ans après la promesse. Ascoval : deux repreneurs successifs
+licenciements annulés par le juge pour absence de réalité du motif économique,
+puis reprise partielle du dernier repreneur en 2021, 36 salariés sur 81
+conservés et l'activité déménagée hors du site
+([[2021-03-31-whirlpool-ageco-liquidation]], grade A) : plus d'activité
+industrielle sur le site d'Amiens quatre ans après la promesse. Ascoval : deux repreneurs successifs
 adoubés par l'État défaillants, dont Altifort aux « garanties trompeuses »
 reconnues par Bercy et British Steel liquidée vingt jours après un prêt d'État
 de 25 M€ ([[2019-02-21-ascoval-echecs-reprises]], grade A). Bridgestone
