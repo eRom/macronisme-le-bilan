@@ -131,6 +131,28 @@ est daté et opposable, mais son contenu est en accès protégé : il ne nomme
 publiquement ni l'intéressé ni la sanction. Le citer seul ne prouve rien ; il
 faut le doubler de la source qui identifie, et dire laquelle établit quoi.
 
+**Avant d'accuser l'outil, sonder un témoin.** Neuf URL Légifrance de forme
+`codes/article_lc/LEGIARTI...` répondaient 404, et l'explication commode était
+que Légifrance bloque les automates. Elle a tenu une journée. Le sondage groupé
+des dix URL de cette forme présentes dans le corpus a montré qu'une répond 200
+avec son contenu : la forme fonctionne, ce sont les neuf identifiants qui ne
+résolvent pas. **Toute défaillance imputée à un portail se teste sur une adresse
+du même hôte et de la même forme dont on sait qu'elle est bonne.** Sans ce
+témoin, « le site refuse les robots » couvre indifféremment un blocage réel et
+neuf références fabriquées.
+
+À noter, parce que c'est ce qui a brouillé le diagnostic : sur Légifrance,
+`curl` reçoit 403 quel que soit l'en-tête, là où `fetch` reçoit 200 avec le même
+agent utilisateur. Deux mécanismes, deux réponses. Ne jamais conclure à la mort
+d'une source sur un seul.
+
+**Pour citer un article de code, citer la loi qui le crée.** Un identifiant
+`LEGIARTI` est opaque, invérifiable de tête et périssable. Le texte de la loi
+contient l'article mot pour mot et son adresse se construit à partir de deux
+informations que la fiche possède déjà, le numéro et la date :
+`legifrance.gouv.fr/eli/loi/AAAA/M/J/NUMERO/jo/texte`. Six lois sondées sous
+cette forme, six fois 200.
+
 **Un rapport de commission porte les chiffres du projet, la loi ceux du texte
 voté.** Sur le Fonds vert, le rapport sénatorial donne 650 M€ d'autorisations
 d'engagement au PLF 2026 quand la loi promulguée en retient 837. Les deux

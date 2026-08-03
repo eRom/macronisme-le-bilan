@@ -116,9 +116,27 @@ la campagne précédente a passé une journée à éradiquer.
 > **Un 200 et un nom ne font pas une source.** Il faut l'élément de contenu que
 > la fiche affirme.
 
-Second piège, déjà connu mais aggravé ici : Légifrance répond **403** à `curl` et
-**404** à la récupération de page. Une URL Légifrance classée MORTE doit être
-re-sondée par l'autre mécanisme avant d'être déclarée morte.
+Second piège, écrit ici le 03/08/2026 puis **démenti le jour même**, et le
+démenti vaut plus que le piège. La note disait : Légifrance répond 403 à `curl`
+et 404 à la récupération de page, donc une URL Légifrance classée MORTE doit
+être re-sondée avant d'être déclarée morte. C'était une excuse, pas un
+diagnostic.
+
+La contre-épreuve : les dix URL de forme `legifrance.gouv.fr/codes/article_lc/`
+du corpus ont été sondées ensemble. **Une répond 200 avec son contenu**
+(`LEGIARTI000021544350`, article R\*1122-1 du code de la défense), les neuf
+autres répondent 404. La forme d'URL fonctionne donc, et un 404 sur cette forme
+est un signal, pas un artefact : l'identifiant ne résout pas.
+
+> Avant de mettre une défaillance sur le compte de l'outil, sonder une adresse
+> du même hôte et de la même forme dont on sait qu'elle est bonne. Sans ce
+> témoin, « le site bloque les automates » couvre indifféremment un blocage et
+> neuf identifiants fabriqués.
+
+Les 403 de `curl`, eux, sont réels : Légifrance refuse `curl` quel que soit
+l'en-tête. C'est `fetch` qui passe, avec le même agent utilisateur. Deux
+mécanismes, deux résultats, et c'est le désaccord entre eux qui a masqué le
+problème pendant une journée.
 
 ## Ce que coûte une fiche
 
@@ -135,6 +153,42 @@ le plus.
 même ordre que la campagne d'intégrité. Ne pas la sous-estimer, et ne pas la
 faire à moitié : une source remplacée sans vérification de contenu est pire que
 l'adresse morte qu'elle remplace, parce qu'elle a l'air réparée.
+
+## Le lot Légifrance, ou ce qu'on trouve en tirant sur le fil
+
+Les deux orphelines Légifrance de la liste ont ouvert un défaut plus large que
+lui-même. Neuf fiches, dont sept qui n'étaient pas orphelines et n'apparaissaient
+donc sur aucune liste, citaient un identifiant d'article qui ne résout pas.
+
+La réparation ne consiste pas à retrouver l'article : elle consiste à **citer la
+loi qui le crée**. Le texte de la loi contient l'article mot pour mot, il porte
+un identifiant stable, et sa forme ELI
+(`legifrance.gouv.fr/eli/loi/AAAA/M/J/NUMERO/jo/texte`) se construit à partir du
+numéro et de la date de la loi, deux informations que la fiche possède déjà.
+Sondée sur les six lois concernées, elle a répondu 200 six fois. C'est la forme
+à préférer désormais pour tout renvoi à un texte législatif.
+
+Ce que la vérification a rapporté au passage, et qui est le vrai gain :
+
+- **Une citation fabriquée.** La fiche des zones d'accélération attribuait à la
+  loi APER une phrase entre guillemets, « n'emporte pas délivrance des
+  autorisations administratives nécessaires », absente du texte. Le fond
+  tenait, la forme non. Réécrite sur ce que la loi dit réellement, la fiche est
+  plus dure qu'avant : le seul effet propre au classement en zone
+  d'accélération est un délai d'enquête publique de quinze jours.
+- **Une portée juridique élargie.** L'exception de presse du secret des
+  affaires ne joue qu'« à l'occasion d'une instance », en défense devant le
+  juge. Une fiche qui la présente comme une immunité générale surestime la
+  décharge.
+- **Trois affirmations confirmées au mot près** qui ne l'étaient pas : le « oui
+  si » de la loi ORE (« subordonnée à l'acceptation, par ce dernier »), la durée
+  des chaires de professeur junior (« ne peut être inférieure à trois ans et ne
+  peut être supérieure à six ans »), le taux de 20 % de la contribution
+  différentielle sur les hauts revenus.
+
+> Une source morte n'est pas seulement une adresse à réparer. C'est le seul
+> moment où quelqu'un rouvre le document, et donc le seul moment où l'écart
+> entre ce que la fiche affirme et ce que la source établit redevient visible.
 
 ## Les trois voies de récupération, et laquelle marche quand
 
@@ -216,9 +270,18 @@ venus d'un moteur qui préférait inventer une réponse plausible au silence.
 4. Les 15 déplacées, les moins graves : `curl -sIL -w '%{url_effective}'` donne
    la cible, il reste à vérifier que c'est le bon document.
 
-Fait au 03/08/2026, trois fiches, commits `2a250b2` et `9a42fc5` (auditions
-Benalla, fiche puis pièce) et `f6765d0` (LBD, contrôles aux frontières). **Reste
-101 orphelines.**
+Fait au 03/08/2026, en trois passes :
+
+| Commits | Objet |
+|---|---|
+| `2a250b2`, `9a42fc5` | auditions Benalla, fiche puis pièce `justice-affaires` |
+| `f6765d0` | LBD, contrôles aux frontières intérieures |
+| `a4f6929`, `f343449` | lot Légifrance : neuf fiches, puis pièce `libertes-publiques` |
+
+**Reste 99 orphelines**, les deux orphelines Légifrance étant réparées avec le
+lot. Les sept autres fiches du lot n'étaient pas orphelines : leur défaut ne
+figurait sur aucune liste, il a été trouvé en tirant sur le fil des deux
+premières.
 
 En attente, non résolues par aucune des trois voies : le communiqué Bercy du
 05/09/2017 sur la cession Engie (`2017-09-05-cession-engie`, source unique) et
