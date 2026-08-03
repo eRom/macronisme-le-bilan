@@ -264,3 +264,21 @@ annoncé par une pièce est une affirmation vérifiable comme les autres.
 > La règle : **le contrat de reprise dit où regarder, il ne dit pas où ne pas
 > regarder.** Avant de réviser une pièce, recalculer son périmètre plutôt que
 > de le lire dans la note.
+
+**Le sujet de commit d'une pièce de jugement encode son verdict : le lire au
+frontmatter, ne jamais le deviner.** La convention est `jugement <domaine>
+(<verdict>)`. Sur quinze domaines dont treize sont défavorables, la pente est de
+taper « defavorable » par habitude : `promesses` (mitigé) et `europe`
+(défavorable) sont parties avec l'inverse le 03/08/2026, et il a fallu réécrire
+l'historique local pour les corriger. Un `awk -F': ' '/^verdict:/{print $2}'`
+avant d'écrire le message coûte une seconde.
+
+Corollaire sur la réécriture elle-même, appris à la dure le même jour : `git
+cherry-pick` **n'accepte pas** `-q`. Un script qui l'appelle ainsi échoue à
+chaque tour, et si le `git commit --amend` qui suit n'est pas conditionné à la
+réussite du cherry-pick, il amende le commit sur lequel on se trouve, c'est-à-dire
+le mauvais. Trois garde-fous : brancher une sauvegarde avant de toucher à
+l'historique, tester le code de retour de chaque cherry-pick, et **comparer les
+arbres avant de déplacer la branche** (`git rev-parse <branche>^{tree}` des deux
+côtés doit donner le même hash). C'est ce dernier contrôle qui prouve qu'une
+réécriture de messages n'a pas mangé de contenu.

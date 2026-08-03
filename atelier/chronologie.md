@@ -38,7 +38,7 @@ avant le sondage général, soit 95 au total sur le dossier.
 | 2 | `ecologie-energie` et `education-recherche`, soldés en entier | ✔ 03/08/2026, 31 entrées, 24 fiches |
 | 3 | `justice-affaires`, `promesses`, `libertes-publiques`, `economie`, soldés en entier | ✔ 03/08/2026, 34 entrées, 26 fiches |
 | 4 | la traîne : `europe`, `industrie`, `securite-immigration`, `finances-publiques`, `retraites-social` | ✔ 03/08/2026, 10 entrées, 9 fiches |
-| 5 | **révision des pièces de jugement**, onze sur seize concernées | en cours, `notes/revision-jugements-post-integrite.md` — `ecologie-energie` ✔ 03/08/2026 |
+| 5 | **révision des pièces de jugement** | ✔ 03/08/2026, treize pièces sur quinze, aucun verdict déplacé ; synthèse à part |
 | 6 | 262 sources mortes, 16 déplacées (mesure du 03/08/2026 après réparation) | ouvert, après la révision |
 
 Les deux derniers lots ont été **intervertis** le soir du 03/08. L'ordre
@@ -86,7 +86,7 @@ redécouvrir. C'est la contrepartie utile d'un dossier qui publie ses échecs.
 Mode opératoire et pièges dans `notes/campagne-integrite-sources.md`,
 inventaire dans `references-fabriquees.md`.
 
-### Révision des jugements, première pièce (03/08/2026)
+### Révision des jugements (03/08/2026)
 
 `ecologie-energie` est révisée, verdict inchangé, huit points bougés. La
 décharge qui s'appuyait sur le jugement d'exécution de l'Affaire du Siècle
@@ -104,6 +104,30 @@ a trouvé trois fiches de grade A non citées sur deux domaines, et **deux
 comptes déjà faux au 31/07** sur deux autres. Procédé versé aux
 `gotchas.md`, tableau des écarts dans
 `notes/revision-jugements-post-integrite.md`.
+
+Les douze pièces suivantes ont été révisées dans la foulée. Le contrôle a
+encore élargi le périmètre : le contrat de reprise annonçait onze pièces
+concernées, il y en avait treize, `retraites-social` et `sante` s'étant
+révélées touchées par le croisement des 62 fiches modifiées au fond avec les
+fiches citées. `international` et `securite-civile` gardent leur
+`date_verdict` au 31/07 : rien n'a bougé chez elles, et la date le dit.
+
+**Aucun verdict n'a été déplacé.** Ce que la révision a corrigé est presque
+toujours de nature juridique : une formation de juridiction (le barème Macron
+validé par la chambre sociale et non par l'assemblée plénière), une nature
+d'acte (nomination au Conseil constitutionnel par décision et non par décret),
+un fondement de secret (délibérations du Gouvernement et non classification
+défense), une motivation de juge (le Conseil d'État exigeait une menace
+« nouvelle », la pièce lui prêtait la « persistance » de la menace). Deux
+inversions de sens seulement, l'Affaire du Siècle et la contra-cyclicité de
+l'assurance chômage. Le reste a resserré des limites, des deux côtés de la
+balance.
+
+Trois éléments sont entrés au dossier par le seul contrôle de périmètre :
+PISA 2022, qui fermait un trou nommé servant de motif au verdict
+d'`education-recherche` ; l'abandon d'ASTRID, qui borne la décharge nucléaire
+d'`industrie` ; la loi école de la confiance, qui rejoint la décharge sur la
+priorité au primaire.
 
 ## À re-vérifier (points ouverts hérités des recherches)
 

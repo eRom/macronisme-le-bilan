@@ -135,17 +135,67 @@ Les onze autres pièces annoncent juste. Pour les deux premières lignes, la
 question est de fond : citer la fiche ou dire pourquoi on ne la cite pas.
 Pour les deux dernières, c'est une correction de chiffre.
 
+**Le premier des deux contrôles a payé encore plus.** Passé sur les seize
+pièces, il a montré que le tableau des points ci-dessus, bâti sur la campagne
+d'intégrité, ne voyait qu'une partie du gisement : **62 fiches ont changé au
+fond**, et deux pièces déclarées hors périmètre par ce contrat en citaient
+(`retraites-social`, cinq fiches ; `sante`, une). Le tri se fait en une
+commande, en excluant les lignes d'URL du diff :
+
+```bash
+for f in $(cat /tmp/mod.txt); do
+  d=$(git diff <base>..HEAD -- "base/$f.md" | grep '^[+-]' | grep -v '^[+-][+-]' | grep -v http)
+  [ -n "$d" ] && echo "$f"
+done > /tmp/fond.txt
+grep -oFf /tmp/fond.txt jugement/<domaine>.md | sort -u
+```
+
+Sans ce tri, la plupart des 62 sont des gains de précision sans effet sur les
+pièces (numéro de décision ajouté, article cité). Avec lui, on lit les diffs et
+on voit lesquelles renversent une affirmation.
+
 ## Ordre de travail
 
 1. ~~**`ecologie-energie`** en premier~~ **FAIT** le 03/08, commit `80ca9a1`.
-2. Puis les dix autres pièces, en passe groupée. Chacune n'a qu'un à trois
-   points du tableau, **plus le contrôle de périmètre** de la section
-   précédente, qui en ajoute sur quatre d'entre elles.
+2. ~~Puis les dix autres pièces~~ **FAIT** le 03/08. Douze pièces révisées au
+   total, pas dix : le contrôle de périmètre en a ajouté deux que ce contrat
+   déclarait hors périmètre (`retraites-social` et `sante`).
 3. **La synthèse en dernier**, une fois les quinze arrêtées : re-tester les
    fils transverses qui citent un domaine révisé, re-motiver le verdict
    d'ensemble si besoin.
 
 Commit dédié par pièce, convention du dépôt : `jugement <domaine> (<verdict>)`.
+**Lire le `verdict:` au frontmatter avant d'écrire le sujet**, il ne se devine
+pas : `promesses` et `europe` ont été committées avec le mauvais verdict au
+sujet le 03/08, et il a fallu réécrire l'historique local pour les corriger.
+
+## État au 03/08/2026
+
+Treize pièces sur quinze révisées, aucun verdict déplacé. Deux gardent le
+31/07 parce qu'aucune de leurs fiches n'a bougé au fond et que leur périmètre
+annoncé était juste : `international` et `securite-civile`. La date fait
+désormais signal.
+
+| Pièce | Verdict | Ce qui a bougé |
+|---|---|---|
+| ecologie-energie | défavorable | 8 points, dont l'inversion de l'Affaire du Siècle et l'entrée d'ASTRID |
+| education-recherche | défavorable | PISA 2022 ferme un trou nommé qui motivait le verdict ; loi école de la confiance en décharge ; choc des savoirs requalifié |
+| justice-affaires | défavorable | deux décisions non publiées sur les portails, dit au périmètre ; LOPJ en emplois nets |
+| institutions | défavorable | base juridique du conseil de défense (R\* 1122-1) sous la charge 4 |
+| economie | défavorable | barème Macron : chambre sociale et non assemblée plénière, deux arrêts distincts |
+| promesses | mitigé | la revalorisation enseignante n'est pas inconditionnelle ; plafond charbon borné dans le temps |
+| libertes-publiques | défavorable | VSA B → A ; encadrement GendNotes au texte ; « menace nouvelle » |
+| securite-immigration | défavorable | « menace nouvelle » (motivation inversée) ; réserve Mayotte ; décision du Conseil constitutionnel |
+| industrie | défavorable | ASTRID en bornage de la décharge 2 ; seuil de 78 €/MWh hors de la loi |
+| europe | défavorable | « menace nouvelle » ; réserve de datation PNRR |
+| finances-publiques | défavorable | Fonds vert : 650 M€ au projet, 837 M€ au vote ; réserve PNRR |
+| retraites-social | défavorable | contra-cyclicité : condition de réouverture et non de maintien ; barème et garde-fou familial du décret RSA |
+| sante | défavorable | le fondement de l'opacité est le secret des délibérations, pas une classification défense |
+
+Aucune charge déterminante n'est tombée, aucune décharge n'a disparu. Les
+corrections ont surtout resserré des qualifications juridiques (formation de
+juridiction, nature de l'acte, fondement du secret, motivation exacte du juge)
+et rendu des limites plus honnêtes des deux côtés.
 
 ## `date_verdict` : tranché
 
