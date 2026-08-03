@@ -151,7 +151,7 @@ commission d'enquête du Sénat chiffre les aides publiques aux entreprises à
 suppressions d'emplois ([[2025-07-01-senat-aides-publiques-211-mds]], grade A).
 La Cour des comptes, sur dix ans de politiques industrielles, conclut à des
 « résultats encore fragiles » malgré la forte progression des moyens
-([[2024-11-19-cour-comptes-dix-ans-industrie]], grade A). Ce qui limite la
+([[2024-11-28-cour-comptes-dix-ans-industrie]], grade A). Ce qui limite la
 charge : les crédits d'investissement se décaissent au rythme d'avancement des
 projets et un démarrage lent n'équivaut pas à une annulation, l'évaluation de
 l'IPP porte sur un horizon post-réforme court à formuler prudemment, et aucune

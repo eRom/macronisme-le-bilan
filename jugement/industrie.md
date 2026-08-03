@@ -41,12 +41,16 @@ Choose France réalisés ».
 
 **1. Dix ans de moyens massifs n'ont pas transformé la structure productive :
 le constat émane de la juridiction financière elle-même.** Le rapport « Dix ans
-de politiques publiques en faveur de l'industrie » du 19/11/2024
-([[2024-11-19-cour-comptes-dix-ans-industrie]], grade A) conclut à des
-« résultats encore fragiles » malgré la forte progression des moyens (France
-Relance, France 2030, baisses d'impôts de production) : la part de l'industrie
-manufacturière reste stable à un niveau faible, environ 10,4 % de la valeur
-ajoutée brute en 2024, contre 22 à 25 % en 1970. Le déficit manufacturier le
+de politiques publiques en faveur de l'industrie » du 28/11/2024
+([[2024-11-28-cour-comptes-dix-ans-industrie]], grade A) conclut à des
+« résultats encore fragiles » malgré la forte progression des moyens : la Cour
+chiffre les soutiens publics à 17 Md€ par an de 2012 à 2019, puis 26,8 Md€ par
+an de 2020 à 2022, pour une part de l'industrie manufacturière qui se stabilise
+entre 10 et 11 % du PIB. Son appréciation du rendement de cette dépense est
+frontale : les plans successifs de soutien à la réindustrialisation et à la
+numérisation donnent des résultats « peu concluants », l'impact des programmes
+d'investissement d'avenir « reste limité », et France 2030 « n'évite pas le
+risque de saupoudrage ». Le déficit manufacturier le
 confirme sur toute la période : record absolu hors énergie en 2022 (-82,5 Md€
 contre -57,8 Md€ en 2021, [[2023-02-07-deficit-commercial-record-2022]], grade
 A), toujours structurel en 2025 quand l'Allemagne dégage 200,4 Md€ d'excédent
@@ -191,7 +195,7 @@ de son niveau de 2019 malgré le retournement
 d'usines de Trendeo sont positifs de 2021 à 2023 (+125, +85, +31,
 [[2026-02-01-solde-usines-trendeo-vs-dge]], grade B), et la Cour des comptes
 constate une part manufacturière « stable », là où les décennies précédentes ne
-connaissaient que le recul ([[2024-11-19-cour-comptes-dix-ans-industrie]],
+connaissaient que le recul ([[2024-11-28-cour-comptes-dix-ans-industrie]],
 grade A). Portée exacte de cette décharge : l'arrêt de la chute est le premier
 agrégat favorable du domaine, et il est établi ; il borne la charge 1, il ne la
 renverse pas, puisque la structure n'a pas progressé et que l'acquis d'emploi
@@ -287,7 +291,7 @@ doctrine de l'État actionnaire inversée en cours de route sous les chocs
   est stable sur la période et l'emploi industriel net positif d'environ
   +103 000 ; la désindustrialisation est une tendance de cinquante ans. La
   charge en rupture se réfute d'une phrase
-  ([[2024-11-19-cour-comptes-dix-ans-industrie]],
+  ([[2024-11-28-cour-comptes-dix-ans-industrie]],
   [[2026-02-27-insee-emploi-industriel-retournement]]).
 - **« 130 000 emplois industriels créés. »** Décharge gouvernementale écartée :
   les séries INSEE établissent environ +103 000 ; à citer uniquement comme
@@ -378,6 +382,6 @@ renverser : la stabilisation n'est pas la réindustrialisation revendiquée, les
 livrables sont sectoriels et pour partie hérités ou de simple rétablissement,
 et aucune décharge ne répond à la charge centrale de la dépense sans effet
 mesuré. Les pièces qui pèsent le plus dans la balance :
-[[2024-11-19-cour-comptes-dix-ans-industrie]],
+[[2024-11-28-cour-comptes-dix-ans-industrie]],
 [[2025-10-17-ipp-impots-production-sans-effet]] et
 [[2026-02-27-insee-emploi-industriel-retournement]].
