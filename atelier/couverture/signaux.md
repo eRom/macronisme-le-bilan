@@ -8,4 +8,4 @@ une file de domaine.
 
 | Date | Signal | Canal | Domaine probable | Statut |
 |------|--------|-------|------------------|--------|
-| 2026-08-03 | Abandon d'ASTRID (2019) absent du corpus, relevé à l'occasion d'une reprise sociale | X | ecologie-energie | trié → T1 en matrice |
+| 2026-08-03 | Abandon d'ASTRID (2019) absent du corpus, relevé à l'occasion d'une reprise sociale | X | ecologie-energie | clos : fiche versée le 03/08/2026 |

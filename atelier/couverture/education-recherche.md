@@ -28,8 +28,8 @@ financement des universités. Il s'interdit en conséquence tout verdict sur
 | Accès au supérieur (Parcoursup, ORE, Mon Master) | OK | OK | OK | saturé | trois périodes couvertes, charges et décharges des deux côtés |
 | Condition étudiante | OK | partiel | TROU | partiel | réforme des bourses 2023 absente (ER-08), rien après 2023 |
 | Recherche publique (LPR et exécution) | OK | OK | OK | OK | annulations 2017 citées en limite de charge sans fiche dédiée, assumé |
-| École inclusive (AESH) | TROU | OK | — | partiel | rien avant 2022 alors que le cadre AESH naît en 2019 (ER-01) |
-| Acquis des élèves (PISA, TIMSS, niveau) | TROU | TROU | TROU | TROU | ER-02 ; trou nommé par le jugement |
+| École inclusive (AESH) | OK | OK | — | OK | cadre 2019 couvert par la fiche loi école de la confiance (ER-01 clos) |
+| Acquis des élèves (PISA, TIMSS, niveau) | TROU | OK | — | partiel | PISA 2022 versé le 03/08/2026 (ER-02 clos) ; évaluations nationales de niveau toujours absentes |
 | Mixité sociale, privé sous contrat | TROU | TROU | TROU | TROU | ER-05 ; trou nommé par le jugement |
 | Harcèlement scolaire | TROU | TROU | TROU | TROU | ER-04 ; trou nommé par le jugement |
 | Covid : écoles et continuité pédagogique | TROU | — | — | TROU | ER-03 ; décharge potentielle absente |
@@ -41,8 +41,8 @@ Statuts : `OK` | `partiel` | `TROU` | `hors-périmètre` | `abandonné` | `satur
 
 | ID | Type | Intitulé | Priorité | Source du signal | Statut |
 |---|---|---|---|---|---|
-| ER-01 | T1 | Loi « école de la confiance » (2019) : instruction à 3 ans, INSPE, cadre AESH | P1 | 2019 = zéro fiche (audit D2) ; loi structurante du canon externe | ouvert |
-| ER-02 | T1 | Acquis des élèves : PISA 2022 (publication 2023), évaluations de niveau | P1 | Trou nommé par le jugement ; le choc des savoirs en découle sans que la cause soit au dossier | ouvert |
+| ER-01 | T1 | Loi « école de la confiance » (2019) : instruction à 3 ans, INSPE, cadre AESH | P1 | 2019 = zéro fiche (audit D2) ; loi structurante du canon externe | clos (fiche versée le 03/08/2026) |
+| ER-02 | T1 | Acquis des élèves : PISA 2022 (publication 2023), évaluations de niveau | P1 | Trou nommé par le jugement ; le choc des savoirs en découle sans que la cause soit au dossier | clos (fiche versée le 03/08/2026) |
 | ER-03 | T4 | Covid : écoles maintenues ouvertes 2020-2021, continuité pédagogique | P1 | Passe adversariale ; décharge potentielle absente, à chercher d'abord | ouvert |
 | ER-04 | T1 | Harcèlement scolaire : plan pHARe, loi de 2022, séquence 2023 | P2 | Trou nommé par le jugement | ouvert |
 | ER-05 | T1 | Mixité sociale et privé sous contrat : protocole 2023 abandonné, financement | P2 | Trou nommé par le jugement | ouvert |
@@ -77,9 +77,11 @@ Aucun.
 
 Non saturé pour la v1 :
 
-1. Matrice : quatre lignes en TROU (acquis des élèves, mixité, harcèlement,
-   Covid), quatre en partiel.
+1. Matrice : trois lignes en TROU (mixité, harcèlement, Covid) depuis le
+   rattrapage du 03/08/2026, trois en partiel.
 2. Aucun P0 ouvert (aucune charge du jugement ne repose sur une pièce fausse
    ou morte).
-3. Trois P1 ouverts (ER-01, ER-02, ER-03) : le domaine attend une campagne de
-   couverture avant toute déclaration de saturation.
+3. P1 restant : ER-03 (décharge Covid, à chercher d'abord). ER-01 et ER-02
+   clos le 03/08/2026 ; le recheck de la pièce de jugement est dû, la limite
+   « aucune pièce sur les acquis des élèves » étant périmée — la pesée de
+   PISA 2022 en charge éventuelle passe par le test de contradiction.

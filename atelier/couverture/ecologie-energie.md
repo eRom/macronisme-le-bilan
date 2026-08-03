@@ -30,15 +30,15 @@ promulguée au jour du verdict.
 | Fiscalité carbone | OK | partiel | partiel | partiel | gel de 2018 couvert ; rendement du gel et affectation TICPE non chiffrés (EE-13) |
 | Nucléaire : parc existant, EPR, crise 2022 | OK | OK | OK | saturé | de Fessenheim au solde exportateur record |
 | Nucléaire : relance (Belfort, loi 2023, EPR2) | — | OK | partiel | partiel | l'angle 50 % et l'annonce sont couverts ; l'exécution EPR2 après l'annonce ne l'est pas (EE-10) |
-| Nucléaire : 4e génération (ASTRID) | TROU | — | — | TROU | EE-01 ; abandon 2019, aucune fiche |
+| Nucléaire : 4e génération (ASTRID) | OK | — | — | OK | EE-01 clos : fiche versée au rattrapage du 03/08/2026 |
 | Renouvelables (EnR 2020, éolien, solaire, APER, PPE) | OK | OK | OK | saturé | PPE 3 couverte par la planification par décrets |
 | Prix et marché de l'électricité (boucliers, Arenh, VNU) | OK | OK | OK | OK | trois fiches B dont le VNU (EE-12) |
 | Fossiles : charbon, gaz | partiel | partiel | OK | partiel | redémarrage de Saint-Avold 2022-2023 seulement effleuré par la fiche Cordemais (EE-08) |
 | Pesticides (glyphosate, Écophyto, Duplomb) | OK | OK | OK | saturé | suite de la loi d'urgence agricole en veille (EE-04) |
 | Biodiversité hors pesticides (OFB, SNB, ZAN) | TROU | partiel | partiel | partiel | EE-07 ; seul le ZAN est couvert |
-| Eau (bassines, police de l'eau, plan Eau) | — | partiel | OK | partiel | Plan Eau 2023 absent (EE-06) ; rapport police de l'eau non résolu (EE-02) |
+| Eau (bassines, police de l'eau, plan Eau) | — | partiel | OK | partiel | Plan Eau 2023 absent (EE-06) ; rapport police de l'eau résolu, fiche en A (EE-02 clos) |
 | Rénovation énergétique (MaPrimeRénov', DPE, CEE) | TROU | OK | OK | OK | création 2020 absente (EE-15), effets bien couverts |
-| Mobilités (LOM, ZFE, vols, leasing, vélo) | TROU | OK | OK | partiel | la LOM de 2019, acte fondateur des ZFE, est absente (EE-05) ; rapport plan vélo non résolu (EE-03) |
+| Mobilités (LOM, ZFE, vols, leasing, vélo) | TROU | OK | OK | partiel | la LOM de 2019, acte fondateur des ZFE, est absente (EE-05) ; rapport plan vélo résolu via le bilan LOM, fiche en A (EE-03 clos) |
 | Convention citoyenne (volet écologique) | OK | OK | OK | saturé | décompte 146/149 jamais tranché (EE-14) |
 | Feux de forêt (cadrage, série, prévention) | OK | OK | OK | saturé | protégé par la note de cadrage BDIFF/EFFIS |
 | Gouvernance ministérielle du domaine | OK | OK | partiel | partiel | portefeuilles 2025-2026 à reconstruire sur Légifrance (EE-11) |
@@ -50,9 +50,9 @@ Statuts : `OK` | `partiel` | `TROU` | `hors-périmètre` | `abandonné` | `satur
 
 | ID | Type | Intitulé | Priorité | Source du signal | Statut |
 |---|---|---|---|---|---|
-| EE-01 | T1 | Abandon d'ASTRID (2019) : sortie de la 4e génération / neutrons rapides | P1 | Signal social trié (signaux.md) + canon filière ; aucune fiche nucléaire en 2019 | ouvert |
-| EE-02 | T5 | Rapport Cour des comptes 2026 « police de l'eau » : page de publication à retrouver, fiche B à rehausser | P1 | Limite d'entrée du jugement ; rattrapage ciblé trivial | ouvert |
-| EE-03 | T5 | Rapport Cour des comptes 2026 « plan vélo » : idem, fiche B à rehausser | P1 | Limite d'entrée du jugement ; rattrapage ciblé trivial | ouvert |
+| EE-01 | T1 | Abandon d'ASTRID (2019) : sortie de la 4e génération / neutrons rapides | P1 | Signal social trié (signaux.md) + canon filière ; aucune fiche nucléaire en 2019 | clos (fiche versée le 03/08/2026) |
+| EE-02 | T5 | Rapport Cour des comptes 2026 « police de l'eau » : page de publication à retrouver, fiche B à rehausser | P1 | Limite d'entrée du jugement ; rattrapage ciblé trivial | clos (résolu le 03/08/2026, fiche en A) |
+| EE-03 | T5 | Rapport Cour des comptes 2026 « plan vélo » : idem, fiche B à rehausser | P1 | Limite d'entrée du jugement ; rattrapage ciblé trivial | clos (résolu le 03/08/2026 via le bilan LOM, fiche en A, date corrigée au 02/04) |
 | EE-04 | T6 | Loi d'urgence agricole : décision du Conseil constitutionnel puis promulgation | P1 | Pièce en cours non pesée par le jugement ; réévaluation promise par l'écarté n° 7 | veille (décision attendue fin août 2026) |
 | EE-05 | T1 | LOM (2019) : création des ZFE, fin des ventes thermiques 2040, forfait mobilités | P2 | Ligne mobilités vide avant 2023 ; la saga ZFE n'a pas son acte fondateur | ouvert |
 | EE-06 | T1 | Plan Eau (mars 2023) : annonce présidentielle, 53 mesures | P2 | Ligne eau réduite au contentieux | ouvert |
@@ -89,9 +89,11 @@ Aucun (le signal ASTRID est trié, voir EE-01 et `signaux.md`).
 
 Non saturé pour la v1 :
 
-1. Matrice : une ligne TROU (ASTRID), huit lignes partielles sur dix-huit.
-2. Aucun P0 ouvert : les deux rapports Cour des comptes non résolus sont
-   contenus par leur grade B et la réserve explicite du jugement, aucune
-   charge ne repose sur eux.
-3. Trois P1 actionnables (EE-01, EE-02, EE-03) et un P1 en veille (EE-04) :
-   campagne de couverture à prévoir avant toute déclaration de saturation.
+1. Matrice : plus aucune ligne TROU depuis le rattrapage du 03/08/2026,
+   huit lignes partielles sur dix-huit.
+2. Aucun P0 ouvert.
+3. P1 restant : EE-04 en veille (décision du Conseil constitutionnel
+   attendue fin août 2026). Le recheck de la pièce de jugement est dû :
+   limite d'entrée sur les deux rapports Cour des comptes désormais
+   résolus, mention « grade B » périmée dans la charge 3, pesée éventuelle
+   d'ASTRID dans la charge « zigzag énergétique ».
