@@ -11,10 +11,10 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000046011488
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000046013941
 ---
 
-Nommée le 20/05/2022, Amélie de Montchalin est battue au second tour des législatives du 19/06/2022 dans la 6e circonscription de l'Essonne (46,64 % contre 53,36 % à Jérôme Guedj). Le décret du 04/07/2022 (JORF n° 0154 du 05/07/2022, NOR HRUX2219577D) met fin à ses fonctions, en application de la règle liant maintien au gouvernement et victoire électorale. Christophe Béchu lui succède : sixième titulaire du ministère de l'Écologie en cinq ans.
+Nommée le 20/05/2022, Amélie de Montchalin est battue au second tour des législatives du 19/06/2022 dans la 6e circonscription de l'Essonne (46,64 % contre 53,36 % à Jérôme Guedj). Le décret du 04/07/2022 relatif à la composition du Gouvernement (JORF n° 0154 du 05/07/2022) met fin à ses fonctions de ministre de la transition écologique et de la cohésion des territoires, en application de la règle liant maintien au gouvernement et victoire électorale. Christophe Béchu lui succède au même portefeuille par l'article 2 du même décret : sixième titulaire du ministère de l'Écologie en cinq ans.
 
 Séquence complète des titulaires depuis 2017 : Nicolas Hulot, François de Rugy, Élisabeth Borne, Barbara Pompili, Amélie de Montchalin, Christophe Béchu, Agnès Pannier-Runacher, Monique Barbut. Deux départs sur rupture publique ([[2018-08-28-demission-hulot]], [[2026-07-22-demission-refusee-barbut]]), un sur affaire ([[2019-07-16-demission-de-rugy]]), un sur défaite électorale.
 

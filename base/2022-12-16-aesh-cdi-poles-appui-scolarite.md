@@ -11,11 +11,11 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000046752317
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000046751169
   - https://www.conseil-constitutionnel.fr/decision/2023/2023862DC.htm
   - https://www.education.gouv.fr/bo/2024/Hebdo27/MENE2416076C
 ---
 
-L'accès au CDI pour les accompagnants d'élèves en situation de handicap (AESH) a été ramené de 6 à 3 ans (loi du 16 décembre 2022, décret du 13 juillet 2023). Les pôles d'appui à la scolarité (PAS) ont d'abord été censurés par le Conseil constitutionnel comme cavalier budgétaire (décision n° 2023-862 DC du 28 décembre 2023) avant d'être déployés par circulaire du 3 juillet 2024, en préfiguration dans quatre départements (Aisne, Côte-d'Or, Eure-et-Loir, Var).
+L'accès au CDI pour les accompagnants d'élèves en situation de handicap (AESH) a été ramené de 6 à 3 ans (loi n° 2022-1574 du 16 décembre 2022 visant à lutter contre la précarité des AESH et des assistants d'éducation, décret n° 2023-597 du 13 juillet 2023). Les pôles d'appui à la scolarité (PAS) ont d'abord été censurés par le Conseil constitutionnel comme cavalier budgétaire (décision n° 2023-862 DC du 28 décembre 2023) avant d'être déployés par circulaire du 3 juillet 2024, en préfiguration dans quatre départements (Aisne, Côte-d'Or, Eure-et-Loir, Var).
 
 Textes et décision établis (grade A). L'écart entre l'ambition inclusive et les moyens accordés aux AESH (rémunération, temps incomplet) reste une critique récurrente des rapports parlementaires.

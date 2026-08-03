@@ -11,10 +11,10 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037227443/
+  - https://www.legifrance.gouv.fr/loda/id/LEGITEXT000037208167
   - https://www.education.gouv.fr/les-notes-d-information-de-la-depp-9799
   - https://www.vie-publique.fr/rapport/284484-place-des-mathematiques-dans-la-voie-generale-du-lycee-general
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047006093
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047005229
   - https://collectif-maths-sciences.fr/wp-content/uploads/2022/03/Note-Mixite-Mars2022.pdf
 ---
 

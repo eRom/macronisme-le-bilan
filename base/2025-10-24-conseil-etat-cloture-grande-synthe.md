@@ -11,10 +11,10 @@ grade: A
 statut: null
 sources:
   - https://www.conseil-etat.fr/actualites/emissions-de-gaz-a-effet-de-serre-le-conseil-d-etat-cloture-le-contentieux-grande-synthe-estimant-que-l-objectif-de-reduction-de-40-pour-2030-est-en-voie-d-etre-atteint
-  - https://www.legifrance.gouv.fr/ceta/id/CETATEXT000052309825
+  - https://www.legifrance.gouv.fr/ceta/id/CETATEXT000052431885
 ---
 
-Le 24/10/2025, le Conseil d'État clôt la procédure d'exécution ouverte en 2019 et rejette la demande d'astreinte semestrielle de 75 M€. Il estime que l'objectif de réduction de 40 % des émissions d'ici 2030 par rapport à 1990 est « en voie d'être atteint », en s'appuyant sur la baisse marquée de 2023 et sur les mesures structurelles prises.
+Le 24/10/2025, le Conseil d'État (n° 467982) déclare ses décisions du 01/07/2021 et du 10/05/2023 entièrement exécutées, clôt la procédure d'exécution ouverte en 2019 et rejette la demande d'astreinte semestrielle de 75 M€. Il estime que l'objectif de réduction de 40 % des émissions d'ici 2030 par rapport à 1990 est « en voie d'être atteint », en s'appuyant sur la baisse marquée de 2023 et sur les mesures structurelles prises.
 
 Conséquence d'ensemble : les deux contentieux climatiques emblématiques du quinquennat, l'Affaire du Siècle ([[2023-12-22-affaire-du-siecle-astreinte-rejetee]]) et Grande-Synthe ([[2020-11-19-conseil-etat-grande-synthe-i]]), se sont soldés sans aucune sanction financière pour l'État, cinq ans après la première reconnaissance de carence fautive.
 

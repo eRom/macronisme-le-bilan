@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047573429
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047571222
 ---
 
 Le décret n° 2023-385 du 22/05/2023, publié le 23/05, applique l'interdiction des vols intérieurs doublés d'une alternative ferroviaire de moins de 2h30. Le champ effectif se limite à trois liaisons au départ de Paris-Orly (Nantes, Lyon, Bordeaux), la condition exigeant une liaison ferroviaire directe et sans correspondance. Le décret n'est applicable que pour trois ans.

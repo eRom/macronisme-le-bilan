@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000050685243
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000050690951
 ---
 
 Le décret n° 2024-1084 du 29/11/2024, publié au JO le 01/12, supprime la prime à la conversion pour l'acquisition d'un véhicule à compter du 02/12/2024, ainsi que la surprime accordée aux habitants ou travailleurs des zones à faibles émissions.

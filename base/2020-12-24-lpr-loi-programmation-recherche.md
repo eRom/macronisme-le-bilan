@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000042730303
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000042738027
   - https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042740927
   - https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042741006
 ---

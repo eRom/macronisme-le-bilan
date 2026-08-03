@@ -10,10 +10,10 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.legifrance.gouv.fr/ceta/id/CETATEXT000043135606
+  - https://paris.tribunal-administratif.fr/decisions-de-justice/dernieres-decisions/l-affaire-du-siecle
 ---
 
-Le 03/02/2021, le tribunal administratif de Paris juge que l'État a commis une faute en ne respectant pas le premier budget carbone (2015-2018) et le reconnaît responsable d'une fraction du préjudice écologique. Il le condamne à un euro symbolique au titre du préjudice moral et ordonne un supplément d'instruction sur les mesures de réparation.
+Le 03/02/2021, le tribunal administratif de Paris (n° 1904967-1904968-1904972-1904976) juge que l'État a commis une faute en ne respectant pas le premier budget carbone (2015-2018) et le reconnaît responsable d'une fraction du préjudice écologique. Il le condamne à un euro symbolique au titre du préjudice moral et ordonne un supplément d'instruction sur les mesures de réparation.
 
 Première reconnaissance judiciaire en France d'une carence fautive de l'État en matière climatique, à l'initiative de Notre Affaire à Tous, Oxfam France, Greenpeace France et la Fondation Nicolas Hulot.
 

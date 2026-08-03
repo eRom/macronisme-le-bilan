@@ -10,8 +10,8 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048063007
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048063059
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047963959
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047963979
   - https://www.fsu.fr/communique-de-presse-intersyndical-voie-professionnelle-le-pacte-lycee-pro-cest-non/
 ---
 
