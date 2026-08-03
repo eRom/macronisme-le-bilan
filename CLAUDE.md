@@ -196,15 +196,20 @@ large que l'événement ne l'exige.
 ## Prolonger jusqu'en 2027
 
 Le socle s'arrête au 30/07/2026, les verdicts au 31/07/2026. Pour couvrir la
-période jusqu'à mai 2027, deux régimes possibles :
+période jusqu'à mai 2027, trois régimes possibles :
 
 - **Veille par événement** (recommandé) : chaque événement majeur passe par le
   contrat de réouverture ci-dessus. Coût faible, dossier toujours cohérent.
+- **Campagne de couverture** : densifier des domaines existants sans événement
+  déclencheur — trous structurels, décharges absentes, périodes creuses.
+  Procédé complet, du diagnostic aux critères d'arrêt :
+  `atelier/methodes/methode-exhaustivite.md` ; matrices par domaine dans
+  `atelier/couverture/`. C'est la seule voie d'ajout de matière hors événement.
 - **Campagne de rattrapage** : un run par domaine sur la seule période
   2026-2027, puis révision des quinze pièces et de la synthèse. À ne lancer que
   si la veille a décroché.
 
-Dans les deux cas, l'invariant de datation tient : `date_verdict` dit de quand
+Dans tous les cas, l'invariant de datation tient : `date_verdict` dit de quand
 date l'appréciation, et la synthèse doit être re-motivée dès qu'une pièce
 bouge.
 
