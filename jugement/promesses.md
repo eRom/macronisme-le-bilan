@@ -131,7 +131,8 @@ manquer une échéance que la majorité s'était elle-même donnée par la loi.*
 L'interdiction du glyphosate « au plus tard dans 3 ans » est refusée
 d'inscription dans la loi EGalim six mois après l'engagement
 ([[2018-05-29-egalim-rejet-inscription-glyphosate]], grade A), puis l'échec est
-reconnu par le président lui-même : « Sur le glyphosate, je n'ai pas réussi »
+reconnu par le président lui-même le 04/12/2020, sous la forme d'« un échec
+collectif » selon le compte rendu de l'Élysée
 ([[2020-12-04-glyphosate-echec-reconnu]], grade A). L'article L. 100-1 A du
 code de l'énergie, voté par la majorité en 2019, imposait une loi de
 programmation énergie-climat avant le 01/07/2023 : elle n'a jamais été soumise

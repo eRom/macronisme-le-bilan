@@ -48,7 +48,8 @@ maillon : engagement présidentiel du 27/11/2017 d'interdire le glyphosate sous
 trois ans, refus de l'inscrire dans la loi EGalim dès mai 2018
 ([[2018-05-29-egalim-rejet-inscription-glyphosate]]), restrictions décidées par
 l'ANSES hors du champ politique ([[2019-12-09-anses-glyphosate-retraits-restrictions]]),
-puis aveu présidentiel enregistré : « Sur le glyphosate, je n'ai pas réussi »
+puis aveu présidentiel du 04/12/2020, que le compte rendu de l'Élysée rapporte
+comme la reconnaissance d'« un échec collectif »
 ([[2020-12-04-glyphosate-echec-reconnu]], grade A). Le second quinquennat
 inverse le mouvement : suspension du plan Écophyto en pleine crise agricole
 ([[2024-02-01-suspension-plan-ecophyto]]), puis remplacement de l'indicateur
