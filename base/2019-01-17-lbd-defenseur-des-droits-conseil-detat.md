@@ -11,9 +11,12 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.conseil-etat.fr/actualites/le-conseil-d-etat-rejette-les-demandes-de-suspension-de-l-usage-des-lanceurs-de-balles-de-defense-lbd
+  - https://juridique.defenseurdesdroits.fr/index.php?lvl=notice_display&id=27452
+  - http://www.conseil-etat.fr/fr/arianeweb/CE/decision/2019-02-01/427386
 ---
 
-Le 17/01/2019, puis par décision formelle n° 2019-029 du 30/01/2019, Jacques Toubon (Défenseur des droits) recommande de suspendre l'usage des LBD en maintien de l'ordre (dangerosité, distances de tir irréalistes en manifestation). Élément à décharge pour l'exécutif : le 01/02/2019, le Conseil d'État (ord. n° 427386 et s.) rejette les référés en suspension, tout en rendant obligatoire l'instruction du 23/01/2019 imposant les caméras-piétons aux tireurs.
+Le 17/01/2019, puis par décision formelle n° 2019-029 du 30/01/2019, Jacques Toubon (Défenseur des droits) demande « la suspension des décisions permettant l'utilisation des lanceurs de balles de défense dans le cadre des opérations de maintien de l'ordre, ainsi qu'au prononcé de toute mesure propre à interdire leur utilisation dans les manifestations à venir » (dangerosité, distances de tir irréalistes en manifestation).
 
-Deux documents officiels ; l'URL de la décision 2019-029 du Défenseur des droits est à re-pointer (page générique citée).
+Élément à décharge pour l'exécutif : le 01/02/2019, le juge des référés du Conseil d'État statuant en formation collégiale (n° 427386) rejette la requête, estimant que l'usage du LBD ne caractérise pas une atteinte grave et manifestement illégale aux libertés fondamentales invoquées ; il admet en revanche les interventions de la Ligue des droits de l'homme, de la CGT et de l'Union syndicale Solidaires. Le gouvernement avait rendu obligatoire, par instruction du 23/01/2019, le port de caméras-piétons par les tireurs.
+
+Les deux décisions sont ouvertes et vérifiées sur leur contenu.

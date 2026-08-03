@@ -11,10 +11,10 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://home-affairs.ec.europa.eu/policies/schengen-area/schengen-governance/temporary-reintroduction-border-control_en
+  - https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/schengen-area/temporary-reintroduction-border-control_en
 ---
 
-La France maintient le rétablissement temporaire des contrôles à ses frontières intérieures terrestres depuis le 13/11/2015, par notifications successives à la Commission européenne. La dernière prolongation notifiée couvre la période du 01/05 au 31/10/2026. Le dispositif, conçu comme temporaire par le code frontières Schengen, dure depuis plus de dix ans, dont neuf sous les mandats d'Emmanuel Macron.
+La France maintient le rétablissement temporaire des contrôles à ses frontières intérieures depuis le 13/11/2015, par notifications successives à la Commission européenne. La dernière prolongation notifiée au registre de la Commission couvre la période du 01/05 au 31/10/2026 et vise l'ensemble des frontières intérieures, terrestres, aériennes et maritimes, avec la Belgique, l'Allemagne, le Luxembourg, la Suisse, l'Espagne et l'Italie ; les motifs invoqués sont la persistance de la menace djihadiste, la hausse des actes antisémites, les réseaux criminels facilitant la migration irrégulière, la dégradation de l'environnement de sécurité mondial et la tenue du G7 à Évian. Le dispositif, conçu comme temporaire par le code frontières Schengen, dure depuis plus de dix ans, dont neuf sous les mandats d'Emmanuel Macron.
 
 Le 02/06/2026, la Commission publie un avis recommandant une levée progressive, relevant que les motifs invoqués manquent de précision géographique et temporelle, que le lien avec la lutte antiterroriste n'est pas explicite et que les flux migratoires ont baissé en 2025.
 
