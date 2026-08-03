@@ -11,7 +11,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000038821376/
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000038811588
   - https://ustr.gov/sites/default/files/enforcement/301Investigations/France_DST_Suspension_Notice_Jan_2021.pdf
 ---
 
