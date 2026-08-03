@@ -1,14 +1,14 @@
 ---
 domaine: sante
 verdict: defavorable
-date_verdict: 2026-07-31
+date_verdict: 2026-08-03
 ---
 
 # Jugement : sante
 
 ## Périmètre
 
-Ce jugement se rend sur les 63 fiches portant le slug `sante` au 31/07/2026, et sur les points restés à vérifier, recensés pour ce domaine. Le cœur du domaine :
+Ce jugement se rend sur les 63 fiches portant le slug `sante` au 03/08/2026, et sur les points restés à vérifier, recensés pour ce domaine. Le cœur du domaine :
 l'hôpital public et son financement, l'accès aux soins et la démographie médicale,
 la gestion de la crise Covid, le médicament et la souveraineté sanitaire, la vieillesse
 et l'autonomie, la fin de vie. Les pièces transverses sont jugées ici sous leur angle
@@ -138,7 +138,12 @@ transparence a régressé sur les contrats vaccins et le recours aux cabinets de
 défense et de sécurité nationale réuni en formation spécialisée dite « conseil de
 défense sanitaire » : les arbitrages sanitaires majeurs échappent au contrôle
 documentaire du Parlement et des juridictions financières, aucun compte rendu n'étant
-communicable, à la différence du conseil des ministres
+communicable, à la différence du conseil des ministres. Le fondement doit être
+nommé exactement, car c'est la confusion la plus fréquente sur ce sujet : ce qui
+est opposé aux demandes de communication est le secret des délibérations du
+Gouvernement, exclusion du droit d'accès prévue par le code des relations entre
+le public et l'administration, et non une classification défense susceptible de
+déclassification
 ([[2020-03-01-pilotage-covid-conseil-defense-secret]], grade A). La transparence a
 régressé sur les contrats vaccins : le rapport spécial 19/2022 de la Cour des comptes
 européenne relève que la présidente de la Commission a mené seule, en mars 2021, les
