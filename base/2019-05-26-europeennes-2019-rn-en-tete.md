@@ -10,9 +10,12 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://archives-resultats-elections.interieur.gouv.fr/resultats/ER2019/
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000038528275
+  - https://www.data.gouv.fr/datasets/resultats-des-elections-europeennes-2019
 ---
 
-Le Rassemblement national arrive en tête avec 23,31 % des suffrages exprimés, devant la liste Renaissance-LREM conduite par Nathalie Loiseau, ancienne ministre chargée des Affaires européennes, à 22,41 %. L'écart est inférieur à un point.
+Résultats définitifs proclamés le 29/05/2019 par la commission nationale de recensement général des votes et publiés au Journal officiel : sur 22 655 174 suffrages exprimés, la liste « Prenez le pouvoir » soutenue par Marine Le Pen et conduite par Jordan Bardella obtient 5 286 939 voix, devant la liste « Renaissance » conduite par Nathalie Loiseau, ancienne ministre chargée des Affaires européennes, à 5 079 015 voix. Soit 23,34 % contre 22,42 %, et un écart de 207 924 voix, 0,92 point.
+
+Les chiffres de 23,31 % et 22,41 % qui ont circulé le soir du scrutin et le lendemain sont ceux des résultats centralisés communiqués par le ministère de l'Intérieur le 27/05, avant les rectifications de la commission nationale. L'ordre d'arrivée et l'ordre de grandeur de l'écart sont les mêmes.
 
 C'est le premier verdict électoral national portant spécifiquement sur la politique européenne du quinquennat, deux ans après le discours de la Sorbonne. Le scrutin de 2024 creusera l'écart dans des proportions sans commune mesure ([[2024-06-09-europeennes-2024-dissolution]]).
