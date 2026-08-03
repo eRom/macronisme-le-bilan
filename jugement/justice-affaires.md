@@ -50,11 +50,14 @@ l'exécutif, établie sous serment et jamais démentie.** L'Élysée, informé d
 l'affaire en interne et ne saisit pas la justice ; la révélation vient de la
 presse le 18 juillet ([[2018-05-01-benalla-revelation]], grade A). Devant la
 commission d'enquête du Sénat, le directeur de cabinet du président reconnaît
-que la mise à pied de quinze jours n'a jamais été réellement exécutée
-(traitement intégral versé, retenue opérée seulement au licenciement, sur les
-congés), que Benalla a utilisé ses passeports diplomatiques une vingtaine de
-fois après son licenciement, et qu'un second passeport a été obtenu via une note
-à en-tête qualifiée par lui de « faux caractérisé »
+que la mise à pied de quinze jours n'a pas eu son effet pécuniaire, Benalla
+ayant reçu « l'intégralité de son traitement » de mai, les quinze jours faisant
+l'objet d'une retenue sur ses droits à congés de 2017 ; que Benalla a utilisé
+ses passeports « presque une vingtaine de fois » entre le 1er août et le
+31 décembre 2018, après son licenciement ; et qu'un second passeport de service
+a été obtenu par une note à en-tête du chef de cabinet rédigée à l'insu de
+celui-ci, Strzoda déclarant devant la commission que Benalla est « un monsieur
+qui a régulièrement utilisé des faux pour obtenir des titres officiels »
 ([[2019-01-16-benalla-auditions-senat]], grade A, déclarations sous serment). Le
 Bureau du Sénat signale trois faux témoignages présumés et en transmet deux
 autres pour examen ([[2019-03-21-senat-signalements-faux-temoignage]], grade A).
