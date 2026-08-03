@@ -26,8 +26,9 @@ quinquennat est plus mince que celle de 2024-2026 : le déséquilibre reflète
 l'état de la recherche, pas l'état des faits. Aucune série comparative entre
 présidences n'existe dans la base pour l'emploi industriel, les fermetures
 d'usines ou les aides : aucun « du jamais vu » n'est constructible, et le seul
-étalon décennal du domaine, le rapport de la Cour des comptes de novembre 2024,
-couvre 2014-2024, donc trois années antérieures à la période. Trois fiches de
+étalon décennal du domaine, le rapport de la Cour des comptes du 28/11/2024,
+analyse les moyens mobilisés de 2012 à 2022, donc cinq années antérieures à la
+période. Trois fiches de
 grade C ([[2022-05-29-ge-belfort-transferts-fiscaux]],
 [[2026-05-15-barometre-ey-ide]], [[2024-10-24-eramet-relieve-suspension]]) ne
 peuvent porter aucune affirmation déterminante ; la fiche
@@ -55,7 +56,7 @@ confirme sur toute la période : record absolu hors énergie en 2022 (-82,5 Md�
 contre -57,8 Md€ en 2021, [[2023-02-07-deficit-commercial-record-2022]], grade
 A), toujours structurel en 2025 quand l'Allemagne dégage 200,4 Md€ d'excédent
 ([[2026-02-05-balance-commerciale-2025]], grade A). Ce qui limite la charge : le
-rapport couvre trois années pré-2017, la désindustrialisation est une tendance
+rapport couvre cinq années pré-2017, la désindustrialisation est une tendance
 de cinquante ans qui n'est pas imputable à la période, et la stabilisation de la
 part manufacturière, après des décennies de recul continu, est précisément ce
 que la décharge 1 porte au crédit de la période. La charge n'est pas « la France
@@ -113,8 +114,10 @@ industriel reste fin 2025 au-dessus de son niveau de 2019.
 sont presque tous soldés par des échecs, établis pièce par pièce.** Whirlpool
 Amiens, promesse de campagne du parking (« Je ne suis pas venu pour vous
 raconter des bobards », [[2017-04-26-whirlpool-promesse-parking]], grade B pour
-la citation, A pour le suivi élyséen) : reprise validée par l'État à 162 emplois
-([[2017-09-14-whirlpool-reprise-wn]], grade A), liquidation de WN en 2019 avec
+la citation, A pour le suivi élyséen) : accord de reprise annoncé sur 277 postes
+préservés, présenté par le Président lui-même à « autour de 270 salariés
+repris », et 162 réembauches effectives au démarrage
+([[2017-07-13-whirlpool-reprise-wn]], grade B), liquidation de WN en 2019 avec
 44 emplois repris ([[2019-07-30-whirlpool-liquidation-wn]], grade A), puis
 liquidation du dernier repreneur et licenciements annulés par le juge, la cause
 économique n'étant pas caractérisée
