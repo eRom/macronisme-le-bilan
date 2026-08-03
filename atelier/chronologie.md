@@ -191,7 +191,7 @@ Industrie (run du 21/07, 15/15 angles, red-team complète) :
 - **CVAE** : l'évaluation IPP du 17/10/2025 recoupe le point ouvert du domaine promesses (statut suppression CVAE toujours non tranché).
 
 Libertes-publiques (run du 20-21/07, 14/15 angles, red-team complète) :
-- **URLs primaires à re-pointer** (fiches A concernées gardées A car le claim central est couvert par une autre URL primaire ; fiches B sinon) : décision CC 2017-695 QPC (visites et saisies), décision DDD 2019-029 (LBD), les quatre lois de l'état d'urgence sanitaire, compte rendu officiel de l'audition IGPN du 15/10/2020, arrêt de cassation Nahel du 10/06/2026, loi 2026-201 (VSA : identifiant JORFTEXT cité incohérent avec mars 2026).
+- **URLs primaires à re-pointer** (fiches A concernées gardées A car le claim central est couvert par une autre URL primaire ; fiches B sinon) : décision CC 2017-695 QPC (visites et saisies), décision DDD 2019-029 (LBD), les quatre lois de l'état d'urgence sanitaire, compte rendu officiel de l'audition IGPN du 15/10/2020, arrêt de cassation Nahel du 10/06/2026, loi 2026-201 (VSA : identifiant JORFTEXT cité incohérent avec mars 2026). → VSA RÉSOLU au rattrapage du 03/08/2026 : l'identifiant cité, JORFTEXT000050228399, renvoyait bien « Pas de contenu disponible », c'était une URL fabriquée sur une fiche citée par le jugement. Le bon identifiant est JORFTEXT000053707088 ; la date de prorogation au 31/12/2027 est confirmée par l'article 47 de la loi et par la décision n° 2026-902 DC du 19/03/2026, toutes deux sondées. Fiche corrigée et rehaussée B → A. Les autres URL de la liste restent à re-pointer.
 - **Rodrigues (2026-02-02)** : source unique index.ngo invérifiable ; confirmer le renvoi en cour criminelle avant tout usage.
 - **Condamnations policiers tardives (fiche C du 2019-12-19)** : sources uniques, re-vérifier à chaque usage.
 - **Décompte 49.3** : 32 par scrutins AN vs 31 selon vie-publique (Bayrou 3 vs 4) ; divergence de méthode documentée dans la fiche bilan, à rafraîchir à chaque nouvel usage.
@@ -204,6 +204,7 @@ Justice-affaires :
 - **Dates divergentes** : jugement Delevoye (2 ou 9 décembre 2021) ; constitution de partie civile Sherpa (entre le 3 et le 25 juin 2025).
 - **Liens à consolider** : fiches Buzyn, Dupond-Moretti, Darmanin, CJR Covid (décisions précises, URLs génériques).
 - **Constat négatif McKinsey** (fiche du 2026-07-20) : à re-vérifier à chaque usage.
+- **Décret de démission Dati** : le run signalait un identifiant « proche de celui du décret Ferrand de février 2025 », à vérifier avant citation. → SONDÉ le 03/08/2026, et le résultat va plus loin que l'alerte : **les deux** identifiants Légifrance de la fiche étaient fabriqués et renvoyaient « Pas de contenu disponible », sur une fiche citée par le jugement du domaine. Remplacés par les décrets du 11/01/2024 (nomination, JORFTEXT000048931984) et du 26/02/2026 (fin de fonctions, JORFTEXT000053586369), ouverts et vérifiés à l'article 1er. Le grade B est maintenu : il tient aux volets judiciaires sur presse, pas aux décrets. Leçon transposable : l'identifiant de nomination tombait dans une plage numérique plausible, donc invisible à un contrôle de vraisemblance ; seul le sondage l'a révélé.
 
 Promesses (run du 20/07 : red-team partielle, quota épuisé en fin de course) :
 - **CVAE** : statut final non tranché (les LF 2025/2026 ont-elles re-reporté ou gelé la trajectoire de suppression ?) ; fiche volontairement NON créée en attendant.
@@ -783,7 +784,7 @@ Securite-civile (run du 30/07, depth H, 4 rounds, NON convergé, 9 angles abouti
 | 2026-02-26 | [remaniement du gouvernement Lecornu II à trois semaines des municipales](base/2026-02-26-remaniement-lecornu-ii-municipales.md) | mesure | A | institutions |
 | 2026-02-27 | [INSEE : recul de l'emploi industriel, +103 000 et non 130 000](base/2026-02-27-insee-emploi-industriel-retournement.md) | mesure | A | industrie, economie |
 | 2026-03-02 | [dissuasion élargie, premières traductions de Sorbonne II](base/2026-03-02-dissuasion-elargie-france-allemagne.md) | mesure | B | europe, international |
-| 2026-03-20 | [VSA prorogée jusqu'à fin 2027](base/2026-03-20-vsa-prorogee-2027.md) | mesure | B | libertes-publiques |
+| 2026-03-20 | [VSA prorogée jusqu'à fin 2027](base/2026-03-20-vsa-prorogee-2027.md) | mesure | A | libertes-publiques |
 | 2026-03-31 | [comptes 2025 notifiés, déficit 5,1 %, dette 115,6 %](base/2026-03-31-comptes-2025-notifies.md) | mesure | A | finances-publiques, europe |
 | 2026-03-31 | [DARES : 56 000 ruptures PSE en 2024, industrie surreprésentée](base/2026-03-31-dares-pse-industrie.md) | mesure | A | industrie, economie |
 | 2026-03-31 | [procédure accélérée devenue systématique, sans accélérer l'application des lois](base/2026-03-31-procedure-acceleree-systematique-sans-effet.md) | mesure | A | institutions |

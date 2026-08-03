@@ -21,6 +21,14 @@
  * relate (un rapport de 2026 sur une mesure de 2019). Le script trie les
  * candidats au sondage, il ne tranche pas. Seule l'ouverture de l'URL tranche
  * (« tout identifiant non sondé est présumé faux »).
+ *
+ * LIMITE DÉMONTRÉE, à connaître avant de faire confiance à un silence de ce
+ * script. Le 03/08/2026, une même fiche portait DEUX identifiants fabriqués.
+ * Le premier tombait à 570 jours de la date de son texte : signalé. Le second
+ * tombait à douze jours : invisible ici, et pourtant mort lui aussi. Un
+ * identifiant inventé peut atterrir dans la bonne plage numérique par simple
+ * chance. Ce script réduit la file à sonder, il ne la supprime jamais : un
+ * corpus « sans écart » n'est pas un corpus vérifié.
  */
 
 import { readdirSync, readFileSync } from "node:fs";
