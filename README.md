@@ -166,8 +166,7 @@ Guardian est réduite aux seuls verbatims cités par la fiche correspondante.
 
 ## Auteur
 
-Romain Ecarnot, avec l'aide de Claude (Anthropic), Antigravity (Google) et Grok
-(SpaceXAI).
+Romain Ecarnot, avec l'aide de Claude (Anthropic), Antigravity (Google), Grok (SpaceXAI) et Sonar-pro (Perplexity).
 
 La recherche documentaire a été menée avec assistance d'IA ; la vérification
 des sources, l'attribution des grades et tous les verdicts sont humains. Le
