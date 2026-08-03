@@ -169,7 +169,7 @@ les dispositifs structurants ont été affaiblis : les ZFE vidées de leur port�
 pour 38 agglomérations sur 43 par décision ministérielle, deux ans après la loi
 ([[2023-07-10-zfe-videes-38-agglomerations]], grade A), avant l'abrogation
 votée par l'Assemblée et la censure procédurale qui l'a annulée
-([[2025-06-17-assemblee-abroge-zfe]], [[2026-05-21-cc-censure-abrogation-zfe]]) ;
+([[2025-05-28-assemblee-abroge-zfe]], [[2026-05-21-cc-censure-abrogation-zfe]]) ;
 l'objectif ZAN assoupli par la loi de 2023
 ([[2023-07-20-loi-zan-assouplissement]]). Le référendum promis n'a jamais eu
 lieu ([[2021-07-06-referendum-climat-enterre]]). Ce qui limite la charge : le
@@ -320,7 +320,7 @@ boucliers sans conditionnalité écologique.
 **5. Une part réelle du détricotage n'est pas imputable à l'exécutif, et les
 reculs suivent des chocs sociaux authentiques.** L'abrogation des ZFE a été
 votée contre l'avis du gouvernement par une coalition allant de la droite au RN
-et à LFI ([[2025-06-17-assemblee-abroge-zfe]], grade A) ; la loi ZAN de 2023
+et à LFI ([[2025-05-28-assemblee-abroge-zfe]], grade A) ; la loi ZAN de 2023
 est d'initiative sénatoriale ([[2023-07-20-loi-zan-assouplissement]]) ; la loi
 Duplomb est une proposition de loi ([[2025-08-11-loi-duplomb-censure-acetamipride]]) ;
 le blocage du référendum climat est partagé avec le Sénat

@@ -849,13 +849,13 @@ Securite-civile (run du 30/07, depth H, 4 rounds, NON convergé, 9 angles abouti
 | 2025-05-12 | [droit du sol à Mayotte : deux parents en séjour régulier un an](base/2025-05-12-droit-du-sol-mayotte-deux-parents.md) | mesure | A | securite-immigration |
 | 2025-05-14 | [ArcelorMittal : bataille de la nationalisation, exécutif contre](base/2025-05-14-arcelormittal-nationalisation-bataille.md) | affaire | A | industrie, institutions |
 | 2025-05-27 | [SAFE, 150 Md€ de prêts et 65 % de contenu européen](base/2025-05-27-safe-preference-europeenne-65-pourcent.md) | mesure | A | europe, industrie |
+| 2025-05-28 | [L'Assemblée vote l'abrogation des ZFE contre l'avis du gouvernement](base/2025-05-28-assemblee-abroge-zfe.md) | mesure | A | ecologie-energie, institutions |
 | 2025-05-30 | [régime de sanctions du RSA (décret)](base/2025-05-30-decret-sanctions-rsa.md) | mesure | A | retraites-social |
 | 2025-06-03 | [Cour des comptes : mise en œuvre précipitée du DPE, instrument de mesure fragilisé](base/2025-06-03-cour-comptes-dpe.md) | affaire | A | ecologie-energie |
 | 2025-06-05 | [réponse du gouvernement à l'annulation de crédits](base/2025-06-05-reponse-gouvernement-annulation-credits.md) | declaration | A | securite-civile, finances-publiques |
 | 2025-06-09 | [droit de dissolution rétabli en juin 2025 et jamais réutilisé, référendum de l'article 11 jamais convoqué](base/2025-06-09-droit-dissolution-retabli-non-utilise.md) | mesure | B | institutions |
 | 2025-06-11 | [« taux réel de 21 % » OQTF : retraitement non standardisé](base/2025-06-11-retailleau-21-pourcent-oqtf.md) | declaration | B | securite-immigration |
 | 2025-06-13 | [loi narcotrafic : PNACO, dossier coffre partiellement censuré](base/2025-06-13-loi-narcotrafic.md) | mesure | A | securite-immigration, justice-affaires |
-| 2025-06-17 | [L'Assemblée vote l'abrogation des ZFE contre l'avis du gouvernement](base/2025-06-17-assemblee-abroge-zfe.md) | mesure | A | ecologie-energie, institutions |
 | 2025-06-23 | [MaPrimeRénov' : guichet des rénovations d'ampleur suspendu, puis rouvert plus restrictif](base/2025-06-23-maprimerenov-suspension-guichet.md) | mesure | A | ecologie-energie |
 | 2025-06-25 | [déclaration franco-allemande pour un règlement « Retour »](base/2025-06-25-retailleau-faeser-reglement-retour.md) | declaration | A | europe, securite-immigration |
 | 2025-07-01 | [Sénat : 211 Md€ d'aides publiques aux entreprises par an](base/2025-07-01-senat-aides-publiques-211-mds.md) | mesure | A | industrie, finances-publiques |

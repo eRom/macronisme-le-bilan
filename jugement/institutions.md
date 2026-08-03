@@ -205,7 +205,7 @@ fonctionné pour la première fois depuis sa création en 2008, sous ce quinquen
 ([[2023-04-12-article-13-veto-ravignon-ademe]]). Le Parlement de la période a
 aussi su imposer des textes contre l'avis du gouvernement (PPL Garot,
 [[2025-05-07-ppl-garot-regulation-installation]] ; abrogation des ZFE votée,
-[[2025-06-17-assemblee-abroge-zfe]]) : l'image d'une chambre écrasée est fausse
+[[2025-05-28-assemblee-abroge-zfe]]) : l'image d'une chambre écrasée est fausse
 pour la XVIIe législature.
 
 **4. Sur le fond de la fin de vie, l'avis citoyen a fini par être suivi.** La
