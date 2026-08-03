@@ -96,21 +96,22 @@ concernées par cette passe.
 
 Commit dédié par pièce, convention du dépôt : `jugement <domaine> (<verdict>)`.
 
-## Question à trancher en séance
+## `date_verdict` : tranché
 
-**`date_verdict` bouge-t-il ?** Le dossier date ses appréciations : le
-frontmatter dit de quand date le jugement. Deux lectures défendables, et il
-faut choisir une fois pour toutes plutôt que domaine par domaine.
+**Oui, `date_verdict` avance dès que la pièce est modifiée**, même si le
+verdict ne bouge pas. Décision de Romain, 03/08/2026. La règle est inscrite
+au contrat du dépôt, à l'étape 6 de « Écrire ou réviser une pièce de
+jugement » dans `CLAUDE.md` : elle vaut désormais pour toute révision future,
+pas seulement pour cette séance.
 
-- Si la révision ne fait que corriger des faits sans déplacer le verdict, on
-  peut soutenir que l'appréciation n'a pas changé de date.
-- Mais un lecteur qui voit `date_verdict: 2026-07-31` sur une pièce relue et
-  amendée le 03/08 est mal informé sur la fraîcheur de ce qu'il lit.
+Raison : la date dit quand l'appréciation a été portée, pas quand elle a
+changé. Un lecteur qui voit `date_verdict: 2026-07-31` sur une pièce reprise
+le 03/08 est mal informé sur la fraîcheur de ce qu'il lit.
 
-Position recommandée : **avancer `date_verdict` dès qu'une pièce est
-modifiée**, même sans changement de verdict, et mentionner la révision dans
-la pièce. La date dit quand l'appréciation a été portée, pas quand elle a
-changé.
+Conséquence pratique pour cette séance : les seize pièces portent aujourd'hui
+`date_verdict: 2026-07-31`. Chaque pièce touchée passe à sa date de révision.
+Les cinq pièces non concernées gardent le 31/07, et c'est un signal utile :
+leur appréciation n'a pas eu à être reprise.
 
 ## Ce qui n'est PAS dans cette séance
 

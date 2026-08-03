@@ -172,7 +172,13 @@ Lire `METHODE.md` §6 et §7 en entier avant de commencer. Puis :
    intégrés (`METHODE.md` §7).
 5. Rédiger selon les cinq sections fixes, frontmatter `domaine` / `verdict` /
    `date_verdict`.
-6. Commit dédié : `jugement <domaine> (<verdict>)`.
+6. **Avancer `date_verdict` dès que la pièce est modifiée**, même si le
+   verdict ne bouge pas. La date dit quand l'appréciation a été portée, pas
+   quand elle a changé : une pièce relue et amendée est une appréciation
+   reportée à cette date. Règle tranchée le 03/08/2026, à la révision qui a
+   suivi la campagne d'intégrité des sources, pour éviter qu'un lecteur
+   croie lire un jugement de juillet quand la pièce a été reprise en août.
+7. Commit dédié : `jugement <domaine> (<verdict>)`.
 
 ## Contrat de réouverture
 
