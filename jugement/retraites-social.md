@@ -1,7 +1,7 @@
 ---
 domaine: retraites-social
 verdict: defavorable
-date_verdict: 2026-07-31
+date_verdict: 2026-08-03
 ---
 
 # Jugement : retraites-social
@@ -9,7 +9,7 @@ date_verdict: 2026-07-31
 ## Périmètre
 
 Ce jugement se rend sur les 35 fiches portant le slug `retraites-social` au
-31/07/2026, et sur les points restés à vérifier, recensés pour ce domaine.
+03/08/2026, et sur les points restés à vérifier, recensés pour ce domaine.
 Le cœur du domaine : les retraites (architecture, réforme de 2023, suspension),
 l'assurance chômage (règles d'indemnisation, gouvernance paritaire, évaluation),
 les minima sociaux et le handicap (RSA, AAH, prime d'activité), le grand âge.
@@ -108,7 +108,9 @@ journalier de référence au 01/10/2021, allocation journalière réduite d'envi
 nuance essentielle d'une durée allongée maintenant le capital de droits à peu
 près constant, plus dégressivité pour les hauts salaires
 ([[2021-10-01-assurance-chomage-reforme-sjr]]) ; contra-cyclicité en 2023,
-durée d'indemnisation amputée de 25 % tant que le chômage reste sous 9 %
+durée d'indemnisation amputée de 25 % par un coefficient réducteur de 0,75, un
+complément de fin de droits n'étant rouvert que si un arrêté constate une hausse
+du chômage de 0,8 point sur un trimestre ou un taux atteignant 9 %
 ([[2023-02-01-assurance-chomage-contra-cyclique]]) ; puis bornes d'âge des
 seniors relevées de deux ans par la convention de 2024, cette fois par la voie
 paritaire sous agrément ([[2024-12-19-convention-assurance-chomage-2024-seniors]]).
@@ -137,8 +139,12 @@ l'illégalité initiale a été corrigée par réécriture.
 démonstration d'un effet propre d'insertion durable, pendant que la refonte
 structurelle promise attendait huit ans.** Le RSA conditionné à 15 à 20 heures
 d'activité est promis en 2022, inscrit dans la loi plein emploi, généralisé au
-01/01/2025 ([[2023-12-18-rsa-conditionne-15h]]), son régime de sanctions précisé
-par décret ([[2025-05-30-decret-sanctions-rsa]]). L'évaluation DARES/IPP de juin
+01/01/2025 ([[2023-12-18-rsa-conditionne-15h]]), avec dérogations pour raisons de
+santé, handicap, invalidité ou parent isolé sans solution de garde, et son régime
+de sanctions précisé par décret : suspension d'au moins 30 % du revenu pendant
+un à deux mois au premier manquement au contrat d'engagement, un à quatre mois
+en cas de réitération, suppression totale et radiation faute de mise à jour du
+contrat ([[2025-05-30-decret-sanctions-rsa]]). L'évaluation DARES/IPP de juin
 2026, re-sondée sur source primaire IPP, conclut que la hausse de la probabilité
 d'emploi à six mois (+25 %) s'explique en très grande partie par le recours aux
 contrats aidés, non par un effet propre d'insertion durable
@@ -254,7 +260,10 @@ chômage initiale (SJR, bonus-malus), et la formule a été réécrite
 ([[2020-11-25-conseil-etat-annulation-decret-chomage]], grade A) ; le Conseil
 constitutionnel a validé la conditionnalité du RSA sous réserves strictes
 (personnalisation, proportionnalité, aucune automaticité des sanctions), que le
-décret d'application respecte ([[2023-12-18-rsa-conditionne-15h]],
+décret d'application respecte, en y ajoutant un garde-fou familial inscrit au
+texte : pour un allocataire ayant des enfants ou une personne handicapée à
+charge, la part suspendue ou supprimée ne peut excéder 50 % du montant
+([[2023-12-18-rsa-conditionne-15h]],
 [[2025-05-30-decret-sanctions-rsa]]) ; la réforme des retraites de 2023 est
 intégralement validée ([[2023-04-14-cc-2023-849-dc-retraites-rip]]). Portée
 exacte : cette décharge interdit toute charge d'illégalité persistante ; elle ne
