@@ -1,7 +1,7 @@
 ---
 domaine: finances-publiques
 verdict: defavorable
-date_verdict: 2026-07-31
+date_verdict: 2026-08-03
 ---
 
 # Jugement : finances-publiques
@@ -9,7 +9,7 @@ date_verdict: 2026-07-31
 ## Périmètre
 
 Ce jugement se rend sur les 82 fiches portant le slug `finances-publiques` au
-31/07/2026, et sur les points restés à vérifier, recensés pour ce domaine.
+03/08/2026, et sur les points restés à vérifier, recensés pour ce domaine.
 Le cœur du domaine : la trajectoire du déficit et de la dette de l'État, la
 consolidation budgétaire et ses instruments (décret d'annulation, 49.3 budgétaire,
 loi spéciale), la fiscalité, la dépense publique et son efficacité, la dette
@@ -80,7 +80,9 @@ l'article 14 de la LOLF ([[2024-02-21-decret-annulation-10md]],
 amputé d'environ 949 M€, le Fonds vert perdant environ 500 M€ en AE
 ([[2024-02-21-annulation-credits-ecologie]]). La dotation du Fonds vert est
 ensuite divisée par trois en deux ans : 2,5 Md€ en LFI 2024, 1,15 Md€ en LFI
-2025, 837 M€ en LFI 2026 ([[2026-02-20-fonds-vert-dotation-divisee]], grade A).
+2025, 837 M€ en LFI 2026, le projet du gouvernement pour 2026 portant même
+650 M€ avant que le débat parlementaire ne relève la dotation
+([[2026-02-20-fonds-vert-dotation-divisee]], grade A).
 Sur le programme 161 sécurité civile, la coupe de 52,77 M€ est la seule dont la
 conséquence capacitaire soit établie par la juridiction financière et non par
 une imputation parlementaire : la note d'exécution budgétaire de la Cour des
@@ -256,7 +258,9 @@ français n'a été rejeté sur l'ensemble des quatre tranches
 baisse de l'enveloppe de 39,4 à 37,5 Md€ en 2022 est un motif technique lié à une
 croissance supérieure aux prévisions, pas une sanction
 ([[2022-06-01-pnrr-enveloppe-revisee-37-5]], grade A), et l'ajout du chapitre
-REPowerEU porte l'enveloppe à 40,3 Md€
+REPowerEU porte l'enveloppe à 40,3 Md€, montant établi par la Commission, la
+date d'adoption de la décision d'exécution révisée n'ayant pas pu être
+confirmée sur source primaire
 ([[2023-12-08-pnrr-repowereu-40-3-milliards]]). Dans l'affaire C-404/19 P, la
 France obtient la réduction d'une correction forfaitaire PAC de 100 % à 25 %
 ([[2020-09-03-annulation-partielle-correction-pac-corse]], grade B). Portée
