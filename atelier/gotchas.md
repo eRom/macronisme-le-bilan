@@ -282,3 +282,27 @@ l'historique, tester le code de retour de chaque cherry-pick, et **comparer les
 arbres avant de déplacer la branche** (`git rev-parse <branche>^{tree}` des deux
 côtés doit donner le même hash). C'est ce dernier contrôle qui prouve qu'une
 réécriture de messages n'a pas mangé de contenu.
+
+**Un identifiant fabriqué ne se signale pas partout de la même façon, et le
+classement du sondeur suit le portail, pas la faute.** Légifrance sert une page
+d'erreur en 200, donc PIEGE, et la campagne d'intégrité les a tous soldés. Le
+Sénat, l'Assemblée et les sites ministériels renvoient un 404 sec : un
+identifiant inventé y est classé MORTE, **indiscernable d'un document qui a
+bougé**. Deux cas prouvés le 03/08/2026 : `senat.fr/rap/a22-117-31/a22-117-31.html`
+(404) contre le réel `a22-117-3/a22-117-3.html` (200), un chiffre de trop ; et
+`compte-rendu-commissions/20190114/lois_enq.html`, dont le suffixe `_enq` n'a
+jamais existé. Conséquence pratique : **le lot des sources mortes se traite à la
+recette de la campagne d'intégrité**, pas à la réparation d'adresse.
+
+**Corollaire sur les mesures de clôture.** « 895 sources re-sondées, zéro
+piège » était exact, et ne disait que zéro piège *de la famille que le sondeur
+sait reconnaître*. Devant un indicateur vert, la question utile n'est pas « est-il
+juste ? » mais « qu'est-ce qu'il ne peut pas voir ? »
+
+**Le décompte d'URL mortes n'est pas la mesure du dommage : l'exposition de la
+fiche l'est.** 263 adresses mortes se répartissaient en 202 fiches touchées,
+dont **104 sans aucune source vivante**, 102 citées par une pièce de jugement et
+73 de grade A. Une fiche à trois sources dont une meurt tient encore ; une fiche
+à source unique qui meurt n'établit plus rien. `atelier/audit-orphelines.ts`
+calcule la répartition à partir de la sortie de `audit-sources.ts` ; c'est elle
+qui donne l'ordre de travail, pas la liste des URL.

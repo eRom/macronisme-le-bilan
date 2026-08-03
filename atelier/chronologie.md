@@ -39,7 +39,7 @@ avant le sondage général, soit 95 au total sur le dossier.
 | 3 | `justice-affaires`, `promesses`, `libertes-publiques`, `economie`, soldés en entier | ✔ 03/08/2026, 34 entrées, 26 fiches |
 | 4 | la traîne : `europe`, `industrie`, `securite-immigration`, `finances-publiques`, `retraites-social` | ✔ 03/08/2026, 10 entrées, 9 fiches |
 | 5 | **révision des pièces de jugement**, synthèse comprise | ✔ 03/08/2026, treize pièces sur quinze plus la synthèse, aucun verdict déplacé |
-| 6 | 262 sources mortes, 16 déplacées (mesure du 03/08/2026 après réparation) | ouvert, après la révision |
+| 6 | 263 sources mortes, 15 déplacées : **104 fiches sans aucune source vivante** | ouvert, 1 faite, `notes/campagne-sources-mortes.md` |
 
 Les deux derniers lots ont été **intervertis** le soir du 03/08. L'ordre
 initial plaçait les sources mortes avant les jugements ; il reposait sur la
