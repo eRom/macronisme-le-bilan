@@ -121,6 +121,48 @@ même ordre que la campagne d'intégrité. Ne pas la sous-estimer, et ne pas la
 faire à moitié : une source remplacée sans vérification de contenu est pire que
 l'adresse morte qu'elle remplace, parce qu'elle a l'air réparée.
 
+## Les trois voies de récupération, et laquelle marche quand
+
+Testées le 03/08/2026 sur les premières orphelines. Le choix se fait au vu de
+**ce que la fiche cite**, pas au vu du portail mort.
+
+### 1. Le document porte un identifiant (décision, arrêt, rapport numéroté)
+
+**Moteur de recherche assisté, très efficace.** Une décision de justice, un avis
+numéroté ou un rapport parlementaire sont indexés partout et se retrouvent par
+leur numéro, même quand l'URL d'origine a disparu. Deux documents retrouvés en
+un seul appel sur la fiche LBD : la décision 2019-029 du Défenseur des droits et
+l'ordonnance n° 427386 du Conseil d'État.
+
+> **Piège propre à ce mode.** La prose du moteur mélange ses propres citations :
+> sur ce cas, elle donnait la source `[7]` comme origine de l'ordonnance du
+> Conseil d'État alors que `[7]` était la page du Défenseur des droits. **Lire la
+> liste de citations, pas la rédaction.** La liste contient des URL réellement
+> crawlées, la rédaction en fabrique.
+
+### 2. Le document est une page de portail qui a bougé
+
+**Le moteur échoue, la variante d'arborescence marche.** Essayé sur la page
+Schengen de la Commission et sur un communiqué de Bercy : dans les deux cas le
+moteur rend des conseils de navigation et aucune URL. En revanche l'arborescence
+se devine : la Commission est passée de
+`/policies/schengen-area/schengen-governance/` à
+`/policies/schengen-borders-and-visa/schengen-area/`.
+
+> **Piège propre à ce mode.** Sur ce portail, **trois variantes d'URL
+> répondaient 200**, dont deux qui n'étaient pas la bonne page. Un 200 ne
+> tranche rien ici : il faut demander l'élément de contenu.
+
+### 3. Le document est un communiqué de presse ou une brève
+
+**Le plus dur, et parfois insoluble.** Ni identifiant ni arborescence
+prévisible. Le communiqué Bercy du 05/09/2017 sur la cession Engie n'a été
+retrouvé par aucune des deux voies. Pour ces cas, deux issues honnêtes :
+remplacer par un document primaire qui établit le même fait (rapport de l'Agence
+des participations de l'État, document budgétaire), ou rétrograder la fiche et
+le dire. **Ne jamais laisser une URL morte en place en espérant qu'elle
+revienne.**
+
 ## Ordre de travail
 
 1. **Les orphelines citées et de grade A** (73). Ce sont les seules dont la
@@ -132,8 +174,14 @@ l'adresse morte qu'elle remplace, parce qu'elle a l'air réparée.
 4. Les 15 déplacées, les moins graves : `curl -sIL -w '%{url_effective}'` donne
    la cible, il reste à vérifier que c'est le bon document.
 
-Fait au 03/08/2026 : `2019-01-16-benalla-auditions-senat` (commits `2a250b2`
-pour la fiche, `9a42fc5` pour la pièce). Reste 103 orphelines.
+Fait au 03/08/2026, trois fiches, commits `2a250b2` et `9a42fc5` (auditions
+Benalla, fiche puis pièce) et `f6765d0` (LBD, contrôles aux frontières). **Reste
+101 orphelines.**
+
+En attente, non résolues par aucune des trois voies : le communiqué Bercy du
+05/09/2017 sur la cession Engie (`2017-09-05-cession-engie`, source unique) et
+le communiqué du tribunal administratif de Cergy-Pontoise sur Indymedia
+(`2019-02-04-blocage-indymedia-annule`, les deux sources mortes).
 
 ## Ce que cette campagne apprend sur la précédente
 

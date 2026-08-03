@@ -306,3 +306,21 @@ dont **104 sans aucune source vivante**, 102 citées par une pièce de jugement 
 à source unique qui meurt n'établit plus rien. `atelier/audit-orphelines.ts`
 calcule la répartition à partir de la sortie de `audit-sources.ts` ; c'est elle
 qui donne l'ordre de travail, pas la liste des URL.
+
+**Pour retrouver une source morte, le moteur de recherche assisté n'est bon que
+sur les documents à identifiant.** Une décision de justice, un avis numéroté, un
+rapport parlementaire se retrouvent par leur numéro même quand l'URL a disparu :
+deux documents retrouvés en un appel sur la fiche LBD (décision 2019-029 du
+Défenseur des droits, ordonnance n° 427386 du Conseil d'État). Sur une page de
+portail déplacée ou un communiqué de presse, il rend des conseils de navigation
+et aucune URL, deux fois sur deux.
+
+Deux pièges à connaître avec ce mode :
+
+1. **La prose du moteur mélange ses propres citations.** Elle donnait `[7]`
+   comme source de l'ordonnance du Conseil d'État alors que `[7]` était la page
+   du Défenseur des droits. Lire la **liste de citations**, pas la rédaction :
+   la liste contient des URL réellement crawlées, la rédaction en fabrique.
+2. **Sur un portail réorganisé, plusieurs variantes d'URL répondent 200.** Trois
+   sur la page Schengen de la Commission, dont deux qui n'étaient pas la bonne
+   page. Le code HTTP ne tranche rien, seul l'élément de contenu tranche.
