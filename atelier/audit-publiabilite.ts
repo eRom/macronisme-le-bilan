@@ -53,7 +53,7 @@ const VOCABULAIRE_CHANTIER: Motif[] = [
   [/\batelier\//g, "renvoi à l'atelier, que le site ne rend pas"],
   [/(?<![-\w])agy(?![-\w])/gi, "nom d'outillage"],
   [/erom-research:/g, "nom d'outillage"],
-  [/\bmethode-(recherche|jugement|synthese)\b/g, "renvoi à une méthode d'origine"],
+  [/\bmethode-(recherche|jugement|synthese|exhaustivite)\b/g, "renvoi à une méthode d'origine"],
   [/\bLinear\b|\bSlack\b/g, "outillage tiers hors sujet"],
   [/\bRomain\b/g, "formulation nominative"],
 ];
