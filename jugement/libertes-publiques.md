@@ -1,14 +1,14 @@
 ---
 domaine: libertes-publiques
 verdict: defavorable
-date_verdict: 2026-07-31
+date_verdict: 2026-08-03
 ---
 
 # Jugement : libertes-publiques
 
 ## Périmètre
 
-Ce jugement se rend sur les 62 fiches portant le slug `libertes-publiques` au 31/07/2026,
+Ce jugement se rend sur les 62 fiches portant le slug `libertes-publiques` au 03/08/2026,
 et sur les points restés à vérifier, recensés pour ce domaine. Le cœur du domaine :
 les libertés individuelles face à la force publique (maintien de l'ordre, surveillance,
 liberté de la presse), les régimes d'exception (sécuritaire et sanitaire), la liberté de
@@ -67,16 +67,20 @@ opinions politiques et religieuses.** Les décrets n° 2020-1510 à 1512 du 02/1
 syndicales. L'application GendNotes ([[2020-02-20-gendnotes]], grade A) est autorisée à
 collecter les mêmes données sensibles. La vidéosurveillance algorithmique, légalisée à
 titre expérimental par la loi JO ([[2023-05-19-loi-jo-vsa]], grade A) pour les seuls JO de
-Paris et bornée au 31/03/2025, est prorogée jusqu'au 31/12/2027 par la loi n° 2026-201 du
-20/03/2026 ([[2026-03-20-vsa-prorogee-2027]], grade B) : l'« expérimentation » couvre ainsi
+Paris et bornée au 31/03/2025, est prorogée jusqu'au 31/12/2027 par l'article 47 de la loi
+n° 2026-201 du 20/03/2026, disposition déclarée conforme par le Conseil constitutionnel le
+19/03/2026 ([[2026-03-20-vsa-prorogee-2027]], grade A) : l'« expérimentation » couvre ainsi
 près de cinq ans. Les algorithmes de détection sur les métadonnées, dits « boîtes noires »,
 expérimentés depuis 2015, sont inscrits définitivement dans le droit commun par la loi PATR
 ([[2021-07-30-loi-patr-boites-noires]], grade A), étendus aux URL. Les drones, deux fois
 interdits par le Conseil d'État ([[2020-05-18-drones-interdits-conseil-detat]], grade A), sont
 légalisés par la LOPMI ([[2023-01-24-lopmi-amendes-forfaitaires]], grade A). Ce qui limite la
-charge : chaque dispositif a été borné par le juge, le Conseil d'État annulant l'enregistrement
+charge : chaque dispositif a été borné, par son propre texte comme par le juge. Le décret
+GendNotes réserve lui-même la saisie des données sensibles aux cas de « nécessité absolue »,
+la cantonne à une zone dédiée et interdit de sélectionner une catégorie de personnes à partir
+de ces seules informations ; le Conseil d'État annule l'enregistrement
 « global » des opinions syndicales ou religieuses dans PASP (décision du 24/12/2021) et les
-transferts vers d'autres fichiers dans GendNotes, et le Conseil constitutionnel validant la
+transferts vers d'autres fichiers dans GendNotes ; le Conseil constitutionnel valide la
 VSA à la condition expresse d'aucune reconnaissance faciale. La charge n'est pas l'illégalité,
 qui n'existe pas ici : c'est l'accumulation et la pérennisation d'un dispositif de surveillance
 qui inclut désormais les opinions politiques et religieuses, avec une expérimentation
@@ -112,8 +116,11 @@ grade A) rend ces mesures définitives en 2021. Parallèlement, la France mainti
 rétablissement des contrôles aux frontières intérieures depuis le 13/11/2015
 ([[2015-11-13-controles-frontieres-interieures-onze-ans]], grade A), la dernière prolongation
 couvrant le 01/05 au 31/10/2026. La CJUE a plafonné à six mois les contrôles réintroduits
-([[2022-04-26-cjue-plafond-six-mois-controles-frontieres]], grade A) : le Conseil d'État a
-validé les renouvellements trois mois plus tard ([[2022-07-27-conseil-etat-valide-renouvellements-controles]],
+([[2022-04-26-cjue-plafond-six-mois-controles-frontieres]], grade A) : trois mois plus tard,
+le Conseil d'État juge le renouvellement licite à la condition que la menace soit
+« nouvelle », notion qu'il définit comme une menace de nature différente ou dont des
+circonstances nouvelles ont modifié l'actualité, la portée ou la consistance, et qu'il tient
+pour caractérisée en l'espèce ([[2022-07-27-conseil-etat-valide-renouvellements-controles]],
 grade A), puis le droit européen a été modifié (règlement 2024/1717) pour autoriser des
 réintroductions jusqu'à deux ans, résolvant la divergence au bénéfice de la position
 gouvernementale. Ce qui limite la charge : la création de l'état d'urgence et le premier
@@ -197,7 +204,7 @@ vaccinal aux réunions politiques ([[2022-01-22-passe-vaccinal-censure-reunions-
 grade A), et deux dispositions de la loi Séparatisme ([[2021-08-13-loi-separatisme-censures]],
 grade A). Le Conseil d'État annule le blocage administratif d'Indymedia
 ([[2019-02-04-blocage-indymedia-annule]], grade A), la dissolution des Soulèvements de la
-Terre ([[2023-11-09-conseil-etat-annule-dissolution-soulevements]], grade A, motif exact :
+Terre, statuant en Section ([[2023-11-09-conseil-etat-annule-dissolution-soulevements]], grade A, motif exact :
 la provocation à des dégradations matérielles ne suffit pas à justifier une atteinte aussi
 grave à la liberté d'association), les dispositions anti-journalistes du Schéma national du
 maintien de l'ordre ([[2021-06-10-snmo-censure-conseil-detat]], grade A), l'enregistrement
