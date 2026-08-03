@@ -9,7 +9,7 @@ acteurs:
   gouvernement: Attal (faits sous Philippe II)
 grade: A
 sources:
-  - https://www.legifrance.gouv.fr/juri/id/JURITEXT000049817758
+  - https://www.legifrance.gouv.fr/juri/id/JURITEXT000049857462
   - https://www.lemonde.fr/societe/article/2024/06/26/affaire-du-1er-mai-2018-la-condamnation-d-alexandre-benalla-devient-definitive-apres-le-rejet-de-son-pourvoi-en-cassation_6244199_3224.html
 ---
 

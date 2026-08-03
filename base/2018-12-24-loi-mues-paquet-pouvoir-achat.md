@@ -9,8 +9,8 @@ acteurs:
   gouvernement: Philippe II
 grade: A
 sources:
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000037851892
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000037845222
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000037851899
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000037846000
   - https://www.insee.fr/fr/statistiques/5371304
 ---
 

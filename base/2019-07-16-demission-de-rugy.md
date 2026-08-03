@@ -9,12 +9,11 @@ acteurs:
   gouvernement: Philippe II
 grade: A
 sources:
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000038772879
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000038772392
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000038772359
   - https://www.lcp.fr/actualites/diners-de-la-discorde-l-enquete-de-l-assemblee-dedouane-francois-de-rugy-mais-pointe-trois
 ---
 
-De Rugy démissionne le 16 juillet 2019 (décret au JO du 17 juillet, NOR HRUX1921029D, fin de fonctions « sur sa demande ») après les révélations de Mediapart, publiées à partir du 10/07/2019, sur des dîners fastueux à l'hôtel de Lassay lorsqu'il présidait l'Assemblée nationale et sur des travaux de rénovation de son logement de fonction ministériel (environ 63 000 €).
+De Rugy démissionne le 16 juillet 2019 : le décret du même jour relatif à la composition du Gouvernement, publié au JO du 17 juillet, met fin « sur sa demande » à ses fonctions de ministre d'État, ministre de la transition écologique et solidaire, et nomme Élisabeth Borne au même portefeuille après les révélations de Mediapart, publiées à partir du 10/07/2019, sur des dîners fastueux à l'hôtel de Lassay lorsqu'il présidait l'Assemblée nationale et sur des travaux de rénovation de son logement de fonction ministériel (environ 63 000 €).
 
 À décharge : aucune poursuite pénale n'est engagée ; l'enquête interne de l'Assemblée (juillet 2019) le dédouane pour l'essentiel tout en pointant trois dîners au caractère personnel, remboursés. Le grade A porte sur la démission actée par décret ; les faits reprochés restent de grade B, partiellement contestés par l'intéressé.
 

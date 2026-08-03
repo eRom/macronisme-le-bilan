@@ -11,10 +11,10 @@ grade: A
 statut: partielle
 sources:
   - https://www.vie-publique.fr/discours/284344-declaration-de-m-emmanuel-macron-president-de-la-republique-sur-son-programme-de-campagne-pour-lelection-presidentielle-de-2022-aubervilliers-le-17-mars-2022
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047444984
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047445077
 ---
 
-Promesse 2022 (profession de foi et discours d'Aubervilliers du 17/03/2022) : report progressif de l'âge légal « à 65 ans ». La loi n° 2023-270 du 14/04/2023 (LFRSS, adoptée via 49.3) fixe finalement 64 ans d'ici 2030, avec accélération de la durée de cotisation (réforme Touraine).
+Promesse 2022 (profession de foi et discours d'Aubervilliers du 17/03/2022) : report progressif de l'âge légal « à 65 ans ». La loi n° 2023-270 du 14/04/2023 de financement rectificative de la sécurité sociale (adoptée via 49.3) fixe finalement 64 ans, par son article 10 qui remplace « soixante-deux » par « soixante-quatre » à l'article L. 161-17-2 du code de la sécurité sociale, à raison de trois mois par génération à compter du 01/09/2023, avec accélération de la durée de cotisation (réforme Touraine).
 
 Réserve de fraîcheur (grade A) : le calendrier de cette réforme est partiellement suspendu par la LFSS 2026 (générations 1964-1968, gel jusqu'au 01/01/2028) ; toute mention « 64 ans / 43 ans » doit porter cette réserve. Validité constitutionnelle et voie référendaire : voir [[2023-04-14-cc-2023-849-dc-retraites-rip]]. Suspension : [[2025-12-31-suspension-reforme-retraites-lfss-2026]]. Mobilisation et 49.3 : [[2023-03-07-mobilisation-retraites-2023]], [[2023-03-16-49-3-retraites-motion-liot]].
 

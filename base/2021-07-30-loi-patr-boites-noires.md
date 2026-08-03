@@ -10,10 +10,10 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043876156/
-  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043835501
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043876100
+  - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043876142
 ---
 
-La loi n° 2021-998 du 30/07/2021 (prévention d'actes de terrorisme et renseignement) pérennise les mesures SILT (périmètres de protection, visites domiciliaires, fermetures de lieux de culte, MICAS) et inscrit définitivement dans le droit commun les algorithmes de détection sur les métadonnées (« boîtes noires » expérimentées depuis 2015), étendus aux URL. Le Conseil constitutionnel valide l'essentiel mais censure l'allongement des MICAS à 24 mois (décision n° 2021-822 DC).
+La loi n° 2021-998 du 30/07/2021 (prévention d'actes de terrorisme et renseignement) pérennise les mesures SILT (périmètres de protection, visites domiciliaires, fermetures de lieux de culte, MICAS) et inscrit définitivement dans le droit commun, par son article 15 modifiant l'article L. 851-3 du code de la sécurité intérieure, les algorithmes de détection sur les métadonnées (« boîtes noires » expérimentées depuis 2015), étendus aux URL. Le Conseil constitutionnel valide l'essentiel mais censure l'allongement des MICAS à 24 mois (décision n° 2021-822 DC du 30/07/2021, non-conformité partielle avec réserve).
 
 Établi par les textes publiés au JO. Lien : [[2017-10-30-loi-silt]].
