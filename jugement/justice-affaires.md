@@ -1,15 +1,15 @@
 ---
 domaine: justice-affaires
 verdict: defavorable
-date_verdict: 2026-07-31
+date_verdict: 2026-08-03
 ---
 
 # Jugement : justice-affaires
 
 ## Périmètre
 
-Ce jugement se rend sur les 53 fiches portant le slug `justice-affaires` au
-31/07/2026, et sur les points restés à vérifier, recensés pour ce domaine.
+Ce jugement se rend sur les 54 fiches portant le slug `justice-affaires` au
+03/08/2026, et sur les points restés à vérifier, recensés pour ce domaine.
 Le cœur du domaine tient en deux volets : les affaires (la probité des membres du
 gouvernement et de l'entourage présidentiel, la façon dont l'exécutif les a
 traitées, leur issue judiciaire) et l'action de l'exécutif sur la machine
@@ -29,7 +29,14 @@ septembre 2026, appel Bayrou à l'automne 2026, instructions Kohler, campagnes
 relèvent du contrat de réouverture (voir METHODE.md, « Mise à jour »). Par ailleurs, une part notable
 des jugements notoires du domaine tient en grade B sur URL unique (liste tenue au suivi de couverture du dossier), deux fiches C ne s'utilisent qu'« à re-vérifier à chaque
 usage » (condamnations tardives de policiers, constat négatif McKinsey) et une
-est inutilisable en l'état (Rodrigues). La couverture temporelle, elle, s'étale
+est inutilisable en l'état (Rodrigues). Une reprise des sources conduite le
+03/08/2026 n'a déplacé aucun grade du domaine, mais elle a établi un fait qui
+commande la lecture : toutes les décisions citées ici ne sont pas publiées sur
+les portails officiels. Le jugement Benalla de première instance ne l'est pas,
+la condamnation étant établie par la presse parlementaire du jour et par
+l'arrêt qui l'a rendue définitive ; l'arrêt de cassation Ferrand ne l'est pas
+non plus, le rejet du pourvoi étant établi par la publication d'une partie à
+l'instance, et aucun numéro de pourvoi n'est cité faute d'avoir pu être ouvert. La couverture temporelle, elle, s'étale
 sur les deux quinquennats sans le déséquilibre marqué d'autres domaines. Aucun
 des cinq retournements de charge du §7 ne joue directement ici ; la discipline
 générale du socle (aucun « du jamais vu » sans série comparative) s'applique et
@@ -71,7 +78,7 @@ Les amendes forfaitaires délictuelles, multipliées par neuf en cinq ans (57 30
 en 2019, 499 900 en 2024, 10 % des délits enregistrés), ne sont payées qu'à
 24,1 %, laissant 1,1 Md€ à recouvrer : une pénalité de masse s'est installée
 sans exécution effective ([[2026-04-01-cour-comptes-amendes-forfaitaires]]). La
-LOPJ 2023-2027 budgète 10 000 postes, au-delà de la promesse, mais l'exécution
+LOPJ 2023-2027 budgète 10 000 emplois nets d'ici 2027, au-delà de la promesse, mais l'exécution
 est contestée par le Sénat : annulations de crédits (139,1 M€ en 2025), postes
 pourvus sous les plafonds, recrutements absorbés par la vacance structurelle
 ([[2023-11-20-lopj-10000-postes-justice]], statut partielle). Ce qui limite la
@@ -240,8 +247,9 @@ l'efface pas (les condamnations restent), et le cas Dati (charge 4) en est le
 contre-exemple frontal.
 
 **4. Des créations réelles pour l'institution judiciaire, votées et mises en
-œuvre.** La LOPJ 2023-2027 budgète 10 000 postes dont 1 500 magistrats et 1 800
-greffiers, au-delà de la promesse de 2022, et 238 brigades de gendarmerie sont
+œuvre.** La LOPJ 2023-2027 budgète à son article 1er 10 000 emplois nets d'ici
+2027, dont 1 500 magistrats et 1 800 greffiers supplémentaires, au-delà de la
+promesse de 2022, et 238 brigades de gendarmerie sont
 annoncées contre 200 promises ([[2023-11-20-lopj-10000-postes-justice]],
 grade A) ; la loi narcotrafic crée le PNACO, opérationnel en janvier 2026, avec
 des décrets d'application réellement pris, le Conseil constitutionnel n'ayant
