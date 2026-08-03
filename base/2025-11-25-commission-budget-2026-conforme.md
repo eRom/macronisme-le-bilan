@@ -10,8 +10,8 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://economy-finance.ec.europa.eu/system/files/2025-11/c_2025_9057_en.pdf
-  - https://economy-finance.ec.europa.eu/euro-area-surveillance/draft-budgetary-plans/draft-budgetary-plans-2026_en
+  - https://economy-finance.ec.europa.eu/document/download/f29a0ce8-0b5c-460e-9f45-272b6af7907a_en?filename=C_2025_9057_1_EN_France.pdf
+  - https://economy-finance.ec.europa.eu/economic-governance-framework/stability-and-growth-pact/annual-draft-budgetary-plans-dbps-euro-area-countries/draft-budgetary-plans-2026_en
 ---
 
 La France soumet son projet de plan budgétaire 2026 le 31/10/2025. Le 25/11/2025, la Commission européenne le déclare conforme à la recommandation du Conseil du 21/01/2025 ([[2025-01-21-conseil-trajectoire-contraignante-2029]]), par l'avis C(2025) 9057 final.

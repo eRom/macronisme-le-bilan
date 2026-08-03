@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - http://cergy-pontoise.tribunal-administratif.fr/Actualites-du-Tribunal/Communiques/Le-tribunal-administratif-de-Cergy-Pontoise-annule-les-decisions-du-ministere-de-l-interieur-tendant-au-retrait-de-publications-sur-le-site-Indymedia-Nantes
+  - https://cergy-pontoise.tribunal-administratif.fr/decisions-de-justice/dernieres-decisions/internet-premier-jugement-rendu-sur-saisine-de-la-personnalite-qualifiee-designee-par-la-cnil
   - https://www.legalis.net/jurisprudences/tribunal-administratif-de-cergy-pontoise-jugement-du-04-fevrier-2019/
 ---
 

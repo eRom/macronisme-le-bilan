@@ -10,8 +10,8 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://agriculture.gouv.fr/lancement-de-la-strategie-ecophyto-2030
-  - https://agriculture.gouv.fr/indicateurs-de-suivi-des-produits-phytopharmaceutiques-pour-lannee-2023
+  - https://agriculture.gouv.fr/planification-ecologique-et-agriculture-le-gouvernement-publie-la-strategie-ecophyto-2030
+  - https://agriculture.gouv.fr/les-indicateurs-de-suivi-de-la-strategie-ecophyto-2030
 ---
 
 La stratégie Écophyto 2030, présentée le 06/05/2024, acte l'abandon du NODU comme indicateur de référence au profit du HRI-1, indicateur de risque harmonisé européen. Le HRI-1 pondère les quantités vendues par des coefficients de danger : il fait mécaniquement apparaître une baisse plus favorable que le NODU, qui mesure l'intensité de recours aux pesticides.

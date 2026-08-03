@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://frontex.europa.eu/media-centre/news/news-releases/management-board-takes-note-of-resignation-of-executive-director-of-frontex-3M3tS5
+  - https://www.frontex.europa.eu/media-centre/news/news-release/frontex-statement-following-the-conclusions-of-the-extraordinary-management-board-meeting-tQDU9Z
 ---
 
 Le conseil d'administration de Frontex prend acte le 29/04/2022 de la démission de son directeur exécutif français, Fabrice Leggeri, à la suite des conclusions d'une enquête de l'Office européen de lutte antifraude.

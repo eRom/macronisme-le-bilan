@@ -10,8 +10,8 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.consilium.europa.eu/en/press/press-releases/2025/01/21/economic-governance-council-adopts-recommendations-for-seven-member-states-to-correct-their-excessive-deficits/
-  - https://economy-finance.ec.europa.eu/system/files/2025-01/com_2025_recommendation_france_en.pdf
+  - https://www.consilium.europa.eu/en/press/press-releases/2025/01/21/stability-and-growth-pact-council-adopts-recommendations-to-countries-under-excessive-deficit-procedure/
+  - https://economy-finance.ec.europa.eu/document/download/f8be355b-dd72-4726-b81e-fea6e416fc1b_en?filename=MTFSP_2025_FR.pdf
   - https://www.senat.fr/rap/r24-789/r24-789.html
 ---
 

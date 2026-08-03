@@ -11,7 +11,7 @@ acteurs:
 grade: A
 sources:
   - https://www.hatvp.fr/communique/situation-de-mme-caroline-cayeux-la-haute-autorite-avise-le-procureur-de-la-republique/
-  - https://actu.orange.fr/france/patrimoine-sous-evalue-l-ex-ministre-caroline-cayeux-condamnee-a-10-mois-de-prison-avec-sursis-magic-CNT000002dnK1z.html
+  - https://france3-regions.franceinfo.fr/hauts-de-france/oise/patrimoine-sous-evalue-de-11-7-millions-d-euros-et-fraude-fiscale-caroline-cayeux-condamnee-a-10-mois-d-emprisonnement-avec-sursis-3348985.html
 ---
 
 Le 28 novembre 2022, Cayeux démissionne après un contrôle HATVP concluant à une déclaration de patrimoine sous-évaluée d'environ 11,7 millions d'euros ; la Haute Autorité avise le procureur le 29 novembre 2022.

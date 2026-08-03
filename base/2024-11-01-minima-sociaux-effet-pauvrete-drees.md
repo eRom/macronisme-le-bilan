@@ -9,7 +9,8 @@ acteurs:
   gouvernement: DREES
 grade: A
 sources:
-  - https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse/panoramas-de-la-drees/minima-sociaux-et-prestations-de-solidarite-0
+  - https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse/panoramas-de-la-drees/241022_Minima_Sociaux_2024
+  - https://drees.solidarites-sante.gouv.fr/sites/default/files/2024-10/MS2024.pdf
 ---
 
 Selon la DREES (panorama « Minima sociaux et prestations de solidarité ») : en 2022, la redistribution (prestations non contributives et impôts directs) réduit le taux de pauvreté de 6,9 points (21,3 % → 14,4 %) et l'intensité de la pauvreté de 18,7 points ; les prestations représentent environ 38 % du revenu disponible des ménages pauvres. Mais le RSA d'une personne seule ne vaut que 46,5 % du seuil de pauvreté (2023), et environ 66 % des personnes en ménage RSA restent pauvres monétairement.

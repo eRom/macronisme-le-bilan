@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: abandonnee
 sources:
-  - https://www.assemblee-nationale.fr/15/cri/2020-2021-extra/20210291.asp
+  - https://www.assemblee-nationale.fr/dyn/15/comptes-rendus/seance/session-extraordinaire-de-2020-2021/premiere-seance-du-mardi-06-juillet-2021
 ---
 
 Le 06/07/2021, à la tribune de l'Assemblée nationale, Jean Castex constate que le blocage du Sénat met fin au processus de révision constitutionnelle visant à inscrire la protection de l'environnement à l'article 1er de la Constitution, l'article 89 exigeant un vote conforme des deux chambres. Il déclare regretter que ce vote « mette, hélas, un terme au processus de révision constitutionnelle ».

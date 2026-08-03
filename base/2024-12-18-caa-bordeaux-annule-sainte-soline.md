@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://bordeaux.cour-administrative-appel.fr/decisions-marquantes/reserves-de-substitution-de-la-sevre-niortaise-et-du-mignon
+  - https://bordeaux.cour-administrative-appel.fr/decisions-de-justice/dernieres-decisions/contentieux-des-bassines-dans-le-bassin-de-la-sevre-niortaise-mignon-quatre-reserves-dont-celle-de-sainte-soline-sont-illegales-en-l-absence-de
 ---
 
 Le 18/12/2024, la cour administrative d'appel de Bordeaux prononce l'annulation partielle des autorisations environnementales de quatre réserves de substitution du bassin Sèvre Niortaise-Mignon : SEV14, SEV15 (Sainte-Soline), SEV24 et SEV26. Motif : absence de dérogation « espèces protégées » alors que les travaux impactent des milieux accueillant des oiseaux nicheurs menacés, dont l'outarde canepetière.
