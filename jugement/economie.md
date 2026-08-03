@@ -1,14 +1,14 @@
 ---
 domaine: economie
 verdict: defavorable
-date_verdict: 2026-07-31
+date_verdict: 2026-08-03
 ---
 
 # Jugement : economie
 
 ## Périmètre
 
-Ce jugement se rend sur les 47 fiches portant le slug `economie` au 31/07/2026,
+Ce jugement se rend sur les 47 fiches portant le slug `economie` au 03/08/2026,
 et sur les points restés à vérifier, recensés pour ce domaine. Le cœur du
 domaine : la fiscalité des ménages et du capital, le droit du travail et les
 règles d'indemnisation vues comme instruments de politique de l'emploi, la
@@ -121,8 +121,11 @@ l'accord d'entreprise, fusionnent les instances représentatives dans le comité
 social et économique et plafonnent les indemnités prud'homales pour licenciement
 sans cause réelle et sérieuse ([[2017-09-22-ordonnances-penicaud-code-travail]],
 grade A). Le barème est validé deux fois, par le Conseil constitutionnel le
-21/03/2018 puis par la Cour de cassation en assemblée plénière le 11/05/2022,
-qui écarte le contrôle in concreto
+21/03/2018 puis par la Cour de cassation le 11/05/2022, en chambre sociale et
+non en assemblée plénière contrairement à ce qui est souvent écrit, par deux
+arrêts d'objets distincts : le premier juge le barème conforme à la convention
+OIT n° 158 et écarte le contrôle in concreto, le second dénie tout effet direct
+en droit interne à la Charte sociale européenne
 ([[2022-05-11-bareme-macron-validation-judiciaire]], grade A) : le droit à
 réparation intégrale du licenciement abusif est donc durablement plafonné. Le
 bilan officiel de la fusion des instances est contrasté, avec surcharge des élus
@@ -142,7 +145,9 @@ Le résultat est évalué par le comité officiel présidé par Rafael Lalive
 retour à l'emploi réduite jusqu'à 12 %, mais sans amélioration de la qualité ni
 de la durabilité des emplois repris, la reprise des publics fragiles se
 concentrant sur des CDD de moins de six mois et l'intérim. Le RSA conditionné à
-15 heures d'activité suit exactement le même schéma
+quinze heures d'activité hebdomadaire, avec dérogations pour raisons de santé,
+handicap, invalidité ou parent isolé sans solution de garde, suit exactement le
+même schéma
 ([[2023-12-18-rsa-conditionne-15h]], grade A) : l'évaluation DARES-IPP de juin
 2026 attribue la hausse de la probabilité d'emploi à six mois « en très grande
 partie » au recours aux contrats aidés, non à un effet propre d'insertion
@@ -377,9 +382,9 @@ une hausse d'impôt indirecte pour l'ensemble des contribuables.
   commerciales, de grade A ([[2026-02-05-balance-commerciale-2025]]).
 - **« Le barème Macron, déni du droit à réparation. »** Écartée comme charge
   juridique : le plafonnement a été validé par le Conseil constitutionnel puis
-  par la Cour de cassation en assemblée plénière, qui le juge conforme à la
-  convention OIT n° 158 et dénie tout effet direct à la Charte sociale
-  européenne entre particuliers. La contestation devant les organes
+  par la chambre sociale de la Cour de cassation, qui le juge conforme à la
+  convention OIT n° 158 dans un arrêt et dénie tout effet direct en droit
+  interne à la Charte sociale européenne dans un autre. La contestation devant les organes
   internationaux n'est portée par aucune pièce du dossier. Ce qui tient est le
   fait, le plafonnement durable lui-même, porté par la charge 3
   ([[2022-05-11-bareme-macron-validation-judiciaire]]).
