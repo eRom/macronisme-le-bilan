@@ -34,9 +34,16 @@ première.
 ## Avancement
 
 Les entrées marquées `[FAIT]` ont été remplacées par le texte réel, ouvert et
-vérifié sur un élément de contenu. Le lot 1 (03/08/2026) a traité les fiches
-citées par la synthèse : **9 entrées soldées sur 84**, soit 10 références
-puisque l'une servait à deux fiches.
+vérifié sur un élément de contenu.
+
+| Lot | Périmètre | Entrées soldées | Reste |
+|---|---|---|---|
+| 1 | fiches citées par la synthèse | 9 (10 références, l'une servant à deux fiches) | 75 |
+| 2 | `ecologie-energie` et `education-recherche`, soldés en entier | 31 | 44 |
+
+Reste par domaine : `justice-affaires` 10, `promesses` 8,
+`libertes-publiques` 8, `economie` 8, `europe` 3, `industrie` 3,
+`securite-immigration` 2, `finances-publiques` 1, `retraites-social` 1.
 
 ## Inventaire
 
@@ -49,7 +56,29 @@ deux textes différents. C'est arrivé sur la loi pouvoir d'achat du 16/08/2022,
 où une fiche visait l'article 10 et l'autre l'article 1er. **Avant de solder
 une entrée « source partagée », vérifier ce que chaque fiche visait.**
 
-### ecologie-energie — 18 références
+### ecologie-energie — 18 références — **SOLDÉ le 03/08/2026**
+
+Correspondance établie, fabriqué → réel :
+
+| Fiche | Texte réel retrouvé |
+|---|---|
+| démission Hulot | décret du 04/09/2018 composition du Gouvernement, `JORFTEXT000037365283` |
+| deuxième budget carbone | décret n° 2020-457, `JORFTEXT000041814459` |
+| Affaire du Siècle, carence | TA Paris 03/02/2021 n° 1904967 et a., **absent du portail** : page du tribunal |
+| Grande-Synthe II | CE 01/07/2021 n° 427301, `CETATEXT000043754044` |
+| Affaire du Siècle, 15 Mt | TA Paris 14/10/2021, **absent du portail** : page du tribunal |
+| départ Montchalin | décret du 04/07/2022 composition du Gouvernement, `JORFTEXT000046013941` |
+| création SGPE (×2) | décret n° 2022-990 `JORFTEXT000046026058` ; nomination Pellion du 13/07/2022 `JORFTEXT000046045444` |
+| Grande-Synthe III | CE 10/05/2023 n° 467982, `CETATEXT000047540937` |
+| vols intérieurs | décret n° 2023-385, `JORFTEXT000047571222` |
+| Affaire du Siècle, astreinte | TA Paris 22/12/2023 n° 2321828/4-1, **absent du portail** : page du tribunal |
+| MaPrimeRénov' | décret n° 2024-249 `JORFTEXT000049309890` **et** arrêté du 21/03/2024 `JORFTEXT000049309915`, qui portent deux objets distincts |
+| sortie du charbon | décret n° 2023-817, `JORFTEXT000047989248` |
+| prime à la conversion | décret n° 2024-1084, `JORFTEXT000050690951` |
+| versement nucléaire | loi n° 2025-127 `JORFTEXT000051168007` + code de l'énergie `LEGISCTA000051213805` |
+| clôture Grande-Synthe | CE 24/10/2025 n° 467982, `CETATEXT000052431885` |
+
+Inventaire d'origine conservé tel quel ci-dessous.
 
 - `2018-08-28-demission-hulot.md` [A]
   https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000037367394
@@ -91,7 +120,22 @@ une entrée « source partagée », vérifier ce que chaque fiche visait.**
   → JORFTEXT000053508155 (LFI 2026, loi n° 2026-103 du 19/02/2026), plus deux
   sources non-Légifrance : c'était la seule source de la fiche
 
-### education-recherche — 17 références
+### education-recherche — 17 références — **SOLDÉ le 03/08/2026**
+
+Correspondance établie, fabriqué → réel :
+
+| Fiche | Texte réel retrouvé |
+|---|---|
+| maths hors tronc commun (×2) | arrêté du 16/07/2018 cycle terminal `LEGITEXT000037208167` ; arrêté du 03/01/2023 `JORFTEXT000047005229` |
+| réforme du lycée (×2) | arrêté du 16/07/2018 épreuves `JORFTEXT000037202834` ; décret n° 2021-983 `JORFTEXT000043861382` |
+| LPR | loi n° 2020-1674, `JORFTEXT000042738027` |
+| AESH | loi n° 2022-1574, `JORFTEXT000046751169` |
+| sélection en master (×3) | CE 07/06/2023 n° 471537 `CETATEXT000047656413` ; CE 31/10/2023 même requête `CETATEXT000048300416` ; loi n° 2016-1828 `JORFTEXT000033680801` |
+| voie professionnelle (×2) | décret n° 2023-765 `JORFTEXT000047963959` ; arrêté du 11/08/2023 `JORFTEXT000047963979` |
+| choc des savoirs, groupes (×2) | décrets n° 2024-228 `JORFTEXT000049286365` et n° 2024-229 `JORFTEXT000049286397`, **du 16 et non du 15 mars** |
+| choc des savoirs, abandon (×2) | décret n° 2026-172 `JORFTEXT000053652587`, arrêté du 10/03/2026 `JORFTEXT000053652601`, décret n° 2026-625 `JORFTEXT000054417257` |
+
+Inventaire d'origine conservé tel quel ci-dessous.
 
 - `2018-07-16-maths-hors-tronc-commun-effet-filles.md` [A]
   https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037227443/

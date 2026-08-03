@@ -93,6 +93,27 @@ donné une source valide pointant vers le mauvais article, c'est-à-dire le
 piège précédent, creusé de sa propre main. **Ouvrir chaque fiche partageant
 l'URL avant de solder.**
 
+**Un identifiant peut être faux deux fois : par son numéro et par son fonds.**
+Les trois jugements de l'Affaire du Siècle étaient cités en `CETATEXT`. Or le
+portail ne publie pas ces jugements de tribunal administratif : aucun
+identifiant n'aurait pu marcher. Chercher un identifiant plausible dans ce
+cas est une perte de temps garantie. **Avant de traquer un numéro, se
+demander si la juridiction publie là.** La bonne source était la page du
+tribunal, avec le numéro de jugement.
+
+**Un décret et un arrêté du même jour ne portent pas le même objet.** La fiche
+MaPrimeRénov' attribuait au décret n° 2024-249 la levée de l'obligation de
+DPE, qui est dans l'arrêté du même jour ; le décret ne traite que du parcours
+monogeste. Une réparation d'URL qui ne lit pas le texte reconduit l'erreur en
+lui donnant l'apparence d'une source vérifiée.
+
+**Le résumé d'une recherche n'est pas le texte.** Sur le décret n° 2023-817,
+le résumé annonçait un plafond de 0,6 puis 0,7 kt eq CO2/MW et laissait croire
+que la fiche se trompait avec ses 1,8. L'ouverture du texte a donné raison à
+la fiche : 1,8 du 01/04/2023 au 31/12/2024, 0,7 ensuite. **Ne jamais corriger
+une fiche sur la foi d'un résumé de moteur ; seul le texte tranche**, dans un
+sens comme dans l'autre.
+
 **Un rapport parlementaire porte les chiffres du projet, pas de la loi.** Sur
 le Fonds vert, le rapport sénatorial donne 650 M€ d'autorisations
 d'engagement pour le PLF 2026, quand le texte voté en retient 837. Les deux
@@ -113,12 +134,19 @@ la fiche.
   des tarifs du gaz court du 31/10/2021 et non du 01/10, et le décret du
   30/06/2024 suspend la réforme de l'assurance chômage en prolongeant les
   règles antérieures plutôt qu'en la suspendant directement.
-- **À faire : 75 entrées d'inventaire restantes** (84 moins les neuf du lot 1),
-  par [`../references-fabriquees.md`](../references-fabriquees.md). Reste par
-  domaine : `ecologie-energie` 16, `education-recherche` 15,
-  `justice-affaires` 10, `promesses` 8, `libertes-publiques` 8, `economie` 8,
-  `europe` 3, `industrie` 3, `securite-immigration` 2, `finances-publiques` 1,
-  `retraites-social` 1.
+- Fait : **lot 2**, `ecologie-energie` et `education-recherche` soldés en
+  entier. 31 entrées, 24 fiches. Sept corrections de fond au passage, toutes
+  découvertes en ouvrant le texte et invisibles à un contrôle d'URL : deux
+  erreurs de date de décret, une attribution de mesure au mauvais texte du
+  même jour, un résumé de jugement qui inversait le sens du dispositif, un
+  seuil de prix attribué à une loi qui ne le contient pas, deux NOR non
+  sondés retirés. Un seul grade a bougé, et il n'a pas bougé : le versement
+  nucléaire universel reste en B, mais sa réserve change d'objet.
+- **À faire : 44 entrées d'inventaire restantes**, par
+  [`../references-fabriquees.md`](../references-fabriquees.md). Reste par
+  domaine : `justice-affaires` 10, `promesses` 8, `libertes-publiques` 8,
+  `economie` 8, `europe` 3, `industrie` 3, `securite-immigration` 2,
+  `finances-publiques` 1, `retraites-social` 1.
 - À faire ensuite : 264 sources mortes, 15 déplacées.
 - À faire en dernier : la révision des pièces de jugement, groupée, une fois le
   corpus assaini. Aucun verdict n'a bougé à ce jour et aucun ne doit bouger

@@ -68,6 +68,25 @@ produit une source valide pointant vers le mauvais article, soit le piège
 précédent creusé de sa propre main. **Une réparation groupée par URL doit
 rouvrir chaque fiche qui la cite.**
 
+**Toutes les juridictions ne publient pas sur le portail.** Trois jugements du
+tribunal administratif de Paris (Affaire du Siècle) étaient cités par un
+identifiant `CETATEXT` : aucun identifiant n'aurait pu fonctionner, le fonds
+lui-même ne contient pas ces décisions. Avant de chercher un numéro, vérifier
+que la juridiction publie là ; sinon la source est la page de la juridiction,
+citée avec le numéro de jugement.
+
+**Un décret et un arrêté du même jour portent des objets différents.** Le
+décret n° 2024-249 et l'arrêté du 21/03/2024 ont été confondus dans une fiche :
+le premier prolonge le parcours monogeste, le second lève l'obligation de DPE.
+Réparer l'URL sans lire le texte aurait donné à l'erreur l'apparence d'une
+source vérifiée, ce qui est pire que l'erreur nue.
+
+**Ne jamais corriger une fiche sur la foi d'un résumé de moteur.** Un résumé
+de recherche donnait 0,6 puis 0,7 kt eq CO2/MW là où une fiche écrivait 1,8 ;
+le texte ouvert a donné raison à la fiche (1,8 jusqu'au 31/12/2024, 0,7
+ensuite). Le résumé se trompe dans les deux sens : il peut valider une erreur
+comme en inventer une.
+
 **Un rapport de commission porte les chiffres du projet, la loi ceux du texte
 voté.** Sur le Fonds vert, le rapport sénatorial donne 650 M€ d'autorisations
 d'engagement au PLF 2026 quand la loi promulguée en retient 837. Les deux
