@@ -303,9 +303,10 @@ création de la période ([[2019-11-08-loi-energie-climat]]) : l'exécutif a
 installé lui-même l'institution indépendante dont les constats nourrissent ce
 dossier. S'y ajoutent le SGPE ([[2022-07-07-creation-sgpe]]), une planification
 finalement complète même si tardive et réglementaire
-([[2026-02-12-planification-ecologique-par-decrets]]), 2,5 millions de
-logements aidés par MaPrimeRénov' avec des rénovations d'ampleur en hausse de
-31 % en 2025 ([[2026-02-12-bilan-anah-maprimerenov]], grade A), un record de
+([[2026-02-12-planification-ecologique-par-decrets]]), 4,39 Md€ d'aides à la
+rénovation distribuées en 2025, en hausse de 16 %, dont 120 305 rénovations
+d'ampleur, soit près de 40 % des rénovations énergétiques financées
+([[2026-02-12-bilan-anah-maprimerenov]], grade A), un record de
 raccordement solaire en accélération continue depuis 2022
 ([[2026-07-03-record-raccordement-solaire]], grade A), les trois premiers
 parcs éoliens en mer du pays ([[2022-11-23-premiers-parcs-eoliens-en-mer]],

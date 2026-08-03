@@ -15,8 +15,9 @@ n'instruit pas : aucune charge ni décharge nouvelle n'y naît, et les fiches de
 établis par les pièces de domaine.
 
 Les quinze pièces ont d'abord été rendues le 31/07/2026. Treize ont été
-révisées le 03/08/2026, à l'issue d'une vérification des sources du socle qui a
-corrigé une douzaine de faits, et leur `date_verdict` porte cette date ;
+révisées le 03/08/2026, à l'issue d'une vérification des sources du socle,
+poursuivie le même jour sur les adresses devenues mortes, qui a corrigé une
+vingtaine de faits, et leur `date_verdict` porte cette date ;
 `international` et `securite-civile` gardent le 31/07, aucune de leurs fiches
 n'ayant bougé au fond. Aucun verdict de domaine n'a été déplacé par cette
 révision. Les neuf fils ci-dessous ont été re-testés sur les pièces révisées,

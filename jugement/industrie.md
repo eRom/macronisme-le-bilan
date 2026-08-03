@@ -51,10 +51,10 @@ entre 10 et 11 % du PIB. Son appréciation du rendement de cette dépense est
 frontale : les plans successifs de soutien à la réindustrialisation et à la
 numérisation donnent des résultats « peu concluants », l'impact des programmes
 d'investissement d'avenir « reste limité », et France 2030 « n'évite pas le
-risque de saupoudrage ». Le déficit manufacturier le
-confirme sur toute la période : record absolu hors énergie en 2022 (-82,5 Md€
-contre -57,8 Md€ en 2021, [[2023-02-07-deficit-commercial-record-2022]], grade
-A), toujours structurel en 2025 quand l'Allemagne dégage 200,4 Md€ d'excédent
+risque de saupoudrage ». Le déficit extérieur le
+confirme sur toute la période : en 2022, il se creuse aussi hors énergie et hors
+matériel militaire, à -74 Md€ contre -63 Md€ en 2021
+([[2023-02-07-deficit-commercial-record-2022]], grade A), et reste structurel en 2025 quand l'Allemagne dégage 200,4 Md€ d'excédent
 ([[2026-02-05-balance-commerciale-2025]], grade A). Ce qui limite la charge : le
 rapport couvre cinq années pré-2017, la désindustrialisation est une tendance
 de cinquante ans qui n'est pas imputable à la période, et la stabilisation de la

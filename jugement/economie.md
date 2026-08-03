@@ -204,9 +204,10 @@ les ménages les plus dépendants de la voiture a déclenché la crise sociale
 majeure du premier mandat, et le recul qu'elle a imposé n'a jamais été repris.
 
 **6. Le déficit extérieur ne s'est pas résorbé sur la période, et il reste
-structurel hors énergie.** Les douanes établissent un déficit des biens de
-162,7 Md€ en 2022, record historique absolu, dont un solde manufacturier hors
-énergie lui aussi record à -82,5 Md€ contre -57,8 Md€ en 2021
+structurel hors énergie.** Les douanes établissent au 07/02/2023 un déficit des
+biens de 164 Md€ en 2022, record historique absolu, et le creusement n'est pas
+seulement énergétique : hors énergie et hors matériel militaire, le déficit se
+dégrade aussi, à -74 Md€ contre -63 Md€ en 2021
 ([[2023-02-07-deficit-commercial-record-2022]], grade A). Le reflux est réel
 ensuite, à -69,2 Md€ en 2025 après -81,0 en 2024 et -99,6 en 2023, mais il est
 porté par la baisse des prix de l'énergie et le retour du parc nucléaire, et
