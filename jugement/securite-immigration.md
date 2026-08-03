@@ -1,7 +1,7 @@
 ---
 domaine: securite-immigration
 verdict: defavorable
-date_verdict: 2026-07-31
+date_verdict: 2026-08-03
 ---
 
 # Jugement : securite-immigration
@@ -9,7 +9,7 @@ date_verdict: 2026-07-31
 ## Périmètre
 
 Ce jugement se rend sur les 33 fiches portant le slug `securite-immigration` au
-31/07/2026, et sur les points restés à vérifier, recensés pour ce domaine.
+03/08/2026, et sur les points restés à vérifier, recensés pour ce domaine.
 Le cœur du domaine : la politique migratoire et d'asile (lois, éloignements,
 frontières, Mayotte), la sécurité intérieure (effectifs, organisation policière,
 délinquance, narcotrafic) et le contentieux qui s'y rattache. Les pièces
@@ -94,7 +94,11 @@ documente une correction de ces pratiques.
 la première dérogation territoriale au droit du sol de la République : à
 Mayotte, l'enfant né sur le sol n'acquiert la nationalité que si un parent est
 en séjour régulier depuis trois mois ([[2018-09-10-loi-collomb]], grade A). La
-loi du 12/05/2025 durcit à deux parents en séjour régulier depuis un an
+loi du 12/05/2025 durcit à deux parents en séjour régulier depuis un an, la
+condition ne valant que pour un seul lorsque la filiation n'est établie qu'à
+son égard, et le Conseil constitutionnel la déclare conforme sous réserve en
+retenant que les contraintes particulières de Mayotte autorisent le législateur
+à adapter dans une certaine mesure les règles d'acquisition de la nationalité
 ([[2025-05-12-droit-du-sol-mayotte-deux-parents]], grade A). Entre les deux, la
 loi immigration de 2024 reporte à 2027 l'application à Mayotte de l'interdiction
 de placement en rétention des mineurs étrangers, régime dérogatoire critiqué par
@@ -118,9 +122,10 @@ années couvertes l'étant sous les mandats d'Emmanuel Macron
 excèdent six mois sauf menace nouvelle distincte
 ([[2022-04-26-cjue-plafond-six-mois-controles-frontieres]], grade A) : la
 pratique française excédait ce plafond depuis des années. Elle n'est pas
-interrompue ; le Conseil d'État la valide trois mois plus tard au motif de la
-persistance de la menace, puis juge en 2025 que le nouveau cadre européen fait
-repartir les compteurs ([[2022-07-27-conseil-etat-valide-renouvellements-controles]],
+interrompue ; le Conseil d'État juge trois mois plus tard le renouvellement
+licite à la condition que la menace soit « nouvelle », notion qu'il définit et
+qu'il tient pour caractérisée, puis juge en 2025 que le nouveau cadre européen
+fait repartir les compteurs ([[2022-07-27-conseil-etat-valide-renouvellements-controles]],
 grade A). En 2024, le nouveau code frontières Schengen, dont la France comptait
 parmi les États demandeurs, porte le plafond à deux ans prolongeables,
 régularisant en droit la pratique jugée non conforme
@@ -155,7 +160,7 @@ commission d'enquête du Sénat). Les amendes forfaitaires délictuelles sont
 multipliées par neuf en cinq ans, payées à 24,1 %, laissant 1,1 milliard d'euros
 à recouvrer, la hausse reflétant en partie un effet d'enregistrement
 ([[2026-04-01-cour-comptes-amendes-forfaitaires]], grade A). La LOPJ budgète
-10 000 postes, mais l'exécution est contestée, annulations de crédits comprises
+10 000 emplois nets, mais l'exécution est contestée, annulations de crédits comprises
 ([[2023-11-20-lopj-10000-postes-justice]], grade A). Sur les résultats
 enregistrés : homicides +18 % sur 2017-2025 (826 à 975 victimes, série peu
 sensible au biais de plainte, stable 2024-2025), coups et blessures +52 % mais
@@ -247,7 +252,8 @@ censures de fond se limitent à deux articles de la loi immigration (les quotas
 parlementaires et le relevé d'empreintes sans consentement,
 [[2024-01-26-loi-immigration-censure-partielle]], grade A) et à un article de la
 loi narcotrafic ([[2025-06-13-loi-narcotrafic]], grade A) ; le Conseil d'État a
-validé les renouvellements de contrôles frontaliers en 2022 comme en 2025
+validé les renouvellements de contrôles frontaliers en 2022, sous la condition
+d'une menace nouvelle qu'il a lui-même définie, comme en 2025
 ([[2022-07-27-conseil-etat-valide-renouvellements-controles]], grade A). Portée
 exacte, identique à la décharge homologue du domaine institutions : elle
 interdit toute charge d'illégalité des textes, elle ne couvre ni les pratiques
