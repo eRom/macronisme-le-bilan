@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.legifrance.gouv.fr/cne/id/CETATEXT000041753909/
+  - https://www.legifrance.gouv.fr/ceta/id/CETATEXT000041782274
 ---
 
 Saisi en référé-liberté par le syndicat Jeunes Médecins, le juge des référés du Conseil d'État rejette, par ordonnance n° 439674 du 22/03/2020, la demande d'un confinement total. Il retient qu'une telle mesure présenterait d'importants risques de rupture d'approvisionnement en denrées de première nécessité, en eau et en électricité, ainsi que d'interruption des télécommunications. Il enjoint toutefois à l'exécutif de préciser et de durcir certaines dérogations aux déplacements.

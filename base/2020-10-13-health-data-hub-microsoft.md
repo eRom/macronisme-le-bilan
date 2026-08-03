@@ -11,7 +11,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.legifrance.gouv.fr/cne/id/CETATEXT000042426359/
+  - https://www.legifrance.gouv.fr/ceta/id/CETATEXT000042444915
   - https://www.health-data-hub.fr/presse/la-plateforme-des-donnees-de-sante-selectionne-scaleway-pour-lhebergement-de-ses-donnees
 ---
 
