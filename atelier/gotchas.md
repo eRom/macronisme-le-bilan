@@ -33,6 +33,33 @@ recherche restreinte à `legifrance.gouv.fr` : une requête suffit.
 > ouvert est présumé faux.** Les moteurs de recherche fabriquent des numéros de
 > loi et des URL parfaitement plausibles.
 
+**L'ampleur du piège a été mesurée le 03/08/2026, et elle est massive.** Le
+sondage réel des 887 sources distinctes du corpus a trouvé **84 références
+officielles qui ne mènent à aucun texte** : 67 fiches, 11 domaines, 79 sur des
+fiches de grade A, toutes citées par au moins une pièce de jugement. La règle
+du sondage n'était donc pas une précaution théorique, c'était une dette. Mode
+opératoire de réparation : `notes/campagne-integrite-sources.md`.
+
+**Un identifiant fabriqué tombe dans la bonne plage numérique.** Les 84 faux
+identifiants étaient à quelques centaines d'unités des vrais, soit à quelques
+jours de la bonne date de publication. Un contrôle de vraisemblance
+chronologique (`audit-identifiants.ts`) n'en signale aucun et ne le peut pas :
+il trie des candidats au sondage, il ne vérifie rien. **Ne jamais conclure d'un
+silence de cet outil.** Seul `audit-sources.ts`, qui ouvre les URL, tranche.
+
+**Le pire cas répond HTTP 200.** Une page Légifrance affichant « Pas de contenu
+disponible » renvoie un code de succès. Un contrôle de statut ne voit rien, un
+contrôle d'identifiant ne voit rien, seul le contenu de la page trahit. Corollaire
+symétrique : un défi anti-robot Cloudflare répond aussi 200, et le compter
+« vivant » serait pire encore, puisque cela déclarerait vérifiée une source que
+personne n'a vue. Les deux marqueurs sont dans les tables de l'outil.
+
+**Une URL valide peut mener au mauvais texte.** Relevé dans
+`securite-immigration` : l'URL d'un décret de 2019 servie pour un décret de
+2023. Aucun contrôle mécanique ne voit ce cas, la page est parfaitement valide.
+Il faut lire ce qu'elle contient. Sonder une URL, ce n'est pas vérifier qu'elle
+répond, c'est vérifier qu'elle désigne le texte annoncé.
+
 ## Les moteurs de recherche
 
 **Ils ne se valent pas sur la fabrication de références.** Sur ce dossier, le
@@ -121,6 +148,12 @@ interrogeable d'un `grep`.
 **Contrôle mécanique avant tout commit** : zéro renvoi `[[slug]]` mort, tout lien
 de pièce pointant vers un fichier existant. Le build le fait aujourd'hui, mais la
 règle précède l'outil.
+
+**Les trois audits ne se remplacent pas, ils se complètent.**
+`atlas/build.ts` scanne le rendu du site, `audit-publiabilite.ts` scanne les
+sources markdown, `audit-sources.ts` sort du dépôt et ouvre les URL. Le
+troisième est le seul à voir qu'une référence est vide, et c'est le seul qui
+coûte du réseau : il se lance par campagne, pas à chaque commit.
 
 **Le grade proposé par une recherche n'est qu'une proposition.** À l'ingestion,
 il est revérifié, et en cas de doute c'est le grade inférieur qui est retenu.
