@@ -124,7 +124,7 @@ contraignant sur les délais et les recours
 l'objectif de la PPE 2 d'environ 2,3 GW
 ([[2024-02-15-eolien-terrestre-objectif-manque]]) ; la part modale du vélo
 plafonne autour de 4 % contre un objectif légal de 9 % en 2024
-([[2026-04-15-plan-velo-objectif-manque]], grade B). Sur le climat, le deuxième
+([[2026-04-02-plan-velo-objectif-manque]], grade B). Sur le climat, le deuxième
 budget carbone n'a été respecté que parce que l'exécutif l'avait lui-même
 relevé de 398 à 422 Mt CO2e par an ([[2020-04-21-deuxieme-budget-carbone-releve]],
 grade A), et la justice administrative a constaté la carence : faute reconnue
