@@ -41,9 +41,12 @@ vérifié sur un élément de contenu.
 | 1 | fiches citées par la synthèse | 9 (10 références, l'une servant à deux fiches) | 75 |
 | 2 | `ecologie-energie` et `education-recherche`, soldés en entier | 31 | 44 |
 | 3 | `justice-affaires`, `promesses`, `libertes-publiques`, `economie`, soldés en entier | 34 | 10 |
+| 4 | la traîne : `europe`, `industrie`, `securite-immigration`, `finances-publiques`, `retraites-social` | 10 | **0** |
 
-Reste la seule traîne : `europe` 3, `industrie` 3, `securite-immigration` 2,
-`finances-publiques` 1, `retraites-social` 1.
+**Inventaire soldé le 03/08/2026.** Les 84 entrées ont été traitées, soit 95
+références fabriquées sur l'ensemble du dossier en comptant les onze de
+`sante` corrigées en amont. Ce document devient une archive : il dit ce qui a
+été trouvé et comment cela a été réparé, il n'a plus de file d'attente.
 
 Deux références du lot 3 n'existent pas sur le portail et ne peuvent pas y
 être retrouvées : l'arrêt de cassation Ferrand du 05/10/2022 et le jugement

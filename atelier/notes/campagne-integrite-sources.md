@@ -149,10 +149,14 @@ la fiche.
   cassation, non par son assemblée plénière. Deux décisions de justice se
   sont révélées absentes du portail et sont désormais sourcées ailleurs, en
   le disant.
-- **À faire : 10 entrées d'inventaire restantes**, la seule traîne, par
-  [`../references-fabriquees.md`](../references-fabriquees.md) : `europe` 3,
-  `industrie` 3, `securite-immigration` 2, `finances-publiques` 1,
-  `retraites-social` 1.
+- Fait : **lot 4**, la traîne. 10 entrées, 9 fiches. Deux d'entre elles
+  portaient déjà en toutes lettres une réserve sur leur propre source ; les
+  deux sont levées sur pièces. Une réserve nouvelle est posée sur la date
+  d'adoption de la décision du Conseil dans la fiche PNRR, faute de source
+  primaire : le montant est établi, la date ne l'est pas.
+- **L'inventaire des références fabriquées est soldé.** 95 références au
+  total sur le dossier, toutes remplacées par un texte réel ouvert et vérifié
+  sur son contenu.
 - À faire ensuite : 264 sources mortes, 15 déplacées.
 - À faire en dernier : la révision des pièces de jugement, groupée, une fois le
   corpus assaini. Aucun verdict n'a bougé à ce jour et aucun ne doit bouger
@@ -168,3 +172,12 @@ sourcée. À traiter en campagne de couverture, pas ici.
 - `2026-02-20-fonds-vert-dotation-divisee` attribue une critique à l'AMF et
   une analyse de méthode de cotation à la Cour des comptes et à I4CE, sans
   source pour l'une ni pour l'autre.
+- `2021-11-05-proces-benalla-premiere-instance` donne les peines de trois
+  policiers qu'aucune pièce judiciaire du dossier ne porte ; elles sont
+  désormais explicitement déclassées en grade B dans la fiche.
+- `2023-12-08-pnrr-repowereu-40-3-milliards` porte la date du 08/12/2023 dans
+  son nom de fichier et son frontmatter, alors que l'adoption par le Conseil
+  à cette date n'est pas confirmée. À trancher sur le Journal officiel de
+  l'Union européenne ; si la date change, la fiche se renomme.
+- `2024-09-21-valse-ministres-industrie` : nominations de Sébastien Martin et
+  de Maud Bregeon, et décret d'attributions n° 2025-22, non sondés.

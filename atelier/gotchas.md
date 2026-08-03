@@ -36,9 +36,18 @@ recherche restreinte à `legifrance.gouv.fr` : une requête suffit.
 **L'ampleur du piège a été mesurée le 03/08/2026, et elle est massive.** Le
 sondage réel des 887 sources distinctes du corpus a trouvé **84 références
 officielles qui ne mènent à aucun texte** : 67 fiches, 11 domaines, 79 sur des
-fiches de grade A, toutes citées par au moins une pièce de jugement. La règle
-du sondage n'était donc pas une précaution théorique, c'était une dette. Mode
-opératoire de réparation : `notes/campagne-integrite-sources.md`.
+fiches de grade A, toutes citées par au moins une pièce de jugement. Avec les
+onze de `sante` corrigées en amont, 95 au total. La règle du sondage n'était
+donc pas une précaution théorique, c'était une dette. Elle a été soldée le
+jour même, en quatre lots ; mode opératoire et pièges dans
+`notes/campagne-integrite-sources.md`.
+
+**Écrire ses doutes dans la fiche est ce qui permet de les solder plus tard.**
+Deux fiches portaient, en toutes lettres, une réserve sur leur propre source :
+« l'identifiant cité ne résout vers aucun texte », « le run associait ce
+décret à l'URL d'un autre ». Ces deux phrases ont fait gagner une demi-heure
+chacune à la campagne de réparation, deux mois plus tard. Une réserve écrite
+est une dette identifiée ; une réserve tue est une erreur.
 
 **Un identifiant fabriqué tombe dans la bonne plage numérique.** Les 84 faux
 identifiants étaient à quelques centaines d'unités des vrais, soit à quelques
