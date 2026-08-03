@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.caissedesdepots.fr/actualites/synfonium-la-caisse-des-depots-et-octave-et-miroslaw-klaba-sallient-pour-creer-un-acteur
+  - https://www.banquedesterritoires.fr/octave-klaba-la-banque-des-territoires-et-synfonium-annoncent-la-signature-dun-contrat-dacquisition
 ---
 
 Le moteur de recherche « souverain » Qwant, soutenu par plus de 50 M€ d'investissements publics depuis 2017 et resté technologiquement dépendant de Bing (Microsoft), est repris le 27/06/2023 par Synfonium (75 % famille Klaba/OVH, 25 % Caisse des Dépôts) dans un contexte de lourdes difficultés financières.

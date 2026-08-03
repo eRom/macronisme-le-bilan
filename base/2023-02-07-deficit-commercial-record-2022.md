@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.douane.gouv.fr/actualites/le-commerce-exterieur-de-la-france-en-2022
+  - https://www.douane.gouv.fr/actualites/resultats-du-commerce-exterieur-de-la-france-pour-lannee-2023
   - https://www.insee.fr/fr/statistiques/7650395
 ---
 

@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.consilium.europa.eu/fr/press/press-releases/2024/07/26/excessive-deficit-procedure-council-establishes-the-existence-of-excessive-deficits-for-seven-member-states/
+  - https://www.consilium.europa.eu/en/press/press-releases/2024/07/26/stability-and-growth-pact-council-launches-excessive-deficit-procedures-against-seven-member-states/
 ---
 
 Sur proposition de la Commission du 08/07/2024, le Conseil de l'Union adopte le 26/07/2024 les décisions constatant l'existence d'un déficit excessif pour sept États membres, dont la France. Le déficit public français 2023 s'établissait à 5,5 % du PIB ([[2024-03-26-derapage-deficit-2023]]), très au-dessus du seuil de 3 %.

@@ -11,7 +11,8 @@ grade: A
 statut: null
 sources:
   - https://www.rte-france.com/analyses-tendances-et-prospectives/bilan-electrique-francais/le-bilan-electrique-2022
-  - https://www.cre.fr/publications/rapport-de-surveillance-des-marches-de-gros-de-lelectricite-et-du-gaz-naturel-pour-2022.html
+  - https://www.vie-publique.fr/files/rapport/pdf/290589.pdf
+  - https://assets.rte-france.com/analyse-et-donnees/2023-02/Communiqu%C3%A9%20-%20Bilan%20%C3%A9lectrique%202022.pdf
 ---
 
 Le bilan électrique 2022 de RTE, publié le 16/02/2023, établit un solde importateur net de 16,5 TWh (57 TWh importés, 40,5 TWh exportés) : une première depuis 1980. La production nucléaire tombe à 279 TWh, plus bas niveau depuis 1988, du fait de la corrosion sous contrainte et d'un programme de maintenance chargé ; l'hydraulique est affaiblie par la sécheresse. Le coût net des importations atteint environ 7 Md€, contre 2 Md€ en moyenne historique.

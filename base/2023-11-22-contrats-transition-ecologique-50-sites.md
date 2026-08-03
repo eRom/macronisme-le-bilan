@@ -12,7 +12,7 @@ grade: A
 statut: null
 sources:
   - https://www.ecologie.gouv.fr/presse/signature-des-contrats-de-transition-ecologique-des-50-sites-industriels-les-plus-emetteurs
-  - https://www.ccomptes.fr/fr/publications/les-aides-publiques-la-decarbonation-de-lindustrie
+  - https://www.ccomptes.fr/fr/publications/les-aides-la-decarbonation-de-lindustrie-du-plan-de-relance-et-de-france-2030
 ---
 
 Le 22/11/2023, 32 contrats de transition écologique couvrant les 50 sites industriels les plus émetteurs de France sont signés entre l'État et les industriels, avec une enveloppe publique d'environ 3,4 Md€.

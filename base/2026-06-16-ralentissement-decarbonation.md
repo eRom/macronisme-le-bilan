@@ -10,8 +10,8 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.citepa.org/fr/secten-2026/
-  - https://www.citepa.org/fr/barometre-emissions/
+  - https://www.citepa.org/le-rapport-secten-edition-2026-est-en-ligne/
+  - https://www.citepa.org/donnees-air-climat/donnees-gaz-a-effet-de-serre/barometre-des-emissions-mensuelles/
 ---
 
 Les émissions territoriales hors UTCATF s'établissent à 367 Mt CO2e en 2024, soit moins 3,0 % par rapport à 2023, et les estimations 2025 à 359 Mt CO2e, soit moins 2,1 %. Le rythme de baisse retombe donc en dessous de la moitié de celui de 2023 (moins 5,8 %), une fois passé le rattrapage post-crise nucléaire.

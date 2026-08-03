@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.defense.gouv.fr/actualites/mgcs-signature-dun-accord-historique-char-du-futur
+  - https://www.defense.gouv.fr/actualites/allemagne-signature-phase-1a-du-programme-char-du-futur
 ---
 
 Sébastien Lecornu et son homologue allemand Boris Pistorius signent le protocole lançant la phase 1A du programme Main Ground Combat System, avec une répartition industrielle à parts égales en huit piliers technologiques.

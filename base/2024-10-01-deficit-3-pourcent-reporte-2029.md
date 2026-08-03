@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: abandonnee
 sources:
-  - https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mardi-01-octobre-2024
+  - https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/seance-du-mardi-01-octobre-2024
   - https://www.economie.gouv.fr/files/files/2024/PSMT_2024.pdf
 ---
 
