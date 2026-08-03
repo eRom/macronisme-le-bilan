@@ -1,5 +1,20 @@
 # Campagne des sources mortes
 
+## Reprise immédiate, si la séance repart à froid
+
+1. Lire ce fichier en entier, puis la liste de travail :
+   [`../sources-mortes-orphelines.md`](../sources-mortes-orphelines.md),
+   **cent fiches**, triées, avec leurs URL mortes et la voie probable.
+2. La règle qui prime sur tout, et qui a failli coûter dix-huit fiches :
+   **une URL qui rend 200 n'est pas une source tant qu'on n'a pas vérifié
+   qu'elle porte l'élément de contenu que la fiche affirme.**
+3. Prendre les fiches dans l'ordre du tableau. Commit par lot, fiche d'abord,
+   pièce de jugement ensuite et séparément si la correction en atteint une.
+4. Régénérer la liste après chaque lot, elle se recalcule en deux commandes.
+
+Rien d'autre n'est nécessaire : tout ce qui a été appris est ici ou dans
+[`../gotchas.md`](../gotchas.md).
+
 > Note de chantier ouverte le 03/08/2026, après la clôture de la campagne
 > d'intégrité ([`campagne-integrite-sources.md`](campagne-integrite-sources.md))
 > et la révision des seize pièces de jugement
@@ -162,6 +177,33 @@ remplacer par un document primaire qui établit le même fait (rapport de l'Agen
 des participations de l'État, document budgétaire), ou rétrograder la fiche et
 le dire. **Ne jamais laisser une URL morte en place en espérant qu'elle
 revienne.**
+
+## Ce que la répartition annonce, et qu'il faut savoir avant de commencer
+
+Classées par la forme de leur URL morte, les cent orphelines se répartissent
+ainsi : **51 en voie 3**, la plus coûteuse, 12 en voie 2, 18 en voie 1 ou 1?,
+le reste en combinaisons. **La majorité du lot est donc dans le cas le plus
+dur.**
+
+Conséquence à assumer d'entrée : une vingtaine de fiches se réparera vite, le
+reste demandera de trouver un document primaire qui établit le même fait, et
+certaines finiront **rétrogradées**. C'est une issue honnête si elle est écrite
+dans la fiche ; ce qui ne l'est pas, c'est de laisser une URL morte en place, ou
+pire, de la remplacer par une adresse valide qui pointe ailleurs.
+
+## Paralléliser, et ce qui ne se parallélise pas
+
+Un sous-agent de recherche par fiche fait tomber le coût de la **découverte** :
+les requêtes partent ensemble au lieu d'une par tour. Ce qui ne se parallélise
+pas, et qui est le vrai coût, c'est la **validation** : ouvrir le document et y
+retrouver l'élément que la fiche affirme. Un agent qui rapporte une URL rapporte
+un candidat, pas une source.
+
+Consigne à donner à un tel agent, en clair : rendre **la liste de citations**,
+pas une rédaction ; ne jamais affirmer qu'une URL est la bonne ; signaler quand
+il n'a rien trouvé plutôt que de proposer une adresse vraisemblable. Les trois
+échecs du 03/08 (rapports de l'Assemblée, communiqué Bercy, page Schengen) sont
+venus d'un moteur qui préférait inventer une réponse plausible au silence.
 
 ## Ordre de travail
 
