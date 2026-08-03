@@ -10,10 +10,10 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.conseil-etat.fr/actualites/redressement-climatique-le-conseil-d-etat-demande-au-gouvernement-de-justifier-sous-3-mois-que-la-trajectoire-de-reduction-des-emissions
+  - https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2020-11-19/427301
 ---
 
-Le 19/11/2020, le Conseil d'État juge recevable le recours de la commune de Grande-Synthe contre le refus implicite du gouvernement de prendre des mesures supplémentaires. Il relève l'engagement de réduire les émissions de 40 % en 2030 par rapport à 1990 et le dépassement des plafonds du premier budget carbone (2015-2018), et donne trois mois au gouvernement pour justifier la compatibilité de son refus avec la trajectoire nationale.
+Le 19/11/2020, le Conseil d'État (décision n° 427301) juge recevable le recours de la commune de Grande-Synthe contre les décisions implicites de rejet nées du silence gardé par le Président de la République, le Premier ministre et le ministre de la transition écologique sur une demande de mesures supplémentaires. Il relève l'engagement européen de réduire les émissions d'au moins 40 % en 2030 par rapport à 1990 et le dépassement des plafonds du premier budget carbone (2015-2018). Il ne tranche pas : avant de statuer, il ordonne un supplément d'instruction et impartit aux parties un délai de trois mois pour produire les éléments qui permettront d'apprécier la compatibilité du refus avec la trajectoire de réduction.
 
 Première fois que la juridiction administrative suprême contrôle la conformité de l'action climatique de l'État à ses propres engagements chiffrés. Premier acte d'un contentieux qui durera cinq ans et se refermera sans sanction ([[2025-10-24-conseil-etat-cloture-grande-synthe]]).
 

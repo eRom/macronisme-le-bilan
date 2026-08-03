@@ -21,4 +21,4 @@ Bilans humains contradictoires : le parquet de Niort recense 47 gendarmes bless�
 
 Volet écologie, décisif pour la lecture de la pièce : l'ouvrage défendu au prix de ce dispositif policier sera jugé illégal en appel vingt et un mois plus tard ([[2024-12-18-caa-bordeaux-annule-sainte-soline]]), et la dissolution du collectif organisateur sera annulée par le Conseil d'État ([[2023-11-09-conseil-etat-annule-dissolution-soulevements]]).
 
-Établi par le rapport de commission d'enquête. Suite : décision accablante de la Défenseure des droits ([[2026-07-07-sainte-soline-defenseure-des-droits]]).
+Établi par le rapport de commission d'enquête. Suite : décision de la Défenseure des droits ([[2026-07-07-sainte-soline-defenseure-des-droits]]).
