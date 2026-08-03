@@ -154,6 +154,31 @@ même ordre que la campagne d'intégrité. Ne pas la sous-estimer, et ne pas la
 faire à moitié : une source remplacée sans vérification de contenu est pire que
 l'adresse morte qu'elle remplace, parce qu'elle a l'air réparée.
 
+### Le taux d'erreur, mesuré sur la première séance
+
+Ce n'est pas une campagne de réparation d'adresses. C'est une campagne de
+re-vérification, et le chiffre du 03/08/2026 le dit sans ambiguïté : **sur les
+quinze fiches rouvertes, neuf portaient une erreur de fond**, et quatre pièces
+de jugement ont dû être reprises, dont la synthèse.
+
+| Fiche | Ce que la relecture du document a montré |
+|---|---|
+| loi APER | une phrase entre guillemets absente du texte |
+| secret des affaires | l'exception de presse donnée pour générale, alors qu'elle ne joue qu'en défense au procès |
+| drones | motif du juge inexact, deux décisions traitées comme identiques alors que la formation, la procédure et le standard diffèrent |
+| Grande-Synthe I | le Conseil d'État ne somme personne, il ordonne un supplément d'instruction |
+| Sainte-Soline | deux éléments retenus à charge ne figurent pas dans la décision |
+| Wuambushu | numéro de décision désignant un autre document, à deux ans d'écart |
+| abrogation des ZFE | mauvais vote, mauvaise date, mauvais chiffres, mauvaise imputation |
+| européennes 2019 | pourcentages du soir du scrutin au lieu de ceux proclamés |
+| Cour des comptes industrie | date de publication fausse de neuf jours, chiffre central attribué à une source qui n'est pas citée |
+
+Aucune de ces erreurs n'était visible depuis le dépôt. Toutes le sont devenues
+au moment précis où quelqu'un a rouvert la source. C'est la vraie raison de
+faire cette campagne, et elle est plus forte que celle qui l'a ouverte : une
+adresse morte est une gêne pour le lecteur, une affirmation fausse est une
+faute.
+
 ## Le lot Légifrance, ou ce qu'on trouve en tirant sur le fil
 
 Les deux orphelines Légifrance de la liste ont ouvert un défaut plus large que
@@ -259,6 +284,25 @@ il n'a rien trouvé plutôt que de proposer une adresse vraisemblable. Les trois
 échecs du 03/08 (rapports de l'Assemblée, communiqué Bercy, page Schengen) sont
 venus d'un moteur qui préférait inventer une réponse plausible au silence.
 
+**Essayé le 03/08, et le résultat est net : six sous-agents lancés en parallèle
+sur six fiches n'ont rien rendu du tout**, ni candidat ni échec déclaré, y
+compris après relance avec une consigne de réponse immédiate. Pendant le même
+intervalle, la voie directe (chercher, ouvrir, vérifier, écrire) a traité huit
+fiches. La conclusion à retenir n'est pas que la parallélisation est mauvaise en
+soi, c'est qu'elle n'a pas été payante ici et que **le travail a avancé quand il
+est resté dans la boucle principale**. Ne pas relancer une flottille avant
+d'avoir compris pourquoi celle-là s'est tue.
+
+Ce qui a effectivement marché, dans l'ordre de rendement :
+
+| Outil | Emploi |
+|---|---|
+| ArianeWeb du Conseil d'État | `conseil-etat.fr/fr/arianeweb/CE/decision/AAAA-MM-JJ/NUMERO`, 404 franc sur un numéro qui n'existe pas |
+| Légifrance, forme ELI | `legifrance.gouv.fr/eli/loi/AAAA/M/J/NUMERO/jo/texte`, se construit de tête |
+| Catalogue du Défenseur des droits | notices `juridique.defenseurdesdroits.fr`, retrouvées par recherche sémantique, jamais devinables |
+| Comptes rendus de séance | l'Assemblée publie le détail des scrutins, c'est là que se voient les confusions de vote |
+| `curl` + `pdftotext -layout` | seule voie sur les rapports du CGLPL |
+
 ## Ordre de travail
 
 1. **Les orphelines citées et de grade A** (73). Ce sont les seules dont la
@@ -277,11 +321,26 @@ Fait au 03/08/2026, en trois passes :
 | `2a250b2`, `9a42fc5` | auditions Benalla, fiche puis pièce `justice-affaires` |
 | `f6765d0` | LBD, contrôles aux frontières intérieures |
 | `a4f6929`, `f343449` | lot Légifrance : neuf fiches, puis pièce `libertes-publiques` |
+| `7032cf6`, `62cca91` | drones, Grande-Synthe I, Sainte-Soline, puis `libertes-publiques` |
+| `fdc51c5`, `0592e2f` | Wuambushu, puis `securite-immigration` et la synthèse |
+| `5b6c0c2` | abrogation des ZFE, fiche renommée à la date du vote |
+| `8ed5b5f` | européennes 2019 |
+| `7845bb9`, `f6a34e8` | Cour des comptes industrie et Pisani-Ferry, puis `industrie` |
 
-**Reste 99 orphelines**, les deux orphelines Légifrance étant réparées avec le
-lot. Les sept autres fiches du lot n'étaient pas orphelines : leur défaut ne
-figurait sur aucune liste, il a été trouvé en tirant sur le fil des deux
-premières.
+Re-sondage complet en fin de séance : **90 orphelines**, contre 104 à
+l'ouverture. Les URL mortes ou déplacées passent de 278 à 252, les orphelines de
+grade A de 73 à 59, et les pièges restent à zéro pour la troisième mesure
+consécutive.
+
+Sept des fiches corrigées n'étaient pas orphelines et ne figuraient sur aucune
+liste : leur défaut a été trouvé en tirant sur le fil des deux qui l'étaient.
+
+**La voie 1 est vidée.** Toutes les décisions de justice et tous les avis
+numérotés du lot ont été retrouvés. C'était la catégorie la plus rentable, elle
+est close, et ce qui reste est plus dur qu'au départ : la voie 3 est passée de
+la moitié du lot à près des trois quarts. Prévoir un rendement décroissant, et
+accepter que la sortie de certaines fiches soit la rétrogradation plutôt que la
+réparation.
 
 En attente, non résolues par aucune des trois voies : le communiqué Bercy du
 05/09/2017 sur la cession Engie (`2017-09-05-cession-engie`, source unique) et
