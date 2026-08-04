@@ -21,8 +21,10 @@ au fond de `justice-affaires`, les instruments de politique étrangère d'`europ
 Limites héritées de la recherche, dites d'entrée. La couverture 2017-2022 est
 structurellement plus faible que 2024-2026 : le déséquilibre reflète l'état de la
 recherche, pas l'état des faits. Le domaine est le plus riche en fiches de grade B
-(jugements notoires à URL unique : Zineb Redouane, Théo Luhaka, Chassaing/Steve,
-Chouviat, BRAV-M, Souchi/Legay, Pegasus, Lavrilleux) et portait deux fiches en grade C ;
+(jugements notoires à URL unique : Théo Luhaka, Chassaing/Steve, Chouviat, BRAV-M,
+Souchi/Legay, Pegasus, Lavrilleux ; la fiche Zineb Redouane a reçu sa seconde source le
+04/08/2026, mais les deux organes remontent à la même information du Monde) et portait
+deux fiches en grade C ;
 il n'en reste qu'une depuis le re-sondage du 04/08/2026, les condamnations de policiers
 tardives, dont la séquence 2025-2026 n'est adossée à aucune source, l'affaire Rodrigues
 étant passée en grade B. Par le §5, aucune affirmation portée uniquement par du C ne peut
@@ -73,6 +75,19 @@ son obligation de contrôle. Le contrôle interne du maintien de l'ordre est ain
 la seule autorité qui l'ait examiné du dehors, trois ans après les faits, sans que la
 conclusion initiale ait jamais été retirée. Le bilan de blessés, lui, est de grade
 A et ne dépend d'aucune interprétation.
+
+Le versant disciplinaire donne le même résultat par le chemin inverse. Dans l'affaire
+Zineb Redouane ([[2018-12-01-mort-zineb-redouane]], grade B), l'IGPN a conclu en avril 2021
+à un manquement à « l'obligation de discernement par une action manifestement inadaptée »,
+imputé au tireur comme à son superviseur, et préconisé le renvoi des deux devant le conseil
+de discipline ; le directeur général de la police nationale a décidé en octobre 2021 de ne
+pas suivre cet avis, et aucune sanction administrative n'a été prononcée. À Sainte-Soline le
+contrôle interne n'a rien retenu et une autorité extérieure l'a censuré ; à Marseille il a
+retenu un manquement et sa demande est restée sans suite. Dans le second cas, ce qui bloque
+n'est ni un parquet ni un juge : c'est la hiérarchie administrative, donc l'exécutif.
+Ce qui limite la portée, et l'empêche d'être déterminante : c'est un cas, le volet pénal du
+même dossier est toujours ouvert, et la décision du directeur général n'est pas une pièce du
+dossier mais un fait rapporté par la presse.
 
 **2. La surveillance s'est étendue et pérennisée, y compris à l'enregistrement des
 opinions politiques et religieuses.** Les décrets n° 2020-1510 à 1512 du 02/12/2020

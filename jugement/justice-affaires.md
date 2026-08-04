@@ -189,7 +189,16 @@ gilets jaunes sont prononcés par les parquets, non par l'exécutif
 ([[2020-10-14-igpn-gilets-jaunes-classements]], grade B, section 4).
 L'imputation directe à l'exécutif est la plus faible des sept charges ; elle est
 retenue pour le tableau d'ensemble et la parole présidentielle, pas comme charge
-déterminante.
+déterminante. Une réserve à cette limitation, et une seule : le volet
+disciplinaire n'obéit pas au même régime. Dans l'affaire Redouane, l'IGPN avait
+préconisé en avril 2021 le renvoi du tireur et de son superviseur devant le
+conseil de discipline, et le directeur général de la police nationale a décidé en
+octobre 2021 de ne pas suivre cet avis, sans qu'aucune sanction administrative
+soit prononcée (même fiche, élément entré au socle le 04/08/2026). Ce refus est
+un acte de l'administration, pas d'un parquet. Il ne déplace pas la charge, qui
+porte sur la réponse pénale, mais il interdit d'étendre l'excuse d'indépendance
+au terrain de la sanction administrative ; ce fil-là est tenu par
+libertes-publiques.
 
 ## Les décharges qui tiennent
 

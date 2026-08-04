@@ -1,7 +1,7 @@
 ---
 domaine: ecologie-energie
 verdict: defavorable
-date_verdict: 2026-08-03
+date_verdict: 2026-08-04
 ---
 
 # Jugement : ecologie-energie

@@ -74,19 +74,19 @@ Ordre de la grille v0, sans commentaire et sans classement.
 
 | # | Domaine | Verdict | Date |
 |---|---------|---------|------|
-| 1 | finances-publiques | [défavorable](finances-publiques.md) | 2026-08-03 |
-| 2 | promesses | [mitigé](promesses.md) | 2026-08-03 |
-| 3 | justice-affaires | [défavorable](justice-affaires.md) | 2026-08-03 |
-| 4 | libertes-publiques | [défavorable](libertes-publiques.md) | 2026-08-03 |
-| 5 | sante | [défavorable](sante.md) | 2026-08-03 |
+| 1 | finances-publiques | [défavorable](finances-publiques.md) | 2026-08-04 |
+| 2 | promesses | [mitigé](promesses.md) | 2026-08-04 |
+| 3 | justice-affaires | [défavorable](justice-affaires.md) | 2026-08-04 |
+| 4 | libertes-publiques | [défavorable](libertes-publiques.md) | 2026-08-04 |
+| 5 | sante | [défavorable](sante.md) | 2026-08-04 |
 | 6 | retraites-social | [défavorable](retraites-social.md) | 2026-08-03 |
-| 7 | economie | [défavorable](economie.md) | 2026-08-03 |
-| 8 | securite-immigration | [défavorable](securite-immigration.md) | 2026-08-03 |
-| 9 | ecologie-energie | [défavorable](ecologie-energie.md) | 2026-08-03 |
+| 7 | economie | [défavorable](economie.md) | 2026-08-04 |
+| 8 | securite-immigration | [défavorable](securite-immigration.md) | 2026-08-04 |
+| 9 | ecologie-energie | [défavorable](ecologie-energie.md) | 2026-08-04 |
 | 10 | education-recherche | [défavorable](education-recherche.md) | 2026-08-03 |
 | 11 | international | [mitigé](international.md) | 2026-07-31 |
 | 12 | institutions | [défavorable](institutions.md) | 2026-08-03 |
-| 13 | europe | [défavorable](europe.md) | 2026-08-03 |
+| 13 | europe | [défavorable](europe.md) | 2026-08-04 |
 | 14 | industrie | [défavorable](industrie.md) | 2026-08-03 |
 | 15 | securite-civile | [défavorable](securite-civile.md) | 2026-07-31 |
 
@@ -321,7 +321,15 @@ délai que le juge avait fixé, le tribunal administratif de Paris constatant le
 22/12/2023 que l'État n'avait pas entièrement réparé au 31/12/2022 le préjudice
 écologique qu'il lui avait enjoint de réparer, et n'écartant l'astreinte
 demandée que parce que la tendance de 2023 achèverait la réparation
-([[2023-12-22-affaire-du-siecle-astreinte-rejetee]], grade A) ; et la légalité
+([[2023-12-22-affaire-du-siecle-astreinte-rejetee]], grade A) ; le fil ne dit
+rien du contrôle interne de l'administration, qui n'est ni le juge ni une
+autorité indépendante, et où le sens va parfois en sens inverse : l'IGPN a
+préconisé en avril 2021 le renvoi en conseil de discipline du CRS auteur du tir
+qui a tué Zineb Redouane et de son superviseur, et le directeur général de la
+police nationale a décidé en octobre 2021 de ne pas suivre cet avis
+([[2018-12-01-mort-zineb-redouane]], grade B, élément entré au socle le
+04/08/2026) — aucune décision de justice n'est en cause, ce qui est
+précisément la limite de portée du fil ; et la légalité
 borne les charges sans les compenser : tout ce que les fils 1 et 2 à charge décrivent est légal, c'est
 précisément pourquoi ce fil ne les renverse pas.
 
