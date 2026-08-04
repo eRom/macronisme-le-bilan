@@ -1,7 +1,7 @@
 ---
 domaine: europe
 verdict: defavorable
-date_verdict: 2026-08-03
+date_verdict: 2026-08-04
 ---
 
 # Jugement : europe
@@ -384,15 +384,15 @@ mise en conformité a fini par être constatée sur le dossier le plus ancien.**
 Toutes les condamnations de la CJUE documentées au dossier sont des constats de
 manquement sans sanction pécuniaire : dioxyde d'azote
 ([[2019-10-24-cjue-condamnation-no2-c-636-18]], grade A), eaux résiduaires
-urbaines ([[2023-06-15-cjue-eaux-residuaires-urbaines]], grade B), et le
+urbaines ([[2024-10-04-cjue-eaux-residuaires-urbaines]], grade A), et le
 manquement « préjudiciel » de 2018 est imputable au Conseil d'État, non à
 l'exécutif ([[2018-10-04-cjue-manquement-conseil-etat-c-416-17]], grade A).
 Les 40 millions payés pour la qualité de l'air relèvent du juge national, et
 le Conseil d'État constate en 2025 l'exécution complète de sa décision, les
 seuils étant enfin respectés ([[2021-08-04-astreintes-conseil-etat-qualite-air]],
 grade A). Le principal canal de coût européen réel, l'apurement des comptes de
-la PAC, a même donné lieu à une réduction de correction obtenue sur recours
-([[2020-09-03-annulation-partielle-correction-pac-corse]], grade B). Portée
+la PAC, a même donné lieu à l'annulation d'une correction obtenue sur pourvoi
+([[2020-12-17-annulation-partielle-correction-pac-corse]], grade A). Portée
 exacte : décharge d'appoint, limitée au corpus (l'affirmation « aucune
 sanction sur la période » au titre de l'article 260 n'est pas sondée et ne
 peut être faite) ; elle n'atténue pas les charges, elle ferme la porte aux

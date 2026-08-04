@@ -1,7 +1,7 @@
 ---
 domaine: justice-affaires
 verdict: defavorable
-date_verdict: 2026-08-03
+date_verdict: 2026-08-04
 ---
 
 # Jugement : justice-affaires
@@ -184,9 +184,9 @@ que la chambre de l'instruction avait écartée
 fortement : les délais et les classements relèvent de parquets et de
 juridictions indépendants, pas d'une politique de l'exécutif ; une relaxe
 définitive existe dans un dossier emblématique
-([[2024-09-20-relaxe-chassaing-steve]], grade B) ; et le taux de classement des
-dossiers gilets jaunes est de l'ordre du taux général
-([[2020-10-15-igpn-gilets-jaunes-classements]], grade B, section 4).
+([[2024-09-20-relaxe-chassaing-steve]], grade B) ; et les classements des dossiers
+gilets jaunes sont prononcés par les parquets, non par l'exécutif
+([[2020-10-14-igpn-gilets-jaunes-classements]], grade B, section 4).
 L'imputation directe à l'exécutif est la plus faible des sept charges ; elle est
 retenue pour le tableau d'ensemble et la parole présidentielle, pas comme charge
 déterminante.
@@ -201,8 +201,9 @@ actions positives du gouvernement écartant les délits poursuivis
 l'assemblée plénière de la Cour de cassation de la mise en examen d'Agnès Buzyn,
 aucune obligation particulière de prudence ou de sécurité ne pesant sur elle au
 sens du texte ([[2023-01-20-cassation-annulation-buzyn]], grade A) ; classement
-de 19 685 plaintes manifestement infondées
-([[2022-01-28-cjr-classement-plaintes-covid]], grade B) ; et, au contentieux
+de 19 685 plaintes types, chaque chef invoqué étant écarté au fond par la
+commission des requêtes
+([[2022-01-24-cjr-classement-plaintes-covid]], grade B) ; et, au contentieux
 administratif, absence de carence fautive de l'État sur les stocks de masques
 ([[2025-10-16-conseil-etat-masques-pas-de-carence-fautive]], grade A). Portée
 exacte : ces décisions jugent l'absence d'infraction et de faute indemnitaire,
@@ -280,8 +281,9 @@ matérielle reste la matière de la charge 2.
   constructible en l'état du dossier.
 - **« 19 685 plaintes contre la gestion du Covid : une responsabilité
   massive. »** Écartée : le volume de plaintes ne mesure aucune responsabilité
-  (règle de méthode du socle) ; plaintes types, classées manifestement infondées
-  ([[2022-01-28-cjr-classement-plaintes-covid]]).
+  (règle de méthode du socle) ; plaintes types, dont chaque chef a été écarté au
+  fond par la commission des requêtes
+  ([[2022-01-24-cjr-classement-plaintes-covid]]).
 - **« Kohler : une prescription scandaleuse qui l'exonère. »** Écartée dans les
   deux sens : la qualification est celle d'une partie civile (grade C,
   communiqué), et l'instruction reste ouverte sur la période 2014-2016
@@ -295,9 +297,13 @@ matérielle reste la matière de la charge 2.
   d'utiliser sans confirmation ([[2026-02-02-rodrigues-renvoi-cour-criminelle]]).
   Inutilisables à charge comme à décharge.
 - **« La moitié des dossiers IGPN gilets jaunes classés : l'impunité
-  organisée. »** Écartée dans sa forme forte : le taux de classement observé est
-  de l'ordre du taux général (70-76 %) et les décisions relèvent des parquets
-  ([[2020-10-15-igpn-gilets-jaunes-classements]]). Ce qui tient (délais, sursis
+  organisée. »** Écartée dans sa forme forte : les décisions de classement
+  relèvent des parquets et non de l'exécutif, et le dossier documente aussi
+  quatre condamnations, six poursuites, quatre mises en examen et un usage
+  disproportionné de la force retenu contre dix-sept policiers
+  ([[2020-10-14-igpn-gilets-jaunes-classements]]). La comparaison avec le taux
+  général de classement des parquets, qui figurait ici, n'est adossée à aucune
+  source du dossier : elle est retirée le 04/08/2026. Ce qui tient (délais, sursis
   systématique) est porté par la charge 7, avec sa limite d'imputation.
 - **Hors période ou hors exécutif, conservés comme contexte.** Le manquement
   constaté par la CJUE est imputé au Conseil d'État, pas au gouvernement

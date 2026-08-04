@@ -127,7 +127,8 @@ objectif contraignant 2020, 19,1 % contre 23 %
 n'est venue que six ans après le début du quinquennat, sans effet juridique
 contraignant sur les délais et les recours
 ([[2023-03-10-loi-aper-zones-acceleration]]) ; l'éolien terrestre manque
-l'objectif de la PPE 2 d'environ 2,3 GW
+l'objectif de 24,1 GW de la PPE 2 d'environ deux gigawatts, 22,0 GW installés
+fin 2023 selon le SDES, 21,8 GW raccordés selon RTE
 ([[2024-02-15-eolien-terrestre-objectif-manque]]) ; la part des actifs se
 rendant au travail à vélo atteint 4 % en 2023, l'objectif de 9 % de part modale
 annoncé en 2018 pour 2024 ayant été reporté à 2030 après le gel du fonds

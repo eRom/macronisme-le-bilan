@@ -1,7 +1,7 @@
 ---
 domaine: finances-publiques
 verdict: defavorable
-date_verdict: 2026-08-03
+date_verdict: 2026-08-04
 ---
 
 # Jugement : finances-publiques
@@ -262,8 +262,10 @@ REPowerEU porte l'enveloppe à 40,3 Md€, montant établi par la Commission, la
 date d'adoption de la décision d'exécution révisée n'ayant pas pu être
 confirmée sur source primaire
 ([[2023-12-08-pnrr-repowereu-40-3-milliards]]). Dans l'affaire C-404/19 P, la
-France obtient la réduction d'une correction forfaitaire PAC de 100 % à 25 %
-([[2020-09-03-annulation-partielle-correction-pac-corse]], grade B). Portée
+France obtient l'annulation pure et simple des corrections forfaitaires PAC au
+taux de 100 % appliquées aux aides à la surface en Haute-Corse, sans qu'aucun
+taux ne leur soit substitué
+([[2020-12-17-annulation-partielle-correction-pac-corse]], grade A). Portée
 exacte : le bon taux d'exécution coexiste avec la traçabilité défaillante
 établie par la Cour des comptes européenne (charge 5) ; les deux ne se
 contredisent pas, l'un juge les versements, l'autre la capacité à en rendre

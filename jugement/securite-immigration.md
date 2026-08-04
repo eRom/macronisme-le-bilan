@@ -1,7 +1,7 @@
 ---
 domaine: securite-immigration
 verdict: defavorable
-date_verdict: 2026-08-03
+date_verdict: 2026-08-04
 ---
 
 # Jugement : securite-immigration
@@ -186,8 +186,10 @@ Quatre moments sur neuf ans, portés par le président lui-même à deux reprise
 « 100 % » d'exécution des OQTF promis en 2019 contre un réel de 6,8 à 11,4 %
 ([[2019-10-30-macron-100-pourcent-oqtf]], grade B) ; « 48 % des interpellés à
 Paris » (Darmanin) puis « la moitié de la délinquance parisienne » (Macron, sur
-France 2) en 2022, quand les étrangers représentent 17 % des mis en cause au
-niveau national et qu'une interpellation de voie publique ne vaut ni mise en
+France 2) en 2022, quand le bilan statistique du SSMSI mesure la part des
+étrangers parmi les mis en cause par infraction — 14 % pour les coups et
+blessures volontaires, 22 % pour les vols avec armes, contre 8 % d'étrangers
+dans la population — et qu'une interpellation de voie publique ne vaut ni mise en
 cause ni condamnation ([[2022-07-24-darmanin-macron-delinquance-etrangers]],
 grade B, verbatim Darmanin non confirmé en source directe, fond statistique
 SSMSI solide) ; un « taux réel » d'exécution des OQTF de 21 % avancé par Bruno
@@ -221,9 +223,9 @@ connaissance du verrou, ni les retraitements de communication de la charge 6.
 
 **2. Le déblocage du Pacte européen est un acquis réel de la période.** La
 méthode graduelle imposée par la présidence française de 2022 a débloqué le
-Pacte migration et asile, constat porté par une source parlementaire
-indépendante de l'exécutif qui y voit son acquis migratoire le plus durable
-([[2022-06-10-pfue-pacte-migration-step-by-step]], grade A) : accord politique
+Pacte migration et asile ; la source du constat est une réponse ministérielle
+publiée au Journal officiel, donc officielle et datée mais émanant de l'exécutif
+lui-même ([[2022-06-10-pfue-pacte-migration-step-by-step]], grade A) : accord politique
 de juin 2022 sur le filtrage et Eurodac, puis adoption des dix actes législatifs
 en mai 2024, la France votant pour l'ensemble
 ([[2024-05-14-pacte-migration-france-vote-pour]], grade A), prolongée par
@@ -287,8 +289,9 @@ condamnées (charge 2) ni les dispositions du CESEDA annulées (charge 4).
   possible.
 - **« Les étrangers font la moitié de la délinquance parisienne. »** Écartée
   comme fait : interpellations de voie publique ne valent ni mises en cause ni
-  condamnations, le chiffre national est de 17 %, et le verbatim primaire de
-  Darmanin n'est pas confirmé en source directe
+  condamnations, les parts publiées par le SSMSI vont de 14 % à 22 % selon
+  l'infraction, et le verbatim primaire de Darmanin n'est pas confirmé en source
+  directe
   ([[2022-07-24-darmanin-macron-delinquance-etrangers]]). Ce qui survit, en
   charge 6, c'est la déformation, pas le chiffre.
 - **« Le taux réel d'exécution des OQTF est de 21 % »** et **« 15 569

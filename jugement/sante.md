@@ -1,7 +1,7 @@
 ---
 domaine: sante
 verdict: defavorable
-date_verdict: 2026-08-03
+date_verdict: 2026-08-04
 ---
 
 # Jugement : sante
@@ -222,9 +222,10 @@ réintégrations est infondée. Ce qui limite la charge : le cœur du dispositif
 validé par le Conseil constitutionnel le 05/08/2021 (deux dispositions censurées, dont le
 placement d'office automatique à l'isolement), le Conseil d'État a refusé le 28/01/2022
 de transmettre au Conseil constitutionnel les QPC le contestant, et la commission des
-requêtes de la CJR a classé sans suite 19 685 plaintes visant la gestion du pass
-sanitaire, jugées manifestement infondées ([[2022-01-28-cjr-classement-plaintes-covid]],
-grade B). La charge n'est pas l'illégalité, démentie par le juge : c'est le coût humain
+requêtes de la CJR a classé sans suite 19 685 plaintes types visant la gestion du pass
+sanitaire, en écartant chacun des chefs invoqués — le pass et les mesures proches d'une
+obligation vaccinale « constituent des actes positifs et non des abstentions »
+([[2022-01-24-cjr-classement-plaintes-covid]], grade B). La charge n'est pas l'illégalité, démentie par le juge : c'est le coût humain
 d'une obligation appliquée à des soignants en pleine pénurie, puis levée sans qu'aucun
 bilan n'en soit tiré.
 
