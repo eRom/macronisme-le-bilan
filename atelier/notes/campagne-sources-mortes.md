@@ -953,3 +953,62 @@ pièces avaient été révisées le jour même. Le contrôle du build qui devait
 comparait que le verdict, jamais la date, et n'échouait sur rien. Il compare
 désormais les deux et il est bloquant. `ecologie-energie`, révisée le matin sans que
 sa `date_verdict` suive, est repassée au 04/08.
+
+## Lots 11 et 13 (04/08/2026)
+
+| | Lot 11 | Lot 13 |
+|---|---|---|
+| lignes | 20 | 6 |
+| OUI déclarés | 20 | 3 |
+| NON déclarés | 0 | 3 |
+| **références inexistantes démasquées** | **7** | 3 |
+| adresses fausses proposées | **0** | **0** |
+
+Dix-sept fiches touchées. Le lot 11 est le plus difficile de la campagne, et le
+plus utile : la moitié de ses lignes ne pointaient pas vers une adresse périmée
+mais vers un identifiant qui n'a jamais existé, et il les a toutes démasquées, en
+donnant chaque fois le bon document.
+
+**Les sept fabrications du Sénat.** `r22-831` était cité comme le rapport Fonds
+Marianne : c'est le rapport TikTok, le bon est le n° 829, déposé le 4 juillet et
+non le 6. `r22-540` était cité comme relayant les constats du comité sur la
+fiscalité du capital, avec la mention « (vérifié) » dans la fiche : il n'existe
+pas, et l'affirmation de vérification était donc fausse elle aussi. `r20-008`,
+`a24-144-324`, `l24-111-325`, `l24-166-1`, `a22-117-31` : aucun n'existe.
+
+**La fabrication qui avait franchi la frontière.** `r22-540` ne figurait pas que
+dans la fiche : la pièce `economie` la citait aussi, mot pour mot. Une référence
+inventée avait quitté le socle pour entrer dans un verdict, ce que le sens unique
+base → jugement est censé rendre impossible. Il l'empêche pour les faits ; il ne
+l'empêche pas pour les identifiants, qui voyagent avec la phrase qui les porte.
+
+**La ligne qui m'accuse.** Au contrôle final des lots 09 et 10, le même matin,
+j'avais « corrigé » `a22-117-31` en `a22-117-3` : un chiffre en moins, un 200
+franc, une page lisible. C'était l'avis budgétaire sur l'action extérieure de
+l'État, sans rapport avec le dédoublement des CP/CE1. Le bon document est l'avis
+n° 120. En tirant ce fil, la seconde source sénatoriale de la même fiche tombe
+aussi : `a23-131-3`, vivante elle aussi, est l'avis sur les régimes sociaux et de
+retraite. Deux sources à 200, aucune sur le sujet, sur une fiche de grade A.
+
+> C'est la démonstration la plus nette de la campagne : le 200 ne prouve rien, et
+> réparer un identifiant par tâtonnement produit exactement le défaut que la
+> campagne existe pour corriger. Le lot avait raison contre moi.
+
+**Ce que le lot 13 apporte malgré ses trois échecs.** Ses trois NON étaient
+fondés : les trois documents sont introuvables. Mais deux d'entre eux ont trouvé
+mieux qu'un équivalent. La page morte de fondation politique qui portait les
+chiffres des cahiers de doléances est remplacée par la direction interministérielle
+de la transformation publique, qui donne d'autres chiffres — plus de 200 000
+citoyens dans plus de 17 000 communes — et surtout annonce la mise en ligne du
+corpus, ce qui ferme une question que la fiche laissait ouverte depuis
+l'ingestion. Le communiqué HATVP retrouvé contredit la décharge que la fiche
+Lecornu en tirait : elle disait « sans signalement d'irrégularité », il dit que la
+Haute Autorité a « parfois sollicité le dépôt de déclarations modificatives afin
+de corriger des erreurs ou des inexactitudes ».
+
+### État de la campagne au 04/08/2026, fin de journée
+
+Douze lots sur treize soldés, 226 lignes sur 246, plus le lot RACINE. Reste le
+lot 12, en cours de traitement à l'extérieur. Une seule source morte connue est
+laissée en place, le communiqué Vivendi sur le rapprochement Lagardère : c'est la
+ligne 224, elle appartient à ce lot 12.

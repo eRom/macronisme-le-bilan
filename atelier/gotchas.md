@@ -596,3 +596,26 @@ sites anti-automates, et que plus personne ne le re-sonde ensuite.
 > Avant d'écrire « bloqué » à propos d'un site, refaire le tir avec l'autre
 > outil. La liste des hôtes anti-automates ne s'enrichit que d'un refus reproduit,
 > jamais d'un seul échec de lecture.
+
+**Retirer un chiffre d'une URL jusqu'à obtenir un 200 est la pire des méthodes.**
+Le Sénat sert des documents à des identifiants voisins qui n'ont rien à voir entre
+eux. Sur la fiche du dédoublement des CP/CE1, `a22-117-31` rendait 404 ; le
+raccourcir en `a22-117-3` a donné un 200 franc, et une page parfaitement lisible :
+l'avis budgétaire sur l'action extérieure de l'État. Le bon document était l'avis
+n° 120, sur un tout autre numéro. La même fiche portait `a23-131-3`, également
+vivant, également hors sujet : les régimes sociaux et de retraite. Deux sources à
+200, aucune sur le sujet de la fiche, pendant des mois.
+
+> Un identifiant sénatorial ne se répare pas par tâtonnement. Ouvrir la page,
+> lire son titre, vérifier qu'elle traite du sujet — un 200 ne dit rien d'autre
+> que « ce numéro existe ».
+
+**Le préfixe d'un rapport du Sénat encode sa nature, et se trompe en silence.**
+`r` pour rapport d'information ou de commission d'enquête, `a` pour avis, `l`
+pour rapport législatif. Le corpus citait `a24-144-324` et `l24-111-325` pour un
+même document, qui est en réalité `l24-144-324`, tome III annexe 24 du rapport
+général. Les deux premières formes rendent 404 : ce sont des références
+fabriquées, pas des adresses périmées. Une annexe se lit à l'adresse
+`senat.fr/rap/lAA-NNN-TT/lAA-NNN-TTPP.html`, où `PP` numérote les sous-pages, et
+la version complète est en `_mono.html` — sur un rapport découpé, chercher une
+citation dans la seule sous-page 1 donne un faux négatif.
