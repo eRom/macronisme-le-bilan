@@ -19,4 +19,4 @@ Le 15/10/2020, des perquisitions sont menées aux domiciles et bureaux d'Édouar
 
 Rappel de méthode : une ouverture d'information judiciaire n'est pas une poursuite aboutie, et une perquisition n'emporte aucune présomption de culpabilité. La procédure se clôt par un non-lieu général le 07/07/2025.
 
-Liens : [[2023-01-20-cassation-annulation-buzyn]], [[2025-07-07-cjr-non-lieu-covid]], [[2022-01-28-cjr-classement-plaintes-covid]].
+Liens : [[2023-01-20-cassation-annulation-buzyn]], [[2025-07-07-cjr-non-lieu-covid]], [[2022-01-24-cjr-classement-plaintes-covid]].

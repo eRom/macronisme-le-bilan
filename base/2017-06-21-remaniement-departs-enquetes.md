@@ -11,7 +11,7 @@ grade: A
 sources:
   - https://www.legifrance.gouv.fr/jorf/jo/2017/06/22/0145
   - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000034982862
-  - https://www.publicsenat.fr/actualites/politique/proces-en-appel-du-modem-francois-bayrou-sera-re-juge-a-lautomne-2026
+  - https://www.lefigaro.fr/politique/2017/06/21/01002-20170621ARTFIG00362-remaniement-qui-sont-les-ministres-du-gouvernement-philippe-ii.php
 ---
 
 Le 9 juin 2017, le parquet de Paris ouvre une enquête visant le MoDem (assistants parlementaires européens, abus de confiance et recel). Les 20-21 juin 2017, Goulard, Bayrou et de Sarnez ne sont pas reconduits : le décret du 21 juin 2017 relatif à la composition du Gouvernement, qui constitue le gouvernement Philippe II, ne porte aucun de leurs noms. Ferrand, visé depuis mai 2017 par une enquête préliminaire sur les Mutuelles de Bretagne (prise illégale d'intérêts), quitte aussi le gouvernement et prend la présidence du groupe LREM à l'Assemblée.

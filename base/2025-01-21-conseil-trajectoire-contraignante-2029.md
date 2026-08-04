@@ -12,7 +12,7 @@ statut: null
 sources:
   - https://www.consilium.europa.eu/en/press/press-releases/2025/01/21/stability-and-growth-pact-council-adopts-recommendations-to-countries-under-excessive-deficit-procedure/
   - https://economy-finance.ec.europa.eu/document/download/f8be355b-dd72-4726-b81e-fea6e416fc1b_en?filename=MTFSP_2025_FR.pdf
-  - https://www.senat.fr/rap/r24-789/r24-789.html
+  - https://www.tresor.economie.gouv.fr/Articles/2025/04/16/publication-du-rapport-d-avancement-annuel-2025
 ---
 
 Le Conseil recommande à la France de corriger son déficit excessif au plus tard en 2029 et fixe une trajectoire maximale de croissance nominale des dépenses primaires nettes : 0,8 % en 2025, 1,2 % de 2026 à 2028, 1,1 % en 2029.

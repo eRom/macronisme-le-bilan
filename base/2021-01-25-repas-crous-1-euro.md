@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.service-public.fr/particuliers/actualites/A14619
+  - https://www.puy-de-dome.gouv.fr/Actualites/Archives-2014-2021/Actualites-2021/Janvier-2021/Un-repas-a-un-euro-pour-tous-les-etudiants-dans-tous-les-Crous
 ---
 
 Dans le contexte de la crise sanitaire, le gouvernement Castex a étendu le repas Crous à 1 € à tous les étudiants (boursiers et non-boursiers, deux repas par jour) en janvier 2021.

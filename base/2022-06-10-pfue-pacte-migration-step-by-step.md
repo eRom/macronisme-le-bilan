@@ -10,9 +10,11 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.senat.fr/rap/r21-713/r21-7133.html
+  - https://www.senat.fr/questions/base/2022/qSEQ220701068.html
 ---
 
-Selon le rapport de bilan de la commission des affaires européennes du Sénat, la présidence française a débloqué le Pacte asile et migration en imposant une approche graduelle consistant à scinder les négociations plutôt qu'à chercher un accord d'ensemble.
+Répondant le 20/10/2022 à une question écrite du sénateur Christian Klinger, le secrétariat d'État chargé de l'Europe expose que la France a, pendant sa présidence du Conseil de l'Union, proposé une « approche graduelle » consistant à rechercher des accords successifs sur les textes du Pacte asile et migration plutôt qu'un accord d'ensemble.
 
-Cette méthode aboutit le 10/06/2022 à un accord politique au Conseil Justice et affaires intérieures sur les règlements « filtrage » et Eurodac, socle des adoptions de 2024 ([[2024-05-14-pacte-migration-france-vote-pour]]). C'est l'acquis de la présidence française le plus durable en matière migratoire, et il est établi par une source parlementaire indépendante de l'exécutif.
+Cette méthode aboutit le 10/06/2022 à un accord au Conseil sur les positions relatives aux règlements « filtrage » et Eurodac, ainsi qu'à un premier mécanisme de solidarité fondé sur le volontariat et limité à un an ; c'est le socle des adoptions de 2024 ([[2024-05-14-pacte-migration-france-vote-pour]]).
+
+Réserve de source, portée au re-sondage du 04/08/2026 : la fiche s'appuyait jusque-là sur un rapport de la commission des affaires européennes du Sénat dont l'identifiant ne résout pas. La source retenue est une réponse ministérielle publiée au Journal officiel : elle est officielle et datée, mais elle émane de l'exécutif, non d'une source parlementaire indépendante.

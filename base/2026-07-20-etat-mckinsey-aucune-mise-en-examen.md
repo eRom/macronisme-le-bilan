@@ -11,7 +11,7 @@ grade: C
 sources:
   - https://fr.wikipedia.org/wiki/Affaire_McKinsey
   - https://www.consultor.fr/articles/affaire-mckinsey-pas-de-faux-temoignage-mais-trois-enquetes-encore-en-cours
-  - https://www.tribunal-de-paris.justice.fr/
+  - https://www.consultor.fr/articles/mckinsey-a-nouveau-perquisitionne-dans-le-cadre-de-laffaire-des-campagnes-de-macron
 ---
 
 Au 20 juillet 2026, dans les trois informations judiciaires liées (fiscalité McKinsey ; comptes de campagne 2017/2022 ; favoritisme), aucune personne physique ou morale (dirigeant McKinsey, consultant, membre de l'exécutif) n'est publiquement mise en examen ni placée sous statut de témoin assisté, malgré quatre vagues de perquisitions (2022, 2023, 2025). L'instruction (juge Serge Tournaire) reste en phase d'accumulation de preuves.

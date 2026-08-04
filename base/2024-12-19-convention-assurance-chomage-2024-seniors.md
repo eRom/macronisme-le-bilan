@@ -9,7 +9,7 @@ acteurs:
   gouvernement: Barnier
 grade: A
 sources:
-  - https://www.unedic.org/publications/trajectoire-financiere-de-lassurance-chomage-2023-2026
+  - https://www.unedic.org/publications/etude-d-impact-de-la-convention-d-assurance-chomage-du-15-novembre-2024
 ---
 
 La convention d'assurance chômage négociée par les partenaires sociaux le 15/11/2024 est agréée par l'État le 19/12/2024, après la parenthèse de reprise en main par l'État au moment de France Travail. Elle relève de deux ans les bornes d'âge des seniors au 01/04/2025 : durée maximale d'indemnisation de 22,5 mois à 55-56 ans et 27 mois à 57 ans et plus (contre des seuils antérieurs de 53 et 55 ans). Le plafonnement des jours non travaillés dans le calcul du SJR passe à 70 % et le bonus-malus est resserré au 01/05/2025.

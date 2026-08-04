@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.senat.fr/rap/l22-115-321/l22-115-32115.html
+  - https://www.senat.fr/rap/l22-115-22/l22-115-223.html
 ---
 
 L'enveloppe de subventions allouée à la France au titre de la Facilité pour la reprise et la résilience est recalculée en juin 2022, conformément au règlement établissant la facilité, et passe de 39,4 à 37,5 milliards d'euros.

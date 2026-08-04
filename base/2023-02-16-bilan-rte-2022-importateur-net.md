@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.rte-france.com/analyses-tendances-et-prospectives/bilan-electrique-francais/le-bilan-electrique-2022
+  - https://www.rte-france.com/actualites/bilan-electrique-2022
   - https://www.vie-publique.fr/files/rapport/pdf/290589.pdf
   - https://assets.rte-france.com/analyse-et-donnees/2023-02/Communiqu%C3%A9%20-%20Bilan%20%C3%A9lectrique%202022.pdf
 ---

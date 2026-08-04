@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.s3ns.io/fr/presse-actualites/s3ns-obtient-la-qualification-secnumcloud-pour-son-offre-premi3ns
+  - https://www.solutions-numeriques.com/s3ns-obtient-la-qualification-secnumcloud-3-2-la-certification-la-plus-exigeante-du-cloud-europeen/
   - https://www.assemblee-nationale.fr/dyn/17/rapports/cenum/l17b3054_rapport-enquete
 ---
 

@@ -10,11 +10,12 @@ acteurs:
 grade: B
 statut: null
 sources:
-  - https://www.entreprises.gouv.fr/fr/actualites/politique-industrielle/attractivite/9e-sommet-choose-france-des-investissements-records-pour-la-reindustrialisation-de-la-france
-  - https://www.publicsenat.fr/actualites/economie/93-milliards-deuros-dinvestissements-et-15-600-emplois-promis-les-chiffres-records-du-sommet-choose-france
-  - https://gomet.net/carbon-giga-usine-photovoltaique-fos-liquidation/
+  - https://www.entreprises.gouv.fr/la-dge/actualites/choose-france-2026-un-nouveau-record-dinvestissements-en-faveur-de-lindustrie-de
+  - https://www.publicsenat.fr/actualites/economie/choose-france-une-des-grandes-reussites-demmanuel-macron-cest-de-faire-venir-des-investisseurs-etrangers-reconnait-la-senatrice-lr-sophie-primas
+  - https://www.publicsenat.fr/actualites/politique/choose-france-2026-choisir-la-france-un-pari-gagnant-pour-les-investisseurs-etrangers-selon-roland-lescure-ministre-de-leconomie
+  - https://france3-regions.franceinfo.fr/provence-alpes-cote-d-azur/bouches-du-rhone/fos-sur-mer/face-a-la-concurrence-chinoise-le-projet-de-la-plus-grande-giga-usine-photovoltaique-integree-d-europe-abandonne-a-fos-sur-mer-3353668.html
 ---
 
-Le 9e sommet Choose France (01/06/2026) annonce 71 projets, 93 Md€, 15 600 emplois directs promis (record). Le ministre de l'Économie affirme que « près de 95 % des investissements annoncés lors des précédentes éditions sont complets ou en passe de l'être » (50 % complets, 45 % en cours). Aucun registre nominatif public projet par projet n'existe pour vérifier ce taux (constat des rapports budgétaires du Sénat). Contre-exemples documentés : giga-usine solaire Carbon à Fos-sur-Mer (1,5 Md€, 3 000 emplois promis) liquidée le 13/05/2026 ; projet AMeLi (ArcelorMittal-SigmaRoc, Dunkerque) abandonné le 16/09/2025 ; ReLieVe suspendu depuis octobre 2024 ([[2024-10-24-eramet-relieve-suspension]]).
+Le 9e sommet Choose France (01/06/2026) annonce 71 projets, 93 Md€, 15 600 emplois directs promis (record). Roland Lescure, ministre de l'Économie, affirme : « Tous ces investissements qui ont été annoncés, à 95 % d'entre eux, sont soit complets pour 50 %, soit en passe de l'être pour 45 % ». Aucun registre nominatif public projet par projet n'existe pour vérifier ce taux (constat des rapports budgétaires du Sénat). Contre-exemples documentés : giga-usine solaire Carbon à Fos-sur-Mer (1,5 Md€ d'investissement prévu) placée en liquidation judiciaire le 13/05/2026, projet abandonné ; projet AMeLi (ArcelorMittal-SigmaRoc, Dunkerque) abandonné le 16/09/2025 ; ReLieVe suspendu depuis octobre 2024 ([[2024-10-24-eramet-relieve-suspension]]).
 
 Grade B pour les annonces (officiel + presse) ; le taux de 95 % est une auto-évaluation invérifiable, à citer comme déclaration, jamais comme fait (C sur ce point).

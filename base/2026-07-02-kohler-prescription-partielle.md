@@ -9,7 +9,7 @@ acteurs:
   gouvernement: Lecornu II (Kohler : ex-SG de l'Élysée 2017-2025, DGA de la Société Générale depuis juin 2025 sous déports HATVP)
 grade: C
 sources:
-  - https://www.anticor.org/2026/07/02/communique-de-presse-affaire-kohler-une-interpretation-scandaleuse-de-la-prescription-par-la-cour-dappel-de-paris/
+  - https://www.anticor.org/2026/07/02/affaire-kohler-la-cour-dappel-enterre-une-partie-des-faits/
   - https://www.leclubdesjuristes.com/
 ---
 

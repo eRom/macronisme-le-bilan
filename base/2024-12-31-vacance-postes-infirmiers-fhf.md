@@ -10,10 +10,10 @@ acteurs:
 grade: B
 statut: null
 sources:
-  - https://www.fhf.fr/actualites-presse/communiques-de-presse/conference-de-presse-de-rentree-de-la-fhf-situation-financiere-et-rh-des-hopitaux
+  - https://www.fhf.fr/actualites/communiques-de-presse/apres-un-nouvel-ete-sous-tension-la-fhf-appelle-des-solutions-perennes-et-des-moyens-suffisants-pour
 ---
 
-Selon la Fédération hospitalière de France, le taux de postes vacants d'infirmiers est revenu à 3 % en 2023, contre 5,7 % en avril 2022.
+Selon l'enquête ressources humaines de la Fédération hospitalière de France, présentée en conférence de presse le 04/09/2024, le taux de postes vacants d'infirmiers est revenu à 3 % en 2023, contre 5,7 % en avril 2022.
 
 Élément à décharge sur l'attractivité des métiers : la revalorisation salariale du Ségur, quelles que soient ses limites de périmètre, coïncide avec une amélioration mesurable de la couverture des postes soignants, alors même que les capacités en lits continuaient de baisser.
 

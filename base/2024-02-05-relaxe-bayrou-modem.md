@@ -9,8 +9,8 @@ acteurs:
   gouvernement: Attal (au jour du jugement)
 grade: A
 sources:
-  - https://www.publicsenat.fr/actualites/politique/proces-des-assistants-d-eurodeputes-du-modem-francois-bayrou-relaxe-au-benefice-du-doute
-  - https://www.publicsenat.fr/actualites/politique/proces-en-appel-du-modem-francois-bayrou-sera-re-juge-a-lautomne-2026
+  - https://www.touteleurope.eu/vie-politique-des-etats-membres/affaire-des-assistants-parlementaires-du-modem-francois-bayrou-relaxe-cinq-anciens-eurodeputes-condamnes/
+  - https://www.touteleurope.eu/vie-politique-des-etats-membres/affaire-des-assistants-parlementaires-du-modem-le-proces-en-appel-de-francois-bayrou-fixe-a-l-automne-2026/
 ---
 
 Le 5 février 2024, le tribunal correctionnel de Paris relaxe Bayrou « au bénéfice du doute » du chef de complicité de détournement de fonds publics européens (assistants parlementaires MoDem) ; le MoDem et huit cadres sont en revanche condamnés. Le parquet fait appel le 8 février 2024. Le procès en appel est fixé du 9 septembre au 5 octobre 2026.

@@ -10,7 +10,7 @@ acteurs:
 grade: B
 statut: null
 sources:
-  - https://www.gisti.org/IMG/pdf/circ_2025-01-23.pdf
+  - https://www.gisti.org/article7476
 ---
 
 La circulaire du 23/01/2025 relative à l'admission exceptionnelle au séjour abroge la circulaire Valls de 2012 et durcit les critères de régularisation : l'indice de référence de résidence ininterrompue passe de 5 à 7 ans, et l'admission devient explicitement une faculté discrétionnaire du préfet.

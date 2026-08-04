@@ -20,4 +20,4 @@ Le même jour, par sa décision n° 2021-824 DC, le Conseil constitutionnel cens
 
 Le socle juridique de l'obligation n'a jamais été invalidé : le 28/01/2022, le Conseil d'État a refusé de transmettre au Conseil constitutionnel les QPC la contestant, les jugeant dépourvues de caractère sérieux (décisions n° 457879 et n° 458261, à re-sourcer, le lien fourni par la recherche étant mort).
 
-Liens : [[2022-01-22-passe-vaccinal-censure-reunions-politiques]], [[2023-05-13-suspension-obligation-vaccinale-soignants]], [[2022-01-28-cjr-classement-plaintes-covid]].
+Liens : [[2022-01-22-passe-vaccinal-censure-reunions-politiques]], [[2023-05-13-suspension-obligation-vaccinale-soignants]], [[2022-01-24-cjr-classement-plaintes-covid]].
