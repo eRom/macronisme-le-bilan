@@ -13,7 +13,8 @@ statut: null
 sources:
   - https://www.legifrance.gouv.fr/ceta/id/CETATEXT000046106309
   - https://www.legifrance.gouv.fr/ceta/id/CETATEXT000051305443
-  - https://www.conseil-etat.fr/actualites/les-controles-aux-frontieres-interieures-retablis-en-octobre-2024-sont-conformes-au-nouveau-reglement-europeen-schengen
+  - https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2022-07-27/463850
+  - https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-03-07/499702
 ---
 
 Le 27/07/2022, trois mois après l'arrêt de la CJUE plafonnant les contrôles à six mois ([[2022-04-26-cjue-plafond-six-mois-controles-frontieres]]), le Conseil d'État (n° 463850) juge que le renouvellement des contrôles est licite dès lors que la menace est « nouvelle », notion qu'il définit : une menace de nature différente, ou dont des circonstances nouvelles ont modifié l'actualité, la portée ou la consistance. Il retient à ce titre l'évasion de la prison de Hassaké en janvier 2022, la montée des appels à attentats, les variants du Covid et les effets du conflit ukrainien sur la criminalité organisée.

@@ -10,8 +10,9 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.hautconseilclimat.fr/publications/rapport-annuel-2024-grand-public-accelerer-la-transition-juste-face-aux-impacts-du-changement-climatique/
-  - https://www.citepa.org/fr/barometre-emissions/
+  - https://www.hautconseilclimat.fr/publications/rapport-annuel-2024/
+  - https://www.hautconseilclimat.fr/wp-content/uploads/2024/06/HCC_RA_2024-Resume-executif.pdf
+  - https://www.citepa.org/emissions-de-gaz-a-effet-de-serre-en-france-nouvelle-estimation-lannee-2023-avec-les-donnees-secten-du-citepa/
 ---
 
 Les émissions territoriales hors UTCATF s'établissent à 373 Mt CO2e en 2023 selon le baromètre Citepa, soit moins 5,8 % (moins 22,8 Mt) par rapport à 2022 : plus forte baisse annuelle hors année Covid.

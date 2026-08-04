@@ -11,7 +11,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.ecologie.gouv.fr/presse/signature-des-contrats-de-transition-ecologique-des-50-sites-industriels-les-plus-emetteurs
+  - https://www.ecologie.gouv.fr/presse/signature-contrats-transition-ecologique-50-sites-industriels-plus-emetteurs
   - https://www.ccomptes.fr/fr/publications/les-aides-la-decarbonation-de-lindustrie-du-plan-de-relance-et-de-france-2030
 ---
 

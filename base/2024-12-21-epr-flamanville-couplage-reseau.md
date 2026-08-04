@@ -11,8 +11,8 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.edf.fr/groupe-edf/espaces-medias/communiques-de-presse/lepr-de-flamanville-3-connecte-avec-succes-au-reseau-electrique-national
-  - https://www.edf.fr/groupe-edf/espaces-medias/communiques-de-presse/lepr-de-flamanville-atteint-sa-pleine-puissance
+  - https://www.edf.fr/en/the-edf-group/dedicated-sections/journalists/all-press-releases/update-on-the-flamanville-epr-the-reactor-produces-its-first-electrons-on-the-national-electricity-grid
+  - https://www.edf.fr/en/the-edf-group/dedicated-sections/journalists/all-press-releases/update-on-the-flamanville-epr-the-reactor-has-reached-100-of-nuclear-thermal-power
 ---
 
 Première divergence du réacteur le 03/09/2024, premier couplage au réseau électrique national le 21/12/2024 à 11h48, pleine puissance (1 669 MWe) atteinte le 14/12/2025.
