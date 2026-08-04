@@ -123,6 +123,26 @@ function sansChemin(u: string): boolean {
   }
 }
 
+/**
+ * Second tir, avec `curl`. Il ne partage ni le magasin de confiance TLS de Bun
+ * ni sa pile HTTP, et plusieurs hôtes lui répondent quand `fetch` échoue.
+ * Mesuré le 04/08/2026 sur la clôture de la campagne des sources mortes : sur
+ * 37 adresses que `fetch` seul déclarait MORTE, trois répondaient 200 à `curl`
+ * (erreur de chaîne de certificats) et dix-neuf répondaient 403, donc bloquées
+ * et non mortes. Vingt-deux faux morts sur trente-sept : sans ce second tir,
+ * l'outil accuse le corpus de ses propres limites.
+ */
+function secondTir(url: string): { code: number; corps: string; url: string } | null {
+  const p = Bun.spawnSync([
+    "curl", "-sSL", "--max-time", "25", "-A", UA,
+    "-w", "\n__FIN__%{http_code}\t%{url_effective}", url,
+  ]);
+  const brut = new TextDecoder().decode(p.stdout);
+  const m = brut.match(/\n__FIN__(\d+)\t(\S*)\s*$/);
+  if (!m) return null;
+  return { code: Number(m[1]), corps: brut.slice(0, m.index), url: m[2] || url };
+}
+
 async function sonder(s: Source): Promise<Resultat> {
   if (sansChemin(s.url))
     return { ...s, verdict: "RACINE", detail: "page d'accueil, pas un document" };
@@ -137,7 +157,7 @@ async function sonder(s: Source): Promise<Resultat> {
     });
     if (r.status === 403 || r.status === 429)
       return { ...s, verdict: "BLOQUEE", detail: `HTTP ${r.status}` };
-    if (!r.ok) return { ...s, verdict: "MORTE", detail: `HTTP ${r.status}` };
+    if (!r.ok) return classeSecondTir(s, `fetch ${r.status}`);
 
     const corps = (await r.text()).slice(0, 200_000).toLowerCase();
     const defi = MARQUEURS_DEFI.find((m) => corps.includes(m));
@@ -153,10 +173,29 @@ async function sonder(s: Source): Promise<Resultat> {
     return { ...s, verdict: "VIVANTE", detail: `200 (${corps.length} car.)` };
   } catch (e) {
     const msg = e instanceof Error ? e.name : String(e);
-    return { ...s, verdict: "MORTE", detail: `injoignable (${msg})` };
+    return classeSecondTir(s, `fetch ${msg}`);
   } finally {
     clearTimeout(minuteur);
   }
+}
+
+/** Verdict après échec du premier tir : c'est `curl` qui tranche, pas `fetch`. */
+function classeSecondTir(s: Source, cause: string): Resultat {
+  const c = secondTir(s.url);
+  if (!c) return { ...s, verdict: "MORTE", detail: `${cause}, curl muet` };
+  if (c.code === 403 || c.code === 429)
+    return { ...s, verdict: "BLOQUEE", detail: `${cause}, curl ${c.code}` };
+  if (c.code < 200 || c.code >= 300)
+    return { ...s, verdict: "MORTE", detail: `${cause}, curl ${c.code}` };
+
+  const corps = c.corps.slice(0, 200_000).toLowerCase();
+  if (MARQUEURS_DEFI.some((m) => corps.includes(m)))
+    return { ...s, verdict: "BLOQUEE", detail: `${cause}, curl 200 mais défi anti-robot` };
+  const piege = MARQUEURS_ERREUR.find((m) => corps.includes(m));
+  if (piege) return { ...s, verdict: "PIEGE", detail: `curl 200 mais « ${piege} »` };
+  if (hote(c.url) !== hote(s.url))
+    return { ...s, verdict: "DEPLACEE", detail: `${cause}, curl → ${hote(c.url)}` };
+  return { ...s, verdict: "VIVANTE", detail: `${cause}, curl 200 (${corps.length} car.)` };
 }
 
 // Concurrence bornée : on sonde des services publics, pas une cible de charge.

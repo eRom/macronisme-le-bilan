@@ -52,10 +52,17 @@ Deux cas prouvés le 03/08/2026 :
 
 ```
 corpus   senat.fr/rap/a22-117-31/a22-117-31.html                404
-réel     senat.fr/rap/a22-117-3/a22-117-3.html                  200   ← un « 1 » de trop
+réel     senat.fr/rap/a22-120-31/a22-120-31_mono.html           200   ← avis n° 120, pas 117
 corpus   senat.fr/compte-rendu-commissions/20190114/lois_enq.html  404
 réel     senat.fr/rap/r18-324-2/r18-324-2.html                  200   ← le suffixe « _enq » n'a jamais existé
 ```
+
+> Rectification du 04/08/2026, et elle porte une leçon. Cette table donnait
+> d'abord `a22-117-3` comme document réel, « un 1 de trop ». C'était faux :
+> `a22-117-3` répond bien 200, mais c'est l'avis budgétaire sur l'action
+> extérieure de l'État. Le bon document est l'avis n° 120, sur un tout autre
+> numéro. **Le premier exemple de la campagne était lui-même une réparation par
+> tâtonnement**, et il a tenu une journée entière parce que le 200 rassurait.
 
 Conséquence : **le lot des mortes se traite à la recette de la campagne
 d'intégrité**, pas à la réparation d'adresse. Lire la fiche pour savoir quel
@@ -1056,7 +1063,67 @@ final les a rattrapées avant commit. La leçon rejoint celle du matin sur les
 identifiants sénatoriaux : dans cette campagne, la main qui répare est une source
 d'erreurs au même titre que la recherche qui propose.
 
-### Campagne close au 04/08/2026
+### Campagne close au 04/08/2026, et la mesure qui la dément à moitié
 
 Treize lots sur treize, **246 lignes sur 246**, plus le lot RACINE en entier.
-Aucune source morte connue ne subsiste dans le corpus.
+
+Cette section a d'abord conclu par « aucune source morte connue ne subsiste dans
+le corpus ». C'était écrit avant la mesure, et la mesure l'a démentie. Elle est
+conservée ici corrigée plutôt que réécrite, parce que l'erreur est celle contre
+laquelle toute cette note met en garde : **une campagne se solde par une mesure,
+pas par un décompte de ses propres commits.**
+
+#### Ce que le sondage complet a d'abord dit, et pourquoi il se trompait
+
+Premier passage sur les 913 sources distinctes : **37 MORTE**. Re-sondées une à
+une avec `curl`, elles se répartissaient ainsi :
+
+| | |
+|---|---|
+| 200 à `curl` (erreur de chaîne de certificats côté `fetch`) | 3 |
+| 403 à `curl` : hôte anti-automate, donc BLOQUEE et non MORTE | 19 |
+| réellement mortes | 15 |
+
+**Vingt-deux faux morts sur trente-sept.** L'outil ne faisait qu'un tir, avec
+`fetch`, et déclarait MORTE tout ce qui n'aboutissait pas. C'est très exactement
+le défaut consigné le matin même à propos de deux articles de presse : *un échec
+de lecture n'est pas un blocage d'hôte, et encore moins une mort*. Le gotcha
+était écrit, l'outil ne l'appliquait pas.
+
+`audit-sources.ts` fait désormais un **second tir à `curl`** avant tout verdict
+d'échec, et c'est `curl` qui tranche : 403 donne BLOQUEE, 200 donne VIVANTE, un
+code d'erreur donne MORTE.
+
+#### La mesure de clôture, avec l'outil corrigé
+
+Corpus entier, 913 sources distinctes :
+
+| | |
+|---|---|
+| RACINE | **0** |
+| PIEGE | **0** (quatrième mesure consécutive) |
+| MORTE | **16** |
+| DEPLACEE | 6 |
+| BLOQUEE | 81 |
+| VIVANTE | 810 |
+
+Dix-huit fiches touchées sur 534, dont **huit orphelines** — cinq de grade A,
+sept citées par une pièce de jugement.
+
+Les seize mortes ne sont pas un reliquat des 246 lignes : aucune n'était sur la
+liste de la campagne. Ce sont des adresses tombées depuis le sondage du 03/08, ou
+des sources introduites pendant la campagne, ou des lignes que le sondeur d'alors
+classait autrement. Les hôtes : INSEE trois fois, l'Assemblée et EDF deux fois
+chacun, puis une traîne d'un cas par portail.
+
+> Le corpus est passé de 263 sources mortes à 16 en deux jours, et de 104 fiches
+> orphelines à 8. Ce sont les vrais chiffres de la campagne. Le zéro n'existe pas
+> et n'existera jamais : des pages meurent tous les jours, et la seule chose
+> qu'on puisse tenir, c'est la fréquence du sondage.
+
+#### Ce qui reste à faire, nommé
+
+Un lot de seize adresses sur douze fiches, dont huit orphelines. Il est petit et
+il est du même genre que ce qui vient d'être fait : lire la fiche, chercher le
+document qu'elle désigne, l'ouvrir, vérifier un élément de contenu. Le sondage
+complet se rejoue en deux commandes, il donne la liste à jour.

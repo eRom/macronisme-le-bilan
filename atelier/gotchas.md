@@ -640,3 +640,18 @@ rien n'est piégé tant qu'on lit le code. Mais une heuristique du type « 200 e
 corps volumineux = vivante » classerait cette page comme une source valide : c'est
 le même défaut que `courdecassation.fr`, à l'envers. **Ne jamais juger de la
 vitalité d'une page à la taille de son corps.**
+
+**Un audit qui ne fait qu'un tir mesure son outil, pas le corpus.**
+`audit-sources.ts` déclarait MORTE tout ce que `fetch` n'aboutissait pas. Mesuré
+le 04/08/2026 sur la clôture de la campagne des sources mortes : **sur 37
+adresses ainsi déclarées mortes, 22 ne l'étaient pas** — trois répondaient 200 à
+`curl` (erreur de chaîne de certificats côté Bun), dix-neuf répondaient 403, donc
+bloquées. Le gotcha « re-sonder avec l'autre outil avant de conclure » était écrit
+le matin même, à propos de deux articles de presse ; l'outil, lui, ne l'appliquait
+pas. Un second tir à `curl` a été ajouté avant tout verdict d'échec, et c'est lui
+qui tranche.
+
+> Écrire une leçon dans les gotchas ne la fait pas entrer dans l'outillage. Quand
+> une leçon porte sur un mode de mesure, chercher tout de suite quel script
+> mesure encore à l'ancienne — sinon le prochain rapport la contredira en silence,
+> avec l'autorité d'un chiffre.
