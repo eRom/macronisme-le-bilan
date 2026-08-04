@@ -11,7 +11,7 @@ acteurs:
 grade: A
 statut: abandonnee
 sources:
-  - https://www.elysee.fr/emmanuel-macron/2018/09/13/presentation-de-la-strategie-nationale-de-prevention-et-de-lutte-contre-la-pauvrete
+  - https://www.lefigaro.fr/social/les-mesures-de-lutte-contre-la-pauvrete-se-sont-accelerees-durant-la-crise-20211013
   - https://www.vie-publique.fr/rapport/275344-revenu-universel-dactivite-rua-rapport-au-premier-ministre
 ---
 

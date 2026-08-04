@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.conseil-etat.fr/actualites/emissions-de-gaz-a-effet-de-serre-le-conseil-d-etat-cloture-le-contentieux-grande-synthe-estimant-que-l-objectif-de-reduction-de-40-pour-2030-est-en-voie-d-etre-atteint
+  - https://www.conseil-etat.fr/actualites/emissions-de-gaz-a-effet-de-serre-des-resultats-obtenus-et-des-mesures-suffisamment-precises-et-credibles-pour-une-reduction-de-40-en-2030
   - https://www.legifrance.gouv.fr/ceta/id/CETATEXT000052431885
 ---
 

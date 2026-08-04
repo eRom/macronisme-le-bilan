@@ -13,9 +13,9 @@ sources:
   - https://www.ccomptes.fr/fr/publications/les-depenses-publiques-pendant-la-crise-et-le-bilan-operationnel-de-leur-utilisation
   - https://www.rexecode.fr/conjoncture-previsions/archives/document-de-la-semaine/crise-covid-la-strategie-du-quoi-qu-il-en-coute-evaluee-par-la-cour-des-comptes
   - https://www.ccomptes.fr/fr/documents/65356
-  - https://www.banque-france.fr/fr/publications-et-statistiques/statistiques/credit-et-titrisation/prets-garantis-par-letat-pge
-  - https://www.impots.gouv.fr/statistiques-du-fonds-de-solidarite
-  - https://www.insee.fr/fr/statistiques/6451642
+  - https://www.banque-france.fr/fr/interventions-gouverneur/le-journal-du-dimanche-soyons-lucides-sur-les-defis-et-confiants-en-nous-memes
+  - https://www.fbf.fr/fr/pge-5-ans-apres/
+  - https://www.impots.gouv.fr/dgfip-analyses-les-beneficiaires-du-fonds-de-solidarite-en-2020-et-2021
 ---
 
 Allocution de Macron du 12/03/2020, puis fonds de solidarité, activité partielle, PGE, exonérations. Selon la Cour des comptes, la hausse des dépenses publiques atteint 96,4 Md€ (+6,5 %) en 2020, dont environ 86 % de dépenses de crise ; la Cour note des dispositifs « conçus de manière large » par rapport aux pays partenaires, avec risques d'effets d'aubaine et de fraude. Déficit 2020 : environ 9 % du PIB ; dette fin 2020 : environ 115 %.

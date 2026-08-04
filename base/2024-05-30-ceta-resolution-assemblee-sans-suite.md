@@ -11,7 +11,7 @@ grade: A
 statut: null
 sources:
   - https://www.assemblee-nationale.fr/dyn/16/scrutins/3782
-  - https://www.economie.gouv.fr/politique-commerciale/ceta-accord-economique-et-commercial-global
+  - https://www.assemblee-nationale.fr/dyn/16/textes/l16t0304_texte-adopte-seance
 ---
 
 Le 30/05/2024, l'Assemblée nationale adopte par 151 voix contre 4 une proposition de résolution non contraignante invitant le gouvernement à réinscrire le projet de loi de ratification du CETA à l'ordre du jour. La coalition rassemble la gauche, Les Républicains et le Rassemblement national ; la majorité présidentielle s'abstient.

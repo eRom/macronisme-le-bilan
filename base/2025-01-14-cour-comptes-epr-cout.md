@@ -11,7 +11,7 @@ grade: A
 statut: null
 sources:
   - https://www.ccomptes.fr/fr/publications/la-filiere-epr-une-dynamique-nouvelle-des-risques-persistants
-  - https://www.edf.fr/groupe-edf/espaces-medias/communiques-de-presse/edf-met-a-jour-l-estimation-du-cout-de-construction-des-6-premiers-reacteurs-epr2
+  - https://documentation.insp.gouv.fr/insp/doc/VIEPUBLIQUE/A8B511993E9F9B826D8155F561516785/la-filiere-epr-nbsp-une-dynamique-nouvelle-des-risques-persistants-rapport-de-suites
 ---
 
 Le rapport « La filière EPR : une dynamique nouvelle, des risques persistants » du 14/01/2025 réévalue le coût complet de Flamanville 3 à 23,7 Md€ en euros constants 2023, contre un devis initial de 3,3 Md€ en 2005 : facteur multiplicatif d'environ 7. L'évaluation précédente de la Cour, en 2020, retenait 19,1 Md€ en euros 2015 : la dérive s'est poursuivie de 4,6 Md€.

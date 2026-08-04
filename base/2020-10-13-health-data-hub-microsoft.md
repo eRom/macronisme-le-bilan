@@ -12,7 +12,7 @@ grade: A
 statut: null
 sources:
   - https://www.legifrance.gouv.fr/ceta/id/CETATEXT000042444915
-  - https://www.health-data-hub.fr/presse/la-plateforme-des-donnees-de-sante-selectionne-scaleway-pour-lhebergement-de-ses-donnees
+  - https://www.cnil.fr/fr/le-conseil-detat-demande-au-health-data-hub-des-garanties-supplementaires
 ---
 
 En référé, le 13/10/2020, le Conseil d'État juge « qu'il ne peut être totalement exclu » que les autorités américaines demandent l'accès aux données de santé hébergées par Microsoft Azure (FISA section 702, CLOUD Act). Le Health Data Hub restera chez Microsoft encore près de six ans : ce n'est que le 19/05/2026 que la Plateforme des données de santé annonce avoir retenu Scaleway (SecNumCloud) pour son hébergement.

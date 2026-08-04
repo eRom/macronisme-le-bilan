@@ -9,10 +9,8 @@ acteurs:
   gouvernement: INSEE, DARES
 grade: A
 sources:
-  - https://www.insee.fr/fr/statistiques/7625129
-  - https://www.insee.fr/fr/statistiques/8301712
+  - https://www.insee.fr/fr/statistiques/4805248
   - https://www.insee.fr/fr/statistiques/serie/010600318
-  - https://www.insee.fr/fr/statistiques/8205545
 ---
 
 Le taux de chômage au sens du BIT (France hors Mayotte, données CVS) recule de 9,5 % (T2 2017) à un creux de 7,1 % au T1 2023, plus bas niveau depuis 1982 ; le taux d'emploi des 15-64 ans atteint un record de 68,8 % en 2024 (contre 64,2 % en 2017), et le solde net d'emplois salariés privés cumule +1,72 million de postes entre le T2 2017 et le T4 2024.

@@ -11,12 +11,10 @@ acteurs:
 grade: A
 statut: tenue
 sources:
-  - https://www.education.gouv.fr/le-dedoublement-des-classes-de-cp-et-ce1-en-education-prioritaire-11524
-  - https://www.education.gouv.fr/reduction-de-la-taille-de-la-classe-en-education-prioritaire-que-nous-apprennent-les-donnees-de-la-depp-380963
+  - https://www.education.gouv.fr/depp/l-education-prioritaire-414237
   - https://www.senat.fr/rap/a23-131-3/a23-131-31.html
-  - https://www.senat.fr/rap/a22-117-31/a22-117-31.html
+  - https://www.senat.fr/rap/a22-117-3/a22-117-3.html
   - https://www.elysee.fr/emmanuel-macron/2019/04/25/conference-de-presse-grand-debat-national
-  - https://www.education.gouv.fr/taille-des-classes-du-premier-degre-une-neuvieme-annee-de-baisse-consecutive-dans-les-ecoles-publiques-380649
 ---
 
 Promesse 2017 : 12 élèves par classe en CP/CE1 d'éducation prioritaire. Calendrier de déploiement établi : CP REP+ à la rentrée 2017 (2 200 classes), extension au CP REP et CE1 REP+ en 2018, CE1 REP en 2019, puis grande section de maternelle en éducation prioritaire à partir de 2020. Prolongement hors éducation prioritaire : Macron annonce au Grand Débat national (25/04/2019) un plafond de 24 élèves par classe en GS, CP et CE1 avant la fin du quinquennat ; à la rentrée 2025, ce plafond est atteint dans 95 % des CP, 92 % des CE1 et 86 % des GS des écoles publiques (chaque chiffre repose sur une source primaire unique mais concordante, Élysée + note ministérielle). Statut tenue, établi par le ministère.

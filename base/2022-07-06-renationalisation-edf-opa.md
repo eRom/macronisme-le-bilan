@@ -12,7 +12,7 @@ grade: A
 statut: null
 sources:
   - https://www.vie-publique.fr/discours/285573-elisabeth-borne-6-juillet-2022-declaration-de-politique-generale
-  - https://www.economie.gouv.fr/letat-depose-le-projet-doffre-publique-dachat-simplifiee-sur-les-titres-dedf
+  - https://presse.economie.gouv.fr/4-10-2022-offre-publique-dachat-simplifiee-sur-les-titres-de-capital-dedf/
   - https://www.edf.fr/groupe-edf/espaces-dedies/journalistes/tous-les-communiques-de-presse/decision-de-la-cour-dappel-de-paris-rejetant-le-recours-en-annulation-forme-par-des-actionnaires-minoritaires-contre-la-decision-de-conformite-de-lamf-reouverture-de-lopas-visant-les
 ---
 

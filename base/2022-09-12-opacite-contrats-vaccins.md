@@ -11,7 +11,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.eca.europa.eu/Lists/ECADocuments/SR22_19/SR_Vaccine_procurement_FR.pdf
+  - https://www.eca.europa.eu/lists/ecadocuments/sr22_19/sr_eu_covid_vaccine_procurement_fr.pdf
   - https://curia.europa.eu/jcms/upload/docs/application/pdf/2025-05/cp250060fr.pdf
   - https://juricaf.org/arret/CJUE-TRIBUNALDEPREMIEREINSTANCEDELUNIONEUROPEENNE-20250514-T3623
 ---

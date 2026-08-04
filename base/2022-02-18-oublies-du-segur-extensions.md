@@ -13,7 +13,7 @@ statut: null
 sources:
   - https://www.conseil-constitutionnel.fr/decision/2024/20231084QPC.htm
   - https://www.vie-publique.fr/en-bref/294406-accord-sur-la-prime-segur-pour-les-exclus-du-secteur-social
-  - https://www.info.gouv.fr/actualite/conference-des-metiers-de-laccompagnement-social-et-medico-social-les-annonces-du-gouvernement
+  - https://solidarites.gouv.fr/conference-des-metiers-2022-les-mesures-salariales-dans-les-etablissements-sociaux-et-medico
 ---
 
 Le périmètre initial du complément de traitement indiciaire de 183 € nets par mois excluait des pans entiers du secteur social et médico-social, corrigés par vagues successives : conférence des métiers du 18/02/2022 étendant la revalorisation à la filière socio-éducative ; accord collectif de branche du 04/06/2024 l'étendant à environ 150 000 professionnels de la branche sociale et médico-sociale privée à but non lucratif (BASS), restés exclus près de quatre ans.

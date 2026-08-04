@@ -12,7 +12,7 @@ statut: null
 sources:
   - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047963959
   - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047963979
-  - https://www.fsu.fr/communique-de-presse-intersyndical-voie-professionnelle-le-pacte-lycee-pro-cest-non/
+  - https://www.sudeducation.org/tracts/lintersyndicale-de-la-voie-pro-refuse-le-pacte-lp-tract-intersyndical/
 ---
 
 La réforme de la voie professionnelle 2023 a créé une allocation de stage forfaitaire financée par l'État (10 €/jour en 2nde, 15 € en 1re, 20 € en terminale ; décret n° 2023-765 et arrêté du 11 août 2023), non soumise à cotisations et n'ouvrant aucun droit social, avec des retards de paiement reconnus au premier semestre 2024.

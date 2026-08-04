@@ -10,8 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.education.gouv.fr/le-budget-de-l-education-nationale-et-de-la-jeunesse-378873
-  - https://www.enseignementsup-recherche.gouv.fr/fr/l-etat-de-l-enseignement-superieur-de-la-recherche-et-de-l-innovation-47671
+  - https://publication.enseignementsup-recherche.gouv.fr/eesr/FR/T496/la_depense_d_education_pour_l_enseignement_superieur/
   - https://www.senat.fr/rap/l16-140-316/l16-140-3161.html
 ---
 

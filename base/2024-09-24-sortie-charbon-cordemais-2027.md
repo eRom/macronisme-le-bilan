@@ -11,7 +11,7 @@ grade: A
 statut: partielle
 sources:
   - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047989248
-  - https://www.edf.fr/groupe-edf/espaces-medias/communiques-de-presse/edf-presente-un-projet-davenir-industriel-pour-le-site-de-cordemais-loire-atlantique
+  - https://www.edf.fr/en/the-edf-group/dedicated-sections/journalists/all-press-releases/future-of-the-cordemais-site-edf-plans-to-stop-the-ecocombust-project-and-confirms-its-intention-to-maintain-industrial-activity-on-the-site
 ---
 
 La promesse présidentielle de fermer toutes les centrales à charbon d'ici 2022 n'a été tenue que pour Le Havre, fermée le 31/03/2021. Saint-Avold et Cordemais ont été maintenues ou redémarrées à la faveur de la crise énergétique, le décret n° 2023-817 du 23/08/2023 ayant relevé le plafond d'émissions applicable aux installations fossiles à 1,8 kt eq CO2 par MW installé du 01/04/2023 au 31/12/2024, avant redescente à 0,7 kt à compter du 01/01/2025.

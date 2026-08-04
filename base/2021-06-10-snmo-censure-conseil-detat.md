@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.conseil-etat.fr/actualites/les-actualites/schema-national-du-maintien-de-l-ordre-le-conseil-d-etat-annule-plusieurs-dispositions
+  - https://www.conseil-etat.fr/actualites/manaeuvre-d-encerclement-accreditation-des-journalistes-le-conseil-d-etat-annule-plusieurs-points-du-schema-du-maintien-de-l-ordre
   - https://www.vie-publique.fr/actualite/283002-schema-national-du-maintien-de-lordre-le-conseil-detat-censure-la-nasse
 ---
 

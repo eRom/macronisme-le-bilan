@@ -12,7 +12,7 @@ grade: A
 statut: tenue
 sources:
   - https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000039683939
-  - https://www.impots.gouv.fr/particulier/questions/qui-beneficie-de-la-suppression-totale-de-la-taxe-dhabitation-sur-la-residence
+  - https://www.impots.gouv.fr/particulier/questions/jai-demenage-en-cours-dannee-dois-je-payer-la-taxe-dhabitation-pour-lannee
 ---
 
 Promesse 2017 : exonérer 80 % des foyers. Réalisée par étapes 2018-2020 (LF 2018), puis élargie au-delà de la promesse initiale : la LF 2020 (art. 16, loi n° 2019-1479 du 28/12/2019) supprime la taxe pour 100 % des foyers sur la résidence principale à compter de 2023.

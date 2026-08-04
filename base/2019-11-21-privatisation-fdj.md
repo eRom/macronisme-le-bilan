@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.economie.gouv.fr/succes-spectaculaire-privatisation-fdj
+  - https://www.vie-publique.fr/files/rapport/pdf/291121.pdf
   - https://www.ccomptes.fr/fr/publications/les-jeux-dargent-et-de-hasard-un-secteur-en-mutation-des-enjeux-de-regulation
 ---
 

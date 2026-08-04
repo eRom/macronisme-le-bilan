@@ -12,7 +12,7 @@ grade: A
 statut: null
 sources:
   - https://www.legifrance.gouv.fr/loda/id/LEGITEXT000037208167
-  - https://www.education.gouv.fr/les-notes-d-information-de-la-depp-9799
+  - https://www.huffingtonpost.fr/life/article/le-retour-des-maths-obligatoires-au-lycee-une-bonne-nouvelle-pour-l-egalite-filles-garcons_210089.html
   - https://www.vie-publique.fr/rapport/284484-place-des-mathematiques-dans-la-voie-generale-du-lycee-general
   - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047005229
   - https://www.socinfo.fr/reforme-du-lycee-filles-maths-ses/

@@ -11,8 +11,8 @@ grade: A
 statut: null
 sources:
   - https://www.conseil-constitutionnel.fr/decision/2020/2020834QPC.htm
-  - https://www.conseil-etat.fr/fr/ariane/427916
-  - https://www.ccomptes.fr/fr/publications/un-premier-bilan-de-lacces-lenseignement-superieur-dans-le-cadre-de-la-loi-orientation
+  - https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2019-06-12/427916
+  - https://www.vie-publique.fr/files/rapport/pdf/273613.pdf
 ---
 
 Le Conseil constitutionnel (décision n° 2020-834 QPC du 3 avril 2020) a validé le secret des délibérations de Parcoursup sous réserve que chaque établissement publie a posteriori ses critères d'examen et la part du traitement algorithmique. Le Conseil d'État (12 juin 2019) avait limité l'accès aux algorithmes locaux aux seuls candidats refusés, excluant tiers et syndicats.

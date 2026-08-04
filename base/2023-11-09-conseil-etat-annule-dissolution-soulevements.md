@@ -11,7 +11,7 @@ grade: A
 statut: null
 sources:
   - https://www.legifrance.gouv.fr/ceta/id/CETATEXT000048384891
-  - https://www.conseil-etat.fr/actualites/actualites/les-soulevements-de-la-terre-le-conseil-detat-annule-la-dissolution
+  - https://www.conseil-etat.fr/actualites/soulevements-de-la-terre-gale-alvarium-cri-le-conseil-d-etat-precise-les-criteres-justifiant-la-dissolution-d-une-association-ou-d-un-groupement
 ---
 
 Le décret du 21/06/2023 avait prononcé la dissolution du groupement de fait Les Soulèvements de la Terre, après les affrontements de Sainte-Soline ([[2023-03-25-sainte-soline-grenades]]). Le 09/11/2023, le Conseil d'État, statuant en Section (n° 476384), l'annule pour excès de pouvoir.

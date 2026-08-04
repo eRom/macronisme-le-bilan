@@ -11,8 +11,8 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.edf-renouvelables.com/communique-de-presse/edf-renouvelables-et-ses-partenaires-mettent-en-service-le-premier-parc-eolien-en-mer-de-france/
-  - https://www.edf.fr/groupe-edf/espaces-medias/communiques-de-presse/inauguration-du-parc-eolien-en-mer-de-fecamp
+  - https://www.edf.fr/sites/groupe/files/2022-11/cp_20221123_inauguration_saint_nazaire_vf.pdf
+  - https://france.edf-powersolutions.com/communiques/parc-eolien-en-mer-de-fecamp-mise-en-service-du-premier-parc-eolien-en-mer-de-normandie/
   - https://www.iberdrola.fr/presse/communiques-de-presse/mise-en-service-commerciale-saint-brieuc
 ---
 

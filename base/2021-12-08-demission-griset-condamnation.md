@@ -10,7 +10,7 @@ acteurs:
   gouvernement: Castex
 grade: A
 sources:
-  - https://www.hatvp.fr/communique/situation-de-m-alain-griset-la-haute-autorite-avise-le-procureur-de-la-republique/
+  - https://www.franceinfo.fr/societe/justice/declaration-de-patrimoine-incomplete-l-ex-ministre-alain-griset-condamne-en-appel-a-quatre-mois-de-prison-avec-sursis_5579958.html
   - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051020487
   - https://www.ici.fr/infos/faits-divers-justice/l-ancien-ministre-nordiste-alain-griset-est-suspendu-pour-5-ans-de-l-ordre-national-de-la-legion-d-honneur-3526643
 ---
