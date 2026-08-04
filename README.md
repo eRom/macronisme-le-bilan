@@ -1,9 +1,9 @@
-![Macronisme 2017-2027 : bilan factuel. 531 fiches sourcées, 879 sources, 15 domaines instruits, synthèse défavorable.](reseaux-sociaux/bilan-macron-image.jpg)
+![Macronisme 2017-2027 : bilan factuel. 534 fiches sourcées, 915 URL distinctes, 15 domaines instruits, synthèse défavorable.](reseaux-sociaux/bilan-emmanuel-macron-image-2027.png)
 
 # Macronisme : le bilan
 
 Dossier documentaire sur les deux quinquennats d'Emmanuel Macron, mai 2017 à
-juillet 2026. **531 fiches** datées et sourcées, **879 URL distinctes**, quinze
+juillet 2026. **534 fiches** datées et sourcées, **915 URL distinctes**, quinze
 domaines instruits, quinze jugements motivés et une synthèse.
 
 **Lecture confortable : [macronisme-le-bilan.netlify.app](https://macronisme-le-bilan.netlify.app)**
@@ -22,23 +22,24 @@ faits. C'est la garantie principale de cette construction.
 
 | | |
 |---|---|
-| Fiches | 531 |
-| URL sources distinctes | 879 |
-| Grade A (document officiel, jugement définitif) | 402 (75,7 %) |
-| Grade B (plusieurs sources de presse indépendantes) | 115 (21,7 %) |
-| Grade C (allégation à source unique) | 14 (2,6 %) |
+| Fiches | 534 |
+| URL sources distinctes | 915 |
+| Grade A (document officiel, jugement définitif) | 409 (76,6 %) |
+| Grade B (plusieurs sources de presse indépendantes) | 112 (21,0 %) |
+| Grade C (allégation à source unique) | 13 (2,4 %) |
 | Grade D (rumeur) | 0 |
 | Domaines instruits | 15 |
 | Période couverte | mai 2017 à juillet 2026 |
 
-Les sources les plus citées sont Légifrance (200 occurrences), le Sénat (76),
-vie-publique.fr (56), l'Assemblée nationale (48) et la Cour des comptes (40).
-La première source de presse généraliste arrive en seizième position.
+Les sources les plus citées sont Légifrance (203 occurrences), le Sénat (74),
+vie-publique.fr (59), l'Assemblée nationale (50) et la Cour des comptes (46).
+Les neuf premières sont toutes institutionnelles ; la première source de presse
+généraliste, franceinfo, vient ensuite avec 18 occurrences.
 
 ## Structure
 
 ```
-base/         531 fiches factuelles, une par pièce, AAAA-MM-JJ-slug.md
+base/         534 fiches factuelles, une par pièce, AAAA-MM-JJ-slug.md
 jugement/     15 pièces de jugement (une par domaine) + synthese.md
 METHODE.md    comment ce dossier est construit et ce que vaut chaque affirmation
 atlas/        générateur et front du site (TypeScript, Bun)
@@ -52,7 +53,9 @@ cliquables sur GitHub ; ils le sont sur le site.
 ## Les verdicts
 
 Échelle commune à cinq niveaux : très favorable, favorable, mitigé, défavorable,
-gravement défavorable. Tous datés du 31/07/2026.
+gravement défavorable. Chaque pièce porte sa propre date de verdict : du
+31/07/2026 pour les deux plus anciennes au 04/08/2026 pour les pièces révisées
+depuis, synthèse comprise.
 
 | Domaine | Verdict |
 |---|---|

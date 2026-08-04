@@ -3,7 +3,7 @@
  * Lecture SEULE sur ../base et ../jugement. Jamais ../atelier : le site rend le
  * dossier, pas la matière première qui a servi à le construire.
  * Sorties : dist/data.js (window.ATLAS) + build-report.md.
- * Contrat : 531/531 fiches parsées ou échec du build ; tout lien cassé listé.
+ * Contrat : 534/534 fiches parsées ou échec du build ; tout lien cassé listé.
  */
 import { readdirSync, readFileSync, writeFileSync, mkdirSync, existsSync, copyFileSync } from "node:fs";
 import { join, resolve, basename } from "node:path";

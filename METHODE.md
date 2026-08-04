@@ -67,13 +67,13 @@ cliquables sur GitHub ; ils le sont sur le site.
 | **C** | allégation à source unique |
 | **D** | rumeur |
 
-État réel du corpus au 2026-08-02, sur **531 fiches** :
+État réel du corpus au 2026-08-04, sur **534 fiches** :
 
 | Grade | Fiches | Part |
 |---|---|---|
-| A | 402 | 75,7 % |
-| B | 115 | 21,7 % |
-| C | 14 | 2,6 % |
+| A | 409 | 76,6 % |
+| B | 112 | 21,0 % |
+| C | 13 | 2,4 % |
 | D | 0 | 0 % |
 
 Deux règles encadrent l'échelle :
@@ -84,35 +84,37 @@ Deux règles encadrent l'échelle :
 - **Le grade D n'entre pas dans la base**, sauf notabilité particulière. Aucune
   fiche n'a passé ce filtre.
 
-Les 531 fiches citent **879 URL distinctes**. Leur répartition dit la nature du
+Les 534 fiches citent **915 URL distinctes**. Leur répartition dit la nature du
 sourcing mieux qu'une déclaration d'intention :
 
 | Source | Occurrences |
 |---|---|
-| legifrance.gouv.fr | 200 |
-| senat.fr | 76 |
-| vie-publique.fr | 56 |
-| assemblee-nationale.fr | 48 |
-| ccomptes.fr | 40 |
-| elysee.fr | 33 |
-| conseil-constitutionnel.fr | 29 |
-| insee.fr | 26 |
+| legifrance.gouv.fr | 203 |
+| senat.fr | 74 |
+| vie-publique.fr | 59 |
+| assemblee-nationale.fr | 50 |
+| ccomptes.fr | 46 |
+| elysee.fr | 32 |
+| conseil-constitutionnel.fr | 32 |
+| insee.fr | 20 |
+| conseil-etat.fr | 20 |
 
-La première source de presse généraliste arrive en seizième position.
+Les neuf sources les plus citées sont toutes institutionnelles. La première
+source de presse généraliste, franceinfo, vient ensuite avec 18 occurrences.
 
 ## 4. La grille des domaines
 
 Quinze domaines, instruits un par un. Le volume de fiches par domaine dépasse
-531 au total : le multi-tagging du §2 fait qu'une fiche compte dans chacun de
+534 au total : le multi-tagging du §2 fait qu'une fiche compte dans chacun de
 ses domaines.
 
 | Domaine | Fiches | Périmètre |
 |---|---|---|
-| `ecologie-energie` | 95 | engagements climat, condamnations de l'État, nucléaire, EPR, glyphosate |
+| `ecologie-energie` | 96 | engagements climat, condamnations de l'État, nucléaire, EPR, glyphosate |
 | `institutions` | 84 | dissolution 2024, gouvernements et remaniements, conseils de défense, rapport au Parlement |
 | `finances-publiques` | 82 | dette, déficits, budgets successifs, alertes de la Cour des comptes, dépenses de conseil |
 | `europe` | 79 | souveraineté, rapport au Parlement européen, compétitivité, dépendance énergétique |
-| `industrie` | 69 | privatisations, désindustrialisation, fermetures, emploi, balance commerciale |
+| `industrie` | 70 | privatisations, désindustrialisation, fermetures, emploi, balance commerciale |
 | `sante` | 63 | gestion du Covid, hôpital public, déserts médicaux, Ségur |
 | `libertes-publiques` | 62 | lois sécuritaires, usages du 49.3, maintien de l'ordre, surveillance, liberté de la presse |
 | `promesses` | 57 | programmes 2017 et 2022, sort de chaque engagement majeur |
@@ -122,7 +124,7 @@ ses domaines.
 | `retraites-social` | 35 | réformes des retraites 2019 et 2023, assurance chômage, minima sociaux |
 | `securite-immigration` | 33 | lois immigration et sécurité, chiffres officiels, écarts discours/résultats |
 | `international` | 27 | diplomatie (Russie, Sahel, Ukraine), Uber Files, ingérences, ventes d'armes |
-| `education-recherche` | 23 | réformes scolaires, Parcoursup, recrutement enseignant, université |
+| `education-recherche` | 25 | réformes scolaires, Parcoursup, recrutement enseignant, université |
 
 Les sujets sensibles ne forment pas de domaine à part : ils tombent dans
 `justice-affaires` ou `libertes-publiques`, et le grade dit ce que chaque pièce
@@ -246,7 +248,7 @@ Sénat sans vote de l'Assemblée, trois fois en trois ans.
 
 ## 8. La synthèse faîtière
 
-`jugement/synthese.md` se rend sur les quinze pièces, jamais sur les 531
+`jugement/synthese.md` se rend sur les quinze pièces, jamais sur les 534
 fiches. Aucune charge nouvelle ne peut y naître : si la lecture croisée en fait
 émerger une, elle passe d'abord par la révision de la pièce de domaine.
 

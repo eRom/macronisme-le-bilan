@@ -167,7 +167,7 @@ export function viewChrono(): HTMLElement {
   const view = h("div", { class: "view", style: "max-width:1400px" },
     h("div", { class: "page-title", style: "padding:0 16px" }, "La chronologie"),
     h("p", { class: "page-sub", style: "padding:0 16px" },
-      "Les 531 pièces sur onze ans, une ligne par domaine, les bandes verticales suivent les neuf gouvernements. ",
+      `Les ${Object.keys(A.fiches).length} pièces sur onze ans, une ligne par domaine, les bandes verticales suivent les neuf gouvernements. `,
       "Les segments matérialisent les pièces qui s'étalent dans le temps."),
     wrap,
   );

@@ -10,7 +10,7 @@ C'est la seule chose importante à retenir avant de lire quoi que ce soit dans
 ce dossier.
 
 Ce qui fait foi est dans [`base/`](../base), fiche par fiche, avec sa source et
-son grade de preuve. Ces 531 fiches sont le résultat d'un tri : chaque fait y a
+son grade de preuve. Ces 534 fiches sont le résultat d'un tri : chaque fait y a
 été revérifié à la main, chaque identifiant sondé, chaque grade éventuellement
 dégradé. **Ce qui n'a pas passé ce tri est resté ici, et y est resté pour une
 raison.**
@@ -49,7 +49,7 @@ plutôt que laissé à découvrir.
 | | | |
 |---|---|---|
 | `research/` | 1,3 Mo | 15 rapports de recherche bruts, un par domaine, plus deux annexes de vérification |
-| `chronologie.md` | 172 Ko | index chronologique des 531 fiches, avancement par domaine, et les points restés à vérifier |
+| `chronologie.md` | 172 Ko | index chronologique des fiches, avancement par domaine, et les points restés à vérifier |
 | `methodes/` | 40 Ko | les trois méthodes d'origine (recherche, jugement, synthèse). `METHODE.md` à la racine en est la version publique et à jour |
 | `notes/` | 44 Ko | notes de session : le raisonnement en cours de route, y compris les impasses |
 | `conception/` | 16 Ko | la conception du site en un document : brief initial, plan d'exécution, amendements, pivot publication |

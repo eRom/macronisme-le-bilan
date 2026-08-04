@@ -92,7 +92,7 @@ export function viewRecherche(initial: string): HTMLElement {
 
   let timer = 0;
   const input = h("input", {
-    class: "search-input", type: "search", placeholder: "Rechercher dans les 531 pièces : 49.3, Canadair, Ségur, McKinsey, ISF…",
+    class: "search-input", type: "search", placeholder: `Rechercher dans les ${Object.keys(A.fiches).length} pièces : 49.3, Canadair, Ségur, McKinsey, ISF…`,
     value: initial,
     oninput: (e: Event) => {
       window.clearTimeout(timer);
@@ -102,7 +102,7 @@ export function viewRecherche(initial: string): HTMLElement {
 
   const view = h("div", { class: "view narrow" },
     h("div", { class: "page-title" }, "Recherche"),
-    h("p", { class: "page-sub" }, "Plein texte sur les titres et les corps des 531 fiches, accents ignorés."),
+    h("p", { class: "page-sub" }, `Plein texte sur les titres et les corps des ${Object.keys(A.fiches).length} fiches, accents ignorés.`),
     h("div", { style: "margin-top:14px" }, input),
     results,
     footer(),
