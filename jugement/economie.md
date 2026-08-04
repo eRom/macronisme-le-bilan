@@ -67,11 +67,12 @@ forfaitaire unique de 30 % sur les revenus du capital
 ([[2017-12-30-flat-tax-pfu]], grade A), impôt sur les sociétés ramené à 25 %
 pour les exercices ouverts au 01/01/2022 ([[2017-12-30-is-25-pourcent]], grade
 A). Le comité d'évaluation installé par le gouvernement lui-même en mesure les
-effets, constats relayés par le rapport du Sénat r22-540
+effets, dans un rapport final publié en octobre 2023
 ([[2023-10-16-evaluation-fiscalite-capital-france-strategie]], grade A) :
 envolée des dividendes déclarés à l'impôt sur le revenu par les ménages
 résidents (29,8 Md€ en 2017 à 37,1 Md€ en 2018), ultra-concentrés au sommet
-(62 % perçus par les 0,1 % des foyers les plus aisés en 2020), manque à gagner
+(1 % des foyers fiscaux concentrent 96 % des montants déclarés, 62 % le sont par
+0,1 % des foyers, proportions stables depuis 2018), manque à gagner
 budgétaire brut de l'IFI estimé à 4,5 Md€ en 2022 par rapport à un ISF maintenu
 (1,8 Md€ perçus contre environ 6,3 Md€ estimés). Surtout, les travaux
 économétriques **ne détectent aucun effet causal significatif sur

@@ -176,8 +176,9 @@ doublé pour atteindre 1,079 Md€ en 2021, et que les entités françaises de
 McKinsey n'ont payé aucun impôt sur les sociétés de 2011 à 2020
 ([[2022-03-16-rapport-senat-cabinets-conseil]], grade A). Le Fonds Marianne a
 fait l'objet d'un référé de la Cour des comptes qualifiant la gestion du SG-CIPDR
-de défaillante, après un rapport de commission d'enquête sur « la dérive d'un
-coup politique » ([[2023-05-04-fonds-marianne]], grade A). Ce qui limite la
+de défaillante, après un rapport de la commission des finances du Sénat, dotée
+des prérogatives d'une commission d'enquête, sur « la dérive d'un coup
+politique » ([[2023-05-04-fonds-marianne]], grade A). Ce qui limite la
 charge : l'encadrement des dépenses de conseil a ensuite produit effet (voir
 décharge 5), et la pièce du Fonds Marianne est une affaire suivie d'une
 information judiciaire, dont l'une des ministres n'a fait l'objet d'aucune mise

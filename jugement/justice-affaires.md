@@ -82,9 +82,13 @@ en 2019, 499 900 en 2024, 10 % des délits enregistrés), ne sont payées qu'à
 24,1 %, laissant 1,1 Md€ à recouvrer : une pénalité de masse s'est installée
 sans exécution effective ([[2026-04-01-cour-comptes-amendes-forfaitaires]]). La
 LOPJ 2023-2027 budgète 10 000 emplois nets d'ici 2027, au-delà de la promesse, mais l'exécution
-est contestée par le Sénat : annulations de crédits (139,1 M€ en 2025), postes
-pourvus sous les plafonds, recrutements absorbés par la vacance structurelle
-([[2023-11-20-lopj-10000-postes-justice]], statut partielle). Ce qui limite la
+est contestée par le Sénat : 327,9 M€ annulés sur la mission Justice par le
+décret du 21/02/2024, 2 308 emplois créés en 2023 et 1 916 prévus en 2024 pour
+une cible de 10 000 sur cinq ans, postes pourvus sous les plafonds, recrutements
+absorbés par la vacance structurelle
+([[2023-11-20-lopj-10000-postes-justice]], statut partielle ; le montant de
+139,1 M€ que portait ici la pièce a perdu sa source au re-sondage du 04/08/2026
+et est retiré). Ce qui limite la
 charge : les créations sont réelles (postes budgétés, PNACO opérationnel,
 [[2025-06-13-loi-narcotrafic]]), la hausse des AFD reflète en partie un effet
 d'enregistrement, et aucune comparaison d'exécution avec les présidences
@@ -134,8 +138,10 @@ charge n'est pas l'illégalité : c'est l'abandon, au cas par cas et sans critè
 énoncé, du standard que l'exécutif s'était lui-même fixé en 2017.
 
 **5. Le Fonds Marianne : l'instrumentalisation politique de fonds publics,
-constatée par le Sénat et la Cour des comptes.** La commission d'enquête du
-Sénat conclut à « la dérive d'un coup politique », avec interférence active du
+constatée par le Sénat et la Cour des comptes.** La commission des finances du
+Sénat, constituée en mission d'information dotée des prérogatives d'une
+commission d'enquête, conclut à « la dérive d'un coup politique » dans son
+rapport n° 829 du 04/07/2023, avec interférence active du
 cabinet de Marlène Schiappa dans le choix des associations ; l'IGA pointe un
 traitement de faveur, le secrétaire général du CIPDR démissionne le jour du
 rapport, un référé de la Cour des comptes qualifie la gestion de défaillante et

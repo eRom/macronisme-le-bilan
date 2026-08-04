@@ -1,7 +1,7 @@
 ---
 domaine: institutions
 verdict: defavorable
-date_verdict: 2026-08-03
+date_verdict: 2026-08-04
 ---
 
 # Jugement : institutions
@@ -135,7 +135,13 @@ Convention fin de vie ([[2023-04-03-convention-fin-de-vie-parcours]]), CNR
 ([[2022-09-08-conseil-national-refondation-essoufflement]]), partagent la même
 structure : lancement présidentiel très visible, absence de caractère
 contraignant, traduction faible ou tardive. C'est cette régularité qui fait la
-pièce, pas chaque cas isolé. Le cas le plus net est la fin de vie : plus de trois
+pièce, pas chaque cas isolé. Le Grand débat en donne une illustration de long
+terme, entrée au socle le 04/08/2026 : les cahiers de doléances remplis par plus
+de 200 000 citoyens dans plus de 17 000 communes sont restés inaccessibles, et
+c'est une résolution de l'Assemblée nationale du 11/03/2025 qui a déclenché leur
+mise en ligne, dont la phase opérationnelle est annoncée le 02/04/2026, sept ans
+après la consultation. L'ouverture vient du Parlement, pas de l'exécutif qui
+avait organisé la collecte. Le cas le plus net est la fin de vie : plus de trois
 ans entre l'avis citoyen et la loi, la cause principale du retard étant la
 dissolution décidée par le président qui avait lui-même commandé la convention.
 Parallèlement, aucun référendum de l'article 11 n'a été convoqué sur les deux
