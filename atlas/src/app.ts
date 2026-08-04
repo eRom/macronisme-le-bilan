@@ -8,6 +8,7 @@ import { viewRecherche } from "./views/recherche";
 import { viewMethode } from "./views/methode";
 import { viewGraphe, destroyGraphe } from "./views/graphe";
 import { viewChrono } from "./views/chrono";
+import { viewProgrammes } from "./views/programmes";
 
 const NAV: [string, string][] = [
   ["#/", "Synthèse"],
@@ -16,6 +17,7 @@ const NAV: [string, string][] = [
   ["#/graphe", "Graphe"],
   ["#/chrono", "Chronologie"],
   ["#/acteurs", "Acteurs"],
+  ["#/programmes", "Programmes"],
   ["#/methode", "Méthode"],
 ];
 
@@ -85,6 +87,7 @@ function route(): void {
     case "acteurs": view = viewActeurs(); break;
     case "acteur": view = viewActeur(rest[0] ?? "", rest[1] ?? ""); break;
     case "recherche": view = viewRecherche(rest.join("/")); break;
+    case "programmes": view = viewProgrammes(); break;
     case "methode": view = viewMethode(); break;
     case "graphe": view = viewGraphe(); break;
     case "chrono": view = viewChrono(); break;

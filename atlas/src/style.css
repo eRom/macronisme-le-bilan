@@ -52,6 +52,11 @@
   --g-b: oklch(0.72 0.13 262);
   --g-c: oklch(0.82 0.148 65);
 
+  /* promesses : la minorité tenue ressort, la majorité non tenue reste neutre.
+     Peindre 169 lignes en rouge serait un verdict de plus que ce que dit la mesure. */
+  --p-tenue: oklch(0.74 0.135 163);
+  --p-non: oklch(0.42 0.014 56);
+
   --elevate-1: oklch(1 0 0 / 0.04);
   --elevate-2: oklch(1 0 0 / 0.09);
   --radius: 6px;
@@ -186,6 +191,8 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .b-role-decharge { background: color-mix(in oklab, var(--v-tres-favorable) 12%, transparent); color: var(--g-a); text-transform: none; }
 .b-role-ecartee { background: color-mix(in oklab, var(--foreground) 6%, transparent); color: var(--muted-foreground); text-transform: none; }
 .b-role-fil { background: color-mix(in oklab, var(--primary) 12%, transparent); color: var(--primary); text-transform: none; }
+.b-tenue { background: color-mix(in oklab, var(--p-tenue) 13%, transparent); color: var(--p-tenue); text-transform: none; }
+.b-nontenue { background: color-mix(in oklab, var(--foreground) 5%, transparent); color: var(--muted-foreground); border-color: var(--border); text-transform: none; font-weight: 500; }
 
 .chip-domaine {
   display: inline-flex; align-items: center; gap: 5px;
@@ -397,6 +404,62 @@ a.chip-domaine:hover { box-shadow: var(--elevate-1) 0 0 0 1px, var(--elevate-2) 
 .search-hit:hover { box-shadow: var(--elevate-1) 0 0 0 1px, var(--elevate-2) 0 4px 8px; transform: translateY(-1px); }
 .search-hit .sh-ex { font-size: 13px; color: var(--muted-foreground); margin-top: 6px; line-height: 1.55; }
 .search-hit mark { background: color-mix(in oklab, var(--primary) 25%, transparent); color: var(--foreground); border-radius: 2px; padding: 0 1px; }
+
+/* ---------------------------------------------------------------- programmes */
+
+.prog-card { display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 20px 16px 18px; }
+.prog-card .pc-head { display: flex; align-items: baseline; justify-content: space-between; width: 100%; }
+.prog-card .pc-an { font-size: 15px; font-weight: 600; color: var(--primary); letter-spacing: -0.01em; }
+.prog-card .pc-n { font-size: 11px; color: var(--muted-foreground); }
+
+.pd-wrap { position: relative; width: 168px; height: 168px; }
+.pd-svg { display: block; width: 100%; height: 100%; }
+/* Aucune animation sur l'arc : sa longueur EST la donnée, elle ne peut pas
+   dépendre d'une frame qui ne vient pas. Voir le commentaire dans programmes.ts. */
+.pd-center {
+  position: absolute; inset: 0; pointer-events: none;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+}
+.pd-pct { font-size: 28px; font-weight: 700; line-height: 1; letter-spacing: -0.02em; }
+.pd-cap { font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: color-mix(in oklab, var(--foreground) 40%, transparent); }
+
+.pc-legend { display: flex; flex-direction: column; gap: 2px; width: 100%; }
+.pl-row { display: flex; align-items: center; gap: 8px; padding: 4px 6px; font-size: 13px; }
+.pl-dot { width: 8px; height: 8px; border-radius: 999px; flex-shrink: 0; }
+.pl-dot.t { background: var(--p-tenue); }
+.pl-dot.n { background: var(--p-non); }
+.pl-label { flex: 1; color: var(--muted-foreground); }
+.pl-n { font-size: 13px; font-weight: 600; }
+
+.prog-total { max-width: 74ch; margin-top: 14px; font-size: 14px; line-height: 1.65; color: var(--muted-foreground); }
+.prog-total strong { color: var(--foreground); font-weight: 600; }
+
+.note-methode p { max-width: 74ch; margin-bottom: 10px; font-size: 14px; line-height: 1.65; color: var(--muted-foreground); }
+.note-methode strong { color: var(--foreground); font-weight: 600; }
+.nm-link { display: inline-block; font-size: 13px; color: var(--primary); border-bottom: 1px solid color-mix(in oklab, var(--primary) 35%, transparent); }
+.nm-link:hover { border-bottom-color: var(--primary); }
+
+.pf-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+/* deux axes de filtre distincts : sans séparation ils se lisent comme une seule
+   rangée de six pastilles, dont deux allumées sans raison apparente. */
+.pf-group { display: flex; gap: 4px; }
+.pf-group + .pf-group { padding-left: 10px; border-left: 1px solid var(--border); }
+.pf-search { flex: 1; width: auto; min-width: 190px; min-height: 32px; padding: 5px 12px; font-size: 13px; }
+.pf-count { font-size: 11px; color: var(--muted-foreground); white-space: nowrap; }
+
+.prog-table-wrap { overflow-x: auto; }
+.prog-table .pp-id { width: 92px; font-size: 11px; white-space: nowrap; vertical-align: top; padding-top: 11px; }
+.prog-table .pp-txt { line-height: 1.55; }
+.prog-table .pp-v { width: 108px; text-align: right; vertical-align: top; padding-top: 10px; }
+
+@media (max-width: 640px) {
+  .prog-table, .prog-table tbody, .prog-table tr, .prog-table td { display: block; width: 100%; }
+  .prog-table thead { display: none; }
+  .prog-table tbody tr { padding: 10px 2px; border-bottom: 1px solid color-mix(in oklab, var(--border) 55%, transparent); }
+  .prog-table td { border: none; padding: 2px 0; }
+  .prog-table .pp-id, .prog-table .pp-v { width: auto; text-align: left; padding-top: 0; }
+  .prog-table .pp-v { margin-top: 7px; }
+}
 
 /* ---------------------------------------------------------------- divers */
 

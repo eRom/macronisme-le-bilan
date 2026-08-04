@@ -2,8 +2,17 @@
 
 Mini-site statique qui présente le bilan des deux quinquennats d'Emmanuel
 Macron, arrêté au 30/07/2026. Généré depuis `../base/` et `../jugement/`, en
-**lecture seule stricte** : le pipeline n'écrit jamais dans le corpus, et ne
-lit jamais `../atelier/`.
+**lecture seule stricte** : le pipeline n'écrit jamais dans le corpus.
+
+Il ne lit `../atelier/` qu'en **un point, nommé `PROMESSES_REL` dans
+`build.ts`** : le tableau des 221 promesses des programmes de campagne, rendu
+par la vue Programmes. Ces engagements ne sont ni datés ni gradés et n'ont pas
+été sondés source par source ; ils n'ont donc pas leur place dans `base/`, et
+la vue le dit au lecteur. La table est lue à sa source plutôt que recopiée dans
+`src/`, un doublon aurait dérivé au premier verdict révisé. Le prix de
+l'exception est un contrôle bloquant : effectif attendu (221), verdicts dans le
+vocabulaire admis, et décompte du document confronté aux lignes lues. **Ne pas
+élargir cette porte** : toute autre matière de l'atelier reste hors du site.
 
 En ligne : https://macronisme-le-bilan.netlify.app
 
@@ -51,9 +60,9 @@ lettres dans les documents.
   normalisation des gouvernements et ministres, extraction des rôles
   (charges / décharges / écartés / fils), calcul des backlinks, layout
   ForceAtlas2 pré-calculé, copie des assets.
-- **`src/`** : front TypeScript vanilla, sans framework, dark only. Neuf vues :
-  synthèse (accueil), domaines, parcours, graphe, chronologie, acteurs, fiche,
-  recherche, méthode.
+- **`src/`** : front TypeScript vanilla, sans framework, dark only. Dix vues :
+  synthèse (accueil), domaines, parcours, graphe, chronologie, acteurs,
+  programmes, fiche, recherche, méthode.
 - **`dist/`** : intégralement généré, autonome, zéro réseau et zéro CDN.
   Régénérable à tout moment, donc jamais commité.
 

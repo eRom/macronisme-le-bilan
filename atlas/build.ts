@@ -1,7 +1,8 @@
 /**
  * Atlas - pipeline de données.
- * Lecture SEULE sur ../base et ../jugement. Jamais ../atelier : le site rend le
- * dossier, pas la matière première qui a servi à le construire.
+ * Lecture SEULE sur ../base et ../jugement, à une exception nommée près
+ * (PROMESSES_REL ci-dessous) : le site rend le dossier, pas la matière première
+ * qui a servi à le construire.
  * Sorties : dist/data.js (window.ATLAS) + build-report.md.
  * Contrat : 534/534 fiches parsées ou échec du build ; tout lien cassé listé.
  */
@@ -596,6 +597,43 @@ const nodes = [...fiches.values()].map((f) => {
 });
 const edges = graph.edges().map((e) => [graph.source(e), graph.target(e)]);
 
+// ---------------------------------------------------------------- promesses
+//
+// Exception nommée et unique à la règle « le pipeline ne lit jamais l'atelier ».
+// Les 221 engagements des deux programmes de campagne ne sont pas des pièces du
+// socle : ils ne sont ni datés ni gradés, et leurs verdicts n'ont pas été sondés
+// source par source. Ils n'ont donc pas leur place dans base/, et la vue qui les
+// rend le dit en toutes lettres au lecteur.
+//
+// La table est lue à sa source plutôt que recopiée dans src/ : un doublon aurait
+// dérivé en silence dès la première révision d'un verdict. Le prix de cette
+// exception est le contrôle ci-dessous, bloquant : effectif attendu, verdicts
+// dans le vocabulaire admis, et décompte du document confronté aux lignes lues.
+
+const PROMESSES_REL = "atelier/programmes-officiels/promesses-electorales-verdicts.md";
+const PROMESSES_ATTENDUES = 221;
+
+type Promesse = { id: string; an: string; txt: string; v: "TENUE" | "NON" };
+
+const promesses: Promesse[] = [];
+const promessesPath = join(POL, PROMESSES_REL);
+if (!existsSync(promessesPath)) {
+  report.compteursMismatch.push({ where: PROMESSES_REL, what: "document des verdicts de promesses introuvable" });
+} else {
+  const raw = readFileSync(promessesPath, "utf-8");
+  for (const m of raw.matchAll(/^\| (P(20\d{2})-\d{3}) \| (.+?) \| (TENUE|NON) \|$/gm)) {
+    promesses.push({ id: m[1], an: m[2], txt: m[3].trim(), v: m[4] as "TENUE" | "NON" });
+  }
+  if (promesses.length !== PROMESSES_ATTENDUES) {
+    report.compteursMismatch.push({
+      where: PROMESSES_REL,
+      what: `${promesses.length} promesses lues, ${PROMESSES_ATTENDUES} attendues : le tableau des verdicts a changé de forme`,
+    });
+  }
+}
+
+const promessesTenues = promesses.filter((p) => p.v === "TENUE").length;
+
 // ---------------------------------------------------------------- sortie data.js
 
 mkdirSync(DIST, { recursive: true });
@@ -622,6 +660,7 @@ const data = {
   ministres: Object.fromEntries([...ministres.entries()].sort((a, b) => b[1].fiches.length - a[1].fiches.length)),
   synthese,
   graphe: { nodes, edges },
+  promesses,
   buildDate: new Date().toISOString().slice(0, 10),
 };
 
@@ -722,6 +761,22 @@ const REGLES_COMPTEURS: Regle[] = [
   // Fiches par domaine (multi-tagging) et occurrences par source.
   { fichier: "METHODE.md", motif: /^\| `([a-z-]+)` \| (\d+) \|/gm, lu: (m) => m[2], attendu: (m) => nb(tagsDomaines.get(m[1])), quoi: (m) => `fiches du domaine ${m[1]}` },
   { fichier: "METHODE.md", motif: /^\| ([a-z0-9-]+(?:\.[a-z0-9-]+)+) \| (\d+) \|/gm, lu: (m) => m[2], attendu: (m) => nb(occurrencesSource.get(m[1])), quoi: (m) => `occurrences de ${m[1]}` },
+
+  // Verdicts des promesses : le décompte rédigé dans le document confronté aux
+  // lignes que le build en a réellement lues. Le front, lui, ne compte rien en
+  // dur, il recompte A.promesses à l'affichage.
+  {
+    fichier: PROMESSES_REL,
+    motif: /^\| (2017|2022) \| (\d+) \| (\d+) \| (\d+) \|/gm,
+    lu: (m) => `${m[2]} tenues, ${m[3]} non tenues, ${m[4]} au total`,
+    attendu: (m) => {
+      const lot = promesses.filter((p) => p.an === m[1]);
+      if (lot.length === 0) return null;
+      const t = lot.filter((p) => p.v === "TENUE").length;
+      return `${t} tenues, ${lot.length - t} non tenues, ${lot.length} au total`;
+    },
+    quoi: (m) => `verdicts du programme ${m[1]}`,
+  },
 ];
 
 for (const r of REGLES_COMPTEURS) {
@@ -751,6 +806,7 @@ const lines = `# Rapport de build Atlas - ${data.buildDate}
 - Citations de fiches dans les jugements (occurrences de rôles) : ${report.citationsJugements}
 - Entrées ministres brutes : ${report.entreesMinistresBrutes} sur ${report.fichesAvecMinistres} fiches (référence indépendante du 01/08 : 631/430)
 - Ministres distincts après séparation puis/et : ${ministres.size} ; gouvernements canoniques : ${GOUVERNEMENTS.length}
+- Promesses des programmes : **${promesses.length}/${PROMESSES_ATTENDUES}** ${promesses.length === PROMESSES_ATTENDUES ? "OK" : "ÉCHEC"} — ${promessesTenues} tenues, ${promesses.length - promessesTenues} non tenues
 - Fonts embarquées : ${fontsEmbarquees.length ? fontsEmbarquees.join(", ") : "aucune (fallback système)"}
 
 ## Distributions (à recouper avec l'étude du 01/08)

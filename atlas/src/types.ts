@@ -15,6 +15,7 @@ export type Domaine = {
 };
 export type Fil = { kind: "charge" | "decharge"; n: number; label: string; html: string; fiches: string[]; pieces: string[] };
 export type ActeurAgg = { nom: string; fiches: string[]; portefeuilles: string[]; gouvs: string[] };
+export type Promesse = { id: string; an: string; txt: string; v: "TENUE" | "NON" };
 export type Atlas = {
   fiches: Record<string, Fiche>;
   domaines: Record<string, Domaine>;
@@ -25,6 +26,7 @@ export type Atlas = {
   ministres: Record<string, ActeurAgg>;
   synthese: { verdict: string; dateVerdict: string | null; perimetreHtml: string; ecartesHtml: string; verdictHtml: string; fils: Fil[] };
   graphe: { nodes: { id: string; x: number; y: number; s: number; dom: string }[]; edges: [string, string][] };
+  promesses: Promesse[];
   buildDate: string;
 };
 
