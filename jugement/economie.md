@@ -1,7 +1,7 @@
 ---
 domaine: economie
 verdict: defavorable
-date_verdict: 2026-08-03
+date_verdict: 2026-08-04
 ---
 
 # Jugement : economie
@@ -363,7 +363,9 @@ une hausse d'impôt indirecte pour l'ensemble des contribuables.
 - **« Le SMIC gelé pendant neuf ans. »** Écartée : sept revalorisations
   automatiques entre janvier 2021 et mai 2023 ont porté le SMIC horaire brut de
   10,25 à 11,52 €. Ce qui tient est l'absence de tout coup de pouce
-  discrétionnaire depuis 2017, choix politique assumé
+  discrétionnaire depuis 2017, choix politique assumé — étant précisé que la
+  source du dossier établit la faculté du coup de pouce, non le constat de son
+  absence, qui reste à recouper
   ([[2023-05-01-smic-sans-coup-de-pouce]], grade B).
 - **« La prime Macron a remplacé les augmentations de salaire. »** Écartée :
   l'effet de substitution est une critique récurrente de la Cour des comptes et

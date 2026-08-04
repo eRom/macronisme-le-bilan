@@ -254,9 +254,10 @@ principale décharge financière du domaine sans l'annuler.
 
 **8. Les vaccins : la France est coauteure du dispositif centralisé dont
 l'opacité est documentée par les organes de contrôle de l'Union, et n'a pas
-porté les demandes de transparence.** La France est à l'origine, avec trois
-partenaires, du mandat confié à la Commission pour négocier les vaccins au nom
-des Vingt-Sept ([[2020-06-17-alliance-vaccins-mandat-commission]], grade B).
+porté les demandes de transparence.** La France est l'un des quatre États
+fondateurs de l'alliance inclusive dont la Commission a pris le relais pour
+négocier les vaccins au nom des Vingt-Sept ; qu'elle en ait pris l'initiative
+n'est pas établi ([[2020-06-17-alliance-vaccins-mandat-commission]], grade B).
 La Cour des comptes européenne établit que la présidente de la Commission a
 négocié seule le plus gros contrat et que les auditeurs se sont vu refuser les
 informations correspondantes, puis le Tribunal de l'Union annule pour

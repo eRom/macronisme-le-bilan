@@ -1,7 +1,7 @@
 ---
 domaine: promesses
 verdict: mitige
-date_verdict: 2026-08-03
+date_verdict: 2026-08-04
 ---
 
 # Jugement : promesses
@@ -101,9 +101,11 @@ effective, et le montant le plus cité tient à une condition : sur les 3 800 �
 annuels affichés, 2 550 € forment la part fixe et 1 250 € une part
 fonctionnelle que seuls perçoivent ceux qui exercent une mission
 complémentaire ([[2023-07-19-enseignants-hausse-partielle]], grade A). Les 10 000
-policiers sont créés en ETP, mais la Cour des comptes documente une attrition
-record, une présence sur la voie publique qui n'a pas augmenté et un taux
-d'élucidation en recul ([[2023-05-01-10000-policiers-attrition]], grade B).
+policiers sont créés en ETP — 8 446 policiers et 2 083 gendarmes entre 2017 et
+2022 selon la commission des finances du Sénat —, mais la Cour des comptes
+documente une attrition record, une présence sur la voie publique qui n'a pas
+augmenté et un taux d'élucidation en recul
+([[2023-05-01-10000-policiers-attrition]], grade B).
 L'assurance chômage des démissionnaires et indépendants existe en droit, avec
 environ 27 000 démissionnaires indemnisés (1 % des dépenses) et 600 ATI
 ([[2018-09-05-assurance-chomage-demissionnaires]], grade B). La

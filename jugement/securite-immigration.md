@@ -152,9 +152,10 @@ divergé, c'est la norme qui a cédé.
 **5. Des moyens massifs, des résultats opérationnels non démontrés, une
 politique d'affichage régulièrement démontée par les organes de contrôle.** Les
 effectifs promis ont été créés comptablement (+10 529 ETP nets sur 2017-2022),
-mais la Cour des comptes documente une attrition record en 2022 (10 840 départs
-police, 15 078 gendarmerie), une présence sur la voie publique qui n'a pas
-augmenté et un taux d'élucidation en recul
+mais la Cour des comptes documente une attrition record en 2022, une présence sur
+la voie publique qui n'a pas augmenté et un taux d'élucidation en recul — les
+volumes de départs restent à re-pointer, la source qui les portait ayant été
+retrouvée fausse au re-sondage du 04/08/2026
 ([[2023-05-01-10000-policiers-attrition]], grade B, contradiction officiel
 contre officiel). La police de sécurité du quotidien affiche 1 154 postes
 budgétaires, pour une présence terrain jugée invérifiable
