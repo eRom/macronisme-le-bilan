@@ -229,7 +229,9 @@ de 9,5 % au deuxième trimestre 2017 à un creux de 7,1 % au premier trimestre
 en 2024 contre 64,2 % en 2017, record de la mesure ; le solde net d'emplois
 salariés privés cumule 1,72 million de postes du deuxième trimestre 2017 au
 quatrième trimestre 2024 ([[2023-04-01-trajectoire-chomage-emploi-macron]],
-grade A). La qualité suit : la part cumulée des CDD et de l'intérim recule à
+grade A pour la série du chômage ; les deux publications de l'INSEE qui portaient
+le taux d'emploi et le solde d'emplois salariés sont mortes au re-sondage du
+04/08/2026 et sans équivalent identifié, ces deux chiffres sont à re-sourcer). La qualité suit : la part cumulée des CDD et de l'intérim recule à
 9,5 % de l'emploi en 2024, le sous-emploi tombe à 4,5 % fin 2023, le chômage des
 15-24 ans passe de 23,5 % à 17,2 %, et le taux d'emploi des 55-64 ans atteint
 58,4 % en 2023, son plus haut niveau depuis le début de la mesure en 1975

@@ -1,7 +1,7 @@
 ---
 domaine: synthese
 verdict: defavorable
-date_verdict: 2026-08-03
+date_verdict: 2026-08-04
 ---
 
 # Synthèse faîtière : les deux quinquennats (2017-2026)
@@ -367,9 +367,10 @@ promesse pour la taxe d'habitation
 ([[2017-12-30-suppression-taxe-habitation]], grade A) ; le dédoublement des
 CP et CE1 est tenu au calendrier, étendu au-delà de sa cible, avec un effet
 immédiat mesuré par la DEPP ([[2017-09-04-dedoublement-cp-ce1]], grade A) ; le
-marché du travail atteint les records de la mesure (taux d'emploi 68,8 % en
-2024, chômage à 7,1 % début 2023, [[2023-04-01-trajectoire-chomage-emploi-macron]],
-grade A) ; l'EPR de Flamanville est couplé et le système électrique revenu à
+marché du travail atteint les records de la mesure (chômage à 7,1 % début 2023,
+taux d'emploi 68,8 % en 2024, ce dernier chiffre restant à re-sourcer depuis la
+disparition de la publication qui le portait,
+[[2023-04-01-trajectoire-chomage-emploi-macron]], grade A) ; l'EPR de Flamanville est couplé et le système électrique revenu à
 deux records d'exportation ([[2024-12-21-epr-flamanville-couplage-reseau]],
 grade A) ; la fibre couvre 94,9 % des locaux ([[2026-06-11-fibre-ftth-arcep]],
 grade A) ; le Ségur salarial est exécuté ([[2020-07-13-accords-segur-revalorisations]],
