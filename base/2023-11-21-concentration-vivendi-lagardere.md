@@ -11,7 +11,7 @@ grade: A
 statut: null
 sources:
   - https://ec.europa.eu/commission/presscorner/detail/fr/ip_23_3147
-  - https://www.vivendi.com/presse/communiques-de-presse/vivendi-finalise-son-rapprochement-avec-le-groupe-lagardere/
+  - https://www.vivendi.com/en/press-release/vivendi-completes-its-transaction-with-lagardere/
   - https://www.senat.fr/rap/r21-593-1/r21-593-1_mono.html
 ---
 

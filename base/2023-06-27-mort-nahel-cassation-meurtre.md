@@ -11,7 +11,7 @@ acteurs:
 grade: B
 statut: null
 sources:
-  - https://www.francetvinfo.fr/faits-divers/police/mort-de-nahel/affaire-nahel-la-cour-de-cassation-renvoie-le-policier-devant-la-cour-d-appel-pour-meurtre_20260612.html
+  - https://www.franceinfo.fr/faits-divers/adolescent-tue-par-un-policier-a-nanterre/mort-de-nahel-la-cour-de-cassation-annule-la-requalification-des-faits-en-violences-ouvrant-la-voie-a-un-possible-proces-du-policier-pour-meurtre_8057276.html
   - https://www.leclubdesjuristes.com/justice/affaire-nahel-les-enjeux-juridiques-de-larret-de-la-cour-de-cassation-du-10-juin-2026/
 ---
 

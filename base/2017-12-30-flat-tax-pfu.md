@@ -11,7 +11,7 @@ grade: A
 statut: tenue
 sources:
   - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000036339090
-  - https://www.strategie.gouv.fr/publications/comite-devaluation-des-reformes-de-fiscalite-capital-troisieme-rapport-detaile
+  - https://www.strategie-plan.gouv.fr/publications/comite-devaluation-reformes-de-fiscalite-capital-troisieme-rapport
 ---
 
 Engagement 2017 : un prélèvement forfaitaire unique de 30 % sur les revenus du capital. Instauré au 1er janvier 2018 par la LF 2018 (art. 28). France Stratégie (comité d'évaluation) documente le passage des dividendes déclarés de 14 Md€ (2017) à 23 Md€ (2018).

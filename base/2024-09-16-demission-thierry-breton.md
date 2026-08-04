@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://x.com/ThierryBreton/status/1835567540209254823
+  - https://www.euronews.com/my-europe/2024/09/16/breton-quits-as-eu-commissioner-blames-von-der-leyens-questionable-governance
   - https://ec.europa.eu/commission/presscorner/detail/fr/ip_24_4701
 ---
 

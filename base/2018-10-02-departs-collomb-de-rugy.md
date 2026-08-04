@@ -11,7 +11,7 @@ acteurs:
 grade: B
 statut: null
 sources:
-  - https://www.francebleu.fr/infos/politique/gerard-collomb-va-quitter-le-gouvernement-1538497683
+  - https://www.ici.fr/infos/politique/gerard-collomb-va-quitter-le-gouvernement-1538497683
   - https://www.publicsenat.fr/actualites/non-classe/francois-de-rugy-se-livre-j-avais-en-face-de-moi-des-gens-qui-menaient-une-guerre
 ---
 

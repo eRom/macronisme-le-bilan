@@ -10,7 +10,7 @@ acteurs:
 grade: B
 statut: null
 sources:
-  - https://www.interieur.gouv.fr/actualites/communiques-de-presse/lancement-du-beauvau-de-securite-civile
+  - https://www.interieur.gouv.fr/actualites/grands-dossiers/beauvau-de-securite-civile
   - https://www.senat.fr/rap/l25-139-328-2/l25-139-328-21.pdf
 ---
 

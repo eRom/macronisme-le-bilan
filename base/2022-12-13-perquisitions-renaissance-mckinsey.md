@@ -11,7 +11,7 @@ acteurs:
 grade: B
 sources:
   - https://www.lemonde.fr/societe/article/2022/12/14/affaire-mckinsey-des-perquisitions-ont-eu-lieu-au-siege-du-parti-renaissance-et-de-l-association-de-financement_6154388_3224.html
-  - https://www.leparisien.fr/faits-divers/campagnes-de-macron-et-cabinets-de-conseil-perquisitions-chez-des-dirigeants-de-mckinsey-01-02-2023-R7VOHL4E6VFCJEXL67O2IUL36E.php
+  - https://www.leparisien.fr/faits-divers/affaire-mckinsey-de-nouvelles-perquisitions-chez-quatre-dirigeants-et-anciens-cadres-de-lentreprise-16-02-2023-KNIWX7JAI5E33LS2MIH6H6LL3M.php
   - https://www.consultor.fr/articles/mckinsey-a-nouveau-perquisitionne-dans-le-cadre-de-laffaire-des-campagnes-de-macron
 ---
 

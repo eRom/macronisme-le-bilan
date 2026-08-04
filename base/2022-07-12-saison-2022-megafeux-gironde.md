@@ -11,7 +11,8 @@ acteurs:
 grade: B
 statut: null
 sources:
-  - https://www.ecologie.gouv.fr/sites/default/files/documents/2023.04.11_DP_Feux_foret__en_pdf_rendu_accessible.pdf
+  - https://www.ecologie.gouv.fr/gouvernement-lance-6eme-edition-campagne-prevention-des-feux-foret-et-vegetation-2023
+  - https://www.ecologie.gouv.fr/sites/default/files/documents/2023.04.11_DP_Feux_foret_9EP_HD-2.pdf
   - https://observatoire.foret.gouv.fr/themes/l-historique-des-feux-de-foret-en-france-metropolitaine
 ---
 

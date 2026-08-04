@@ -12,9 +12,9 @@ grade: B
 sources:
   - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048931984
   - https://www.legifrance.gouv.fr/loda/id/JORFTEXT000053586369
-  - https://www.anticor.org/2025/07/23/proces-ordonne-pour-rachida-dati-et-carlos-ghosn/
-  - https://www.rts.ch/info/monde/17015482-nouvelles-perquisitions-visant-la-ministre-rachida-dati-dans-laffaire-engie.html
-  - https://www.lorientlejour.com/article/1421689/proces-dati-ghosn-les-dates-sont-desormais-connues.html
+  - https://www.anticor.org/2025/07/24/affaire-dati-ghosn-anticor-se-constituera-partie-civile-pour-porter-la-voix-des-citoyens-a-laudience/
+  - https://www.leparisien.fr/faits-divers/affaire-engie-rachida-dati-les-locaux-de-lentreprise-perquisitionnes-17-04-2026-IJUQCWB2JRBRBHE7WDI27TXXWI.php
+  - https://www.bfmtv.com/police-justice/affaire-renault-nissan-le-proces-de-rachida-dati-pour-corruption-se-tiendra-en-septembre-2026_AN-202509290636.html
 ---
 
 Nommée ministre de la Culture par le décret du 11 janvier 2024 relatif à la composition du Gouvernement, publié au Journal officiel le lendemain, et reconduite le 21 septembre 2024 malgré sa mise en examen de 2021 ([[2021-07-27-mise-en-examen-dati-renault]]) ; l'exécutif invoque la présomption d'innocence. Le 13 novembre 2024, le PNF requiert son renvoi en correctionnelle avec Carlos Ghosn ; les pourvois de la défense sont rejetés (7 et 14 octobre 2024). Ordonnance de renvoi le 22 juillet 2025 ; Dati dénonce une décision « politisée ».
