@@ -27,7 +27,23 @@ Attention à ce que « OK » ne couvre pas : les wikilinks morts sont listés sa
 faire échouer le build. Après tout renommage de fiche, lire la section
 « Wikilinks morts » — le vert ne la voit pas. En revanche la table des quinze
 verdicts de la synthèse est bloquante depuis le 04/08/2026, `date_verdict`
-comprise.
+comprise, et les compteurs publics le sont depuis le même jour.
+
+## Les compteurs publics
+
+`REGLES_COMPTEURS`, dans `build.ts`, confronte au corpus chaque chiffre que
+`README.md`, `METHODE.md` et `src/index.html` annoncent sur lui : total de
+fiches, URL distinctes, effectif et part de chaque grade, fiches par domaine,
+occurrences par source. Un écart est bloquant et nomme le document, le chiffre
+écrit et le chiffre réel.
+
+Deux réflexes, dans cet ordre. **Un compteur que le code peut calculer ne
+s'écrit pas en dur** : les trois compteurs affichés par le front (chronologie,
+recherche) lisent `A.fiches` et ne peuvent plus retarder. **Sinon, ajouter une
+règle plutôt que corriger le chiffre** : une correction manuelle ne protège que
+du décalage d'aujourd'hui. Restent nécessairement en dur les deux `meta` de
+`index.html`, que le build ne réécrit pas, et les chiffres rédigés en toutes
+lettres dans les documents.
 
 ## Structure
 

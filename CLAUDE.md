@@ -234,9 +234,19 @@ open dist/index.html                                              # file:// suff
 
 `build-report.md` doit dire **534/534** et « Verdict du build : OK ». Le build
 sort en erreur sur une fiche non parsée, un champ manquant bloquant, une fuite
-de vocabulaire interne, ou une ligne de la table des quinze verdicts en
-désaccord avec le frontmatter de sa pièce — verdict comme `date_verdict`.
-C'est tout ce que `hardFail` couvre.
+de vocabulaire interne, une ligne de la table des quinze verdicts en désaccord
+avec le frontmatter de sa pièce — verdict comme `date_verdict` — ou un compteur
+public en désaccord avec le corpus. C'est tout ce que `hardFail` couvre.
+
+Le contrôle des compteurs a été rendu bloquant le 04/08/2026, après que
+`README.md` et `METHODE.md` ont annoncé pendant plusieurs jours 531 fiches et
+879 URL quand `base/` en portait 534 et 915, avec grades et répartition par
+domaine faux d'autant. Il confronte au corpus les chiffres écrits dans
+`README.md`, `METHODE.md` et `atlas/src/index.html` : total de fiches, URL
+distinctes, effectif et part de chaque grade, fiches par domaine, occurrences
+par source. **Ajouter une règle à `REGLES_COMPTEURS` plutôt que de corriger un
+chiffre à la main**, et préférer un compteur calculé quand le code peut le
+lire lui-même, comme les trois compteurs affichés par le front.
 
 Le contrôle sur `date_verdict` a été rendu bloquant le 04/08/2026, après que
 huit des quinze lignes de la table se sont retrouvées datées de la veille alors

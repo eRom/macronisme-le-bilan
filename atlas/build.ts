@@ -93,6 +93,7 @@ const report = {
   gouvernementsNonMappes: new Map<string, number>(),
   ministresSuspects: [] as Issue[],
   verdictsMismatch: [] as Issue[],
+  compteursMismatch: [] as Issue[],
   datesInvalides: [] as Issue[],
   fuitesInternes: [] as Issue[],
   citationsJugements: 0,
@@ -663,9 +664,82 @@ for (const f of fiches.values()) {
   types.set(f.ty, (types.get(f.ty) ?? 0) + 1);
 }
 
+// ------------------------------------------- compteurs publics (bloquant)
+//
+// Les documents publics annoncent des chiffres sur le corpus, et rien ne les
+// tenait : le 04/08/2026, README.md et METHODE.md affichaient encore 531 fiches
+// et 879 URL quand base/ en portait 534 et 915, avec des grades et une
+// répartition par domaine faux d'autant. Chaque règle ci-dessous confronte un
+// chiffre écrit à la mesure faite sur le corpus. Un écart est bloquant.
+//
+// Ajouter une règle plutôt que de corriger un chiffre à la main : une
+// correction manuelle ne protège que du décalage d'aujourd'hui.
+
+const urlDistinctes = new Set<string>();
+const occurrencesSource = new Map<string, number>();
+const tagsDomaines = new Map<string, number>();
+for (const f of fiches.values()) {
+  for (const u of f.src) {
+    const t = u.trim();
+    if (!/^https?:\/\//.test(t)) continue;
+    urlDistinctes.add(t);
+    const host = /^https?:\/\/(?:www\.)?([^/]+)/.exec(t)?.[1];
+    if (host) occurrencesSource.set(host, (occurrencesSource.get(host) ?? 0) + 1);
+  }
+  for (const d of f.d) tagsDomaines.set(d, (tagsDomaines.get(d) ?? 0) + 1);
+}
+
+const part = (n: number) => ((n / fiches.size) * 100).toFixed(1).replace(".", ",");
+
+type Regle = {
+  fichier: string;
+  motif: RegExp;
+  lu: (m: RegExpExecArray) => string;
+  attendu: (m: RegExpExecArray) => string | null;
+  quoi: (m: RegExpExecArray) => string;
+};
+
+const nb = (n: number | undefined) => (n === undefined ? null : String(n));
+
+const REGLES_COMPTEURS: Regle[] = [
+  // Total de fiches, sous toutes ses formes rédigées.
+  { fichier: "README.md", motif: /(\d{3}) fiches/g, lu: (m) => m[1], attendu: () => String(fiches.size), quoi: () => "fiches du corpus" },
+  { fichier: "README.md", motif: /\| Fiches \| (\d+) \|/g, lu: (m) => m[1], attendu: () => String(fiches.size), quoi: () => "fiches du corpus" },
+  { fichier: "METHODE.md", motif: /(\d{3}) fiches/g, lu: (m) => m[1], attendu: () => String(fiches.size), quoi: () => "fiches du corpus" },
+  { fichier: "METHODE.md", motif: /dépasse\s+(\d{3}) au total/g, lu: (m) => m[1], attendu: () => String(fiches.size), quoi: () => "fiches du corpus" },
+  { fichier: "atlas/src/index.html", motif: /(\d{3}) pièces/g, lu: (m) => m[1], attendu: () => String(fiches.size), quoi: () => "fiches du corpus" },
+
+  // URL distinctes citées en frontmatter.
+  { fichier: "README.md", motif: /(\d{3}) URL distinctes/g, lu: (m) => m[1], attendu: () => String(urlDistinctes.size), quoi: () => "URL distinctes" },
+  { fichier: "README.md", motif: /\| URL sources distinctes \| (\d+) \|/g, lu: (m) => m[1], attendu: () => String(urlDistinctes.size), quoi: () => "URL distinctes" },
+  { fichier: "METHODE.md", motif: /(\d{3}) URL distinctes/g, lu: (m) => m[1], attendu: () => String(urlDistinctes.size), quoi: () => "URL distinctes" },
+
+  // Répartition des grades, effectif et part.
+  { fichier: "README.md", motif: /\| Grade ([ABCD]) \([^|]*\) \| (\d+) \((\d+,\d) %\) \|/g, lu: (m) => `${m[2]} (${m[3]} %)`, attendu: (m) => `${grades.get(m[1]) ?? 0} (${part(grades.get(m[1]) ?? 0)} %)`, quoi: (m) => `grade ${m[1]}` },
+  { fichier: "README.md", motif: /\| Grade D \([^|]*\) \| (\d+) \|/g, lu: (m) => m[1], attendu: () => String(grades.get("D") ?? 0), quoi: () => "grade D" },
+  { fichier: "METHODE.md", motif: /^\| ([ABCD]) \| (\d+) \| (\d+(?:,\d)?) % \|/gm, lu: (m) => `${m[2]} (${m[3]} %)`, attendu: (m) => { const n = grades.get(m[1]) ?? 0; return `${n} (${n === 0 ? "0" : part(n)} %)`; }, quoi: (m) => `grade ${m[1]}` },
+
+  // Fiches par domaine (multi-tagging) et occurrences par source.
+  { fichier: "METHODE.md", motif: /^\| `([a-z-]+)` \| (\d+) \|/gm, lu: (m) => m[2], attendu: (m) => nb(tagsDomaines.get(m[1])), quoi: (m) => `fiches du domaine ${m[1]}` },
+  { fichier: "METHODE.md", motif: /^\| ([a-z0-9-]+(?:\.[a-z0-9-]+)+) \| (\d+) \|/gm, lu: (m) => m[2], attendu: (m) => nb(occurrencesSource.get(m[1])), quoi: (m) => `occurrences de ${m[1]}` },
+];
+
+for (const r of REGLES_COMPTEURS) {
+  const chemin = join(POL, r.fichier);
+  if (!existsSync(chemin)) { report.compteursMismatch.push({ where: r.fichier, what: "fichier introuvable, contrôle des compteurs impossible" }); continue; }
+  const texte = readFileSync(chemin, "utf-8");
+  r.motif.lastIndex = 0;
+  let m: RegExpExecArray | null;
+  while ((m = r.motif.exec(texte)) !== null) {
+    const attendu = r.attendu(m);
+    if (attendu === null) { report.compteursMismatch.push({ where: r.fichier, what: `« ${m[0].trim()} » porte sur une clé absente du corpus` }); continue; }
+    if (r.lu(m) !== attendu) report.compteursMismatch.push({ where: r.fichier, what: `${r.quoi(m)} : le document dit ${r.lu(m)}, le corpus dit ${attendu}` });
+  }
+}
+
 const fmtIssues = (list: Issue[]) => (list.length === 0 ? "aucun\n" : list.map((i) => `- ${i.where} : ${i.what}`).join("\n") + "\n");
 
-const hardFail = report.fichesParsees !== report.fichesTotal || report.erreursParse.length > 0 || report.champsManquants.length > 0 || report.fuitesInternes.length > 0 || report.verdictsMismatch.length > 0;
+const hardFail = report.fichesParsees !== report.fichesTotal || report.erreursParse.length > 0 || report.champsManquants.length > 0 || report.fuitesInternes.length > 0 || report.verdictsMismatch.length > 0 || report.compteursMismatch.length > 0;
 
 const lines = `# Rapport de build Atlas - ${data.buildDate}
 
@@ -698,8 +772,10 @@ ${fmtIssues(report.liensMortsBase)}
 ${fmtIssues(report.liensMortsJugement)}
 ### Sections manquantes dans les pièces
 ${fmtIssues(report.sectionsManquantes)}
-### Verdicts table vs frontmatter
+### Verdicts table vs frontmatter (bloquant)
 ${fmtIssues(report.verdictsMismatch)}
+### Compteurs publics vs corpus (bloquant)
+${fmtIssues(report.compteursMismatch)}
 ### Gouvernements non mappés (valeur brute -> occurrences)
 ${report.gouvernementsNonMappes.size === 0 ? "aucun\n" : [...report.gouvernementsNonMappes.entries()].sort((a, b) => b[1] - a[1]).map(([v, n]) => `- ${n} × « ${v} »`).join("\n") + "\n"}
 ### Entrées ministres suspectes (contiennent « puis »)
