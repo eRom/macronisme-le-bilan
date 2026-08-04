@@ -447,7 +447,12 @@ versions gonflées de celles-ci.
   faits citables : réserves strictes de sourçage des deux fiches, chiffres de
   niveau domaine à re-sourcer ([[2024-12-31-gnl-russe-rebond-importations]],
   [[2024-12-31-desindustrialisation-relative-france-ue]]) ; la politique de
-  sanctions, contexte indispensable du premier, est hors périmètre assumé. La
+  sanctions, contexte indispensable du premier, est hors périmètre assumé.
+  Le re-sondage du 04/08/2026 ajoute une raison de fond à cet écartement : les
+  81 % sont une progression **française**, quand les importations européennes de
+  GNL russe progressent de 12 % et celles de l'Union de 18 % sur la même année.
+  Le chiffre ne dit donc rien d'une duplicité européenne, qui est l'usage qu'on
+  aurait pu en faire ici. La
   seconde a déjà été écartée dans `industrie`.
 - **« Onze ans de contrôles aux frontières : une illégalité continue. »**
   Écartée dans cette forme : le Conseil d'État a validé la pratique, aucune
