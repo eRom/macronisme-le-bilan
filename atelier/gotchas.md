@@ -540,14 +540,29 @@ recollé sur le nouveau domaine rend 404 : il faut retrouver l'article. Sur ce
 cas, seule la version anglaise existe.
 
 **Une erreur de certificat n'est pas une défaillance du site.** `fetch` refuse la
-chaîne TLS de `france-renov.gouv.fr` et de `bdiff.agriculture.gouv.fr` avec
-`unable to verify the first certificate` ; `curl`, qui s'appuie sur le magasin de
-confiance du système, obtient 200 sur les deux. Deux occurrences le 04/08/2026, la
-seconde ayant fait déclarer à tort « inaccessible, blocage anti-robot » une base
-de données parfaitement vivante.
+chaîne TLS de `france-renov.gouv.fr`, de `bdiff.agriculture.gouv.fr` et de
+`results.elections.europa.eu` avec `unable to verify the first certificate` ;
+`curl`, qui s'appuie sur le magasin de confiance du système, obtient 200 sur les
+trois. Trois occurrences le 04/08/2026, dont une a fait déclarer à tort
+« inaccessible, blocage anti-robot » une base de données parfaitement vivante.
 
 > Devant une erreur de certificat, re-sonder avec l'autre outil avant de conclure
 > quoi que ce soit sur le site.
+
+**`courdecassation.fr` répond 200 à n'importe quelle adresse.** Y compris
+`/decision/zzzz`. Le site sert, pour toute URL, une coquille de 255 octets qui
+demande d'activer JavaScript et les cookies. Conséquences, mesurées le
+04/08/2026 : aucune référence pointant vers ce site n'est vérifiable par une
+sonde, un identifiant de décision fabriqué y est indiscernable d'un vrai, et le
+sondeur classait tout cela VIVANTE — le pire des faux négatifs, puisqu'il déclare
+vérifiée une source que personne n'a vue. Le motif
+`this website requires js enabled and cookies` a été ajouté à `MARQUEURS_DEFI`
+dans `audit-sources.ts` ; ces sources sortent désormais en BLOQUEE.
+
+> Le corpus cite deux identifiants `courdecassation.fr/decision/<id>` qu'aucun
+> automate ne peut départager. Pour une décision de justice française, préférer
+> la presse juridique professionnelle, qui cite la motivation, à un renvoi vers
+> un site qui ne prouve rien.
 
 **Curia sert ses communiqués de presse aux automates, seuls ses arrêts sont en
 JavaScript.** `curia.europa.eu/juris/document/document.jsf` ne rend rien de

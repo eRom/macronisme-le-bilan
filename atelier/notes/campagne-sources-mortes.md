@@ -794,3 +794,64 @@ Huit lots sur treize sont soldés, soit 160 lignes des 246. Restent les lots 09 
 c'est-à-dire les pertes de simple corroboration, moins graves que les orphelines des
 premiers lots. S'y ajoute désormais le lot RACINE, quinze fiches dont aucune source
 ne porte de chemin, qui n'a jamais figuré sur aucune liste.
+
+## Le lot RACINE soldé, et un hôte qui répond 200 à tout
+
+Traité le 04/08/2026 dans la foulée. Vingt-six fiches, trente-six sources sans
+chemin, dont quatorze fiches qui n'avaient que cela. Il ne reste **aucune source
+sans chemin dans le corpus**.
+
+Quatorze fiches ont reçu le document qu'elles désignaient, vérifié au contenu.
+Douze n'avaient une page d'accueil qu'en appoint : sept ont reçu le document réel,
+cinq l'ont perdue sans remplacement, chaque fois avec la réserve écrite dans la
+fiche. Retirer un renvoi qui n'établissait rien ne retire rien à la fiche ; ce que
+ça change, c'est que la fiche le dit.
+
+### Trois corrections de fond
+
+- **Rodrigues** : le renvoi du policier devant une cour criminelle n'était plus « à
+  confirmer ». Deux sources concordantes portent les « charges suffisantes » retenues
+  par la cour d'appel et la perte définitive de l'usage de l'œil droit. Grade C relevé
+  en B, et deux pièces de jugement reprises : elles l'écartaient au motif d'une source
+  unique invérifiable, ce motif tombe, reste celui qui tient — un renvoi n'est pas une
+  condamnation.
+- **Zacharopoulou** : classement fin mars 2023, annoncé le 4 avril. Retirée faute de
+  source, la motivation d'« absence d'intention sexuelle et de contrainte pénalement
+  caractérisée ».
+- **Deux incertitudes de date levées** : les réquisitions du non-lieu covid sont du
+  21 mai 2025, et la LFSS 2026 est la loi n° 2025-1403 du 30 décembre 2025.
+
+### `courdecassation.fr` répond 200 à n'importe quelle adresse
+
+C'est la découverte de méthode du lot, et elle est mauvaise. Le site sert, pour
+**toute** URL — `/decision/zzzz` compris — une coquille de 255 octets qui demande
+JavaScript. Aucune référence qui y pointe n'est vérifiable par une sonde, un
+identifiant de décision fabriqué y est indiscernable d'un vrai, et le sondeur
+classait tout cela VIVANTE.
+
+> Un hôte qui répond 200 à tout est pire qu'un hôte mort : il valide n'importe
+> quelle référence. Le motif est ajouté à `MARQUEURS_DEFI`, ces sources sortent
+> désormais en BLOQUEE.
+
+Le corpus cite deux identifiants `courdecassation.fr/decision/<id>` qu'aucun automate
+ne peut départager. Ils restent au dossier, faute de mieux, mais ils ne prouvent
+rien : à traiter comme des candidats, pas comme des sources.
+
+### Contrôle final
+
+Les 40 sources des fiches touchées ont été re-sondées. Trois mortes de plus ont été
+trouvées, dont deux qui auraient laissé leur fiche orpheline — le communiqué de
+Microsoft sur les 4 Md€ et le bilan 2025 de Trendeo. Toutes remplacées. Ne restent
+que des 403 d'hôtes connus et des 202 d'EUR-Lex, dont le contenu est lu par l'autre
+voie.
+
+### Ce que la campagne a produit au 04/08/2026
+
+Huit lots de mortes sur treize, plus le lot RACINE en entier. Le motif RACINE, écrit
+en dix lignes, a trouvé en un passage un défaut que trois campagnes successives
+n'avaient pas vu, sur quatorze fiches dont quatre de grade A.
+
+> La bonne question à poser à un audit vert n'est pas « est-il juste ? » mais
+> « qu'est-ce qu'il ne peut pas voir ? ». Posée trois fois, elle a rapporté trois
+> fois : les identifiants fabriqués derrière un 404, les pages d'accueil derrière un
+> 200, et maintenant les hôtes qui répondent 200 à tout.

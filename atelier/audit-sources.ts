@@ -65,6 +65,11 @@ const MARQUEURS_DEFI = [
   "just a moment",
   "enable javascript and cookies to continue",
   "vérification que vous êtes bien un humain",
+  // courdecassation.fr sert cette coquille de 255 octets pour TOUTE adresse,
+  // y compris /decision/zzzz. Sans ce motif, un identifiant de décision
+  // fabriqué est compté VIVANTE : le pire des faux négatifs, et le corpus en
+  // cite deux qu'aucun automate ne peut départager (constat du 04/08/2026).
+  "this website requires js enabled and cookies",
 ];
 
 type Source = { fiches: string[]; url: string; grades: string[] };
