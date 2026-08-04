@@ -619,3 +619,24 @@ fabriquées, pas des adresses périmées. Une annexe se lit à l'adresse
 `senat.fr/rap/lAA-NNN-TT/lAA-NNN-TTPP.html`, où `PP` numérote les sous-pages, et
 la version complète est en `_mono.html` — sur un rapport découpé, chercher une
 citation dans la seule sous-page 1 donne un faux négatif.
+
+**Un lien automatique markdown `<url>` fait rendre 404 une adresse parfaitement
+valide.** L'extracteur de la campagne capturait le chevron fermant avec l'URL. Sur
+le lot 12, seize propositions sur trente et une sont ressorties en 404, 400 ou
+« page introuvable », et le lot était sur le point d'être déclaré massivement
+fabriqué. Une fois le chevron exclu de la classe de caractères, les mêmes adresses
+répondent toutes 200 et portent leurs citations.
+
+> C'est le deuxième cas de la campagne où l'outil accuse le lot de son propre
+> défaut, après l'italique markdown du lot 10. Les deux fois, le signal était le
+> même : un taux d'échec anormalement élevé et homogène. **Devant un lot qui
+> échoue en bloc, suspecter l'extracteur avant le rédacteur.** Classe de
+> caractères à exclure d'une URL extraite d'un markdown : espace, backtick,
+> parenthèse fermante, crochet fermant, et les deux chevrons.
+
+**`franceinfo.fr` sert une page d'erreur de 300 ko sur une adresse morte.** Le
+titre dit « Page erreur 404 - franceinfo » et le statut HTTP est bien 404, donc
+rien n'est piégé tant qu'on lit le code. Mais une heuristique du type « 200 et
+corps volumineux = vivante » classerait cette page comme une source valide : c'est
+le même défaut que `courdecassation.fr`, à l'envers. **Ne jamais juger de la
+vitalité d'une page à la taille de son corps.**

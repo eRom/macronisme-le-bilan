@@ -1012,3 +1012,51 @@ Douze lots sur treize soldés, 226 lignes sur 246, plus le lot RACINE. Reste le
 lot 12, en cours de traitement à l'extérieur. Une seule source morte connue est
 laissée en place, le communiqué Vivendi sur le rapprochement Lagardère : c'est la
 ligne 224, elle appartient à ce lot 12.
+
+## Lot 12 (04/08/2026) : la campagne est soldée
+
+| | Lot 12 |
+|---|---|
+| lignes | 20 |
+| OUI déclarés | 20 |
+| NON déclarés | 0 |
+| adresses fausses proposées | **0** |
+| références inexistantes démasquées | 2 |
+
+Quinze fiches. Les vingt propositions se chargent et portent ce qu'elles
+annoncent. C'est, avec le lot 09, le second lot sans défaut de la campagne.
+
+**Il a failli être condamné en bloc, pour la deuxième fois du même genre.** Au
+premier passage, seize des trente et une adresses proposées ressortaient en 404 ou
+400. La cause n'était pas dans le lot : il écrit ses URL en liens automatiques
+markdown, `<https://…>`, et l'extracteur capturait le chevron fermant. Après
+correction, les mêmes adresses répondent toutes 200. Le lot 10 avait déjà produit
+ce faux verdict avec l'italique markdown et les crochets d'abrègement.
+
+> Deux occurrences, même signal : un taux d'échec anormalement élevé **et
+> homogène**. Devant un lot qui échoue en bloc, suspecter l'extracteur avant le
+> rédacteur. C'est écrit dans les gotchas avec la classe de caractères à exclure.
+
+**Les deux références fabriquées.** `l16b1891-t1_rapport-fond` était cité sur la
+fiche de la mobilisation contre la réforme des retraites comme un rapport de la
+commission des lois : le n° 1891 de la seizième législature est une proposition de
+loi sur une vignette « collection » pour véhicules d'époque. `EUR-E20857`, sur la
+fiche de l'accord de Turnberry, ne mène à aucun texte.
+
+**La correction la plus utile n'est ni l'une ni l'autre.** La fiche du GNL russe
+titre un rebond de 81 % : c'est un chiffre **français**, et la même source donne
+12 % pour l'Europe et 18 % pour l'Union. Le lot l'a vu et l'a écrit. Sans cette
+précision, le chiffre se lisait comme une duplicité européenne — c'est justement
+l'usage que la pièce `europe` aurait pu en faire, et l'écartement qu'elle avait
+déjà prononcé gagne là une raison de fond.
+
+**Trois adresses fausses, de mon fait.** En appliquant les substitutions, j'ai
+transcrit trois URL de mémoire au lieu de les recopier du rapport. Le contrôle
+final les a rattrapées avant commit. La leçon rejoint celle du matin sur les
+identifiants sénatoriaux : dans cette campagne, la main qui répare est une source
+d'erreurs au même titre que la recherche qui propose.
+
+### Campagne close au 04/08/2026
+
+Treize lots sur treize, **246 lignes sur 246**, plus le lot RACINE en entier.
+Aucune source morte connue ne subsiste dans le corpus.
