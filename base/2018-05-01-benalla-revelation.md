@@ -11,7 +11,8 @@ acteurs:
 grade: A
 sources:
   - https://www.lemonde.fr/politique/article/2018/07/18/le-collaborateur-de-macron-alexandre-benalla-a-frappe-un-manifestant-le-1er-mai-a-paris_5333333_823448.html
-  - https://www.senat.fr/compte-rendu-commissions/20190114/lois_enq.html
+  - https://www.senat.fr/compte-rendu-commissions/20190114/lois.html
+  - https://www.senat.fr/rap/r18-324-1/r18-324-11.pdf
 ---
 
 Le 1er mai 2018, Alexandre Benalla, chargé de mission à l'Élysée, coiffé d'un casque de police, frappe des manifestants place de la Contrescarpe à Paris. Le 18 juillet 2018, Le Monde l'identifie. L'Élysée, informé dès le 2 mai, l'avait sanctionné en interne (mise à pied de 15 jours) sans saisir la justice. Benalla est licencié début août 2018 après de nouvelles révélations.

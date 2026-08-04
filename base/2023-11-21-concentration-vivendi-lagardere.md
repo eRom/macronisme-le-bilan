@@ -12,7 +12,7 @@ statut: null
 sources:
   - https://ec.europa.eu/commission/presscorner/detail/fr/ip_23_3147
   - https://www.vivendi.com/presse/communiques-de-presse/vivendi-finalise-son-rapprochement-avec-le-groupe-lagardere/
-  - https://www.senat.fr/rap/r21-593-1/r21-593-1-mono.html
+  - https://www.senat.fr/rap/r21-593-1/r21-593-1_mono.html
 ---
 
 Le 09/06/2023, la Commission européenne autorise le rachat de Lagardère (Europe 1, JDD, Paris Match, Hachette) par Vivendi sous condition de cession intégrale d'Editis et de Gala. Editis est cédé le 14/11/2023 pour 653 M EUR à IMI (Daniel Kretinsky), Gala au groupe Figaro, et Vivendi finalise l'opération le 21/11/2023. Le Sénat avait constaté dès mars 2022 (rapport n° 593) l'obsolescence des seuils anti-concentration de la loi du 30/09/1986 face au numérique. RSF cite la concentration comme premier point de vigilance pour la France.

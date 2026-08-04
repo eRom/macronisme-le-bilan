@@ -11,8 +11,8 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.rte-france.com/analyses-tendances-et-prospectives/bilan-electrique-francais/le-bilan-electrique-2024
-  - https://www.rte-france.com/analyses-tendances-et-prospectives/bilan-electrique-francais/le-bilan-electrique-2025
+  - https://assets.rte-france.com/prod/public/2025-02/Bilan-electrique-2024-Fiche-echanges-vue-ensemble.pdf
+  - https://assets.rte-france.com/prod/public/2026-02/Bilan-electrique-2025-principaux-resultats.pdf
   - https://www.ccomptes.fr/fr/publications/la-maintenance-du-parc-electronucleaire-dedf-en-france
 ---
 

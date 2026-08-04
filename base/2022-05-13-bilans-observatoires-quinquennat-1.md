@@ -11,7 +11,7 @@ grade: C
 statut: null
 sources:
   - https://www.luipresident.fr/emmanuel-macron
-  - https://www.ifrap.org/etat-et-collectivites/macronome-le-bilan-du-quinquennat-d-emmanuel-macron
+  - https://www.ifrap.org/etat-et-collectivites/macronometre-le-bilan-du-quinquennat
   - https://www.institutmontaigne.org/presidentielle-2022/emmanuel-macron
 ---
 

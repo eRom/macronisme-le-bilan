@@ -13,7 +13,7 @@ sources:
   - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049040245
   - https://www.conseil-constitutionnel.fr/decision/2024/2023863DC.htm
   - https://www.assemblee-nationale.fr/dyn/16/scrutins/3213
-  - https://www.senat.fr/scrutin/scr2023-109.html
+  - https://www.senat.fr/scrutin-public/2023/scr2023-109.html
 ---
 
 Promesse 2022 d'une loi immigration. Adoptée le 19/12/2023 après intégration de durcissements sénatoriaux massifs (scrutin AN n° 3213 : 349 pour, 186 contre, 38 abstentions ; Sénat : 214 pour, 114 contre, 12 abstentions), la loi n° 2024-42 du 26/01/2024 « contrôler l'immigration, améliorer l'intégration » est promulguée après censure de 32 articles sur 86 par le Conseil constitutionnel (décision n° 2023-863 DC du 25/01/2024, essentiellement pour cavaliers législatifs). Le Conseil censure aussi au fond l'article 1er (quotas migratoires fixés par le Parlement) et l'article 38 (relevé d'empreintes et photographie sans consentement) ; la condition de niveau de français A2 pour la carte pluriannuelle est conservée. La loi reporte par ailleurs au 01/01/2027 l'application à Mayotte de l'interdiction de placement en rétention des mineurs étrangers, régime dérogatoire critiqué par le CGLPL.

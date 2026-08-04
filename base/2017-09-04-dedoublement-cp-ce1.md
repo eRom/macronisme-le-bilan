@@ -12,11 +12,12 @@ grade: A
 statut: tenue
 sources:
   - https://www.education.gouv.fr/depp/l-education-prioritaire-414237
-  - https://www.senat.fr/rap/a23-131-3/a23-131-31.html
-  - https://www.senat.fr/rap/a22-117-3/a22-117-3.html
+  - https://www.senat.fr/rap/a22-120-31/a22-120-31_mono.html
   - https://www.elysee.fr/emmanuel-macron/2019/04/25/conference-de-presse-grand-debat-national
 ---
 
 Promesse 2017 : 12 élèves par classe en CP/CE1 d'éducation prioritaire. Calendrier de déploiement établi : CP REP+ à la rentrée 2017 (2 200 classes), extension au CP REP et CE1 REP+ en 2018, CE1 REP en 2019, puis grande section de maternelle en éducation prioritaire à partir de 2020. Prolongement hors éducation prioritaire : Macron annonce au Grand Débat national (25/04/2019) un plafond de 24 élèves par classe en GS, CP et CE1 avant la fin du quinquennat ; à la rentrée 2025, ce plafond est atteint dans 95 % des CP, 92 % des CE1 et 86 % des GS des écoles publiques (chaque chiffre repose sur une source primaire unique mais concordante, Élysée + note ministérielle). Statut tenue, établi par le ministère.
 
 Efficacité mesurée (DEPP) : le dédoublement au CP en REP+ réduit de 16 % l'écart en français et de 38 % en mathématiques avec les élèves hors éducation prioritaire ; l'effet est maximal au CP, s'estompe dès le CE1, et l'approche descriptive brute donne des effets plus modestes (9 % et 14 %). Contradictoire (officiel vs officiel) : la DEPP établit en février 2026 que les bénéfices « ne se maintiennent pas de façon significative à l'entrée en sixième », contredisant le succès revendiqué par l'exécutif. Distinguer statut juridique (tenu) et efficacité mesurée (réelle mais modeste et décroissante).
+
+L'exécution du dédoublement en éducation prioritaire est confirmée par l'avis n° 120 (2022-2023) de la commission de la culture du Sénat sur la mission Enseignement scolaire du PLF 2023, où le ministre indique qu'« à la rentrée 2022, les dédoublements en CP et CE1 en REP et REP+ sont réalisés à 100 % », la grande section de maternelle étant alors à 75 %. Le re-sondage du 04/08/2026 a retiré les deux références sénatoriales que portait la fiche, `a22-117-3` et `a23-131-3` : toutes deux répondent, mais la première est l'avis sur l'action extérieure de l'État et la seconde celui sur les régimes sociaux et de retraite. Aucune ne traite d'éducation. Les taux de la rentrée 2025 hors éducation prioritaire ne reposent donc que sur la note ministérielle.

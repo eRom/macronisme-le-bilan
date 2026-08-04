@@ -9,7 +9,7 @@ acteurs:
   gouvernement: Barnier (faits 2015-2020, fonctions sous Borne)
 grade: B
 sources:
-  - https://www.whatsupdoc-lemag.fr/article/lancienne-ministre-de-la-sante-agnes-firmin-le-bodo-condamnee-dans-laffaire-des-cadeaux-d-0
+  - https://www.lefigaro.fr/actualite-france/cadeaux-d-urgo-l-ex-ministre-agnes-firmin-le-bodo-condamnee-a-une-amende-20241017
   - https://www.caducee.net/actualite-medicale/16900/l-ancienne-ministre-de-la-sante-agnes-firmin-le-bodo-condamnee-a-8-000-euros-d-amende-dans-l-affaire-des-cadeaux-urgo.html
 ---
 

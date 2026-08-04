@@ -9,7 +9,7 @@ acteurs:
   gouvernement: Castex (période examinée : Philippe II et Castex)
 grade: A
 sources:
-  - https://www.senat.fr/notice-rapport/2021/r21-578-notice.html
+  - https://www.senat.fr/rap/r21-578-1/r21-578-1_mono.html
   - https://www.senat.fr/notice-rapport/2021/r21-578-1-notice.html
   - https://www.senat.fr/rap/r21-578-1/r21-578-1.html
 ---
