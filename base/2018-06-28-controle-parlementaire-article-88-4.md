@@ -12,7 +12,6 @@ grade: A
 statut: null
 sources:
   - https://www.assemblee-nationale.fr/dyn/15/rapports/due/l15b1123_rapport-information
-  - https://www.assemblee-nationale.fr/
 ---
 
 Environ 900 textes européens sont transmis chaque année au Parlement au titre de l'article 88-4 de la Constitution, soit près de 4 500 sur la XVe législature. Sur la même période, 58 propositions de résolution européenne seulement sont déposées à l'Assemblée nationale, dont une trentaine définitivement adoptées. Sous la XVIe législature, écourtée par la dissolution, 45 propositions sont déposées et 11 définitivement adoptées.

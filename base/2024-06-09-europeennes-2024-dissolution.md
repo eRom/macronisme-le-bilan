@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://elections.interieur.gouv.fr/
+  - https://results.elections.europa.eu/fr/france/
   - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049689651
 ---
 

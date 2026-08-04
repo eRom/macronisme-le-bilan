@@ -10,7 +10,7 @@ acteurs:
 grade: B
 statut: null
 sources:
-  - https://www.ameli.fr/
+  - https://www.ameli.fr/assure/remboursements/rembourse/remboursement-seance-psychologue-mon-soutien-psy
 ---
 
 À compter du 15/06/2024, le tarif de la séance de Mon soutien psy passe de 30 € à 50 €, l'obligation d'adressage médical préalable est supprimée et le nombre de séances remboursées annuellement passe de 8 à 12. La refonte corrige les trois critiques principales adressées au dispositif créé en 2022, dont le boycott par une large part des psychologues.

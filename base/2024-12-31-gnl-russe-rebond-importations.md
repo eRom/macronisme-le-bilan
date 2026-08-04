@@ -10,7 +10,6 @@ acteurs:
 grade: B
 statut: null
 sources:
-  - https://www.statistiques.developpement-durable.gouv.fr
   - https://ieefa.org/resources/europe-lng-tracker
 ---
 
@@ -18,4 +17,4 @@ En 2024, la structure des importations gazières françaises s'établit à envir
 
 C'est le point de contradiction le mieux documenté du dossier énergétique européen : l'écart entre le discours de sortie du gaz russe tenu depuis 2022 et les volumes effectivement importés deux ans plus tard.
 
-Grade B et réserve de sourçage stricte : les parts et volumes proviennent de références de niveau domaine, l'angle Eurostat dédié ayant échoué. Ils doivent être re-sourcés sur le bilan gazier du SDES et sur Eurostat avant tout usage chiffré. Le sens de la tendance est en revanche corroboré par deux sources indépendantes.
+Grade B et réserve de sourçage stricte : les parts et volumes proviennent d'un traqueur privé, le renvoi vers la page d'accueil du service statistique ministériel ayant été retiré le 04/08/2026 comme n'établissant rien. Ils doivent être re-sourcés sur le bilan gazier du SDES et sur Eurostat avant tout usage chiffré. Le sens de la tendance est en revanche corroboré par deux sources indépendantes.

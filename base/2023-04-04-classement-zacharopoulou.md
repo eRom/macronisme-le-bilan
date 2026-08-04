@@ -9,9 +9,10 @@ acteurs:
   gouvernement: Borne
 grade: C
 sources:
-  - https://information.tv5monde.com/
+  - https://www.cnews.fr/france/2023-04-04/chrysoula-zacharopoulou-accusee-de-viols-et-violences-gynecologiques-lenquete
+  - https://www.francebleu.fr/infos/faits-divers-justice/violences-gynecologiques-l-enquete-visant-la-secretaire-d-etat-chrysoula-zacharopoulou-classee-sans-suite-3024601
 ---
 
-Le 4 avril 2023, le parquet de Paris classe sans suite les plaintes pour viols et violences gynécologiques visant la secrétaire d'État (gynécologue de profession) pour des actes médicaux antérieurs à ses fonctions : infraction insuffisamment caractérisée, absence d'intention sexuelle et de contrainte pénalement caractérisée. Elle reste au gouvernement. Pièce à décharge.
+Le 4 avril 2023, le parquet de Paris annonce le classement sans suite, intervenu fin mars, de l'enquête ouverte en mai 2022 contre la secrétaire d'État (gynécologue de profession) après deux plaintes pour viols et violences gynécologiques visant des actes médicaux antérieurs à ses fonctions. Motif retenu par le parquet : infraction insuffisamment caractérisée. Elle reste au gouvernement. Pièce à décharge.
 
-Grade C : source unique dans le corpus (TV5Monde, 04/04/2023), lien non résolu vers l'article précis.
+Grade C : sources de presse concordantes mais aucune pièce judiciaire au dossier, et la motivation exacte du parquet n'est connue que par ses déclarations rapportées. Le re-sondage du 04/08/2026 a distingué la date du classement, fin mars, de celle de son annonce, le 4 avril, et retiré l'affirmation d'une « absence d'intention sexuelle et de contrainte pénalement caractérisée », que les sources ne portent pas.

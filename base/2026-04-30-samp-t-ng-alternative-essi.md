@@ -11,8 +11,8 @@ acteurs:
 grade: B
 statut: null
 sources:
-  - https://www.occar.int
-  - https://www.mbda-systems.com
+  - https://www.defense.gouv.fr/dga/actualites/dga-commande-version-multi-couches-astermica-vl
+  - https://www.mbda-systems.com/france-strengthens-air-defences-development-sampt-ng-dual-layer-system
 ---
 
 L'Organisation conjointe de coopération en matière d'armement signe le 30/04/2026, au nom de la France et de l'Italie, un contrat de développement d'une version bicouche du SAMP/T NG associant les missiles Aster et VL MICA, présentée comme l'alternative souveraine à l'initiative allemande European Sky Shield.

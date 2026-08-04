@@ -12,7 +12,7 @@ grade: A
 statut: tenue
 sources:
   - https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32023R0956
-  - https://www.ecologie.gouv.fr
+  - https://www.ecologie.gouv.fr/politiques-publiques/mecanisme-dajustement-carbone-aux-frontieres-macf
 ---
 
 La taxe carbone aux frontières annoncée à la Sorbonne en 2017 ([[2017-09-26-discours-sorbonne-i]]) et érigée en priorité de la présidence française de 2022 ([[2022-01-01-pfue-bilan-textes-adoptes]]) prend la forme du règlement (UE) 2023/956. Elle entre en phase transitoire le 01/10/2023, puis pleinement en vigueur le 01/01/2026.

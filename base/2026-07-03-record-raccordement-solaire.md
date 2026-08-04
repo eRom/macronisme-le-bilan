@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.statistiques.developpement-durable.gouv.fr
+  - https://www.statistiques.developpement-durable.gouv.fr/tableau-de-bord-solaire-photovoltaique-quatrieme-trimestre-2025
 ---
 
 Le tableau de bord du SDES fait état de 6,1 GW de nouvelles capacités solaires raccordées en 2025, contre 5,2 GW en 2024, portant la puissance cumulée du parc à 31,3 GW au 31/12/2025.

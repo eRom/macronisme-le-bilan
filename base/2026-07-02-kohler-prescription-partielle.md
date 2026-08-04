@@ -10,7 +10,6 @@ acteurs:
 grade: C
 sources:
   - https://www.anticor.org/2026/07/02/affaire-kohler-la-cour-dappel-enterre-une-partie-des-faits/
-  - https://www.leclubdesjuristes.com/
 ---
 
 Le 10 septembre 2025, la Cour de cassation avait cassé un arrêt rejetant la prescription, jugeant que le silence sur des liens d'intérêts ne constitue pas à lui seul une dissimulation frauduleuse. Le 2 juillet 2026, la chambre de l'instruction de la cour d'appel de Paris déclare prescrits les faits antérieurs à 2014 et maintient la mise en examen pour prise illégale d'intérêts sur la période 2014-2016 (dossiers MSC/STX-Fincantieri, voir [[2022-09-23-mise-en-examen-kohler]]).

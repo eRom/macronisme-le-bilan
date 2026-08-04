@@ -10,7 +10,7 @@ acteurs:
 grade: B
 statut: null
 sources:
-  - https://www.europarl.europa.eu/
+  - https://www.europarl.europa.eu/news/fr/press-room/20240710IPR22812/le-parlement-reelit-ursula-von-der-leyen-a-la-presidence-de-la-commission
 ---
 
 Après avoir été en 2019 l'un des artisans de la nomination d'Ursula von der Leyen, contre le système du Spitzenkandidat et contre le candidat du PPE Manfred Weber, Macron soutient sa reconduction dans le paquet des nominations de juin-juillet 2024. Elle est confirmée par le Parlement européen le 18/07/2024.

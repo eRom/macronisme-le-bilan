@@ -12,7 +12,7 @@ statut: null
 sources:
   - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052075814
   - https://www.conseil-constitutionnel.fr/decision/2025/2025891DC.htm
-  - https://petitions.assemblee-nationale.fr/
+  - https://lcp.fr/actualites/loi-duplomb-la-petition-depasse-les-deux-millions-de-signatures-391460
 ---
 
 Le 08/07/2025, l'Assemblée nationale adopte définitivement par 316 voix contre 223 la proposition de loi Duplomb « visant à lever les contraintes à l'exercice du métier d'agriculteur », qui rouvrait l'usage de l'acétamipride, néonicotinoïde interdit en France depuis 2018 mais autorisé dans l'Union européenne.
