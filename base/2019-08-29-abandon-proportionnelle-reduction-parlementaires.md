@@ -12,7 +12,7 @@ grade: A
 statut: abandonnee
 sources:
   - https://www.assemblee-nationale.fr/dyn/15/dossiers/democratie_plus_representative_responsable_efficace
-  - https://www.assemblee-nationale.fr/dyn/15/dossiers/renouveau_vie_democratique_constitutionnel
+  - https://www.assemblee-nationale.fr/dyn/15/dossiers/renouveau_vie_democratique
 ---
 
 Promesses institutionnelles 2017 : dose de proportionnelle et réduction d'un tiers du nombre de parlementaires. Le projet de loi constitutionnelle n° 911 (déposé le 23/05/2018) voit son examen interrompu par l'affaire Benalla (juillet 2018) puis est retiré le 29/08/2019 ; le second projet « renouveau de la vie démocratique » (29/08/2019) n'est jamais inscrit à l'ordre du jour et devient caduc à la fin de la XVe législature (21/06/2022).

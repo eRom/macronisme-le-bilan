@@ -10,7 +10,7 @@ acteurs:
 grade: C
 statut: abandonnee
 sources:
-  - https://www.fondation-abbe-pierre.fr/documents/pdf/29e_rapport_sur_letat_du_mal-logement_en_france_2024.pdf
+  - https://www.fondationpourlelogement.fr/29e-rapport-sur-letat-du-mal-logement-en-france-2024/
 ---
 
 Engagement solennel du 27/07/2017 : « la première bataille : loger tout le monde dignement [...] je ne veux plus, d'ici la fin de l'année, avoir des femmes et des hommes dans les rues ». La Fondation Abbé Pierre estime ~330 000 personnes sans domicile en 2024, contre 143 000 au dernier recensement INSEE (2012).

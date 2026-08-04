@@ -11,7 +11,7 @@ grade: A
 statut: null
 sources:
   - https://www.legifrance.gouv.fr/ceta/id/CETATEXT000049097069
-  - https://curia.europa.eu/juris/document/document.jsf?docid=277685&doclang=FR
+  - https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-02-02/450285
 ---
 
 Dans son arrêt ADDE du 21/09/2023 (affaire C-143/22), la CJUE juge que la directive 2008/115/CE dite « retour » s'applique au ressortissant de pays tiers faisant l'objet d'une décision de refus d'entrée à une frontière intérieure où le contrôle a été réintroduit : les garanties de la directive doivent lui être appliquées.

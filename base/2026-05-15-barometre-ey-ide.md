@@ -10,7 +10,7 @@ acteurs:
 grade: C
 statut: null
 sources:
-  - https://www.ey.com/fr_fr/attractiveness/barometre-ey-de-l-attractivite-de-la-france-2026
+  - https://www.ey.com/fr_fr/newsroom/2026/05/barometre-ey-de-l-attractivite-de-la-france-2026
 ---
 
 Le baromètre EY 2026 place la France en tête européenne de l'accueil des investissements directs étrangers pour la 7e année consécutive (852 projets en 2025, devant le Royaume-Uni 730 et l'Allemagne 548). Contrepoint à décharge aux pièces sur le retournement 2024-2026.

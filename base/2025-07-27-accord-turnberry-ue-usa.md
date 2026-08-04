@@ -13,7 +13,7 @@ statut: null
 sources:
   - https://www.senat.fr/ue/pac/EUR-E20857.html
   - https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1455
-  - https://oeil.secure.europarl.europa.eu/oeil/popups/ficheprocedure.do?reference=2025/0261(COD)
+  - https://www.europarl.europa.eu/legislative-train/theme-international-trade-inta/file-implementation-of-certain-tariff-aspects-of-the-2025-eu-us-framework-agreement
 ---
 
 Un compromis politique est conclu le 27/07/2025 au complexe Trump Turnberry en Écosse, entre Ursula von der Leyen et Donald Trump, puis formalisé par une déclaration conjointe le 21/08/2025. Il plafonne à 15 % les droits de douane américains sur la majorité des importations européennes ; en contrepartie, l'Union supprime la plupart de ses droits sur les produits industriels américains et ouvre un accès préférentiel à certains produits agricoles et halieutiques.

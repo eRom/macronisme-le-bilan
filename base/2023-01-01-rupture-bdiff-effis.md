@@ -11,7 +11,7 @@ grade: A
 statut: null
 sources:
   - https://observatoire.foret.gouv.fr/themes/l-historique-des-feux-de-foret-en-france-metropolitaine
-  - https://effis.jrc.ec.europa.eu/
+  - https://forest-fire.emergency.copernicus.eu/about-effis
 ---
 
 Note de cadrage, pas fiche d'événement. Elle protège tout le volet feux du dossier contre la réfutation la plus facile, qui consiste à opposer deux chiffres issus de référentiels différents. Date conventionnelle : la source ne donne que l'année de la rupture.

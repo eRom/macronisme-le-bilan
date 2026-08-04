@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://curia.europa.eu/juris/document/document.jsf?docid=258254&doclang=FR
+  - https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:62020CJ0368
   - https://curia.europa.eu/jcms/upload/docs/application/pdf/2022-04/cp220064fr.pdf
 ---
 

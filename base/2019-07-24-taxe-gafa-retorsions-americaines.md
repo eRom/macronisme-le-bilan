@@ -12,7 +12,7 @@ grade: A
 statut: null
 sources:
   - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000038811588
-  - https://ustr.gov/sites/default/files/enforcement/301Investigations/France_DST_Suspension_Notice_Jan_2021.pdf
+  - https://www.federalregister.gov/documents/2021/01/12/2021-00425/notice-of-modification-of-section-301-action-investigation-of-frances-digital-services-tax
 ---
 
 La loi n° 2019-759 du 24/07/2019 institue une taxe de 3 % sur les services numériques, avec des seuils de 750 millions d'euros de chiffre d'affaires mondial et 25 millions en France, portant sur le ciblage publicitaire, l'intermédiation et la vente de données.

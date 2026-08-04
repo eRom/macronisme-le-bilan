@@ -11,7 +11,7 @@ grade: A
 statut: null
 sources:
   - https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse/etudes-et-resultats/251113_ER_etablissements-de-sante
-  - https://drees.solidarites-sante.gouv.fr/publications-documents-de-reference-et-statistiques/les-etablissements-de-sante
+  - https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse-documents-de-reference/panoramas-de-la-drees/260520-Etablissements-de-sant%C3%A9-en-2024
 ---
 
 Selon la statistique annuelle des établissements de santé de la DREES, les capacités d'hospitalisation complète passent de 399 985 lits au 31/12/2017 à 367 300 au 31/12/2024, soit une baisse nette de 32 685 lits (moins 8,2 %). Sur la même période, les places d'hospitalisation partielle passent de 75 436 à environ 91 200, soit une hausse d'environ 15 500 places (plus 20 %).

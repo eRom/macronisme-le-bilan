@@ -9,7 +9,7 @@ acteurs:
   gouvernement: DREES / COR
 grade: A
 sources:
-  - https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse/panoramas-de-la-drees/les-retraites-et-les-retraites-edition-2025
+  - https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse-documents-de-reference/250731_PANORAMAS-retraites
   - https://www.cor-retraites.fr/node/644
 ---
 

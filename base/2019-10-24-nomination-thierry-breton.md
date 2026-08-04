@@ -11,7 +11,7 @@ grade: A
 statut: null
 sources:
   - https://www.lemonde.fr/politique/article/2019/10/24/emmanuel-macron-propose-thierry-breton-pour-la-commission-europeenne_6016719_823448.html
-  - https://commission.europa.eu/system/files/2020-01/mission-letter-thierry-breton_en.pdf
+  - https://commissioners.ec.europa.eu/system/files/2022-12/president-elect_von_der_leyens_mission_letter_to_thierry_breton.pdf
   - https://www.euractiv.com/section/future-eu/news/parliament-panel-clears-breton-for-eu-commissioner-hearing/
 ---
 

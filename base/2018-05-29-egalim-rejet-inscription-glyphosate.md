@@ -11,7 +11,7 @@ grade: A
 statut: null
 sources:
   - https://www.assemblee-nationale.fr/15/cri/2017-2018/20180242.asp
-  - https://www.assemblee-nationale.fr/dyn/15/rapports/rap-info/l15b2382_rapport-information
+  - https://www.assemblee-nationale.fr/dyn/opendata/RINFANR5L15B2406.html
 ---
 
 Lors de l'examen du projet de loi EGalim, les amendements visant à graver dans la loi l'interdiction du glyphosate sous trois ans sont rejetés en séance publique le 29/05/2018, par 63 voix contre 20. Le ministre de l'Agriculture Stéphane Travert s'y oppose au motif de l'absence d'alternatives opérationnelles dans certaines filières.

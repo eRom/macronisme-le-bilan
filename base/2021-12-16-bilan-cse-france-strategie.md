@@ -9,7 +9,7 @@ acteurs:
   gouvernement: comité d'évaluation France Stratégie, DARES
 grade: B
 sources:
-  - https://www.strategie.gouv.fr
+  - https://www.strategie-plan.gouv.fr/publications/evaluation-ordonnances-22-septembre-2017-relatives-dialogue-social-aux-relations-de-0
   - https://www.insee.fr/fr/statistiques/8205545
 ---
 

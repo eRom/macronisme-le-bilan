@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.asn.fr/l-asn-controle/actualites-du-controle/installations-nucleaires/reacteurs-nucleaires-de-edf/corrosion-sous-contrainte-sur-des-circuits-RIS-de-reacteurs-d-edf
+  - https://reglementation-controle.asnr.fr/information/archives-des-actualites/corrosion-detectee-sur-le-circuit-ris-du-reacteur-1-de-la-centrale-de-civaux
   - https://www.ccomptes.fr/fr/publications/la-maintenance-du-parc-electronucleaire-dedf-en-france
 ---
 

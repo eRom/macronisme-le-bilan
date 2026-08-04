@@ -15,7 +15,7 @@ sources:
   - https://www.education.gouv.fr/les-notes-d-information-de-la-depp-9799
   - https://www.vie-publique.fr/rapport/284484-place-des-mathematiques-dans-la-voie-generale-du-lycee-general
   - https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047005229
-  - https://collectif-maths-sciences.fr/wp-content/uploads/2022/03/Note-Mixite-Mars2022.pdf
+  - https://www.socinfo.fr/reforme-du-lycee-filles-maths-ses/
 ---
 
 La suppression des mathématiques du tronc commun de première et terminale générales (arrêté du 16 juillet 2018 sur la grille horaire, effet à la rentrée 2020) a provoqué un effondrement documenté des effectifs féminins en mathématiques : la part des filles suivant au moins 6 h de maths en terminale chute de 47,5 % (2019) à 35,7 % (2021). La DEPP confirme en 2026 un écart persistant (58,8 % des garçons contre 33,7 % des filles en spécialité maths).

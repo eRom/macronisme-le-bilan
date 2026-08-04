@@ -10,7 +10,7 @@ acteurs:
 grade: C
 statut: null
 sources:
-  - https://www.vipress.net/eramet-et-suez-suspendent-leur-projet-de-recyclage-de-batteries-a-dunkerque/
+  - https://www.ici.fr/infos/economie-social/eramet-suspend-son-projet-d-usine-de-recyclage-de-batteries-a-dunkerque-9133908
 ---
 
 Eramet annonce le 24/10/2024 la suspension sine die de son projet de recyclage de batteries à Dunkerque, invoquant les incertitudes du marché européen. Pièce de contexte sur l'écart entre les annonces de la « vallée de la batterie » et les concrétisations.

@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: null
 sources:
-  - https://www.ccomptes.fr/fr/publications/la-mise-en-oeuvre-du-diagnostic-de-performance-energetique-2021-2024
+  - https://www.ccomptes.fr/fr/publications/la-mise-en-oeuvre-du-diagnostic-de-performance-energetique
   - https://www.vie-publique.fr/rapport/294326-la-mise-en-oeuvre-du-diagnostic-de-performance-energetique-2021-2024
 ---
 

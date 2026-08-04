@@ -11,7 +11,7 @@ grade: B
 statut: null
 sources:
   - https://www.insee.fr/fr/statistiques/5012724
-  - https://drees.solidarites-sante.gouv.fr/publications-documents-de-reference-et-statistiques/les-etablissements-de-sante
+  - https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse-documents-de-reference/panoramas-de-la-drees/260520-Etablissements-de-sant%C3%A9-en-2024
 ---
 
 Le nombre de maternités actives passe de 533 en 2014 à 445 en 2024, soit 88 fermetures, avec une baisse d'environ 20 % des lits d'obstétrique. Sur la même période, le taux de mortalité infantile remonte de 3,3 pour mille en 2011 à 4,1 pour mille en 2024 en France métropolitaine, la mortalité néonatale passant de 1,5 à 2,0 pour mille, inversant une tendance décennale à la baisse.

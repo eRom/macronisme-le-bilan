@@ -10,7 +10,7 @@ acteurs:
 grade: A
 statut: abandonnee
 sources:
-  - https://www.assemblee-nationale.fr/dyn/15/dossiers/retraites_systeme_universel
+  - https://www.assemblee-nationale.fr/dyn/15/dossiers/systeme_universel_de_retraite
   - https://www.vie-publique.fr/discours/280261-interview-de-m-gabriel-attal-secretaire-detat-porte-parole-du-gouverne-09062021
   - https://www.vie-publique.fr/discours/284344-declaration-de-m-emmanuel-macron-president-de-la-republique-sur-son-programme-de-campagne-pour-lelection-presidentielle-de-2022-aubervilliers-le-17-mars-2022
 ---

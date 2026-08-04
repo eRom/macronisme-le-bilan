@@ -13,7 +13,7 @@ statut: null
 sources:
   - https://www.vie-publique.fr/discours/285573-elisabeth-borne-6-juillet-2022-declaration-de-politique-generale
   - https://www.economie.gouv.fr/letat-depose-le-projet-doffre-publique-dachat-simplifiee-sur-les-titres-dedf
-  - https://www.amf-france.org/fr/actualites-mises-en-garde/la-cour-dappel-de-paris-rejette-le-recours-contre-la-decision-de-conformite-de-loffre-publique
+  - https://www.edf.fr/groupe-edf/espaces-dedies/journalistes/tous-les-communiques-de-presse/decision-de-la-cour-dappel-de-paris-rejetant-le-recours-en-annulation-forme-par-des-actionnaires-minoritaires-contre-la-decision-de-conformite-de-lamf-reouverture-de-lopas-visant-les
 ---
 
 Le 06/07/2022, Élisabeth Borne annonce en déclaration de politique générale l'intention de porter l'État à 100 % d'EDF (84 % alors). L'opération prend la forme d'une OPA simplifiée déposée le 04/10/2022 (12 €/action, ~9,7 Md€), contestée par les minoritaires (ADAM, FCPE) qui estiment le prix pénalisé par l'ARENH. La cour d'appel de Paris rejette leurs recours le 02/05/2023 ; retrait obligatoire le 08/06/2023.
