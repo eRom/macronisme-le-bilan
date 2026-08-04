@@ -1127,3 +1127,92 @@ Un lot de seize adresses sur douze fiches, dont huit orphelines. Il est petit et
 il est du même genre que ce qui vient d'être fait : lire la fiche, chercher le
 document qu'elle désigne, l'ouvrir, vérifier un élément de contenu. Le sondage
 complet se rejoue en deux commandes, il donne la liste à jour.
+
+## Le lot des seize, ou ce que la mesure de clôture avait fait apparaître
+
+Traité le 04/08/2026 dans la foulée de la mesure. Onze fiches touchées, seize
+adresses, dont huit fiches sans plus aucune source vivante. Aucune de ces lignes
+n'était sur la liste des 246 : ce sont des pages tombées depuis le sondage du
+03/08 ou des sources introduites pendant la campagne elle-même.
+
+### Trois chiffres perdent leur support et changent
+
+- **Police de sécurité du quotidien.** La fiche donnait « 1 154 postes créés fin
+  2022 sur les 1 300 annoncés », adossés au seul avis du Sénat `a22-119-3`. Cet
+  avis n'existe pas — c'est la même référence fabriquée que celle démasquée sur
+  le plan 10 000 policiers, sur une autre fiche. Le rapport de la Cour des comptes
+  du 26/04/2023 donne **1 089 postes pour 62 quartiers en juin 2022**, contre
+  1 300 prévus pour 60. La pièce `securite-immigration` reprenait le 1 154.
+- **Pouvoir d'achat par unité de consommation.** Les deux séries INSEE citées sont
+  mortes. Sur la série courante en base 2020, **les valeurs 2021 à 2024 ont toutes
+  été révisées d'un dixième de point**, et l'année 2025 entre au dossier à
+  **-0,7 %**. C'est un troisième recul, et le premier hors crise : la décharge
+  d'`economie` et le fil de la synthèse, qui disaient « ne recule que les deux
+  années de crise », sont bornés à 2017-2024. Les valeurs 2017 à 2019 ne sont sur
+  aucune page citée et sont déclarées à re-sourcer.
+- **GE Belfort.** Ni `l15b0842` ni `l15b4528` ne mènent à un document. Le rapport
+  de la commission d'enquête sur la politique industrielle est le **n° 897**, pas
+  le n° 842. La pénalité de 50 M€ et le solde du plan social passent à la presse
+  régionale, qui les établit, et le solde entre au dossier : plan achevé en
+  octobre 2020, Belfort et Bourogne passant de 1 760 à 1 275 salariés.
+
+### Deux recettes de récupération qui ressortent
+
+- **Les décisions du Conseil d'État se retrouvent à leur forme ArianeWeb**, une
+  fois de plus. La page `conseil-etat.fr/actualites/` qui les annonçait a disparu,
+  la décision est là, à son numéro.
+- **Les communiqués d'EDF ont survécu en anglais** quand leur version française a
+  disparu : `edf.fr/en/the-edf-group/dedicated-sections/journalists/all-press-releases/`.
+  Les deux communiqués Flamanville, couplage et pleine puissance, s'y lisent avec
+  leur heure et leur puissance au mégawatt près.
+
+### Corrections de date et de portée
+
+Le bilan de l'OFPRA est du **27 janvier 2026**, pas du 13. La mise en examen de
+Kohler est établie par sa source au mois — « depuis septembre 2022 » — le jour du
+23 relevant de la presse, ce qui est désormais écrit dans la fiche. Le
+communiqué du ministère des armées sur le char franco-allemand, que le sondage
+donnait mort en 503, répondait 200 une heure plus tard : **un 503 est transitoire
+par définition, il ne prouve rien.**
+
+### Contrôle final
+
+Les 25 sources des onze fiches touchées : aucune morte. Les quatre non-200 sont
+Légifrance et `interieur.gouv.fr`, tous deux connus pour refuser les automates.
+
+## Mesure de clôture réelle, 04/08/2026 en fin de journée
+
+Sondage complet, outil corrigé (second tir à `curl`), 915 sources distinctes :
+
+| | 03/08 au matin | 04/08 au soir |
+|---|---|---|
+| RACINE | 36 (non mesuré alors) | **0** |
+| PIEGE | 0 | **0** |
+| MORTE | 263 | **0** |
+| DEPLACEE | 15 | **0** |
+| BLOQUEE | 10 | 80 |
+| VIVANTE | 607 | **829** |
+| fiches orphelines | 104 | **0** |
+
+Les six dernières DEPLACEE ont été réécrites à leur adresse d'arrivée : une
+redirection marche jusqu'au jour où elle s'arrête, et deux d'entre elles
+changeaient de chemin en plus de changer d'hôte.
+
+### Ce que ce zéro ne dit pas, et qu'il faut lire avec lui
+
+Les 80 BLOQUEE sont des hôtes qui refusent les automates : Légifrance,
+`interieur.gouv.fr`, `education.gouv.fr`, `economie.gouv.fr`, `info.gouv.fr`,
+`consilium.europa.eu`, EUR-Lex, quelques titres de presse derrière Cloudflare.
+**Sur ces adresses, ni l'outil ni personne ici ne sait distinguer une page morte
+d'une page gardée.** Le zéro porte sur les 835 adresses qu'on peut lire, pas sur
+les 915.
+
+Le nombre de BLOQUEE a d'ailleurs été multiplié par huit dans la journée, et
+c'est une bonne nouvelle : ce sont, pour l'essentiel, les dix-neuf adresses que
+l'outil déclarait mortes à tort avant le second tir, plus celles que la campagne
+a introduites en remplaçant des pages disparues par des documents officiels sur
+des portails gardés.
+
+> Un audit qui affiche zéro doit toujours être lu avec la taille de son angle
+> mort. Ici, 80 sur 915, soit près d'une source sur onze, sont hors de portée de
+> la mesure. C'est la limite dure de cette campagne, et elle n'a pas bougé.

@@ -655,3 +655,17 @@ qui tranche.
 > une leçon porte sur un mode de mesure, chercher tout de suite quel script
 > mesure encore à l'ancienne — sinon le prochain rapport la contredira en silence,
 > avec l'autorité d'un chiffre.
+
+**Un 503 n'est pas une mort, c'est une indisponibilité passagère.** Le communiqué
+du ministère des armées sur le char franco-allemand a été classé MORTE sur un 503
+obtenu par `fetch` **et** par `curl`. Une heure plus tard, la même adresse répond
+200. Le second tir protège d'un outil, pas d'une panne : un code 5xx doit être
+re-sondé plus tard, jamais interprété comme une adresse perdue.
+
+**Un communiqué d'entreprise peut survivre dans sa version anglaise.** Les deux
+communiqués d'EDF sur Flamanville, couplage au réseau et pleine puissance, ont
+disparu de `edf.fr/groupe-edf/espaces-medias/communiques-de-presse/` et se lisent
+intégralement sous `edf.fr/en/the-edf-group/dedicated-sections/journalists/all-press-releases/`,
+avec l'heure et la puissance au mégawatt près. Même famille que les communiqués de
+l'ANSES, disparus en français et vivants en anglais. **Avant de déclarer un
+communiqué perdu, essayer la version anglaise du site.**
