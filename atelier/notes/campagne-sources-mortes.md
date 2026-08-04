@@ -855,3 +855,61 @@ n'avaient pas vu, sur quatorze fiches dont quatre de grade A.
 > « qu'est-ce qu'il ne peut pas voir ? ». Posée trois fois, elle a rapporté trois
 > fois : les identifiants fabriqués derrière un 404, les pages d'accueil derrière un
 > 200, et maintenant les hôtes qui répondent 200 à tout.
+
+## Lots 09 et 10, et le premier lot sans défaut
+
+Traités le 04/08/2026 en fin de matinée.
+
+| | Lot 09 | Lot 10 |
+|---|---|---|
+| lignes | 20 | 20 |
+| annoncées OUI | 20 | 18 |
+| confirmées au contenu ici | 15 | 16 |
+| non testables (hôte anti-automate) | 5 | 4 |
+| adresses fausses | 0 | 0 |
+| erreurs de fond | 0 | 0 |
+
+**Le lot 09 est le premier sans le moindre défaut de la campagne** : aucune adresse
+fabriquée, aucun équivalent abusif, aucune affirmation que le document ne porte pas.
+Les deux échecs déclarés par le lot 10 se résolvent tous les deux.
+
+### `conseil-etat.fr` est le contre-exemple de `courdecassation.fr`
+
+Le lot 09 porte surtout des décisions du Conseil d'État, retrouvées à leur adresse
+ArianeWeb, qui se construit et qui tient :
+`conseil-etat.fr/fr/arianeweb/CE/decision/AAAA-MM-JJ/NUMERO`. L'identifiant résout,
+la page rend son texte, un numéro faux donne un 404 franc. C'est l'exact contraire de
+la Cour de cassation, traitée une heure plus tôt, qui répond 200 à tout. Deux
+juridictions suprêmes, deux régimes de vérifiabilité opposés.
+
+### Trois défauts trouvés en tirant sur le fil
+
+- **Un identifiant du Sénat à un chiffre près** sur la fiche du dédoublement des
+  CP-CE1 : `a22-117-31` au lieu de `a22-117-3`. C'est le cas d'école de l'ouverture
+  de la campagne, retrouvé par hasard parce que le contrôle final sonde toutes les
+  sources des fiches touchées, pas seulement les lignes du lot.
+- **Une ligne du lot 08 restée non appliquée** : la statistique des PGE de la Banque
+  de France. Rattrapée par le même contrôle.
+- **Trois sources mortes de plus**, dont deux séries de l'INSEE qui portaient le taux
+  d'emploi et le solde d'emplois salariés privés. Sans équivalent : ces deux chiffres
+  sont déclarés à re-sourcer dans la fiche, dans `economie` et dans la synthèse.
+
+> Le contrôle final n'est pas une formalité de clôture : sur ces deux lots, il a
+> rapporté plus que les lignes elles-mêmes.
+
+### Le re-sondage a failli rejeter un bon lot, pour une raison qui lui est propre
+
+Au premier passage, quinze des vingt lignes du lot 10 ressortaient à zéro citation
+retrouvée — de quoi conclure à la fabrication en série. La cause était dans l'outil :
+le lot met ses citations en italique markdown et abrège avec `[…]`, si bien que la
+chaîne cherchée contenait des astérisques et des crochets absents de la page. Une
+fois ces artefacts retirés, toutes les citations se retrouvent au mot près.
+
+> Le contrôle par citation littérale est le bon outil, mais il est littéral jusque
+> dans ses défauts. Normaliser la mise en forme du rapport avant de chercher —
+> retirer `*`, `_` et `[…]` — sinon l'outil accuse le lot de sa propre rigidité.
+
+### État de la campagne au 04/08/2026
+
+Dix lots sur treize soldés, 200 lignes sur 246, plus le lot RACINE en entier. Restent
+les lots 11, 12 et 13, soit 46 lignes, les moins graves du classement d'origine.
