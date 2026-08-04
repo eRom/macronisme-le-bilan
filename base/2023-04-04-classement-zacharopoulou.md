@@ -10,7 +10,7 @@ acteurs:
 grade: C
 sources:
   - https://www.cnews.fr/france/2023-04-04/chrysoula-zacharopoulou-accusee-de-viols-et-violences-gynecologiques-lenquete
-  - https://www.francebleu.fr/infos/faits-divers-justice/violences-gynecologiques-l-enquete-visant-la-secretaire-d-etat-chrysoula-zacharopoulou-classee-sans-suite-3024601
+  - https://www.ici.fr/infos/faits-divers-justice/violences-gynecologiques-l-enquete-visant-la-secretaire-d-etat-chrysoula-zacharopoulou-classee-sans-suite-3024601
 ---
 
 Le 4 avril 2023, le parquet de Paris annonce le classement sans suite, intervenu fin mars, de l'enquête ouverte en mai 2022 contre la secrétaire d'État (gynécologue de profession) après deux plaintes pour viols et violences gynécologiques visant des actes médicaux antérieurs à ses fonctions. Motif retenu par le parquet : infraction insuffisamment caractérisée. Elle reste au gouvernement. Pièce à décharge.

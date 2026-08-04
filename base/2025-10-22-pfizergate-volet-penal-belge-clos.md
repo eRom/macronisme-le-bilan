@@ -11,7 +11,7 @@ acteurs:
 grade: B
 statut: null
 sources:
-  - https://euractiv.fr/news/la-cour-supreme-de-belgique-met-fin-a-une-procedure-engagee-contre-ursula-von-der-leyen-en-raison-dallegations-relatives-a-un-accord-sur-les-vaccins/
+  - https://euractiv.com/fr/news/la-cour-supreme-de-belgique-met-fin-a-une-procedure-engagee-contre-ursula-von-der-leyen-en-raison-dallegations-relatives-a-un-accord-sur-les-vaccins/
   - https://www.dhnet.be/dernieres-depeches/2025/10/22/cour-de-cassation-le-pourvoi-en-cassation-dun-belge-contre-ursula-von-der-leyen-rejete-ZFJEFVIM5JEWPBQZSDVIBTYMCM/
 ---
 

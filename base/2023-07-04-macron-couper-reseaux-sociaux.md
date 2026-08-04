@@ -10,7 +10,7 @@ acteurs:
 grade: B
 statut: null
 sources:
-  - https://euractiv.fr/section/politique/news/emmanuel-macron-envisage-t-il-de-couper-les-reseaux-sociaux-en-cas-de-desordres
+  - https://euractiv.com/fr/news/emmanuel-macron-envisage-t-il-de-couper-les-reseaux-sociaux-en-cas-de-desordres/
   - https://www.publicsenat.fr/actualites/societe/reseaux-sociaux-et-emeutes-le-gouvernement-ouvert-a-une-evolution-legislative
 ---
 

@@ -12,7 +12,7 @@ grade: A
 statut: null
 sources:
   - https://montreuil.tribunal-administratif.fr/qui-sommes-nous/vie-du-tribunal/plan-de-sauvegarde-de-l-emploi-p-pse-de-la-societe-arcelormittal-france-rejet-du-recours-du-syndicat-cgt-d-arcelormittal-dunkerque
-  - https://www.francebleu.fr/infos/economie-social/le-plan-social-d-arcelormittal-en-france-valide-par-l-etat-608-postes-supprimes-4341949
+  - https://www.ici.fr/hauts-de-france/nord-59/dunkerque/le-plan-social-d-arcelormittal-en-france-valide-par-l-etat-608-postes-supprimes-4341949
   - https://france3-regions.franceinfo.fr/grand-est/moselle/metz/la-justice-deboute-la-cgt-qui-contestait-le-plan-social-d-arcelormittal-et-ses-608-postes-supprimes-en-france-3332531.html
 ---
 
