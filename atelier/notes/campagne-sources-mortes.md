@@ -682,3 +682,30 @@ Répercussions sur les pièces : `europe`, `finances-publiques`,
 `securite-immigration`, `justice-affaires`, `sante` et `ecologie-energie`
 reprises, `date_verdict` avancée. Aucun verdict déplacé. La synthèse ne cite
 aucune des fiches corrigées : rien à re-motiver.
+
+## Le motif RACINE, et ce qu'il a trouvé au premier passage
+
+Ajouté à `audit-sources.ts` le 04/08/2026, à la suite des lots 05 et 06 : toute
+source dont l'URL n'a pas de chemin est classée **RACINE**, sans appel réseau.
+Le défaut est dans l'adresse, pas dans la réponse du serveur.
+
+Contre-épreuve passée : le motif n'attrape ni une page de rapport du Sénat, ni
+une URL à chaîne de requête comme celles de curia. Une chaîne de requête ou un
+fragment suffisent à désigner un document, la racine nue non.
+
+Premier passage sur le corpus : **36 sources sans chemin, sur 29 fiches**, dont
+10 de grade A. Et le chiffre qui compte :
+
+> **Quinze fiches n'ont aucune source portant un chemin.** Elles sont
+> orphelines au sens fort — aucune de leurs sources n'établit quoi que ce soit —
+> et aucun sondage ne les voyait, puisque leurs URL répondent 200.
+
+Dont quatre de grade A : relaxe Dupond-Moretti devant la CJR, non-lieu covid
+devant la CJR, omnibus de détricotage du Green Deal, record de raccordement
+solaire. Les hôtes qui reviennent : `courdecassation.fr` et
+`leclubdesjuristes.com`, trois fois chacun.
+
+C'est un lot de campagne à part entière, du même ordre que celui des mortes, et
+il ne recoupe pas la liste des orphelines : ces fiches en étaient absentes par
+construction. À traiter à la même recette — lire la fiche, chercher le document
+qu'elle désigne, l'ouvrir, vérifier un élément de contenu.

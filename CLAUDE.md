@@ -8,7 +8,7 @@ de fond.
 ## Structure
 
 ```
-base/         531 fiches factuelles, AAAA-MM-JJ-slug.md      <- ce qui fait foi
+base/         534 fiches factuelles, AAAA-MM-JJ-slug.md      <- ce qui fait foi
 jugement/     15 pièces de domaine + synthese.md             <- les verdicts
 atlas/        générateur + front du site (TypeScript, Bun)
 METHODE.md    méthode publique, destinée au lecteur
@@ -232,8 +232,14 @@ bun build ./src/app.ts --outdir ./dist --minify --target browser  # src/ -> dist
 open dist/index.html                                              # file:// suffit, zéro réseau
 ```
 
-`build-report.md` doit dire **531/531** et « Verdict du build : OK ». Le build
-sort en erreur sur tout lien mort ou champ manquant bloquant.
+`build-report.md` doit dire **534/534** et « Verdict du build : OK ». Le build
+sort en erreur sur une fiche non parsée, un champ manquant bloquant ou une fuite
+de vocabulaire interne — c'est tout ce que `hardFail` couvre.
+
+**Le verdict ne couvre pas les liens morts.** Un renvoi `[[slug]]` qui ne pointe
+vers aucune fiche est listé dans le rapport, sous « Wikilinks morts », et laisse
+le verdict à OK. Après tout renommage de fiche, lire cette section : le vert ne
+la voit pas.
 
 `build.ts` porte aussi l'audit de publiabilité : la table `INTERDITS` scanne le
 `data.js` final et fait échouer le build sur toute survivance de vocabulaire

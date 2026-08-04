@@ -16,6 +16,12 @@
  * Le classement compte plus que le code HTTP, parce que le mode de défaillance
  * le plus dangereux du dossier ne se voit pas dans le code :
  *
+ *   RACINE    l'URL n'a pas de chemin : c'est la page d'accueil d'un site, pas
+ *             un document. Elle répond 200, elle n'établit rien, et elle ne
+ *             mourra jamais — donc aucun sondage ne l'attrapait avant le
+ *             04/08/2026. Trois cas trouvés à l'ajout de ce motif. Même
+ *             famille que PIEGE : une source d'apparence parfaite qui ne
+ *             porte pas ce que la fiche affirme. Vérifié sans appel réseau.
  *   PIEGE     200, mais la page dit « Pas de contenu disponible ». C'est la
  *             signature d'un identifiant Légifrance fabriqué. Trois cas
  *             confirmés sur ce dossier, dont deux sur des fiches citées par
@@ -80,7 +86,13 @@ for (const nom of readdirSync(BASE).filter((f) => f.endsWith(".md")).sort()) {
 }
 const sources = [...parUrl.values()];
 
-type Verdict = "PIEGE" | "MORTE" | "BLOQUEE" | "DEPLACEE" | "VIVANTE";
+type Verdict =
+  | "RACINE"
+  | "PIEGE"
+  | "MORTE"
+  | "BLOQUEE"
+  | "DEPLACEE"
+  | "VIVANTE";
 type Resultat = Source & { verdict: Verdict; detail: string };
 
 const hote = (u: string) => {
@@ -91,7 +103,25 @@ const hote = (u: string) => {
   }
 };
 
+/**
+ * Une source sans chemin ne désigne aucun document. Pas de requête : le défaut
+ * est dans l'adresse, pas dans la réponse du serveur. Une chaîne de requête ou
+ * un fragment suffit à désigner une page (`?docid=`, `#/fiche/…`), la racine
+ * nue non.
+ */
+function sansChemin(u: string): boolean {
+  try {
+    const { pathname, search, hash } = new URL(u);
+    return pathname.replace(/\/+$/, "") === "" && !search && !hash;
+  } catch {
+    return false;
+  }
+}
+
 async function sonder(s: Source): Promise<Resultat> {
+  if (sansChemin(s.url))
+    return { ...s, verdict: "RACINE", detail: "page d'accueil, pas un document" };
+
   const ctrl = new AbortController();
   const minuteur = setTimeout(() => ctrl.abort(), 20_000);
   try {
@@ -137,7 +167,14 @@ for (let i = 0; i < sources.length; i += PARALLELE) {
 }
 process.stderr.write("\n\n");
 
-const ordre: Verdict[] = ["PIEGE", "MORTE", "DEPLACEE", "BLOQUEE", "VIVANTE"];
+const ordre: Verdict[] = [
+  "RACINE",
+  "PIEGE",
+  "MORTE",
+  "DEPLACEE",
+  "BLOQUEE",
+  "VIVANTE",
+];
 console.log(
   `${slug ? `Domaine ${slug}` : "Corpus entier"} : ${sources.length} sources distinctes sondées\n`,
 );
@@ -162,4 +199,7 @@ console.log(
 );
 console.log(
   "PIEGE est le cas grave : l'URL a l'air valide et ne mène à rien.",
+);
+console.log(
+  "RACINE aussi, et il est pire : la page vit, donc rien ne le signalait.",
 );
