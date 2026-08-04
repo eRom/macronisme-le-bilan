@@ -229,6 +229,20 @@ renommées, huit renvois cassés dans quatre pièces de jugement, et le build so
 > Après tout renommage de fiche, lire la section « Wikilinks morts » du rapport
 > de build. Le verdict vert ne la couvre pas.
 
+**Un contrôle du rapport qui ne fait rien échouer finit par ne plus être lu.**
+Le contrôle « Verdicts table vs frontmatter » existait depuis le début et
+affichait « aucun » ; il ne comparait en réalité que le verdict, pas la date. Le
+04/08/2026, huit des quinze lignes de la table de la synthèse dataient les
+appréciations de la veille alors que les pièces avaient été révisées le jour même,
+et le rapport n'a rien vu. Le contrôle compare désormais `date_verdict` et il est
+entré dans `hardFail` : c'est le cinquième motif bloquant. Les wikilinks morts,
+juste au-dessus, restent non bloquants : le rapport porte donc encore des sections
+décoratives, et il faut savoir lesquelles.
+
+> Devant une section de `build-report.md` qui dit « aucun », se demander d'abord
+> si elle compare vraiment ce qu'elle prétend comparer. Un contrôle qui n'a jamais
+> rien attrapé est aussi bien un contrôle parfait qu'un contrôle mort.
+
 **`atlas/.netlify/` est gitignoré** : l'identifiant qui lie le dossier au site
 d'hébergement n'est pas versionné. Un clone frais ne peut pas déployer avant
 d'avoir relié le projet (`netlify link`).
@@ -570,3 +584,15 @@ lisible, mais `curia.europa.eu/jcms/upload/docs/application/pdf/AAAA-MM/cpNNNNNf
 répond 200 et se lit au `pdftotext`. Un communiqué de presse de la Cour porte la
 date, le numéro d'affaire et le dispositif résumé : c'est souvent tout ce qu'une
 fiche a besoin d'établir.
+
+**Une page qu'un outil de récupération ne rend pas n'est pas une page bloquée.**
+Le 03/08/2026, deux articles de presse ont été déclarés inaccessibles et laissés
+de côté ; ouverts le lendemain par `curl` avec un en-tête de navigateur, ils
+répondent 200, texte complet, et chacun portait plusieurs éléments qui manquaient
+au dossier. L'échec était dans le chemin de lecture, pas chez l'hôte. Le coût
+n'est pas la minute perdue : c'est qu'un hôte innocent entre dans la liste des
+sites anti-automates, et que plus personne ne le re-sonde ensuite.
+
+> Avant d'écrire « bloqué » à propos d'un site, refaire le tir avec l'autre
+> outil. La liste des hôtes anti-automates ne s'enrichit que d'un refus reproduit,
+> jamais d'un seul échec de lecture.

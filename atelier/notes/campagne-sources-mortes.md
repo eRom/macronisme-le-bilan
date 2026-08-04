@@ -913,3 +913,43 @@ fois ces artefacts retirés, toutes les citations se retrouvent au mot près.
 
 Dix lots sur treize soldés, 200 lignes sur 246, plus le lot RACINE en entier. Restent
 les lots 11, 12 et 13, soit 46 lignes, les moins graves du classement d'origine.
+
+## Hors lots : deux pages rendues à la main (04/08/2026)
+
+Deux articles de presse avaient été déclarés inaccessibles la veille et laissés de
+côté. Rouverts avec `curl` et un en-tête de navigateur, ils répondent 200 et se
+lisent en entier. **L'échec venait du chemin de lecture, pas de l'hôte** : ni
+`franceinfo.fr` ni `humanite.fr` ne refusent les automates, et ils n'entrent donc
+pas dans la liste des sites anti-automates que la campagne tient à jour. Chaque
+chiffre repris a été retrouvé littéralement sur la page, par la même sonde que les
+lots.
+
+Le rendement est hors de proportion avec l'effort. Ces deux pages ont :
+
+- donné à la fiche Zineb Redouane sa seconde source, et surtout révélé qu'elle
+  était **fausse sur un point et muette sur quatre autres**. Le tireur y était
+  « brigadier de CRS » : aucune source citée ne porte ce grade, il venait de la page
+  d'Amnesty fabriquée que la campagne avait retirée sans que personne relise la
+  phrase autour. Entrent au dossier le dépaysement de l'instruction à Lyon en 2019
+  pour soupçons de collusion entre le parquet de Marseille et les policiers mis en
+  cause, les deux expertises contradictoires sur la nature du tir, la préconisation
+  de l'IGPN de renvoyer le tireur et son superviseur en conseil de discipline, et le
+  refus du directeur général de la police nationale de la suivre ;
+- donné aux fiches sur les condamnations de policiers et sur le rapport IGPN 2019
+  l'ordre de grandeur qui leur manquait, et un fait qui vaut mieux que les chiffres :
+  **il n'existe pas de statistique nationale des condamnations de policiers pour
+  violences**, ni à l'Intérieur ni à la Justice. Une absence de donnée est un fait du
+  dossier, pas un trou de la recherche.
+
+> Une source qu'on n'a pas réussi à lire n'est pas une source morte, et le retirer
+> du dossier sans relire la phrase qu'elle portait laisse derrière elle des
+> affirmations orphelines. Le « brigadier » a survécu à la mort de sa propre source.
+
+### Ce que la vérification de ces deux pages a fait tomber par ricochet
+
+Le contrôle de cohérence de la synthèse, exécuté par réflexe après les corrections :
+la table des quinze verdicts datait huit appréciations de la veille, alors que les
+pièces avaient été révisées le jour même. Le contrôle du build qui devait le voir ne
+comparait que le verdict, jamais la date, et n'échouait sur rien. Il compare
+désormais les deux et il est bloquant. `ecologie-energie`, révisée le matin sans que
+sa `date_verdict` suive, est repassée au 04/08.
