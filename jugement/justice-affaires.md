@@ -221,8 +221,9 @@ grade B) ; Bayrou est relaxé en première instance
 témoignage visant les plus hauts collaborateurs du président sont classés
 ([[2019-03-21-senat-signalements-faux-temoignage]], grade A) ; l'enquête
 Lecornu-SAPN est classée après remboursement
-([[2023-06-30-classement-lecornu-sapn]], grade B) ; au conditionnel, les
-plaintes visant Zacharopoulou auraient été classées
+([[2023-06-30-classement-lecornu-sapn]], grade B) ; les plaintes visant
+Zacharopoulou sont classées sans suite fin mars 2023, le parquet retenant une
+infraction insuffisamment caractérisée
 ([[2023-04-04-classement-zacharopoulou]], grade C). Surtout, aucun ministre de
 la période n'est définitivement condamné pour l'usage des pouvoirs de sa
 fonction (corruption, favoritisme, détournement) : les condamnations définitives
@@ -293,8 +294,9 @@ matérielle reste la matière de la charge 2.
   en cour criminelle ».** Écartées : l'arrêt d'appel Dussopt est annulé en
   cassation avec renvoi, la portée exacte de l'annulation à son égard étant un
   point ouvert de la chronologie ([[2026-06-03-cassation-dussopt]]) ; le renvoi
-  Rodrigues repose sur une source unique invérifiable que la fiche interdit
-  d'utiliser sans confirmation ([[2026-02-02-rodrigues-renvoi-cour-criminelle]]).
+  Rodrigues, confirmé au re-sondage du 04/08/2026 et passé en grade B, est un acte
+  de procédure et non une condamnation, il ne prouve donc rien sur l'issue
+  ([[2026-02-02-rodrigues-renvoi-cour-criminelle]]).
   Inutilisables à charge comme à décharge.
 - **« La moitié des dossiers IGPN gilets jaunes classés : l'impunité
   organisée. »** Écartée dans sa forme forte : les décisions de classement

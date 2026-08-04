@@ -1,7 +1,7 @@
 ---
 domaine: libertes-publiques
 verdict: defavorable
-date_verdict: 2026-08-03
+date_verdict: 2026-08-04
 ---
 
 # Jugement : libertes-publiques
@@ -22,10 +22,11 @@ Limites héritées de la recherche, dites d'entrée. La couverture 2017-2022 est
 structurellement plus faible que 2024-2026 : le déséquilibre reflète l'état de la
 recherche, pas l'état des faits. Le domaine est le plus riche en fiches de grade B
 (jugements notoires à URL unique : Zineb Redouane, Théo Luhaka, Chassaing/Steve,
-Chouviat, BRAV-M, Souchi/Legay, Pegasus, Lavrilleux) et porte deux fiches en grade C
-(Rodrigues, source unique invérifiable ; condamnations policiers tardives, sources
-uniques) : par le §5, aucune affirmation portée uniquement par du C ne peut être
-déterminante dans le verdict. Plusieurs décisions de référence ont une URL primaire à
+Chouviat, BRAV-M, Souchi/Legay, Pegasus, Lavrilleux) et portait deux fiches en grade C ;
+il n'en reste qu'une depuis le re-sondage du 04/08/2026, les condamnations de policiers
+tardives, dont la séquence 2025-2026 n'est adossée à aucune source, l'affaire Rodrigues
+étant passée en grade B. Par le §5, aucune affirmation portée uniquement par du C ne peut
+être déterminante dans le verdict. Plusieurs décisions de référence ont une URL primaire à
 re-pointer (2017-695 QPC, 2019-029 DDD, les quatre lois de l'état d'urgence sanitaire,
 loi 2026-201) ; le claim central de chaque fiche concernée reste couvert par une autre
 source primaire, et le grade est tenu.
@@ -243,7 +244,8 @@ condamnations sont avec sursis, les délais sont très longs (environ sept ans p
 de LBD de décembre 2018 jugés en 2025-2026), le commissaire Chassaing est relaxé dans
 l'affaire Steve Maia Caniço ([[2024-09-20-relaxe-chassaing-steve]], grade B, relaxe
 déinitive, le parquet ne fait pas appel), et l'affaire Rodrigues ([[2026-02-02-rodrigues-renvoi-cour-criminelle]],
-grade C) reste à confirmer sur source unique. La décharge tient sur l'existence des
+grade B depuis le re-sondage du 04/08/2026) en est au stade du renvoi, sans jugement rendu
+plus de sept ans après les faits. La décharge tient sur l'existence des
 condamnations et la effectiveness du canal pénal, elle ne tient pas sur la sévérité.
 
 **3. Plusieurs dispositifs d'exception jugés à charge préexistent à 2017 : la création est
@@ -324,9 +326,11 @@ l'acte tel qu'il a été pris, sans interdire l'instrument en soi.
   par la loi n° 2026-201 du 20/03/2026. La présenter comme un désaveu du contenu est la
   confusion entre censure de procédure et censure de fond.
 - **« Rodrigues : le policier enfin renvoyé en cour criminelle. »** Écartée comme charge
-  déterminante : grade C, source unique et URL générique invérifiable (index.ngo)
-  ([[2026-02-02-rodrigues-renvoi-cour-criminelle]]). Une affirmation portée uniquement par du
-  C ne peut pas être déterminante (§5).
+  déterminante, pour une autre raison qu'à la rédaction : la source est désormais double et
+  concordante, la fiche est passée en grade B au re-sondage du 04/08/2026
+  ([[2026-02-02-rodrigues-renvoi-cour-criminelle]]). Ce qui l'écarte est la nature du fait :
+  un renvoi devant une juridiction de jugement n'est pas une condamnation, et le délai de
+  plus de sept ans qu'il documente est déjà porté par la charge sur la lenteur du canal pénal.
 - **« Benalla prouve la violence d'État impunie. »** Écartée sur l'impunité : la condamnation
   est définitive en cassation (grade A). Ce qui tient est la dissimulation initiale de
   l'Élysée (sanction interne sans saisir la justice dès le 2 mai 2018), mais c'est une

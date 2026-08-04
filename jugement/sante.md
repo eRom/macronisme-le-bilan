@@ -90,10 +90,12 @@ portée dans les territoires sous-dotés, précisément ceux où l'exercice coor
 moins développé ([[2023-05-19-loi-rist-2-acces-direct-paramedicaux]], grade A). La
 loi Valletoux visait à encadrer l'intérim des jeunes médecins et l'installation ; sa
 contrainte d'installation a été retirée en navette
-([[2023-12-27-loi-valletoux]], grade A). Au total, 6 à 6,7 millions de personnes
-demeurent sans médecin traitant, la part des patients en affection de longue durée sans
-médecin traitant stagne par rapport à 2024 malgré un recul depuis 2022
-([[2026-02-01-patients-sans-medecin-traitant]], grade B). La pièce la plus nette est la
+([[2023-12-27-loi-valletoux]], grade A). La part des patients en affection de longue durée
+sans médecin traitant recule de 5,6 % en 2022 à 4,3 % fin 2025, mais stagne par rapport à
+2024, et l'Assurance maladie qualifie l'accès au médecin traitant de stable dans un
+contexte de besoins croissants ; l'ordre de grandeur de 6 à 6,7 millions de personnes sans
+médecin traitant dans la population générale n'est adossé à aucune source du dossier depuis
+le re-sondage du 04/08/2026 ([[2026-02-01-patients-sans-medecin-traitant]], grade B). La pièce la plus nette est la
 proposition de loi Garot, transpartisane, qui instaure une régulation de l'installation
 des médecins libéraux par autorisation de l'ARS dans les zones surdotées : l'Assemblée
 nationale l'adopte en première lecture le 07/05/2025 contre l'avis du gouvernement, qui
