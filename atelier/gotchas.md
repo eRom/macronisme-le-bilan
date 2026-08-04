@@ -539,7 +539,19 @@ déplacée, c'est un domaine éteint au profit d'un autre. Et le chemin d'origin
 recollé sur le nouveau domaine rend 404 : il faut retrouver l'article. Sur ce
 cas, seule la version anglaise existe.
 
-**Chaîne TLS incomplète sur `france-renov.gouv.fr`. [candidat 1x - 04/08/2026]**
-`fetch` échoue sur `unable to verify the first certificate`, la récupération de
-page aussi. Un navigateur ne le voit pas, un automate si. Passer par un autre
-site de la même administration plutôt que par une exception TLS.
+**Une erreur de certificat n'est pas une défaillance du site.** `fetch` refuse la
+chaîne TLS de `france-renov.gouv.fr` et de `bdiff.agriculture.gouv.fr` avec
+`unable to verify the first certificate` ; `curl`, qui s'appuie sur le magasin de
+confiance du système, obtient 200 sur les deux. Deux occurrences le 04/08/2026, la
+seconde ayant fait déclarer à tort « inaccessible, blocage anti-robot » une base
+de données parfaitement vivante.
+
+> Devant une erreur de certificat, re-sonder avec l'autre outil avant de conclure
+> quoi que ce soit sur le site.
+
+**Curia sert ses communiqués de presse aux automates, seuls ses arrêts sont en
+JavaScript.** `curia.europa.eu/juris/document/document.jsf` ne rend rien de
+lisible, mais `curia.europa.eu/jcms/upload/docs/application/pdf/AAAA-MM/cpNNNNNfr.pdf`
+répond 200 et se lit au `pdftotext`. Un communiqué de presse de la Cour porte la
+date, le numéro d'affaire et le dispositif résumé : c'est souvent tout ce qu'une
+fiche a besoin d'établir.

@@ -709,3 +709,88 @@ C'est un lot de campagne à part entière, du même ordre que celui des mortes, 
 il ne recoupe pas la liste des orphelines : ces fiches en étaient absentes par
 construction. À traiter à la même recette — lire la fiche, chercher le document
 qu'elle désigne, l'ouvrir, vérifier un élément de contenu.
+
+## Lots 07 et 08, et une citation exacte dans le mauvais document
+
+Traités le 04/08/2026 en fin de matinée. Ce sont les deux meilleurs rendus de la
+campagne : aucune adresse fabriquée, équivalents signalés comme tels, et le lot 08
+démontre pourquoi la référence qu'il refuse ne peut pas exister.
+
+| | Lot 07 | Lot 08 |
+|---|---|---|
+| lignes | 20 | 20 |
+| annoncées OUI | 19 | 19 |
+| confirmées au contenu ici | 15 | 17 |
+| non testables (hôte anti-automate) | 4 | 2 |
+| candidat écarté après vérification | 1 | 0 |
+| NON infondé | 1 | 0 |
+
+### Le défaut qui survit à un contrôle par citation
+
+Pour les premières condamnations de policiers, le lot 07 proposait un article
+d'Amnesty International consacré à la valeur probante de l'image en justice. La
+citation qu'il en tire est exacte au mot près, je l'ai retrouvée dans la page. Elle
+porte sur une convocation annoncée le 7 novembre, pas sur les jugements de décembre
+2019. Et la page contient bien « huit mois de prison avec sursis », le chiffre même
+que portait la fiche — pour une affaire de 2016 devant le lycée Bergson, sans
+rapport.
+
+> Une citation littérale, vérifiable, exacte, et le mauvais document. Le contrôle
+> par citation ne suffit pas : il faut demander à la page **ce que la fiche
+> affirme**, pas seulement retrouver ce que l'agent en cite. C'est la même leçon
+> que sur les auditions Benalla, à un cran de raffinement de plus, et il a fallu
+> deux campagnes pour la formuler ainsi.
+
+Bénéfice collatéral : les peines de décembre 2019 ne sont pas « 8 mois et 2 mois
+avec sursis » mais deux mois pour le policier qui avait jeté un pavé et quatre mois
+pour celui qui avait giflé un manifestant.
+
+### Cinq erreurs de fond
+
+- **Plan 10 000 policiers** : l'avis du Sénat n° 119 n'existe pas, mais les
+  chiffres sont exacts et le rapport de la commission des finances sur le PLF 2023
+  les porte — 8 446 policiers et 2 083 gendarmes entre 2017 et 2022. Le lot avait
+  proposé un autre avis, réel et sans ces chiffres : bonne intuition, mauvais
+  document, deuxième fois dans la même séance.
+- **Procès Benalla** : une source sans rapport avec l'affaire, un numéro de rapport
+  qui désigne une proposition de loi sur les frais de transport hospitaliers. La
+  commission des lois n'a jamais publié de rapport sur Benalla ; seul le Sénat l'a
+  fait.
+- **Achats de vaccins** : la France est l'un des quatre fondateurs de l'alliance
+  inclusive, pas établie comme étant « à l'origine » de la centralisation. Titre de
+  fiche corrigé, pièce `europe` ajustée.
+- **Numerus apertus** : la projection « 292 000 médecins en 2050 » ne figure pas
+  sous cette forme dans le communiqué DREES qui porte le scénario.
+- **Détricotage du Green Deal** : trois pages d'accueil pour seules sources sur une
+  fiche de grade A. La lecture de la directive CSDDD corrige au passage la
+  formulation : 5 000 salariés et 1,5 Md€ sont les seuils de la première vague
+  d'application inscrite dans le texte adopté, pas ceux d'un compromis de mars 2024,
+  le régime général étant de 1 000 salariés et 450 M€.
+
+### Deux constats d'outillage
+
+**Une erreur de certificat n'est pas une défaillance du site.** Le lot 07 a déclaré
+la base des incendies de forêt inaccessible pour blocage anti-robot : elle répond
+200 avec `curl`. Deuxième occurrence en deux jours, après `france-renov.gouv.fr`.
+
+**Curia sert ses communiqués de presse aux automates**, seuls ses arrêts sont en
+JavaScript. Une fiche gardait ainsi une source parfaitement lisible qu'on croyait
+bloquée. Recettes dans [`../gotchas.md`](../gotchas.md).
+
+### Contrôle final
+
+Les 71 sources des trente fiches touchées ont été re-sondées : aucune adresse
+écrite ce matin n'est morte. Le contrôle a trouvé quatre mortes de plus hors des
+quarante lignes, sur des fiches touchées pour une autre raison ; deux sont réparées,
+deux restent ouvertes, une page de l'INSEE sur le dialogue social et un dossier de
+textes européens du Sénat.
+
+Répercussions sur les pièces : `europe`, `securite-immigration`, `promesses` et
+`economie` ajustées, `date_verdict` avancée. Aucun verdict déplacé.
+
+### État de la campagne au soir du 04/08/2026
+
+Huit lots sur treize sont soldés, soit 160 lignes des 246. Restent les lots 09 à 13,
+c'est-à-dire les pertes de simple corroboration, moins graves que les orphelines des
+premiers lots. S'y ajoute désormais le lot RACINE, quinze fiches dont aucune source
+ne porte de chemin, qui n'a jamais figuré sur aucune liste.
