@@ -495,13 +495,19 @@ const SRC_SYN = "jugement/synthese.md";
 // table des 15 verdicts = source de vérité de l'ordre
 const tableSection = synSections.get("La table des quinze verdicts") ?? "";
 const ordreDomaines: string[] = [];
-for (const row of tableSection.matchAll(/^\|\s*\d+\s*\|\s*([a-z-]+)\s*\|\s*\[([^\]]+)\]\([^)]*\)\s*\|/gm)) {
-  const [, slug, verdictTxt] = row;
+for (const row of tableSection.matchAll(/^\|\s*\d+\s*\|\s*([a-z-]+)\s*\|\s*\[([^\]]+)\]\([^)]*\)\s*\|\s*([0-9-]*)\s*\|/gm)) {
+  const [, slug, verdictTxt, dateTxt] = row;
   ordreDomaines.push(slug);
   const piece = pieces.get(slug);
   if (!piece) { report.verdictsMismatch.push({ where: "table synthèse", what: `pièce absente : ${slug}` }); continue; }
   if (piece.verdict !== normalizeVerdict(verdictTxt)) {
     report.verdictsMismatch.push({ where: slug, what: `table "${normalizeVerdict(verdictTxt)}" vs frontmatter "${piece.verdict}"` });
+  }
+  // La date de la table dit au lecteur de quand date chaque appréciation. Une pièce
+  // révisée sans que la table suive donne une synthèse qui périme en silence : c'est
+  // arrivé le 04/08/2026 sur huit des quinze lignes, invisible au build d'alors.
+  if (dateTxt.trim() !== (piece.dateVerdict ?? "")) {
+    report.verdictsMismatch.push({ where: slug, what: `date_verdict table "${dateTxt.trim()}" vs frontmatter "${piece.dateVerdict ?? "(absente)"}"` });
   }
 }
 
@@ -659,7 +665,7 @@ for (const f of fiches.values()) {
 
 const fmtIssues = (list: Issue[]) => (list.length === 0 ? "aucun\n" : list.map((i) => `- ${i.where} : ${i.what}`).join("\n") + "\n");
 
-const hardFail = report.fichesParsees !== report.fichesTotal || report.erreursParse.length > 0 || report.champsManquants.length > 0 || report.fuitesInternes.length > 0;
+const hardFail = report.fichesParsees !== report.fichesTotal || report.erreursParse.length > 0 || report.champsManquants.length > 0 || report.fuitesInternes.length > 0 || report.verdictsMismatch.length > 0;
 
 const lines = `# Rapport de build Atlas - ${data.buildDate}
 

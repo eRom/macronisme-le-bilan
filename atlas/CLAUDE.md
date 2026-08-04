@@ -19,9 +19,15 @@ open dist/index.html                                              # file:// suff
 Les deux étapes sont distinctes : une modification dans `src/` n'atteint le
 rendu que si la seconde ligne est rejouée. Oubli classique.
 
-`build-report.md` doit dire **531/531** et « Verdict du build : OK ». Tout lien
+`build-report.md` doit dire **534/534** et « Verdict du build : OK ». Tout lien
 cassé ou champ manquant y est listé, et le build sort en erreur (exit 1) sur
 les erreurs bloquantes.
+
+Attention à ce que « OK » ne couvre pas : les wikilinks morts sont listés sans
+faire échouer le build. Après tout renommage de fiche, lire la section
+« Wikilinks morts » — le vert ne la voit pas. En revanche la table des quinze
+verdicts de la synthèse est bloquante depuis le 04/08/2026, `date_verdict`
+comprise.
 
 ## Structure
 
@@ -73,6 +79,6 @@ netlify deploy --prod --dir=dist
 Cette commande suppose un site Netlify déjà lié (`.netlify/state.json`, non
 versionné). Un repreneur utilisera son propre hébergeur.
 
-Avant toute mise en ligne : `build-report.md` doit dire 531/531 et « Verdict du
+Avant toute mise en ligne : `build-report.md` doit dire 534/534 et « Verdict du
 build : OK ». L'audit de publiabilité étant tenu par le build, un rapport vert
 vaut feu vert.

@@ -233,8 +233,16 @@ open dist/index.html                                              # file:// suff
 ```
 
 `build-report.md` doit dire **534/534** et « Verdict du build : OK ». Le build
-sort en erreur sur une fiche non parsée, un champ manquant bloquant ou une fuite
-de vocabulaire interne — c'est tout ce que `hardFail` couvre.
+sort en erreur sur une fiche non parsée, un champ manquant bloquant, une fuite
+de vocabulaire interne, ou une ligne de la table des quinze verdicts en
+désaccord avec le frontmatter de sa pièce — verdict comme `date_verdict`.
+C'est tout ce que `hardFail` couvre.
+
+Le contrôle sur `date_verdict` a été rendu bloquant le 04/08/2026, après que
+huit des quinze lignes de la table se sont retrouvées datées de la veille alors
+que les pièces avaient été révisées le jour même. Une synthèse dont la table
+retarde ment au lecteur sur la date de chaque appréciation, ce qui est
+exactement ce que la règle de `date_verdict` existe pour empêcher.
 
 **Le verdict ne couvre pas les liens morts.** Un renvoi `[[slug]]` qui ne pointe
 vers aucune fiche est listé dans le rapport, sous « Wikilinks morts », et laisse
