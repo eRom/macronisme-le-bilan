@@ -8,7 +8,7 @@ Verdict laissé vide : à remplir par confrontation au bilan et aux fiches de `b
 - `2017-Programme-Emmanuel-Macron-En-Marche.md` — programme En Marche !, présidentielle 2017
 - `2022-Emmanuel-Macron-Avec-Vous-24-pages.md` — programme « Avec vous », présidentielle 2022
 
-## Méthode d'extraction
+## Méthode d'extraction des promesses
 
 - Une ligne = un engagement concret distinct (une puce en gras du programme).
 - Le libellé condense la promesse mais en conserve les chiffrages, échéances et

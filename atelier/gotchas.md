@@ -218,6 +218,17 @@ dans le corpus.
 OKLCH ; les couleurs passées au graphe doivent être converties en hexadécimal,
 sinon les nœuds sont rendus sans couleur, sans erreur.
 
+**Le build n'échoue PAS sur un lien mort, contrairement à ce qu'annonce le
+contrat.** `hardFail`, dans `atlas/build.ts`, ne compte que quatre choses : les
+fiches non parsées, les erreurs de parse, les champs manquants et les fuites de
+vocabulaire interne. Les wikilinks morts, eux, sont **listés dans le rapport et
+n'ont aucun effet sur le verdict**. Démontré le 04/08/2026 : trois fiches
+renommées, huit renvois cassés dans quatre pièces de jugement, et le build sort
+« Verdict : OK ».
+
+> Après tout renommage de fiche, lire la section « Wikilinks morts » du rapport
+> de build. Le verdict vert ne la couvre pas.
+
 **`atlas/.netlify/` est gitignoré** : l'identifiant qui lie le dossier au site
 d'hébergement n'est pas versionné. Un clone frais ne peut pas déployer avant
 d'avoir relié le projet (`netlify link`).
@@ -479,3 +490,56 @@ Ce renversement, à quelques heures d'intervalle, dit aussi quelque chose de plu
 général : **un gotcha de contournement se périme**. Ce qui passait ce matin est
 fermé ce soir. Re-tester le contournement avant de s'y fier, plutôt que de le
 lire comme un acquis.
+
+**EUR-Lex et curia répondent aux automates sans rien dire, et l'Office des
+publications, lui, répond.** `curia.europa.eu` rend ses arrêts en JavaScript ;
+`eur-lex.europa.eu` renvoie un code **202 avec un corps de zéro octet**, quelle
+que soit la forme d'URL (`/TXT/`, `/TXT/HTML/`) et quel que soit l'agent. Un 202
+vide n'est ni un 200 ni un 404 : il ne dit pas si le document existe. Le
+contournement, éprouvé le 04/08/2026 sur deux arrêts, passe par l'interface de
+contenu de l'Office des publications, qui sert le même corpus :
+
+```bash
+# métadonnées : date, titre complet, ECLI, parties, matière
+curl -sL -H "Accept: application/xml;notice=object" \
+  "http://publications.europa.eu/resource/celex/62023CJ0268"
+# texte intégral en français
+curl -sL -H "Accept: application/xhtml+xml" -H "Accept-Language: fra" \
+  "http://publications.europa.eu/resource/celex/62019CJ0404"
+# PDF quand l'expression HTML n'existe pas
+curl -sL -H "Accept: application/pdf" \
+  "http://publications.europa.eu/resource/celex/62022CJ0601"
+```
+
+Le CELEX se construit de tête : `6` + année + `CJ` (arrêt de la Cour) + numéro
+d'affaire sur quatre chiffres. `62023CJ0268` = affaire C-268/23.
+
+> Ce que ça change pour le dossier : **un numéro d'affaire CJUE est vérifiable en
+> une commande**, et l'était depuis le début. Les deux fiches CJUE des lots 05 et
+> 06 portaient l'une une date fausse de trois mois et demi, l'autre un numéro
+> d'affaire qui désignait un litige autrichien sur le loup. Toutes les
+> expressions ne sont pas servies dans toutes les langues : un 404 sur
+> `Accept-Language: fra` ne veut pas dire que le document n'existe pas, essayer
+> l'autre format ou la langue de procédure.
+
+**`interieur.gouv.fr` sert ses PDF aux automates et refuse ses pages HTML.**
+Vérifié le 04/08/2026 : toute page HTML du domaine répond 403, `www` comme
+`mobile`, quel que soit l'agent ; les fichiers servis sous `/content/download/`
+répondent 200 avec leur `application/pdf`. Or les publications du SSMSI y sont
+intégralement déposées.
+
+> Sur cet hôte, ne pas conclure d'un 403 sur la page de présentation que la
+> publication est inaccessible. Chercher le lien de téléchargement du PDF, qui
+> passe, et qui est de toute façon le document lui-même.
+
+**Un domaine entier peut mourir, et ses chemins ne se transposent pas.
+[candidat 1x - contrôle final du 04/08/2026]** `reporters-sans-frontieres.org`
+ne répond plus du tout, quand `rsf.org` répond 200 : ce n'est pas une page
+déplacée, c'est un domaine éteint au profit d'un autre. Et le chemin d'origine
+recollé sur le nouveau domaine rend 404 : il faut retrouver l'article. Sur ce
+cas, seule la version anglaise existe.
+
+**Chaîne TLS incomplète sur `france-renov.gouv.fr`. [candidat 1x - 04/08/2026]**
+`fetch` échoue sur `unable to verify the first certificate`, la récupération de
+page aussi. Un navigateur ne le voit pas, un automate si. Passer par un autre
+site de la même administration plutôt que par une exception TLS.

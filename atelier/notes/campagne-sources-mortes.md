@@ -574,9 +574,111 @@ répondent 403 à `fetch`. Le contournement est mort en quelques heures, ce qui
 oblige à traiter les gotchas de contournement comme périssables et à les
 re-tester avant de s'y fier. Détail dans [`../gotchas.md`](../gotchas.md).
 
-**Ce que ces deux lots ferment, enfin.** Le communiqué de Bercy du 05/09/2017
+**Ce que ces deux lots ferment.** Le communiqué de Bercy du 05/09/2017
 sur la cession Engie, porté « non résolu par aucune des trois voies » depuis
 l'ouverture de la campagne, ne sera pas retrouvé : il a disparu et le site le
 refuse aux automates. Le rapport du Sénat prend sa place pour ce qu'il établit,
 et l'écart de calendrier qu'il révèle est consigné dans la fiche plutôt que
 gommé.
+
+## Lots 05 et 06, et l'outil qu'on n'avait pas cherché
+
+Traités le 04/08/2026 au matin, à la même recette. Le lot 06 est le meilleur
+rendu de la campagne à ce jour : il refuse quatre lignes en démontrant que la
+référence elle-même est fausse, et les quatre démonstrations tiennent.
+
+| | Lot 05 | Lot 06 |
+|---|---|---|
+| lignes | 20 | 20 |
+| annoncées OUI | 18 | 16 |
+| NON déclarés, et fondés | 2 | 4 |
+| confirmées au contenu ici | 16 | 14 |
+| non testables (hôte anti-automate) | 2 | 2 |
+| adresses fausses | 0 | 0 |
+
+Trente lignes sur trente-quatre testables se confirment. Quarante-six adresses
+retirées, quarante-sept écrites, sur trente-huit fiches. Les quatre lignes non
+testables (`lesechos.fr`, `rfi.fr`, `euractiv.com`, `fidh.org`) n'ont pas été
+retenues sur la foi du lot : chacune des quatre fiches a reçu une autre source,
+ouverte et citée.
+
+### Sept erreurs de fond
+
+- **Eaux résiduaires urbaines**, quatre erreurs dans une fiche de cinq lignes :
+  date, numéro d'affaire, nombre d'agglomérations, articles de la directive.
+  L'arrêt est du 4 octobre 2024, affaire C-268/23, 78 agglomérations, articles 4,
+  5, 10 et 15. Le C-601/22 de la fiche désigne un renvoi préjudiciel autrichien
+  sur la protection du loup. La fiche portait elle-même l'avertissement « ne pas
+  citer le numéro d'affaire sans vérification préalable ».
+- **Correction PAC en Haute-Corse** : l'arrêt C-404/19 P est du 17 décembre 2020
+  et non du 3 septembre, et il n'a pas « ramené la correction à 25 % » — ce taux
+  n'apparaît pas une fois dans le texte. La Cour annule les corrections
+  forfaitaires à 100 % sans y substituer aucun taux. Deux pièces de jugement
+  reprenaient la formulation inverse.
+- **Étrangers et délinquance** : le taux national de 17 % opposé aux « 48 % des
+  interpellés à Paris » n'existe dans aucune publication du SSMSI. Le n° 53
+  invoqué porte sur les violences conjugales. Le bilan statistique donne des
+  parts par infraction, 14 % et 22 %, contre 8 % dans la population.
+- **Classement des plaintes covid par la CJR** : annonce du 24 et non du 28
+  janvier 2022 ; attribution nominative à François Molins et fenêtre de réception
+  des plaintes retirées faute de source.
+- **Audition de l'IGPN** : tenue le 14 octobre 2020, rapportée le 15. Les « 115
+  dossiers restant à l'examen » et le taux de classement « de 70 à 76 % » ne sont
+  dans aucune source ; le second servait de décharge dans `justice-affaires`.
+- **Éolien terrestre** : l'objectif de la PPE 2 est de 24,1 GW, valeur unique, et
+  non d'une fourchette « 24,1 à 24,6 ». Le SDES donne 22,0 GW installés fin 2023
+  quand les 21,8 GW de la fiche sont le chiffre de RTE, qui ne compte que le
+  raccordé. Deux mesures officielles, deux périmètres, un seul était cité.
+- **Pacte migration** : le rapport sénatorial support n'existe pas. Le fait est
+  établi par une réponse ministérielle au JO, ce qui retire à la pièce ce que la
+  fiche en tirait, une source parlementaire indépendante de l'exécutif.
+
+### Un numéro d'affaire CJUE était vérifiable en une commande depuis le début
+
+C'est l'enseignement d'outillage de la séance, et il est désagréable. EUR-Lex
+répond 202 avec un corps vide aux automates, curia rend son texte en JavaScript :
+les deux lots en ont conclu, chacun de son côté, que la référence était
+invérifiable, et la campagne l'avait admis avant eux. L'interface de contenu de
+l'Office des publications sert le même corpus en XML, XHTML et PDF, sans
+protection, et le CELEX se construit de tête. Recettes dans
+[`../gotchas.md`](../gotchas.md).
+
+> Quand deux outils différents échouent sur le même hôte, la conclusion n'est pas
+> « ce document est invérifiable » mais « je n'ai pas trouvé la bonne porte ».
+> Deux fiches ont porté des références fausses pendant un an pour cette raison.
+
+### Une page d'accueil est une source morte que le sondeur voit vivante
+
+Trois sources du corpus pointaient vers une page d'accueil : deux fois celle du
+tribunal de Paris, une fois celle d'Euractiv. Elle répond 200, elle n'établit
+rien, et elle ne mourra jamais. C'est un défaut de la même famille que
+l'identifiant fabriqué, et aucun audit ne le voit.
+
+> À faire : un motif dans `audit-sources.ts` qui signale toute source dont l'URL
+> n'a pas de chemin. Suspecte par construction.
+
+Défaut voisin, resté ouvert : la fiche Kohler cite `leclubdesjuristes.com` sans
+chemin. Le motif l'attraperait.
+
+### Une citation vérifiée ne dit rien de la publication qui la porte
+
+Le lot 05 a proposé un blog personnel pour l'état des lieux McKinsey et un site
+de conseil en marketing pour la liquidation de Carbon. Les deux citations étaient
+exactes, le re-sondage les a confirmées, et aucune des deux publications ne tient
+le standard du dossier. Remplacées par Consultor et France 3 Provence-Alpes-Côte
+d'Azur.
+
+> Le sondeur mesure si la page répond et si elle porte le texte annoncé. Il ne
+> mesure pas ce que la page vaut, et cette lecture-là ne se délègue pas non plus.
+
+### Contrôle final
+
+Les 64 sources des trente-huit fiches touchées ont été re-sondées : **aucune
+adresse écrite ce matin n'est morte**. Deux sources pré-existantes sont tombées au
+passage — une page de Public Sénat, et le domaine `reporters-sans-frontieres.org`,
+entièrement éteint au profit de `rsf.org`, dont les chemins ne se transposent pas.
+
+Répercussions sur les pièces : `europe`, `finances-publiques`,
+`securite-immigration`, `justice-affaires`, `sante` et `ecologie-energie`
+reprises, `date_verdict` avancée. Aucun verdict déplacé. La synthèse ne cite
+aucune des fiches corrigées : rien à re-motiver.
