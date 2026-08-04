@@ -87,7 +87,7 @@ Ordre de la grille v0, sans commentaire et sans classement.
 | 11 | international | [mitigé](international.md) | 2026-07-31 |
 | 12 | institutions | [défavorable](institutions.md) | 2026-08-04 |
 | 13 | europe | [défavorable](europe.md) | 2026-08-04 |
-| 14 | industrie | [défavorable](industrie.md) | 2026-08-03 |
+| 14 | industrie | [défavorable](industrie.md) | 2026-08-04 |
 | 15 | securite-civile | [défavorable](securite-civile.md) | 2026-07-31 |
 
 ## Les fils transverses à charge
@@ -345,7 +345,9 @@ rebond de 6,9 % en 2021, environ 1,12 million d'emplois regagnés
 compléments redistributifs face au choc énergétique
 ([[2021-10-01-boucliers-tarifaires-energie]], grade A pour les paramètres
 tarifaires, B pour l'agrégat de coût) ; un pouvoir d'achat
-moyen qui ne recule que les deux années de crise. L'issue judiciaire est
+moyen qui ne recule que les deux années de crise — jusqu'en 2024, la série
+révisée entrée au socle le 04/08/2026 donnant un troisième recul en 2025,
+hors crise ([[2024-01-01-pouvoir-achat-rdb-dents-de-scie]], grade A). L'issue judiciaire est
 intégrale : annulation de la mise en examen de Buzyn par l'assemblée plénière
 de la Cour de cassation ([[2023-01-20-cassation-annulation-buzyn]], grade A),
 non-lieu général de la CJR ([[2025-07-07-cjr-non-lieu-covid]], grade A), arrêts

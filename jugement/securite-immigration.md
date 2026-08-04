@@ -157,9 +157,12 @@ la voie publique qui n'a pas augmenté et un taux d'élucidation en recul — le
 volumes de départs restent à re-pointer, la source qui les portait ayant été
 retrouvée fausse au re-sondage du 04/08/2026
 ([[2023-05-01-10000-policiers-attrition]], grade B, contradiction officiel
-contre officiel). La police de sécurité du quotidien affiche 1 154 postes
-budgétaires, pour une présence terrain jugée invérifiable
-([[2018-02-08-police-securite-quotidien]], grade B). La réforme DDPN unifie la
+contre officiel). La police de sécurité du quotidien affiche 1 089 postes
+budgétaires en juin 2022, pour 1 300 annoncés, et la Cour des comptes constate
+une mesure insuffisante des résultats, faute d'outil d'évaluation qualitative
+([[2018-02-08-police-securite-quotidien]], grade B ; le chiffre de 1 154 que
+portait ici la pièce venait d'un avis du Sénat qui n'existe pas, retiré au
+re-sondage du 04/08/2026). La réforme DDPN unifie la
 police sur un périmètre bien plus étroit que la communication ne l'annonce
 ([[2023-11-02-reforme-ddpn]], grade B). Place nette XXL affiche 4 650
 interpellations, pour moins de 10 % de déferrements et des avoirs valorisés

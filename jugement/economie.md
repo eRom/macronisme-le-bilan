@@ -261,10 +261,13 @@ versé à environ 12 millions de ménages modestes
 pour l'agrégat de coût), après une indemnité inflation de 100 € versée à environ
 38 millions de résidents gagnant moins de 2 000 € nets
 ([[2021-12-01-indemnite-inflation-100e]], grade A). Résultat sur le revenu : le
-pouvoir d'achat du revenu disponible brut par unité de consommation ne recule
-que deux années sur huit, toutes deux de crise (-0,3 % en 2020, -0,4 % en 2022),
-et progresse les six autres, jusqu'à +2,1 % en 2024
-([[2024-01-01-pouvoir-achat-rdb-dents-de-scie]], grade A). Portée exacte : la
+pouvoir d'achat du revenu disponible brut par unité de consommation recule en
+2020 et en 2022, deux années de crise (-0,3 % chaque fois), et progresse
+ensuite, jusqu'à +2,2 % en 2024
+([[2024-01-01-pouvoir-achat-rdb-dents-de-scie]], grade A). Ce qui limite la
+décharge, et qui est entré au socle le 04/08/2026 : la série révisée donne
+-0,7 % en 2025, troisième recul de la période, hors crise cette fois. La
+décharge porte donc sur 2017-2024, pas sur la fin du mandat. Portée exacte : la
 Cour des comptes qualifie les dispositifs de « conçus de manière large » par
 rapport aux pays partenaires, relève des risques d'effets d'aubaine, l'absence
 de bilan public consolidé et un pilotage défaillant du recouvrement des indus ;

@@ -1,7 +1,7 @@
 ---
 domaine: industrie
 verdict: defavorable
-date_verdict: 2026-08-03
+date_verdict: 2026-08-04
 ---
 
 # Jugement : industrie
@@ -137,7 +137,9 @@ par un groupe d'État chinois avec 54 emplois sur 450, brevets inclus, le projet
 alternatif à capitaux publics ayant échoué
 ([[2024-09-10-vencorex-liquidation-borsodchem]], grade B). GE Belfort :
 1 000 emplois nets promis lors du rachat d'Alstom, jamais créés, pénalité de
-50 M€ versée, puis 1 044 suppressions annoncées et négociées à 485
+50 M€ sous forme de contribution à un fonds de réindustrialisation, puis 1 044
+suppressions annoncées et négociées à 485, plan achevé en octobre 2020, les
+sites de Belfort et Bourogne passant de 1 760 à 1 275 salariés
 ([[2019-10-01-ge-belfort-penalite-accord]], grade A). S'y ajoute l'abandon du
 projet de conversion biomasse Ecocombust à Cordemais
 ([[2024-09-24-sortie-charbon-cordemais-2027]], grade A). Ce qui limite la
