@@ -465,6 +465,8 @@ a.chip-domaine:hover { box-shadow: var(--elevate-1) 0 0 0 1px, var(--elevate-2) 
 
 .empty { color: var(--muted-foreground); font-size: 13px; padding: 24px 0; text-align: center; }
 .footer { border-top: 1px solid var(--border); margin-top: 48px; padding: 20px 0 0; font-size: 12px; color: var(--muted-foreground); display: flex; gap: 12px; flex-wrap: wrap; justify-content: space-between; }
+.footer a { color: var(--primary); }
+.footer a:hover { text-decoration: underline; }
 .backtop { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted-foreground); margin-bottom: 14px; }
 .backtop a { color: var(--primary); }
 .backtop a:hover { text-decoration: underline; }

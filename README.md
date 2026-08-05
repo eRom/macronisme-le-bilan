@@ -171,6 +171,9 @@ Guardian est réduite aux seuls verbatims cités par la fiche correspondante.
 
 Romain Ecarnot, avec l'aide de Claude (Anthropic), Antigravity (Google), Grok (SpaceXAI) et Sonar-pro (Perplexity).
 
+[**Soutenir l'auteur**](https://www.gofundme.com/f/me-remettre-debout-au-sens-propre) :
+cagnotte personnelle, sans rapport avec ce dossier, qui reste libre et gratuit.
+
 La recherche documentaire a été menée avec assistance d'IA ; la vérification
 des sources, l'attribution des grades et tous les verdicts sont humains. Le
 dispositif de recherche est public et reproductible : plugin

@@ -137,7 +137,15 @@ export function backtop(href: string, label: string): HTMLElement {
 
 export function footer(): HTMLElement {
   return h("div", { class: "footer" },
-    h("span", {}, "Romain Ecarnot, avec l'aide de Claude (Anthropic), Antigravity (Google), Grok (SpaceXAI) et Sonar-pro (Perplexity)."),
+    h("span", {},
+      "Romain Ecarnot, avec l'aide de Claude (Anthropic), Antigravity (Google), Grok (SpaceXAI) et Sonar-pro (Perplexity). ",
+      h("a", {
+        href: "https://www.gofundme.com/f/me-remettre-debout-au-sens-propre",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        title: "Cagnotte personnelle de l'auteur, sans rapport avec le dossier",
+      }, "Soutenir l'auteur"),
+    ),
     h("span", { class: "mono" }, `dossier arrêté au ${A.buildDate}`),
   );
 }
