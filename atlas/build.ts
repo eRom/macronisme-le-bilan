@@ -682,7 +682,8 @@ writeFileSync(join(DIST, "data.js"), `window.ATLAS=${json};\n`);
 // ---------------------------------------------------------------- assets front
 
 const SRC = join(ATLAS, "src");
-for (const f of ["index.html", "style.css"]) {
+// og.png : carte de partage servie aux scrapers sociaux, source dans reseaux-sociaux/og-card.html.
+for (const f of ["index.html", "style.css", "og.png"]) {
   const p = join(SRC, f);
   if (existsSync(p)) copyFileSync(p, join(DIST, f));
 }
@@ -752,6 +753,7 @@ const REGLES_COMPTEURS: Regle[] = [
   { fichier: "README.md", motif: /(\d{3}) URL distinctes/g, lu: (m) => m[1], attendu: () => String(urlDistinctes.size), quoi: () => "URL distinctes" },
   { fichier: "README.md", motif: /\| URL sources distinctes \| (\d+) \|/g, lu: (m) => m[1], attendu: () => String(urlDistinctes.size), quoi: () => "URL distinctes" },
   { fichier: "METHODE.md", motif: /(\d{3}) URL distinctes/g, lu: (m) => m[1], attendu: () => String(urlDistinctes.size), quoi: () => "URL distinctes" },
+  { fichier: "atlas/src/index.html", motif: /(\d{3}) URL sources distinctes/g, lu: (m) => m[1], attendu: () => String(urlDistinctes.size), quoi: () => "URL distinctes" },
 
   // Répartition des grades, effectif et part.
   { fichier: "README.md", motif: /\| Grade ([ABCD]) \([^|]*\) \| (\d+) \((\d+,\d) %\) \|/g, lu: (m) => `${m[2]} (${m[3]} %)`, attendu: (m) => `${grades.get(m[1]) ?? 0} (${part(grades.get(m[1]) ?? 0)} %)`, quoi: (m) => `grade ${m[1]}` },

@@ -1,0 +1,150 @@
+<!doctype html>
+<!-- Source de la carte de partage du site (Open Graph / Twitter Card).
+     Rendu : Chrome headless 1200x630 -> atlas/src/og.png, copié dans dist/ par build.ts.
+     Tokens repris de atlas/src/style.css (design system eRom, mode dark).
+
+     Les trois compteurs et le verdict sont figés dans le pixel : aucun contrôle du build
+     ne les voit. Après toute variation du corpus, re-générer :
+       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --disable-gpu \
+         --hide-scrollbars --force-device-scale-factor=2 --window-size=1200,630 \
+         --screenshot=atlas/src/og.png reseaux-sociaux/og-card.html
+     Les mêmes chiffres, eux, sont contrôlés dans les meta de atlas/src/index.html. -->
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<style>
+  :root {
+    --background: oklch(0.239 0.002 114);
+    --foreground: oklch(0.97 0.0017 67.802);
+    --card: oklch(0.275 0 0);
+    --card-border: oklch(0.2487 0.0047 56.173);
+    --border: oklch(0.2805 0.0056 56.158);
+    --muted-foreground: oklch(0.7249 0.0081 56.28);
+    --primary: oklch(0.817 0.1705 77.689);
+    --v-defavorable: oklch(0.704 0.191 22.216);
+    --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px; height: 630px;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+    position: relative;
+  }
+  /* Chaleur par le brand, jamais par le fond : deux halos très faibles. */
+  body::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      radial-gradient(900px 460px at 4% -18%, oklch(0.817 0.1705 77.689 / 0.10), transparent 62%),
+      radial-gradient(700px 400px at 104% 120%, oklch(0.704 0.191 22.216 / 0.07), transparent 60%);
+  }
+  .frame {
+    position: relative;
+    height: 100%;
+    padding: 52px 56px 48px;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 17px; font-weight: 500;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--muted-foreground);
+    display: flex; align-items: center; gap: 16px;
+  }
+  .eyebrow::before {
+    content: ""; width: 13px; height: 13px; flex: none;
+    background: var(--primary); border-radius: 3px;
+  }
+  .eyebrow::after {
+    content: ""; flex: 1; height: 1px;
+    background: linear-gradient(to right, var(--border), transparent);
+  }
+
+  h1 {
+    margin-top: 22px;
+    font-size: 72px; font-weight: 800;
+    letter-spacing: -0.035em; line-height: 1;
+    white-space: nowrap;
+  }
+  h1 .brand { color: var(--primary); }
+
+  .lede {
+    margin-top: 22px;
+    font-size: 27px; line-height: 1.42;
+    color: var(--muted-foreground);
+    max-width: 970px;
+  }
+
+  .stats {
+    margin-top: 58px;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
+  }
+  .stat {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 26px 28px;
+  }
+  .stat .n {
+    font-size: 50px; font-weight: 700;
+    letter-spacing: -0.03em; line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .stat .l {
+    margin-top: 10px;
+    font-family: var(--mono);
+    font-size: 15px; letter-spacing: 0.04em;
+    color: var(--muted-foreground);
+  }
+
+  footer {
+    margin-top: 52px; padding-top: 28px;
+    border-top: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .verdict { display: flex; align-items: center; gap: 16px; }
+  .verdict .k {
+    font-family: var(--mono);
+    font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--muted-foreground);
+  }
+  .verdict .v {
+    font-size: 30px; font-weight: 800; letter-spacing: -0.02em;
+    color: var(--v-defavorable);
+  }
+  .url {
+    font-family: var(--mono);
+    font-size: 17px; color: var(--primary);
+  }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="eyebrow">Dossier public · sources ouvertes</div>
+
+    <h1>Macronisme 2017&#8211;2026 <span class="brand">· le bilan</span></h1>
+
+    <p class="lede">Deux quinquennats instruits pièce par pièce : chaque fait daté, sourcé
+      et gradé, quinze jugements contradictoires, décharges incluses.</p>
+
+    <div class="stats">
+      <div class="stat"><div class="n">534</div><div class="l">pièces datées et gradées</div></div>
+      <div class="stat"><div class="n">915</div><div class="l">URL sources distinctes</div></div>
+      <div class="stat"><div class="n">15</div><div class="l">domaines jugés + synthèse</div></div>
+    </div>
+
+    <footer>
+      <div class="verdict">
+        <span class="k">Synthèse d'ensemble</span>
+        <span class="v">DÉFAVORABLE</span>
+      </div>
+      <div class="url">macronisme-le-bilan.netlify.app</div>
+    </footer>
+  </div>
+</body>
+</html>
