@@ -765,8 +765,8 @@ for (const slug of briefDirs) {
     report.briefs.push({ where: ou, what: `aucune pièce de jugement « ${slug}.md » dans jugement/` });
     continue;
   }
-  const pageSrc = join(dir, "page.html");
-  if (!existsSync(pageSrc)) { report.briefs.push({ where: ou, what: "page.html introuvable" }); continue; }
+  const pageSrc = join(dir, "index.html");
+  if (!existsSync(pageSrc)) { report.briefs.push({ where: ou, what: "index.html introuvable" }); continue; }
 
   let conf: BriefConf = {};
   const confPath = join(dir, "brief.json");
@@ -815,12 +815,12 @@ for (const slug of briefDirs) {
   for (const [valeur, quoi] of interdits) {
     const re = new RegExp(`(?<![\\w-])${valeur.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?![\\w-])`);
     if (re.test(nu)) {
-      report.briefs.push({ where: `${ou}/page.html`, what: `${quoi} est écrit en dur (« ${valeur} ») : la page doit le recevoir du build` });
+      report.briefs.push({ where: `${ou}/index.html`, what: `${quoi} est écrit en dur (« ${valeur} ») : la page doit le recevoir du build` });
     }
   }
   const rediges = nu.match(/\d+\s*(?:charges?|décharges?|pièces?|URL|sources? distinctes?)\b/gi) ?? [];
   for (const r of new Set(rediges)) {
-    report.briefs.push({ where: `${ou}/page.html`, what: `compteur rédigé en dur (« ${r.trim()} ») : la page doit le recevoir du build` });
+    report.briefs.push({ where: `${ou}/index.html`, what: `compteur rédigé en dur (« ${r.trim()} ») : la page doit le recevoir du build` });
   }
 
   // --- contrôle : le chiffre de signature renvoie à une fiche qui existe
@@ -978,11 +978,11 @@ for (const slug of briefDirs) {
   let page = pageBrut;
   for (const [cle, valeur] of Object.entries(REMPLACEMENTS)) {
     const marqueur = `<!--BRIEF:${cle}-->`;
-    if (!page.includes(marqueur)) { report.briefs.push({ where: `${ou}/page.html`, what: `marqueur ${marqueur} absent` }); continue; }
+    if (!page.includes(marqueur)) { report.briefs.push({ where: `${ou}/index.html`, what: `marqueur ${marqueur} absent` }); continue; }
     page = page.replaceAll(marqueur, valeur);
   }
   const restants = [...page.matchAll(/<!--BRIEF:([A-Z]+)-->/g)].map((m) => m[1]);
-  for (const r of new Set(restants)) report.briefs.push({ where: `${ou}/page.html`, what: `marqueur <!--BRIEF:${r}--> inconnu de l'émetteur` });
+  for (const r of new Set(restants)) report.briefs.push({ where: `${ou}/index.html`, what: `marqueur <!--BRIEF:${r}--> inconnu de l'émetteur` });
 
   // La page source est abondamment commentée pour qui la reprend ; le lecteur du
   // site, lui, n'a que faire de l'architecture du build. Les commentaires sont
@@ -994,7 +994,7 @@ for (const slug of briefDirs) {
   writeFileSync(join(dest, "index.html"), page);
   if (existsSync(ogPath)) copyFileSync(ogPath, join(dest, "og.png"));
   for (const extra of readdirSync(dir)) {
-    if (["page.html", "brief.json", "og.png"].includes(extra)) continue;
+    if (["index.html", "brief.json", "og.png"].includes(extra)) continue;
     copyFileSync(join(dir, extra), join(dest, extra));
   }
   report.briefsEmis.push(`${slug} — ${compteurs.fiches} pièces, ${compteurs.citees} citées, verdict ${piece.verdict}`);

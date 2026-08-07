@@ -44,7 +44,7 @@ Le slug est celui du fichier de `jugement/`, sans exception ni alias.
 
 ```
 atlas/briefs/institutions/
-  page.html        mise en page écrite à la main, aucun chiffre en dur
+  index.html       mise en page écrite à la main, aucun chiffre en dur
   brief.json       paramètres du domaine (voir §7 et §8)
   og.png           carte de partage, générée, commitée
 atlas/briefs/_socle/
@@ -141,7 +141,7 @@ la table des promesses : un doublon dérive à la première pièce révisée.
 de données depuis `base/` et `jugement/`, puis **l'injecte dans la page au
 moment du build**, dans une balise `<script>` en tête de corps.
 
-`atlas/briefs/institutions/page.html` est écrite à la main et **ne contient
+`atlas/briefs/institutions/index.html` est écrite à la main et **ne contient
 aucun chiffre, aucun verdict, aucune date d'appréciation, aucun titre de fiche
 en dur.** Elle lit `window.BRIEF` et construit la frise, les compteurs, le
 jugement et le registre à partir de lui.
@@ -154,7 +154,7 @@ elle est rendue impossible.
 indexable ; un registre construit dans le navigateur serait invisible aux
 moteurs et annulerait la raison d'être du brief. L'émetteur écrit donc le
 registre en HTML dans le fichier de sortie, à un emplacement marqué dans
-`page.html`. La frise, elle, peut se construire en JavaScript : son contenu est
+`index.html`. La frise, elle, peut se construire en JavaScript : son contenu est
 déjà porté par le registre, et les tuiles portent le titre de leur pièce en
 `aria-label` pour l'accessibilité.
 
@@ -283,7 +283,7 @@ main : elles portent le verdict et la date, donc elles dériveraient.
 Tous bloquants, tous listés dans `build-report.md` :
 
 1. **Domaine déclaré sans pièce de jugement** correspondante dans `jugement/`.
-2. **Chiffre en dur dans `page.html`** : la page ne doit contenir ni le verdict,
+2. **Chiffre en dur dans `index.html`** : la page ne doit contenir ni le verdict,
    ni la date d'appréciation, ni un compteur du domaine en clair. Le contrôle
    confronte la page aux valeurs réelles du corpus plutôt qu'à des motifs
    génériques, avec deux réserves apprises à l'écriture : seuls les compteurs à
