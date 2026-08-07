@@ -6,7 +6,7 @@
  * Sorties : dist/data.js (window.ATLAS) + build-report.md.
  * Contrat : 534/534 fiches parsées ou échec du build ; tout lien cassé listé.
  */
-import { readdirSync, readFileSync, writeFileSync, mkdirSync, existsSync, copyFileSync } from "node:fs";
+import { readdirSync, readFileSync, writeFileSync, mkdirSync, existsSync, copyFileSync, cpSync } from "node:fs";
 import { join, resolve, basename } from "node:path";
 import { Marked } from "marked";
 import Graph from "graphology";
@@ -97,6 +97,8 @@ const report = {
   compteursMismatch: [] as Issue[],
   datesInvalides: [] as Issue[],
   fuitesInternes: [] as Issue[],
+  briefs: [] as Issue[],
+  briefsEmis: [] as string[],
   citationsJugements: 0,
   aretes: 0,
   entreesMinistresBrutes: 0,
@@ -695,6 +697,309 @@ for (const f of ["JetBrainsMono-Regular.ttf", "JetBrainsMono-Medium.ttf", "JetBr
   if (existsSync(p)) { copyFileSync(p, join(DIST, "fonts", f)); fontsEmbarquees.push(f); }
 }
 
+// ---------------------------------------------------------- briefs de domaine
+//
+// Une page autonome par domaine jugé, sous dist/briefs/<slug>/, en design
+// system institut. Spec : docs/2026-08-07-briefs-domaines.md.
+//
+// Le partage des rôles est la clé et il ne se négocie pas : TOUT ce qui porte
+// un chiffre, un verdict ou une date est calculé ici et écrit en HTML statique ;
+// la page source n'arrange que des blocs. Une pièce révisée met donc le brief à
+// jour au prochain build, sans qu'on y touche. C'est la leçon de PROMESSES_REL,
+// appliquée avant d'avoir eu à la repayer.
+//
+// Corollaire pour le référencement : le registre, les chiffres et les intitulés
+// du jugement existent dans le fichier servi, sans exécution de JavaScript. Le
+// script de la page ne fait qu'ajouter le survol et les filtres.
+
+const SITE = "https://macronisme-le-bilan.netlify.app";
+const DEPOT = "https://github.com/eRom/macronisme-le-bilan";
+const BRIEFS_SRC = join(ATLAS, "briefs");
+const BRIEFS_DIST = join(DIST, "briefs");
+
+const VERDICT_LABELS: Record<string, string> = {
+  "tres-favorable": "Très favorable", favorable: "Favorable", mitige: "Mitigé",
+  defavorable: "Défavorable", "gravement-defavorable": "Gravement défavorable",
+};
+const TYPE_LABELS: Record<string, string> = {
+  mesure: "Mesure", affaire: "Affaire", promesse: "Promesse", declaration: "Déclaration",
+};
+const MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
+const frDate = (d: string): string => {
+  const [y, m, j] = d.split("-");
+  return `${Number(j)}${Number(j) === 1 ? "er" : ""} ${MOIS[Number(m) - 1]} ${y}`;
+};
+const frNombre = (n: number): string => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+const frPct = (n: number, d: number): string => ((n / d) * 100).toFixed(1).replace(".", ",") + " %";
+
+/** Largeur et hauteur d'un PNG, lues dans le bloc IHDR. Évite une dépendance pour un contrôle de format. */
+function tailleePng(p: string): { w: number; h: number } | null {
+  const buf = readFileSync(p);
+  if (buf.length < 24 || buf.readUInt32BE(0) !== 0x89504e47) return null;
+  return { w: buf.readUInt32BE(16), h: buf.readUInt32BE(20) };
+}
+
+type BriefConf = {
+  titre_seo?: string; description?: string;
+  chiffre_signature?: { valeur: string; legende: string; fiche: string };
+  og_genere_le?: string; og_verdict?: string; og_date_verdict?: string;
+  og_compteurs?: { fiches?: number; citees?: number };
+};
+
+const briefDirs = existsSync(BRIEFS_SRC)
+  ? readdirSync(BRIEFS_SRC, { withFileTypes: true }).filter((e) => e.isDirectory() && e.name !== "_socle").map((e) => e.name).sort()
+  : [];
+
+if (briefDirs.length > 0) {
+  mkdirSync(BRIEFS_DIST, { recursive: true });
+  // Socle commun aux quinze : feuille du design system, fontes auto-hébergées,
+  // socle structurel des briefs. Copié une fois, pas quinze.
+  cpSync(join(BRIEFS_SRC, "_socle"), join(BRIEFS_DIST, "_socle"), { recursive: true });
+}
+
+for (const slug of briefDirs) {
+  const dir = join(BRIEFS_SRC, slug);
+  const ou = `atlas/briefs/${slug}`;
+  const piece = pieces.get(slug);
+  if (!piece) {
+    report.briefs.push({ where: ou, what: `aucune pièce de jugement « ${slug}.md » dans jugement/` });
+    continue;
+  }
+  const pageSrc = join(dir, "page.html");
+  if (!existsSync(pageSrc)) { report.briefs.push({ where: ou, what: "page.html introuvable" }); continue; }
+
+  let conf: BriefConf = {};
+  const confPath = join(dir, "brief.json");
+  if (!existsSync(confPath)) report.briefs.push({ where: ou, what: "brief.json introuvable" });
+  else {
+    try { conf = JSON.parse(readFileSync(confPath, "utf-8")) as BriefConf; }
+    catch (e) { report.briefs.push({ where: `${ou}/brief.json`, what: `JSON illisible : ${(e as Error).message}` }); }
+  }
+
+  // --- mesures du domaine, toutes prises sur le corpus, aucune saisie à la main
+  const domFiches = [...fiches.values()].filter((f) => f.d.includes(slug)).sort((a, b) => a.dt.localeCompare(b.dt));
+  // « citée » = invoquée par une charge ou une décharge. Le périmètre, le verdict
+  // et la section des écartés ne comptent pas : on marque ce qui PORTE le jugement.
+  const citees = new Set([...piece.charges, ...piece.decharges].flatMap((b) => b.slugs));
+  const urlsDom = new Set<string>();
+  for (const f of domFiches) for (const u of f.src) if (/^https?:\/\//.test(u.trim())) urlsDom.add(u.trim());
+  const gradesDom = new Map<string, number>();
+  for (const f of domFiches) gradesDom.set(f.g, (gradesDom.get(f.g) ?? 0) + 1);
+
+  const compteurs = {
+    fiches: domFiches.length,
+    citees: domFiches.filter((f) => citees.has(f.slug)).length,
+    urls: urlsDom.size,
+    charges: piece.charges.length,
+    decharges: piece.decharges.length,
+    gradeA: gradesDom.get("A") ?? 0,
+  };
+  const verdictLibelle = VERDICT_LABELS[piece.verdict] ?? piece.verdict;
+  const dv = piece.dateVerdict;
+  if (!dv) report.briefs.push({ where: ou, what: "la pièce de jugement n'a pas de date_verdict" });
+
+  // --- contrôle : aucun chiffre, verdict ni date figé dans la page source.
+  // Confronté aux valeurs réelles plutôt qu'à des motifs génériques : le contrôle
+  // suit le corpus au lieu de deviner ce qui ressemble à un chiffre.
+  const pageBrut = readFileSync(pageSrc, "utf-8");
+  const nu = pageBrut.replace(/<!--[\s\S]*?-->/g, "");
+  const interdits: [string, string][] = [
+    [verdictLibelle, "le verdict"],
+    ...(dv ? ([[dv, "la date d'appréciation (ISO)"], [frDate(dv), "la date d'appréciation (en clair)"]] as [string, string][]) : []),
+    // Seuls les compteurs à deux chiffres ou plus sont cherchés tels quels : un
+    // « 4 » isolé se rencontre légitimement dans du code (indices, découpages),
+    // et un contrôle qui crie au loup finit désarmé. Les petits compteurs sont
+    // couverts par le motif rédigé ci-dessous.
+    ...Object.entries(compteurs).filter(([, v]) => v >= 10).map(([k, v]) => [String(v), `le compteur « ${k} »`] as [string, string]),
+  ];
+  for (const [valeur, quoi] of interdits) {
+    const re = new RegExp(`(?<![\\w-])${valeur.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?![\\w-])`);
+    if (re.test(nu)) {
+      report.briefs.push({ where: `${ou}/page.html`, what: `${quoi} est écrit en dur (« ${valeur} ») : la page doit le recevoir du build` });
+    }
+  }
+  const rediges = nu.match(/\d+\s*(?:charges?|décharges?|pièces?|URL|sources? distinctes?)\b/gi) ?? [];
+  for (const r of new Set(rediges)) {
+    report.briefs.push({ where: `${ou}/page.html`, what: `compteur rédigé en dur (« ${r.trim()} ») : la page doit le recevoir du build` });
+  }
+
+  // --- contrôle : le chiffre de signature renvoie à une fiche qui existe
+  const sig = conf.chiffre_signature;
+  if (!sig) report.briefs.push({ where: `${ou}/brief.json`, what: "chiffre_signature absent" });
+  else if (!fiches.has(sig.fiche)) {
+    report.briefs.push({ where: `${ou}/brief.json`, what: `chiffre_signature.fiche « ${sig.fiche} » n'existe pas dans base/` });
+  }
+
+  // --- contrôle : la carte de partage et ce contre quoi elle a été produite.
+  // Ses pixels sont illisibles au build ; on contrôle donc sa métadonnée. Une
+  // carte qui annonce un verdict périmé ment au lecteur avant même le clic.
+  const ogPath = join(dir, "og.png");
+  if (!existsSync(ogPath)) report.briefs.push({ where: ou, what: "og.png introuvable" });
+  else {
+    const t = tailleePng(ogPath);
+    if (!t) report.briefs.push({ where: `${ou}/og.png`, what: "PNG illisible" });
+    else if (t.w !== 1200 || t.h !== 630) {
+      report.briefs.push({ where: `${ou}/og.png`, what: `format ${t.w}×${t.h}, attendu 1200×630` });
+    }
+    const ecarts: string[] = [];
+    if (conf.og_verdict !== piece.verdict) ecarts.push(`verdict « ${conf.og_verdict ?? "(absent)"} » vs « ${piece.verdict} »`);
+    if (conf.og_date_verdict !== dv) ecarts.push(`date_verdict « ${conf.og_date_verdict ?? "(absente)"} » vs « ${dv ?? "(absente)"} »`);
+    if (conf.og_compteurs?.fiches !== compteurs.fiches) ecarts.push(`fiches ${conf.og_compteurs?.fiches ?? "(absent)"} vs ${compteurs.fiches}`);
+    if (conf.og_compteurs?.citees !== compteurs.citees) ecarts.push(`citées ${conf.og_compteurs?.citees ?? "(absent)"} vs ${compteurs.citees}`);
+    if (ecarts.length) {
+      report.briefs.push({
+        where: `${ou}/og.png`,
+        what: `la carte a été produite contre un état périmé (${ecarts.join(" ; ")}). Régénérer l'image, puis mettre brief.json à jour.`,
+      });
+    }
+  }
+
+  // --- fragments statiques
+  const lienFiche = (s: string) => `${SITE}/#/fiche/${s}`;
+  const lienPiece = `${SITE}/#/domaine/${slug}`;
+
+  const bandeau =
+    `<p class="b-marque">Macronisme 2017-2026 · le bilan</p>` +
+    `<h1 class="b-domaine">${escapeHtml(piece.nom)}</h1>` +
+    `<p class="b-verdict">Verdict&nbsp;: <b>${escapeHtml(verdictLibelle)}</b>` +
+    `<span class="b-quand">appréciation portée le <time datetime="${dv ?? ""}">${dv ? frDate(dv) : "date inconnue"}</time></span></p>`;
+
+  const chiffre = (v: string, l: string) => `<li><b>${v}</b><span>${l}</span></li>`;
+  const chiffres =
+    `<ul class="b-chiffres">` +
+    chiffre(frNombre(compteurs.fiches), "pièces datées et sourcées") +
+    chiffre(frNombre(compteurs.citees), "portent le jugement") +
+    chiffre(frNombre(compteurs.urls), "URL sources distinctes") +
+    chiffre(frPct(compteurs.gradeA, compteurs.fiches), "de grade A") +
+    chiffre(frNombre(compteurs.charges), compteurs.charges > 1 ? "charges qui tiennent" : "charge qui tient") +
+    chiffre(frNombre(compteurs.decharges), compteurs.decharges > 1 ? "décharges qui tiennent" : "décharge qui tient") +
+    `</ul>` +
+    (sig
+      ? `<figure class="b-signature"><b>${escapeHtml(sig.valeur)}</b>` +
+        `<figcaption>${escapeHtml(sig.legende)} — <a href="${lienFiche(sig.fiche)}">la pièce qui l'établit</a></figcaption></figure>`
+      : "");
+
+  const annees: string[] = [];
+  if (domFiches.length) {
+    const a0 = Number(domFiches[0].dt.slice(0, 4)), a1 = Number(domFiches[domFiches.length - 1].dt.slice(0, 4));
+    for (let a = a0; a <= a1; a++) annees.push(String(a));
+  }
+
+  const frise =
+    `<div class="b-frise">` +
+    annees.map((an) => {
+      const l = domFiches.filter((f) => f.dt.startsWith(an));
+      const tuiles = l.map((f) =>
+        `<button type="button" class="b-tuile${citees.has(f.slug) ? " est-citee" : ""}" data-slug="${f.slug}"` +
+        ` data-type="${escapeHtml(f.ty)}" aria-label="${escapeHtml(`${frDate(f.dt)} · ${f.t}`)}"></button>`
+      ).join("");
+      return `<div class="b-col"><div class="b-pile">${tuiles}</div>` +
+        `<div class="b-an">${an}</div><div class="b-eff">${l.length}</div></div>`;
+    }).join("") +
+    `</div>`;
+
+  const blocs = (items: Bloc[], titre: string, cls: string) =>
+    `<section class="b-bloc ${cls}"><h3 class="b-bloc-titre">${titre}</h3><ol>` +
+    items.map((b) => `<li>${escapeHtml(b.label)}</li>`).join("") +
+    `</ol></section>`;
+  const jugement =
+    blocs(piece.charges, "Les charges qui tiennent", "b-charges") +
+    blocs(piece.decharges, "Les décharges qui tiennent", "b-decharges") +
+    `<p class="b-vers-piece"><a href="${lienPiece}">Lire le jugement complet, ses attendus et ce qu'il écarte</a></p>`;
+
+  const registre =
+    annees.map((an) => {
+      const l = domFiches.filter((f) => f.dt.startsWith(an));
+      if (!l.length) return "";
+      return `<section class="b-reg-an"><h3>${an}<span>${l.length} pièce${l.length > 1 ? "s" : ""}</span></h3><ol>` +
+        l.map((f) =>
+          `<li class="b-reg-ligne${citees.has(f.slug) ? " est-citee" : ""}" data-type="${escapeHtml(f.ty)}">` +
+          `<time class="b-reg-date" datetime="${f.dt}">${frDate(f.dt)}</time>` +
+          `<a class="b-reg-titre" href="${lienFiche(f.slug)}">${escapeHtml(f.t)}</a>` +
+          `<span class="b-reg-meta"><span class="b-reg-type">${TYPE_LABELS[f.ty] ?? escapeHtml(f.ty)}</span>` +
+          `<span class="b-reg-grade" title="grade ${escapeHtml(f.g)}">${escapeHtml(f.g)}</span></span></li>`
+        ).join("") + `</ol></section>`;
+    }).join("");
+
+  const url = `${SITE}/briefs/${slug}/`;
+  const titreSeo = conf.titre_seo ?? `${piece.nom} : le bilan Macron 2017-2026 en ${compteurs.fiches} pièces datées`;
+  const description = conf.description
+    ?? `${compteurs.fiches} pièces datées et sourcées sur ${piece.nom.toLowerCase()} sous Emmanuel Macron, ${compteurs.urls} URL distinctes. Verdict ${verdictLibelle.toLowerCase()}, ${compteurs.charges} charges et ${compteurs.decharges} décharges. Les faits sont séparés des jugements.`;
+  const alt = `${piece.nom} · le bilan Macron 2017-2026 : verdict ${verdictLibelle.toLowerCase()}, ${compteurs.fiches} pièces datées et sourcées.`;
+  const jsonld = JSON.stringify({
+    "@context": "https://schema.org", "@type": "Report",
+    name: `${piece.nom} — bilan des deux quinquennats Macron`,
+    about: piece.nom, inLanguage: "fr-FR", url,
+    datePublished: dv ?? undefined, dateModified: dv ?? undefined,
+    author: { "@type": "Person", name: "eRom" },
+    isPartOf: { "@type": "Dataset", name: "Macronisme 2017-2026 · le bilan", url: `${SITE}/` },
+    citation: `${compteurs.urls} sources primaires et de presse distinctes`,
+  }).replace(/</g, "\\u003c");
+
+  const meta = [
+    `<title>${escapeHtml(titreSeo)}</title>`,
+    `<meta name="description" content="${escapeHtml(description)}" />`,
+    `<link rel="canonical" href="${url}" />`,
+    // URL absolue obligatoire : les scrapers sociaux ne résolvent pas le relatif.
+    `<meta property="og:title" content="${escapeHtml(titreSeo)}" />`,
+    `<meta property="og:description" content="${escapeHtml(description)}" />`,
+    `<meta property="og:type" content="article" />`,
+    `<meta property="og:site_name" content="Macronisme · le bilan" />`,
+    `<meta property="og:locale" content="fr_FR" />`,
+    `<meta property="og:url" content="${url}" />`,
+    `<meta property="og:image" content="${url}og.png" />`,
+    `<meta property="og:image:type" content="image/png" />`,
+    `<meta property="og:image:width" content="1200" />`,
+    `<meta property="og:image:height" content="630" />`,
+    `<meta property="og:image:alt" content="${escapeHtml(alt)}" />`,
+    `<meta name="twitter:card" content="summary_large_image" />`,
+    `<meta name="twitter:title" content="${escapeHtml(titreSeo)}" />`,
+    `<meta name="twitter:description" content="${escapeHtml(description)}" />`,
+    `<meta name="twitter:image" content="${url}og.png" />`,
+    `<meta name="twitter:image:alt" content="${escapeHtml(alt)}" />`,
+    `<script type="application/ld+json">${jsonld}</script>`,
+  ].join("\n  ");
+
+  const donnees = `<script>window.BRIEF=${JSON.stringify({
+    domaine: slug, nom: piece.nom, verdict: piece.verdict, verdict_libelle: verdictLibelle,
+    date_verdict: dv, compteurs,
+    // tyk = le type tel qu'il est écrit dans le frontmatter, seule clé commune
+    // avec le data-type des lignes du registre ; ty = son libellé affichable.
+    fiches: Object.fromEntries(domFiches.map((f) => [f.slug, {
+      d: frDate(f.dt), t: f.t, tyk: f.ty, ty: TYPE_LABELS[f.ty] ?? f.ty, g: f.g, c: citees.has(f.slug),
+    }])),
+    liens: { piece: lienPiece, fiche: `${SITE}/#/fiche/`, site: `${SITE}/`, depot: DEPOT },
+  }).replace(/<\//g, "<\\/")};</script>`;
+
+  const REMPLACEMENTS: Record<string, string> = {
+    TETE: meta, BANDEAU: bandeau, CHIFFRES: chiffres, FRISE: frise,
+    JUGEMENT: jugement, REGISTRE: registre, DONNEES: donnees,
+  };
+  let page = pageBrut;
+  for (const [cle, valeur] of Object.entries(REMPLACEMENTS)) {
+    const marqueur = `<!--BRIEF:${cle}-->`;
+    if (!page.includes(marqueur)) { report.briefs.push({ where: `${ou}/page.html`, what: `marqueur ${marqueur} absent` }); continue; }
+    page = page.replaceAll(marqueur, valeur);
+  }
+  const restants = [...page.matchAll(/<!--BRIEF:([A-Z]+)-->/g)].map((m) => m[1]);
+  for (const r of new Set(restants)) report.briefs.push({ where: `${ou}/page.html`, what: `marqueur <!--BRIEF:${r}--> inconnu de l'émetteur` });
+
+  // La page source est abondamment commentée pour qui la reprend ; le lecteur du
+  // site, lui, n'a que faire de l'architecture du build. Les commentaires sont
+  // retirés du rendu, jamais de la source.
+  page = page.replace(/<!--[\s\S]*?-->/g, "").replace(/\n{3,}/g, "\n\n");
+
+  const dest = join(BRIEFS_DIST, slug);
+  mkdirSync(dest, { recursive: true });
+  writeFileSync(join(dest, "index.html"), page);
+  if (existsSync(ogPath)) copyFileSync(ogPath, join(dest, "og.png"));
+  for (const extra of readdirSync(dir)) {
+    if (["page.html", "brief.json", "og.png"].includes(extra)) continue;
+    copyFileSync(join(dir, extra), join(dest, extra));
+  }
+  report.briefsEmis.push(`${slug} — ${compteurs.fiches} pièces, ${compteurs.citees} citées, verdict ${piece.verdict}`);
+}
+
 // ---------------------------------------------------------------- rapport
 
 const grades = new Map<string, number>();
@@ -796,7 +1101,7 @@ for (const r of REGLES_COMPTEURS) {
 
 const fmtIssues = (list: Issue[]) => (list.length === 0 ? "aucun\n" : list.map((i) => `- ${i.where} : ${i.what}`).join("\n") + "\n");
 
-const hardFail = report.fichesParsees !== report.fichesTotal || report.erreursParse.length > 0 || report.champsManquants.length > 0 || report.fuitesInternes.length > 0 || report.verdictsMismatch.length > 0 || report.compteursMismatch.length > 0;
+const hardFail = report.fichesParsees !== report.fichesTotal || report.erreursParse.length > 0 || report.champsManquants.length > 0 || report.fuitesInternes.length > 0 || report.verdictsMismatch.length > 0 || report.compteursMismatch.length > 0 || report.briefs.length > 0;
 
 const lines = `# Rapport de build Atlas - ${data.buildDate}
 
@@ -810,6 +1115,7 @@ const lines = `# Rapport de build Atlas - ${data.buildDate}
 - Ministres distincts après séparation puis/et : ${ministres.size} ; gouvernements canoniques : ${GOUVERNEMENTS.length}
 - Promesses des programmes : **${promesses.length}/${PROMESSES_ATTENDUES}** ${promesses.length === PROMESSES_ATTENDUES ? "OK" : "ÉCHEC"} — ${promessesTenues} tenues, ${promesses.length - promessesTenues} non tenues
 - Fonts embarquées : ${fontsEmbarquees.length ? fontsEmbarquees.join(", ") : "aucune (fallback système)"}
+- Briefs de domaine émis : ${report.briefsEmis.length ? "\n" + report.briefsEmis.map((b) => `  - ${b}`).join("\n") : "aucun"}
 
 ## Distributions (à recouper avec l'étude du 01/08)
 - Grades : ${[...grades.entries()].sort().map(([g, n]) => `${g}=${n}`).join(", ")}
@@ -834,6 +1140,8 @@ ${fmtIssues(report.sectionsManquantes)}
 ${fmtIssues(report.verdictsMismatch)}
 ### Compteurs publics vs corpus (bloquant)
 ${fmtIssues(report.compteursMismatch)}
+### Briefs de domaine (bloquant)
+${fmtIssues(report.briefs)}
 ### Gouvernements non mappés (valeur brute -> occurrences)
 ${report.gouvernementsNonMappes.size === 0 ? "aucun\n" : [...report.gouvernementsNonMappes.entries()].sort((a, b) => b[1] - a[1]).map(([v, n]) => `- ${n} × « ${v} »`).join("\n") + "\n"}
 ### Entrées ministres suspectes (contiennent « puis »)

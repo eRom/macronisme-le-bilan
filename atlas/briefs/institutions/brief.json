@@ -1,0 +1,18 @@
+{
+  "titre_seo": "Institutions sous Macron 2017-2026 : le bilan documenté et sourcé",
+  "description": "Le Parlement, le budget, les ordonnances, le référendum et les enceintes de décision sous Emmanuel Macron. Pièces datées et sourcées, verdict motivé, décharges incluses. Les faits sont séparés des jugements.",
+
+  "chiffre_signature": {
+    "valeur": "79,6 % → 61,3 % → 33,5 %",
+    "legende": "Ordonnances ratifiées, sur les trois quinquennats successifs, toutes mesurées en 2026",
+    "fiche": "2022-05-13-ordonnances-effondrement-ratification"
+  },
+
+  "_og": "Ce que la carte de partage annonce est figé dans ses pixels et illisible au build. On garde donc ici l'état du corpus contre lequel elle a été produite : un écart est bloquant, et impose de régénérer l'image avant de mettre ces valeurs à jour.",
+  "_og_regenerer": "Image produite par gpt-image-2 en 1920x1008, qualité medium, avec og_prompt ci-dessous ; puis réduite en 1200x630 et ramenée à 64 couleurs, ce qui divise le poids par seize et supprime le léger relief que le modèle pose sous le titre. Suite exacte : sips -Z 1200 source.png --out plein.png ; magick plein.png -strip -colors 64 -define png:compression-level=9 og.png",
+  "og_prompt": "A flat, print-like graphic poster on warm off-white paper, colour #FAF8F5. No photography, no people, no gradients, no drop shadows, no 3D, no rounded corners, no logos, no icons, no decorative flourishes. The aesthetic is a sober contemporary French institutional document — a parliamentary report cover: hairline rules only, right angles only, strict left alignment, generous margins. A solid deep navy blue horizontal bar, colour #122B78, spans the full width along the very top edge, about 1.5% of the image height. LAYOUT — two columns separated by a single vertical hairline rule in #D9D4CC at about 63% of the width. Wide empty margins: nothing important within 8% of any edge. LEFT COLUMN, top to bottom, left-aligned: 1. Small letter-spaced uppercase serif, warm grey #78716C, exact text: \"MACRONISME 2017-2026 · LE BILAN\" 2. A very large high-contrast serif headline (Spectral or Georgia style), near-black #1C1A19, exact single word: \"INSTITUTIONS\" 3. A horizontal hairline rule in #D9D4CC. 4. Medium serif line: \"Verdict :\" in near-black #1C1A19, then on the same line \"DÉFAVORABLE\" in deep crimson #8A1622, semibold. 5. Small monospace typewriter text in grey #78716C, exact text: \"appréciation portée le 4 août 2026\" RIGHT COLUMN, a stacked data block, figures in deep navy #122B78, large monospace numerals, each on its own line with a small grey serif caption beneath: \"79,6 %\" caption \"2007-2012\" ; \"61,3 %\" caption \"2012-2017\" ; \"33,5 %\" caption \"2017-2022\". Then a hairline rule, then a small serif line in near-black, exact text: \"Ordonnances ratifiées\". BOTTOM, full width above the lower margin: a horizontal hairline rule in #D9D4CC, and beneath it one small serif line in grey #78716C, exact text: \"84 pièces datées et sourcées · macronisme-le-bilan.netlify.app\". Render every French accent exactly: É, é, à, û. Reproduce all quoted text character for character, no extra words, no invented labels, no watermark. Text crisp, perfectly horizontal, fully inside the margins.",
+  "og_genere_le": "2026-08-07",
+  "og_verdict": "defavorable",
+  "og_date_verdict": "2026-08-04",
+  "og_compteurs": { "fiches": 84, "citees": 45 }
+}

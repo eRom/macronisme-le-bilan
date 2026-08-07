@@ -1,0 +1,186 @@
+<!doctype html>
+<!--
+  Brief du domaine « institutions ».
+
+  Cette page n'écrit AUCUN chiffre, AUCUN verdict, AUCUNE date d'appréciation :
+  elle arrange des blocs que build.ts calcule sur base/ et jugement/ puis
+  injecte aux marqueurs <!==BRIEF:XXX==>. Une pièce révisée met donc la page à
+  jour au prochain build, sans qu'on y touche. Un contrôle bloquant refuse le
+  build si une valeur est figée ici.
+
+  Le registre, les chiffres et les intitulés du jugement sont écrits en HTML
+  statique par l'émetteur : ils doivent exister sans JavaScript, c'est la raison
+  d'être du brief côté référencement. Le script en bas de page n'ajoute que le
+  survol et les filtres, et tout ce qu'il pilote est marqué hidden tant qu'il
+  n'a pas tourné.
+
+  Spec : atlas/docs/2026-08-07-briefs-domaines.md
+-->
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--BRIEF:TETE-->
+  <link rel="stylesheet" href="../_socle/institut.css" />
+  <link rel="stylesheet" href="../_socle/brief.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%96%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+  <style>
+    /* Accents propres à ce domaine. Le socle porte la topologie, ce bloc porte
+       le caractère : ici, la sécheresse d'un document parlementaire. */
+    .b-chapeau { font-style: italic; }
+    .b-domaine { font-variant: small-caps; letter-spacing: .015em; }
+    /* Le chiffre de signature reste en Spectral : le DS réserve Courier Prime
+       aux prompts et au code, et ce chiffre est un titre, pas de la donnée
+       tabulaire. Le mono du registre, lui, aligne des dates et se justifie. */
+    .b-signature b { font-variant-numeric: tabular-nums; letter-spacing: -.005em; }
+  </style>
+</head>
+<body>
+  <main class="b-page">
+
+    <header class="b-bandeau"><!--BRIEF:BANDEAU--></header>
+
+    <!--BRIEF:CHIFFRES-->
+
+    <section class="b-section" aria-labelledby="t-frise">
+      <span class="b-label">La chronologie</span>
+      <h2 id="t-frise">Neuf ans, pièce par pièce</h2>
+      <p class="b-chapeau">Une colonne par année, une tuile par pièce du dossier. Le bleu marque celles
+        qu'invoquent les charges et les décharges du jugement&nbsp;: la masse bleue est la base
+        sur laquelle l'appréciation repose, et elle se compte à l'œil.</p>
+
+      <p class="b-legende">
+        <span><i class="est-citee"></i>Pièce que le jugement invoque</span>
+        <span><i></i>Autre pièce du domaine</span>
+      </p>
+
+      <div class="b-filtres" id="filtres" hidden>
+        <span class="b-label" id="lbl-filtres">Filtrer</span>
+      </div>
+
+      <div class="b-frise-zone">
+        <!--BRIEF:FRISE-->
+        <aside class="b-cartouche" id="cartouche" hidden aria-live="polite">
+          <p class="b-c-vide">Survolez une pièce de la frise pour la lire.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="b-section" aria-labelledby="t-jugement">
+      <span class="b-label">Le jugement</span>
+      <h2 id="t-jugement">Ce qui tient, contre et pour</h2>
+      <p class="b-chapeau">Les affirmations ci-dessous ont survécu à un test de contradiction. Celles qui
+        ont échoué ne sont pas effacées&nbsp;: elles figurent dans la pièce complète, avec la raison
+        de leur écartement.</p>
+      <div class="b-jugement"><!--BRIEF:JUGEMENT--></div>
+    </section>
+
+    <section class="b-section" aria-labelledby="t-registre">
+      <span class="b-label">Le registre</span>
+      <h2 id="t-registre">Toutes les pièces, une par une</h2>
+      <p class="b-chapeau">Chaque ligne ouvre la pièce sur le dossier&nbsp;: son récit daté, ses acteurs
+        nommés, ses sources et son grade. Un filet bleu signale celles que le jugement invoque.</p>
+      <div class="b-registre"><!--BRIEF:REGISTRE--></div>
+    </section>
+
+    <footer class="b-pied">
+      <p>Les faits et les jugements sont séparés. On peut rejeter le verdict et garder toutes les pièces.</p>
+      <nav class="b-pied-liens" aria-label="Le dossier">
+        <a href="https://macronisme-le-bilan.netlify.app/">Le dossier complet</a>
+        <a href="https://github.com/eRom/macronisme-le-bilan">Sources, méthode et atelier sur GitHub</a>
+      </nav>
+    </footer>
+
+  </main>
+
+  <!--BRIEF:DONNEES-->
+  <script>
+  (function () {
+    var B = window.BRIEF;
+    if (!B) return;
+    var slugs = Object.keys(B.fiches);
+
+    /* --- cartouche : le détail d'une pièce, au survol comme au clic --- */
+    var cartouche = document.getElementById("cartouche");
+    var frise = document.querySelector(".b-frise");
+    cartouche.hidden = false;
+
+    function bloc(tag, classe, texte) {
+      var el = document.createElement(tag);
+      el.className = classe;
+      el.textContent = texte;
+      return el;
+    }
+
+    function montrer(slug) {
+      var f = B.fiches[slug];
+      if (!f) return;
+      cartouche.classList.toggle("est-citee", f.c);
+      var meta = document.createElement("p");
+      meta.className = "b-c-meta";
+      meta.append(bloc("span", "", f.ty), bloc("span", "", "grade " + f.g));
+      if (f.c) meta.append(bloc("span", "b-c-porte", "invoquée par le jugement"));
+      cartouche.replaceChildren(bloc("p", "b-c-date", f.d), bloc("p", "b-c-titre", f.t), meta);
+    }
+
+    frise.addEventListener("mouseover", function (e) {
+      var b = e.target.closest("[data-slug]");
+      if (b) montrer(b.dataset.slug);
+    });
+    frise.addEventListener("click", function (e) {
+      var b = e.target.closest("[data-slug]");
+      if (!b) return;
+      frise.querySelectorAll('[aria-current="true"]').forEach(function (x) { x.removeAttribute("aria-current"); });
+      b.setAttribute("aria-current", "true");
+      montrer(b.dataset.slug);
+    });
+    frise.addEventListener("focusin", function (e) {
+      var b = e.target.closest("[data-slug]");
+      if (b) montrer(b.dataset.slug);
+    });
+
+    /* --- filtres : construits depuis les données, jamais écrits en dur --- */
+    var parType = {};
+    slugs.forEach(function (s) {
+      var k = B.fiches[s].tyk;
+      parType[k] = (parType[k] || []).concat(s);
+    });
+    var choix = [{ cle: "tous", libelle: "Tout", n: slugs.length }];
+    Object.keys(parType).sort(function (a, b) { return parType[b].length - parType[a].length; })
+      .forEach(function (k) {
+        choix.push({ cle: "type:" + k, libelle: B.fiches[parType[k][0]].ty + "s", n: parType[k].length });
+      });
+    choix.push({ cle: "citees", libelle: "Invoquées par le jugement", n: B.compteurs.citees });
+
+    var barre = document.getElementById("filtres");
+    var actif = "tous";
+
+    function appliquer(cle) {
+      actif = cle;
+      barre.querySelectorAll("button").forEach(function (b) {
+        b.setAttribute("aria-pressed", String(b.dataset.cle === cle));
+      });
+      document.querySelectorAll("[data-slug], .b-reg-ligne").forEach(function (el) {
+        var slug = el.dataset.slug;
+        var ty = slug ? B.fiches[slug].tyk : el.dataset.type;
+        var citee = slug ? B.fiches[slug].c : el.classList.contains("est-citee");
+        var garde = cle === "tous" || (cle === "citees" ? citee : cle === "type:" + ty);
+        el.classList.toggle("est-masquee", !garde);
+      });
+    }
+
+    choix.forEach(function (c) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "b-filtre";
+      b.dataset.cle = c.cle;
+      b.setAttribute("aria-pressed", String(c.cle === actif));
+      b.textContent = c.libelle + " (" + c.n + ")";
+      b.addEventListener("click", function () { appliquer(c.cle); });
+      barre.appendChild(b);
+    });
+    barre.hidden = false;
+  })();
+  </script>
+</body>
+</html>

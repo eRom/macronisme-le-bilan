@@ -1,0 +1,147 @@
+/* Socle structurel des briefs de domaine.
+   Complète institut.css sans jamais le réécrire : ne définit que la topologie
+   commune aux quinze pages (bandeau, chiffres, frise, jugement, registre, pied).
+   Tout ce qui relève de l'apparence propre à un domaine vit dans son page.html.
+
+   Règles du design system institut qui contraignent ce fichier, et qui ne se
+   négocient pas : rien ne bouge au survol (pas de translate, pas de scale, pas
+   d'élévation) — les états parlent par la couleur ; filets plutôt qu'ombres ;
+   angles droits, 2px seulement pour les cartes ; la garance ne sert qu'à
+   l'alerte, ici le seul verdict ; le vert ne sert qu'à l'acquis, ici les seules
+   décharges. */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--papier-fond);
+  color: var(--encre);
+  font-family: var(--serif);
+  font-size: 15px;
+  line-height: 1.65;
+  -webkit-text-size-adjust: 100%;
+}
+
+.b-page { max-width: 1080px; margin: 0 auto; padding: var(--esp-48) var(--esp-24) var(--esp-64); }
+
+a { color: var(--bleu-700); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--bleu-900); text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--bleu-700); outline-offset: 2px; }
+
+.b-label {
+  display: block; font-size: 12px; font-weight: 600;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--encre-muted);
+}
+
+/* ----------------------------------------------------------------- bandeau */
+
+.b-bandeau { border-top: 3px solid var(--bleu-700); border-bottom: 1px solid var(--filet); padding: var(--esp-24) 0 var(--esp-32); }
+.b-marque { margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--encre-muted); }
+.b-domaine { margin: var(--esp-12) 0 var(--esp-16); font-size: clamp(38px, 8vw, 60px); line-height: 1.04; font-weight: 600; letter-spacing: -.01em; }
+.b-verdict { margin: 0; font-size: 19px; display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--esp-12); }
+.b-verdict b { color: var(--garance-700); font-weight: 600; }
+.b-quand { font-family: var(--mono); font-size: 12px; color: var(--encre-muted); letter-spacing: .01em; }
+
+/* ---------------------------------------------------------------- chiffres */
+
+.b-chiffres { list-style: none; margin: var(--esp-32) 0 0; padding: 0; display: grid; gap: 1px; background: var(--filet); border: 1px solid var(--filet); grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+.b-chiffres li { background: var(--papier-carte); padding: var(--esp-16); display: flex; flex-direction: column; gap: 2px; }
+.b-chiffres b { font-size: 27px; line-height: 1.1; font-weight: 600; font-variant-numeric: tabular-nums; }
+.b-chiffres span { font-size: 13px; color: var(--encre-3); line-height: 1.4; }
+
+.b-signature { margin: var(--esp-24) 0 0; padding: var(--esp-24); border: 1px solid var(--filet); border-left: 3px solid var(--bleu-700); background: var(--papier-carte); border-radius: var(--rayon-champ); }
+.b-signature b { display: block; font-size: clamp(24px, 5vw, 34px); line-height: 1.15; font-weight: 600; color: var(--bleu-800); font-variant-numeric: tabular-nums; }
+.b-signature figcaption { margin-top: var(--esp-8); font-size: 14px; color: var(--encre-3); }
+
+/* ------------------------------------------------------------------ section */
+
+.b-section { margin-top: var(--esp-64); }
+.b-section > h2 { font-size: 25px; font-weight: 600; margin: var(--esp-8) 0 var(--esp-12); }
+.b-chapeau { margin: 0 0 var(--esp-24); color: var(--encre-3); max-width: 72ch; }
+
+/* -------------------------------------------------------------------- frise */
+
+.b-legende { display: flex; flex-wrap: wrap; gap: var(--esp-8) var(--esp-24); font-size: 13px; color: var(--encre-3); margin-bottom: var(--esp-16); }
+.b-legende i { display: inline-block; width: 11px; height: 11px; background: var(--filet); vertical-align: -1px; margin-right: 6px; }
+.b-legende i.est-citee { background: var(--bleu-700); }
+
+.b-filtres { display: flex; flex-wrap: wrap; align-items: center; gap: var(--esp-8); margin-bottom: var(--esp-24); }
+.b-filtre { font-family: var(--serif); font-size: 13px; color: var(--encre-2); background: var(--papier-carte); border: 1px solid var(--filet); border-radius: 0; padding: 4px 11px; cursor: pointer; }
+.b-filtre:hover { background: var(--bleu-50); border-color: var(--bleu-300); color: var(--bleu-800); }
+.b-filtre[aria-pressed="true"] { background: var(--bleu-700); border-color: var(--bleu-700); color: var(--papier-carte); }
+
+.b-frise-zone { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: var(--esp-32); align-items: end; }
+.b-frise { display: flex; gap: 1.4%; align-items: flex-end; border-bottom: 1px solid var(--encre); min-height: 120px; }
+.b-col { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; align-items: center; }
+.b-pile { display: flex; flex-direction: column-reverse; align-items: center; gap: 3px; width: 100%; }
+/* Brique plutôt que carré : une tuile assez large pour que la colonne se lise
+   comme une densité, assez basse pour que l'année la plus chargée tienne dans
+   un écran. Un carré à cette largeur donnerait une pile deux fois trop haute. */
+.b-tuile { width: 100%; height: 14px; border: 0; padding: 0; background: var(--filet); cursor: pointer; }
+.b-tuile.est-citee { background: var(--bleu-700); }
+.b-tuile:hover, .b-tuile[aria-current="true"] { background: var(--encre); }
+/* Filtrer retire la tuile du flux plutôt que de la rendre invisible : une pile
+   trouée se lit comme une pile cassée, une pile tassée se lit comme un compte. */
+.b-tuile.est-masquee { display: none; }
+.b-an { font-family: var(--mono); font-size: 12px; color: var(--encre-3); padding-top: 7px; }
+/* --encre-estompee sur papier tombe à ~2,3:1 : ce compte porte du sens, il ne
+   peut pas être décoratif. Encre muted, ~4,6:1. */
+.b-eff { font-size: 11px; color: var(--encre-muted); font-variant-numeric: tabular-nums; }
+
+.b-cartouche { border: 1px solid var(--filet); border-radius: var(--rayon-champ); background: var(--papier-carte); padding: var(--esp-16); min-height: 128px; }
+.b-cartouche.est-citee { border-left: 3px solid var(--bleu-700); }
+.b-cartouche .b-c-vide { color: var(--encre-estompee); font-size: 14px; margin: 0; }
+.b-cartouche .b-c-date { font-family: var(--mono); font-size: 12px; color: var(--encre-muted); }
+.b-cartouche .b-c-titre { font-size: 16px; line-height: 1.4; margin: 6px 0 10px; }
+.b-cartouche .b-c-meta { display: flex; flex-wrap: wrap; gap: var(--esp-12); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--encre-muted); }
+.b-cartouche .b-c-porte { color: var(--bleu-700); }
+
+/* ----------------------------------------------------------------- jugement */
+
+.b-jugement { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--esp-32); }
+.b-bloc ol { margin: var(--esp-12) 0 0; padding-left: 1.35em; }
+.b-bloc li { margin-bottom: var(--esp-12); line-height: 1.5; }
+.b-bloc-titre { font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--encre-muted); margin: 0; padding-bottom: var(--esp-8); border-bottom: 1px solid var(--filet); }
+/* La garance est réservée à l'alerte, donc au seul verdict : les charges se
+   passent de rouge, leur intitulé suffit. Le vert, lui, code l'acquis, ce qui
+   est exactement ce qu'est une décharge. */
+.b-charges li::marker { color: var(--encre-muted); font-weight: 600; }
+.b-decharges li::marker { color: var(--vert); font-weight: 600; }
+.b-decharges li { color: var(--vert-texte); }
+.b-vers-piece { grid-column: 1 / -1; margin: 0; padding-top: var(--esp-16); border-top: 1px solid var(--filet); }
+
+/* ----------------------------------------------------------------- registre */
+
+.b-registre { border: 1px solid var(--filet); border-radius: var(--rayon-champ); background: var(--papier-carte); }
+.b-reg-an h3 { position: sticky; top: 0; z-index: 1; margin: 0; background: var(--papier-surface); border-top: 1px solid var(--filet); border-bottom: 1px solid var(--filet); padding: 7px var(--esp-16); font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; display: flex; justify-content: space-between; gap: var(--esp-12); }
+.b-reg-an:first-child h3 { border-top: 0; }
+.b-reg-an h3 span { color: var(--encre-muted); font-weight: 400; letter-spacing: .06em; text-transform: none; }
+.b-registre ol { list-style: none; margin: 0; padding: 0; }
+.b-reg-ligne { display: grid; grid-template-columns: 130px minmax(0, 1fr) 145px; gap: var(--esp-16); align-items: baseline; padding: 9px var(--esp-16); border-bottom: 1px solid var(--filet-clair); }
+.b-reg-ligne:last-child { border-bottom: 0; }
+.b-reg-ligne:hover { background: var(--bleu-50); }
+.b-reg-ligne.est-citee { border-left: 3px solid var(--bleu-700); padding-left: calc(var(--esp-16) - 3px); }
+.b-reg-ligne.est-masquee { display: none; }
+.b-reg-date { font-family: var(--mono); font-size: 12px; color: var(--encre-muted); }
+.b-reg-titre { font-size: 15px; line-height: 1.45; color: var(--encre); text-decoration: none; }
+.b-reg-titre:hover { color: var(--bleu-800); text-decoration: underline; }
+.b-reg-ligne.est-citee .b-reg-titre { color: var(--bleu-800); }
+.b-reg-meta { display: flex; gap: var(--esp-12); align-items: baseline; justify-content: flex-end; }
+.b-reg-type { font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--encre-muted); }
+.b-reg-grade { font-family: var(--mono); font-size: 11px; border: 1px solid var(--filet); padding: 0 5px; color: var(--encre-3); }
+
+/* --------------------------------------------------------------------- pied */
+
+.b-pied { margin-top: var(--esp-64); border-top: 2px solid var(--encre); padding-top: var(--esp-24); display: flex; flex-wrap: wrap; gap: var(--esp-24) var(--esp-32); align-items: baseline; justify-content: space-between; }
+.b-pied-liens { display: flex; flex-wrap: wrap; gap: var(--esp-24); }
+.b-pied p { margin: 0; font-size: 13px; color: var(--encre-muted); max-width: 52ch; }
+
+/* ------------------------------------------------------------------- mobile */
+
+@media (max-width: 860px) {
+  .b-page { padding: var(--esp-32) var(--esp-16) var(--esp-48); }
+  .b-frise-zone { grid-template-columns: minmax(0, 1fr); align-items: stretch; }
+  .b-frise { gap: 1.6%; }
+  .b-reg-ligne { grid-template-columns: minmax(0, 1fr); gap: 2px; padding: var(--esp-12) var(--esp-16); }
+  .b-reg-meta { justify-content: flex-start; }
+}

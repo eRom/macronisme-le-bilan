@@ -48,8 +48,17 @@ atlas/briefs/institutions/
   brief.json       paramètres du domaine (voir §7 et §8)
   og.png           carte de partage, générée, commitée
 atlas/briefs/_socle/
-  brief.css        socle commun aux quinze : reprise du design system institut
+  brief.css        socle structurel commun aux quinze (topologie, frise, registre)
+  institut.css     copie de la feuille du design system, à ne jamais éditer ici
+  fonts/*.woff2    Spectral et Courier Prime, auto-hébergées
+  fonts/OFL.txt    licence des fontes
 ```
+
+La feuille du design system et ses fontes sont **versionnées dans ce dépôt**, pas
+lues chez le voisin. Le pipeline ne peut pas dépendre d'un chemin machine : il
+doit builder sur n'importe quelle machine, et l'audit de publiabilité interdit
+d'ailleurs qu'un tel chemin figure où que ce soit. Une correction du design
+system remonte à son dépôt d'origine, puis se recopie ici.
 
 Sortie du build, dans `dist/` :
 
@@ -104,9 +113,13 @@ par type et sur les seules pièces citées. Un repère sépare les deux
 quinquennats.
 
 **4. Le jugement.** Les intitulés numérotés des charges qui tiennent, puis des
-décharges qui tiennent, dans l'ordre de la pièce. Chaque intitulé porte un lien
-vers la pièce complète sur l'atlas. Les décharges sont les seules à recevoir le
-vert du design system, qui code l'acquis.
+décharges qui tiennent, dans l'ordre de la pièce. Les décharges sont les seules
+à recevoir le vert du design system, qui code l'acquis.
+
+Un **seul** lien mène à la pièce complète, sous les deux blocs, et non un lien
+par intitulé comme prévu d'abord : l'atlas n'offre pas d'ancre par charge, dix
+liens y pointeraient donc tous vers la même adresse. Dix liens identiques ne
+servent ni le lecteur ni le référencement.
 
 **5. Registre.** Les pièces du domaine en clair, année par année, intertitre
 collant au défilement, une ligne par pièce : date, titre, type, grade. Les
@@ -271,8 +284,13 @@ Tous bloquants, tous listés dans `build-report.md` :
 
 1. **Domaine déclaré sans pièce de jugement** correspondante dans `jugement/`.
 2. **Chiffre en dur dans `page.html`** : la page ne doit contenir ni le verdict,
-   ni la date d'appréciation, ni un compteur du domaine en clair. Contrôle par
-   motifs, sur le modèle de la table des interdits déjà en place.
+   ni la date d'appréciation, ni un compteur du domaine en clair. Le contrôle
+   confronte la page aux valeurs réelles du corpus plutôt qu'à des motifs
+   génériques, avec deux réserves apprises à l'écriture : seuls les compteurs à
+   deux chiffres ou plus sont cherchés tels quels — un « 4 » isolé se rencontre
+   légitimement dans du code, et un contrôle qui crie au loup finit désarmé —
+   et les petits compteurs sont rattrapés par un motif rédigé
+   (`\d+ charges?|décharges?|pièces?|URL`).
 3. **Métadonnées de la carte OpenGraph périmées** (§7).
 4. **Fiche du chiffre de signature absente** de `base/` (§8).
 5. **Carte OpenGraph absente** du dossier du domaine, ou hors format 1200×630.
