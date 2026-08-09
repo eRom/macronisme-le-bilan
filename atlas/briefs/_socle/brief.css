@@ -99,7 +99,11 @@ a:hover { color: var(--bleu-900); text-decoration-thickness: 2px; }
 
 /* ----------------------------------------------------------------- jugement */
 
-.b-jugement { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--esp-32); }
+/* Le minimum de la piste est plafonné à la largeur disponible : sans le min(),
+   une piste de 320px déborde de la page dès que le viewport descend sous 352px,
+   les marges retirées, et la page part en défilement horizontal. Mesuré à 16px
+   de débordement à 320px, sur tous les briefs à la fois — c'est du socle. */
+.b-jugement { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: var(--esp-32); }
 .b-bloc ol { margin: var(--esp-12) 0 0; padding-left: 1.35em; }
 .b-bloc li { margin-bottom: var(--esp-12); line-height: 1.5; }
 .b-bloc-titre { font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--encre-muted); margin: 0; padding-bottom: var(--esp-8); border-bottom: 1px solid var(--filet); }
