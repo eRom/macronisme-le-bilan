@@ -823,6 +823,18 @@ for (const slug of briefDirs) {
     report.briefs.push({ where: `${ou}/index.html`, what: `compteur rédigé en dur (« ${r.trim()} ») : la page doit le recevoir du build` });
   }
 
+  // --- contrôle : tout renvoi au socle pointe un fichier qui existe.
+  // Depuis que l'interactivité vit dans _socle/brief.js plutôt que recopiée dans
+  // chaque page (09/08/2026), un fichier renommé casserait les quinze briefs à la
+  // fois, et en silence : le build resterait vert, la page s'ouvrirait, elle
+  // n'aurait simplement plus ni survol ni filtres. Une feuille de style perdue se
+  // verrait ; un script perdu, non.
+  for (const m of nu.matchAll(/(?:src|href)="\.\.\/_socle\/([^"]+)"/g)) {
+    if (!existsSync(join(BRIEFS_SRC, "_socle", m[1]))) {
+      report.briefs.push({ where: `${ou}/index.html`, what: `renvoi au socle « ${m[1]} » : aucun fichier de ce nom dans briefs/_socle/` });
+    }
+  }
+
   // --- contrôle : le chiffre de signature renvoie à une fiche qui existe
   const sig = conf.chiffre_signature;
   if (!sig) report.briefs.push({ where: `${ou}/brief.json`, what: "chiffre_signature absent" });
