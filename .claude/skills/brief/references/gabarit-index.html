@@ -1,0 +1,134 @@
+<!doctype html>
+<!--
+  GABARIT. Recopier dans atlas/briefs/<domaine>/index.html, puis remplacer
+  tout ce qui est marqué « ÉCRIRE ». Le reste ne se touche pas : la topologie
+  est fixe pour les quinze domaines, et l'émetteur de build.ts attend les sept
+  marqueurs <!==BRIEF:XXX==> tels quels — un marqueur manquant ou inconnu fait
+  échouer le build.
+
+  Le commentaire de tête ci-dessous est à réécrire pour le domaine : il sert à
+  qui reprendra la page, et c'est l'endroit où consigner ce que le domaine a de
+  particulier. Les commentaires sont retirés du rendu par le build, jamais de
+  la source.
+
+  ÉCRIRE — commentaire de tête :
+  Brief du domaine « <domaine> ».
+
+  Cette page n'écrit AUCUN chiffre, AUCUN verdict, AUCUNE date d'appréciation :
+  elle arrange des blocs que build.ts calcule sur base/ et jugement/ puis
+  injecte aux marqueurs. Une pièce révisée met donc la page à jour au prochain
+  build, sans qu'on y touche. Un contrôle bloquant refuse le build si une
+  valeur est figée ici.
+
+  Le registre, les chiffres et les intitulés du jugement sont écrits en HTML
+  statique par l'émetteur : ils doivent exister sans JavaScript, c'est la raison
+  d'être du brief côté référencement.
+
+  <ÉCRIRE : ce que ce domaine a de particulier, s'il y a lieu — une frise qui
+  commence avant le quinquennat, une année sans pièce, un taux de citation
+  inhabituel. Sinon, retirer ce paragraphe.>
+
+  Spec : atlas/docs/2026-08-07-briefs-domaines.md
+-->
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--BRIEF:TETE-->
+  <link rel="stylesheet" href="../_socle/institut.css" />
+  <link rel="stylesheet" href="../_socle/brief.css" />
+  <!-- ÉCRIRE : une favicon emoji qui NOMME le domaine sans porter de jugement.
+       Encoder l'emoji en pourcent dans l'URL de données. institutions : ⚖️
+       (%E2%9A%96%EF%B8%8F), libertes-publiques : 🕊️ (%F0%9F%95%8A%EF%B8%8F).
+       Un emoji qui commente le verdict serait un éditorial dans un onglet. -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E<EMOJI>%3C/text%3E%3C/svg%3E" />
+  <style>
+    /* ÉCRIRE — accents propres à ce domaine, et rien de plus. Le socle porte la
+       topologie, ce bloc porte le registre : deux ou trois règles, chacune
+       justifiée par ce que la matière du domaine appelle, et commentée comme
+       telle. Rester dans le design system institut — filets plutôt qu'ombres,
+       angles droits, rien ne bouge au survol, la garance au seul verdict.
+
+       Exemples déjà en place, à ne pas recopier tels quels :
+         institutions        .b-chapeau { font-style: italic; }
+                             .b-domaine { font-variant: small-caps; }
+         libertes-publiques  .b-chapeau { border-left: 1px solid var(--filet);
+                                          padding-left: var(--esp-16); } */
+
+    /* Le chiffre de signature reste en Spectral : le DS réserve Courier Prime
+       aux prompts et au code, et ce chiffre est un titre, pas de la donnée
+       tabulaire. Le mono du registre, lui, aligne des dates et se justifie. */
+    .b-signature b { font-variant-numeric: tabular-nums; letter-spacing: -.005em; }
+  </style>
+</head>
+<body>
+  <main class="b-page">
+
+    <header class="b-bandeau"><!--BRIEF:BANDEAU--></header>
+
+    <!--BRIEF:CHIFFRES-->
+
+    <section class="b-section" aria-labelledby="t-frise">
+      <span class="b-label">La chronologie</span>
+      <!-- ÉCRIRE : titre de section. Éviter d'y figer une durée ou une année,
+           qui vieillirait au premier ajout de pièce. -->
+      <h2 id="t-frise"><TITRE FRISE></h2>
+      <!-- ÉCRIRE : chapeau. Dire comment se lit la frise, puis ce que ce
+           domaine a de particulier. Ne jamais y écrire de compteur. -->
+      <p class="b-chapeau">Une colonne par année, une tuile par pièce. Le bleu marque celles qu'invoquent
+        les charges et les décharges du jugement&nbsp;: la masse bleue est la base sur laquelle
+        l'appréciation repose, et elle se compte à l'œil. <PARTICULARITÉ DU DOMAINE, S'IL Y A LIEU></p>
+
+      <p class="b-legende">
+        <span><i class="est-citee"></i>Pièce que le jugement invoque</span>
+        <span><i></i>Autre pièce du domaine</span>
+      </p>
+
+      <div class="b-filtres" id="filtres" hidden>
+        <span class="b-label" id="lbl-filtres">Filtrer</span>
+      </div>
+
+      <div class="b-frise-zone">
+        <!--BRIEF:FRISE-->
+        <aside class="b-cartouche" id="cartouche" hidden aria-live="polite">
+          <p class="b-c-vide">Survolez une pièce de la frise pour la lire.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="b-section" aria-labelledby="t-jugement">
+      <span class="b-label">Le jugement</span>
+      <h2 id="t-jugement">Ce qui tient, contre et pour</h2>
+      <!-- ÉCRIRE : la deuxième phrase est commune aux quinze, la troisième dit
+           ce que l'équilibre charges / décharges a de propre à ce domaine. -->
+      <p class="b-chapeau">Les affirmations ci-dessous ont survécu à un test de contradiction. Celles qui
+        ont échoué ne sont pas effacées&nbsp;: elles figurent dans la pièce complète, avec la raison de
+        leur écartement. <CE QUE L'ÉQUILIBRE DE CE DOMAINE A DE PARTICULIER></p>
+      <div class="b-jugement"><!--BRIEF:JUGEMENT--></div>
+    </section>
+
+    <section class="b-section" aria-labelledby="t-registre">
+      <span class="b-label">Le registre</span>
+      <h2 id="t-registre">Toutes les pièces, une par une</h2>
+      <p class="b-chapeau">Chaque ligne ouvre la pièce sur le dossier&nbsp;: son récit daté, ses acteurs
+        nommés, ses sources et son grade. Un filet bleu signale celles que le jugement invoque.</p>
+      <div class="b-registre"><!--BRIEF:REGISTRE--></div>
+    </section>
+
+    <footer class="b-pied">
+      <p>Les faits et les jugements sont séparés. On peut rejeter le verdict et garder toutes les pièces.</p>
+      <nav class="b-pied-liens" aria-label="Le dossier">
+        <a href="https://macronisme-le-bilan.netlify.app/">Le dossier complet</a>
+        <a href="https://github.com/eRom/macronisme-le-bilan">Sources, méthode et atelier sur GitHub</a>
+      </nav>
+    </footer>
+
+  </main>
+
+  <!--BRIEF:DONNEES-->
+  <!-- Interactivité commune aux quinze briefs, dans le socle : survol, cartouche,
+       filtres. Le fichier est chargé APRÈS le bloc de données ci-dessus, dont il
+       dépend, et sans defer ni type=module — la page doit s'ouvrir en file://. -->
+  <script src="../_socle/brief.js"></script>
+</body>
+</html>
