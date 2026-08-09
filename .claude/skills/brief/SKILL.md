@@ -15,6 +15,14 @@ d'exploration ; le brief est la porte d'entrée d'un domaine.
 contrôles bloquants et la règle du chiffre de signature. Ce runbook en est
 l'exécution ; en cas de contradiction, la spec gagne.
 
+**Trois lectures valent d'être faites tôt**, parce que plusieurs instructions
+d'ici ne s'exécutent bien qu'en les connaissant : l'émetteur de briefs dans
+`atlas/build.ts` (la section « briefs de domaine », qui porte tous les contrôles
+bloquants), `atlas/briefs/_socle/brief.css` (les classes disponibles et celles
+qui portent déjà un filet), et **un brief existant** — `institutions` ou
+`libertes-publiques` — dont le `brief.json` et l'`index.html` sont les meilleurs
+modèles qui soient.
+
 ## Ce que tu décides, et ce que tu ne décides pas
 
 Tu enchaînes tout ce qui suit sans rien demander. Trois choix relèvent du
@@ -50,6 +58,12 @@ préparer.
 
 Sonde ensuite `base/` pour le domaine : dates extrêmes, répartition par année,
 par type, par grade, URL distinctes. Un script jetable sur le frontmatter suffit.
+
+**La clé est `domaines:`, au pluriel et sous forme de liste** — une fiche relève
+souvent de plusieurs domaines. Filtre par appartenance à cette liste, jamais par
+égalité. Le singulier `domaine:` est la clé de `jugement/` : un filtre dessus
+rend zéro fiche, et le script plante deux lignes plus loin sans dire pourquoi.
+
 Ce sondage sert deux choses : repérer les particularités à dire au lecteur (une
 frise qui commence avant le quinquennat, une année vide, un taux de citation
 inhabituel), et connaître les valeurs interdites du §4.
@@ -60,9 +74,11 @@ Ne calcule jamais à la main le nombre de pièces citées : la règle de « cit�
 (invoquée par une charge ou une décharge, à l'exclusion du périmètre et des
 écartés) n'est portée que par `build.ts`.
 
-Crée le dossier avec un `index.html` et un `brief.json` provisoires, lance
-`bun run build.ts` depuis `atlas/`, et lis la section **« Briefs de domaine
-émis »** de `build-report.md` :
+Crée le dossier avec son `index.html` — **écris-le définitif dès maintenant**,
+le §4 le rend indépendant des compteurs par construction, un brouillon jetable
+serait du travail perdu — et un `brief.json` dont seuls les `og_compteurs` sont
+provisoires. Lance `bun run build.ts` depuis `atlas/`, et lis la section
+**« Briefs de domaine émis »** de `build-report.md` :
 
 ```
 - <domaine> — N pièces, M citées, verdict X
@@ -84,20 +100,41 @@ corrigé**. Un brief est une vitrine, c'est exactement l'endroit où un chiffre
 choisi pour son effet ruine le dossier qu'il sert. Un chiffre qui survit à sa
 propre correction devient inattaquable, et c'est ce qu'on cherche.
 
-Passe chaque candidat au test suivant, et retiens celui qui y résiste :
+Passe chaque candidat aux trois tests. **Ils ne sont pas parallèles** : le
+troisième arbitre le deuxième, et lire la liste comme trois gardes indépendantes
+mène à une impasse dès qu'un domaine porte une décharge forte — ce qui sera le
+cas de plusieurs des douze domaines restants.
 
-- **Sa fiche est-elle de grade A, sur source primaire ?** Un chiffre de
-  signature porté par du grade C est indéfendable.
-- **Un lecteur hostile peut-il le démonter en une phrase ?** Si oui, il est
-  mauvais quel que soit son effet. Méfie-toi particulièrement des comparaisons
-  entre deux décomptes qui ne mesurent pas la même chose.
-- **La fiche l'assortit-elle d'une correction, d'une année de repli, d'un
-  avertissement ?** Alors la légende porte cette correction, dans la légende
-  elle-même et pas ailleurs.
+1. **Sa fiche est-elle de grade A, sur source primaire ?** Un chiffre de
+   signature porté par du grade C est indéfendable, et un chiffre spectaculaire
+   de grade B — typiquement une allégation associative relayée en source
+   parlementaire — meurt ici, quel que soit son effet.
+
+2. **Que reste-t-il du chiffre une fois sa correction appliquée ?** La question
+   n'est pas « peut-on lui opposer une objection » : tout chiffre en appelle
+   une, et un domaine sérieux en fournit toujours. Elle est **« reste-t-il
+   quelque chose après » **. Un chiffre dont la correction absorbe l'essentiel
+   de la substance est mauvais même s'il est de grade A : si retirer ce que la
+   pièce concède ramène l'accroche à une valeur qui ne dit plus rien, écarte-le.
+
+3. **La fiche l'assortit-elle d'une correction, d'une année de repli, d'un
+   avertissement ?** Alors la légende porte cette correction, **dans la légende
+   elle-même et pas ailleurs**. C'est ce qui neutralise le test 2 : un chiffre
+   dont la correction est déjà inscrite n'est plus démontable, il est seulement
+   attaquable, et l'attaque tombe sur une légende qui l'attendait.
+
+Le bon candidat est celui qui **survit à sa propre correction** : même en
+accordant intégralement la décharge la plus forte du domaine, il reste vrai et
+il reste parlant.
 
 Écris-le dans `brief.json` avec sa légende et le slug de la fiche qui l'établit
 — le build vérifie que cette fiche existe, rien de plus : l'exactitude du
 chiffre reste ta responsabilité, et elle se vérifie en ouvrant la fiche.
+
+**Consigne l'arbitrage dans `brief.json`, sous une clé `_chiffre_ecarte`.** Le
+fichier porte déjà des clés préfixées `_` qui ne servent qu'à la reprise
+humaine ; c'est leur emploi. Le corps du commit et le message final le redisent,
+mais c'est là qu'il survit à la conversation.
 
 ## §4 — La page
 
@@ -113,11 +150,28 @@ bloquant refuse le build si une valeur est figée là.
 
 Concrètement, ne doivent apparaître nulle part dans `index.html` : le libellé du
 verdict (« Défavorable »), la date d'appréciation sous ses deux formes
-(`2026-08-04` et « 4 août 2026 »), tout compteur du domaine à deux chiffres ou
-plus pris isolément, et tout compteur rédigé en chiffres suivi de « charges »,
-« décharges », « pièces », « URL » ou « sources distinctes ». Les commentaires
-HTML sont exemptés : le contrôle les retire avant de scanner, et le build les
-retire du rendu.
+(`2026-08-04` et « 4 août 2026 »), et tout compteur rédigé en chiffres suivi de
+« charges », « décharges », « pièces », « URL » ou « sources distinctes ».
+
+S'y ajoutent **six compteurs**, cherchés tels quels dès qu'ils valent 10 ou plus
+— `fiches`, `citees`, `urls`, `charges`, `decharges`, `gradeA`. Les deux
+derniers surprennent : `urls` et `gradeA` ne se devinent pas comme des
+« compteurs du domaine », et ils ne sont connus qu'après le premier build. Deux
+d'entre eux peuvent tomber sur la même valeur, ce qui rend le motif d'autant
+plus facile à heurter par accident. Écris la page sans aucun nombre et la
+question ne se pose pas.
+
+Les commentaires HTML sont exemptés : le contrôle les retire avant de scanner,
+et le build les retire du rendu.
+
+Deux choses que le build vérifie aussi, sans que ça se voie d'ici. Tout renvoi
+`src=` ou `href=` vers `../_socle/…` doit pointer un fichier réel — le gabarit
+en porte trois, garde-les tels quels. Et **le nom affiché du domaine vient de la
+pièce de jugement**, pas de `brief.json` : tu n'as rien à déclarer pour lui.
+
+**Lis `atlas/briefs/_socle/brief.css` avant d'écrire ton bloc d'accents.** Sans
+ça, l'accent se pose à l'aveugle : la classe que tu vises porte peut-être déjà
+un filet, et tu le doublerais.
 
 Donne à la page un caractère propre au domaine, mais **petit et justifié** : le
 socle porte la topologie, ton bloc d'accents porte le registre. `institutions` a
@@ -157,11 +211,21 @@ automatique ne peut le relire, et une faute se repaie en image entière.
 
 ## §7 — Build et vérifications
 
+**C'est le second build**, celui qui compte : le premier, au §2, n'était là que
+pour lire les compteurs, et il échouait forcément faute de carte. Maintenant que
+`og.png` existe et que `brief.json` porte les vrais `og_compteurs`, la garde de
+la carte se déclenche enfin et le verdict global devient significatif.
+
 ```bash
 cd atlas
 bun run build.ts
 bun build ./src/app.ts --outdir ./dist --minify --target browser
 ```
+
+La seconde ligne reconstruit l'application de l'atlas, dont le brief ne dépend
+pas — il ne charge que `_socle/`. Elle est là pour que `dist/` reste cohérent en
+vue d'un déploiement, pas pour le brief : un échec là ne dit rien sur ton
+travail.
 
 Trois choses doivent être vraies, et se constatent, elles ne se supposent pas :
 
@@ -175,17 +239,39 @@ Trois choses doivent être vraies, et se constatent, elles ne se supposent pas :
 
 ## §8 — Vérifier le rendu, par la mesure
 
-Sers `atlas/dist/` sur un port local — l'extension Chrome refuse les URL
-`file://`, et c'est le seul moyen de piloter la page.
+Sers `atlas/dist/` sur un port local, par exemple :
+
+```bash
+cd atlas/dist && python3 -m http.server 8777
+```
+
+Deux raisons, et la seconde est la vraie : l'extension Chrome refuse les URL
+`file://`, et surtout `contentDocument` d'une iframe y est inaccessible par
+politique d'origine. Le §11 vante plus loin l'ouverture en `file://`, qui est
+un critère réel de la spec — mais **les mesures ci-dessous ne s'y font pas**, on
+n'y récolterait qu'une erreur opaque.
 
 **Mesure le débordement horizontal plutôt que de le regarder.** Dans la page
-servie, crée des iframes calibrées à 320, 375, 390, 430, 768 et 1100 px, et
+servie, crée des iframes calibrées à 280, 320, 375, 390, 430, 768 et 1100 px, et
 compare `scrollWidth` à `clientWidth` de chacune ; liste au passage les éléments
 dont le bord droit dépasse, c'est ce qui nomme le coupable en une passe. Ce
 protocole a rattrapé un défaut du socle que deux relectures humaines et un
 déploiement avaient laissé passer, parce qu'il ne se voyait qu'en dessous de
-375 px. **Ne te fie pas à Chrome headless en `--window-size` étroit** : il a
-affiché une page franchement débordante alors qu'elle ne l'était pas.
+375 px.
+
+**Deux méthodes qui mentent, et il faut le savoir avant de les croire.** Chrome
+headless en `--window-size` étroit a affiché une page franchement débordante
+alors qu'elle ne l'était pas. Et `resize_window(390, …)` répond
+`Successfully resized` puis laisse `window.innerWidth` à plus de 1600 : macOS
+impose une largeur de fenêtre minimale, et l'échec est parfaitement silencieux.
+
+**Pour la capture mobile**, que le juge visuel réclame : rends la page dans une
+iframe **visible** de 390 px placée en haut à gauche, le reste du document vidé
+et le fond neutralisé, puis capture la région `[0, 0, 390, 845]` par `zoom`.
+Pour atteindre un bloc plus bas, repositionne le cadre en `top` négatif plutôt
+que de faire défiler. Vérifie `innerWidth` dans le cadre avant de capturer :
+c'est ce qui distingue une vraie capture mobile d'une page large photographiée
+de près.
 
 Exerce ensuite l'interactivité, toujours par le code plutôt qu'à l'œil : clique
 un filtre et vérifie que tuiles **et** lignes de registre tombent au compte
@@ -203,6 +289,10 @@ repos mobile et un survol. Un FAIL se corrige avant de présenter.
 volontairement hors du dépôt (`.gitignore`) : c'est un document de travail, il
 ne partira pas au commit, et c'est normal.
 
+**Le document porte aussi un tableau « Planning » en tête**, avec un statut par
+étape. Ajoute-y ta ligne : écrire la section et laisser le tableau périmé est
+l'oubli classique.
+
 Ce qu'une étape contient : la date et sa fenêtre, le canal, le lien, la consigne
 **aucune pièce jointe** (la page porte sa carte, une image jointe la
 remplacerait et ferait perdre l'aperçu), l'angle, la liste de ce qu'il ne faut
@@ -215,9 +305,16 @@ traitées, et prépare la réponse. Le texte du post ne redit jamais les chiffre
 que la carte affiche déjà. Pas de hashtag, `#Macron` à la rigueur.
 
 Programme le post en respectant la fenêtre mardi-jeudi et en laissant respirer
-le précédent brief — et rappelle la règle que le document se donne à lui-même :
-un nouveau brief se décide après mesure du précédent, pas sous l'effet d'un bon
-score.
+le précédent brief.
+
+Le document se donne à lui-même une règle — un nouveau brief se décide après
+mesure du précédent, pas sous l'effet d'un bon score — **et il consigne aussi
+qu'elle a déjà été levée une fois, par décision.** Tu vas donc tomber sur une
+note qui dit les deux. Ne la contredis pas sans la voir : la sortie propre est
+de distinguer la fabrication de la publication. Construire la page ne consomme
+rien ; c'est l'envoi qui se discipline. Pose donc une condition de départ
+explicite sur l'étape que tu écris — le post précédent doit avoir été mesuré
+avant que celui-ci parte.
 
 ## §10 — Commit
 
@@ -241,6 +338,13 @@ le post, ce que le build et les mesures ont donné, et les décisions où tu t'e
 écarté de l'évidence. Ouvre la page en local (`open` sur le fichier de `dist/`,
 qui fonctionne en `file://`). Termine par l'état exact du décalage entre le
 dépôt et la production, et laisse les commandes prêtes sans les lancer.
+
+Dis franchement ce que tu **n'as pas** pu vérifier. Le critère « fonctionne
+entièrement en `file://` » de la spec, notamment, ne s'établit ici que
+structurellement — script classique et non module, pas de `defer`, chargé après
+le bloc de données, aucune ressource distante — puisque les mesures du §8
+exigent une origine servie. C'est une limite connue, pas un oubli : la nommer
+vaut mieux que laisser croire à une vérification qui n'a pas eu lieu.
 
 Si Romain valide : `netlify deploy --prod --dir=dist` depuis `atlas/`, puis
 `git push`. Sinon, la conversation continue et le commit sert de filet.
