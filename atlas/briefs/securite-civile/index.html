@@ -1,0 +1,126 @@
+<!doctype html>
+<!--
+  Brief du domaine « securite-civile ».
+
+  Cette page n'écrit AUCUN chiffre, AUCUN verdict, AUCUNE date d'appréciation :
+  elle arrange des blocs que build.ts calcule sur base/ et jugement/ puis
+  injecte aux marqueurs. Une pièce révisée met donc la page à jour au prochain
+  build, sans qu'on y touche. Un contrôle bloquant refuse le build si une
+  valeur est figée ici.
+
+  Le registre, les chiffres et les intitulés du jugement sont écrits en HTML
+  statique par l'émetteur : ils doivent exister sans JavaScript, c'est la raison
+  d'être du brief côté référencement. Le script en bas de page n'ajoute que le
+  survol et les filtres, et tout ce qu'il pilote est marqué hidden tant qu'il
+  n'a pas tourné.
+
+  Particularité de ce domaine : sa frise n'ouvre pas à la première année du
+  quinquennat. La première pièce est une décision européenne antérieure à toute
+  décision française du dossier, et les premières colonnes sont nettement plus
+  maigres que les dernières. C'est l'état de la recherche sur ce domaine — le
+  run le plus défaillant des domaines instruits, rattrapé à la main — et non
+  l'état des faits ; la pièce de jugement le dit d'entrée, la page le redit au
+  lecteur plutôt que de le laisser conclure à un défaut de rendu.
+
+  Spec : atlas/docs/2026-08-07-briefs-domaines.md
+-->
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--BRIEF:TETE-->
+  <link rel="stylesheet" href="../_socle/institut.css" />
+  <link rel="stylesheet" href="../_socle/brief.css" />
+  <!-- ⛑️ : le casque de secours est l'emblème international de la protection
+       civile. Il nomme le domaine entier — flotte, SDIS, volontariat, crise —
+       là où un camion l'aurait réduit aux pompiers, et il ne commente rien. -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9B%91%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+  <style>
+    /* Accents propres à ce domaine. Le socle porte la topologie, ce bloc porte
+       le caractère : ici, le relevé. La matière de ce domaine est une suite de
+       dates — une promesse et son échéance, des livraisons annoncées puis
+       repoussées, une saison de feux — et les chapeaux en prennent la forme :
+       un filet en tête, comme l'ouverture d'un relevé, là où le domaine des
+       libertés publiques le porte en marge comme un considérant. */
+    .b-chapeau { border-top: 1px solid var(--filet); padding-top: var(--esp-12); }
+    /* L'année n'est pas ici un simple repère de frise, c'est l'unité de la
+       charge : tout ce qui est reproché se juge à une date, et le lecteur
+       compare des colonnes plus qu'il ne compte des tuiles. Elle passe donc de
+       l'encre des légendes à celle du texte — un cran de contraste, rien de
+       plus, et le compte sous elle garde son gris. */
+    .b-an { color: var(--encre-2); }
+    /* Le chiffre de signature reste en Spectral : le DS réserve Courier Prime
+       aux prompts et au code, et ce chiffre est un titre, pas de la donnée
+       tabulaire. Le mono du registre, lui, aligne des dates et se justifie. */
+    .b-signature b { font-variant-numeric: tabular-nums; letter-spacing: -.005em; }
+  </style>
+</head>
+<body>
+  <main class="b-page">
+
+    <header class="b-bandeau"><!--BRIEF:BANDEAU--></header>
+
+    <!--BRIEF:CHIFFRES-->
+
+    <section class="b-section" aria-labelledby="t-frise">
+      <span class="b-label">La chronologie</span>
+      <h2 id="t-frise">Le dossier dans l'ordre des dates</h2>
+      <p class="b-chapeau">Une colonne par année, une tuile par pièce. Le bleu marque celles qu'invoquent
+        les charges et les décharges du jugement&nbsp;: la masse bleue est la base sur laquelle
+        l'appréciation repose, et elle se compte à l'œil. Les premières colonnes sont plus maigres que
+        les dernières, et il faut le lire pour ce que c'est&nbsp;: l'état de la recherche sur ce
+        domaine, le plus défaillant de ceux qui ont été instruits, et non l'état des faits.</p>
+
+      <p class="b-legende">
+        <span><i class="est-citee"></i>Pièce que le jugement invoque</span>
+        <span><i></i>Autre pièce du domaine</span>
+      </p>
+
+      <div class="b-filtres" id="filtres" hidden>
+        <span class="b-label" id="lbl-filtres">Filtrer</span>
+      </div>
+
+      <div class="b-frise-zone">
+        <!--BRIEF:FRISE-->
+        <aside class="b-cartouche" id="cartouche" hidden aria-live="polite">
+          <p class="b-c-vide">Survolez une pièce de la frise pour la lire.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="b-section" aria-labelledby="t-jugement">
+      <span class="b-label">Le jugement</span>
+      <h2 id="t-jugement">Ce qui tient, contre et pour</h2>
+      <p class="b-chapeau">Les affirmations ci-dessous ont survécu à un test de contradiction. Celles qui
+        ont échoué ne sont pas effacées&nbsp;: elles figurent dans la pièce complète, avec la raison de
+        leur écartement. Le second bloc ne renverse pas le premier dans ce domaine, il le borne&nbsp;:
+        la contrainte industrielle est réelle et elle est étrangère aux décisions françaises, ce qui
+        déplace le reproche du rythme de l'industrie vers l'échéance qui a été annoncée par-dessus.</p>
+      <div class="b-jugement"><!--BRIEF:JUGEMENT--></div>
+    </section>
+
+    <section class="b-section" aria-labelledby="t-registre">
+      <span class="b-label">Le registre</span>
+      <h2 id="t-registre">Toutes les pièces, une par une</h2>
+      <p class="b-chapeau">Chaque ligne ouvre la pièce sur le dossier&nbsp;: son récit daté, ses acteurs
+        nommés, ses sources et son grade. Un filet bleu signale celles que le jugement invoque.</p>
+      <div class="b-registre"><!--BRIEF:REGISTRE--></div>
+    </section>
+
+    <footer class="b-pied">
+      <p>Les faits et les jugements sont séparés. On peut rejeter le verdict et garder toutes les pièces.</p>
+      <nav class="b-pied-liens" aria-label="Le dossier">
+        <a href="https://macronisme-le-bilan.netlify.app/">Le dossier complet</a>
+        <a href="https://github.com/eRom/macronisme-le-bilan">Sources, méthode et atelier sur GitHub</a>
+      </nav>
+    </footer>
+
+  </main>
+
+  <!--BRIEF:DONNEES-->
+  <!-- Interactivité commune aux quinze briefs, dans le socle : survol, cartouche,
+       filtres. Le fichier est chargé APRÈS le bloc de données ci-dessus, dont il
+       dépend, et sans defer ni type=module — la page doit s'ouvrir en file://. -->
+  <script src="../_socle/brief.js"></script>
+</body>
+</html>
