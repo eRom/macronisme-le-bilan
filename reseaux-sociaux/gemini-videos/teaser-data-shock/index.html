@@ -7,9 +7,10 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 </head>
 <body>
-  <div id="root" data-composition-id="teaser-data-shock" data-duration="24" data-fps="60">
+  <div id="root" data-composition-id="teaser-data-shock" data-width="1080" data-height="1080" data-start="0" data-duration="24" data-fps="60">
     <div class="stage-bg"></div>
-    <div id="beat-1" class="clip" data-start="0" data-end="5.2" data-track-index="1">
+    
+    <div id="beat-1" class="clip" data-start="0" data-duration="5" data-track-index="1">
       <div class="beat-content">
         <div class="kicker">9 ANS DE POUVOIR</div>
         <div class="counter-box">
@@ -19,14 +20,16 @@
         <div class="subtitle">534 FICHES DATÉES & SOURCÉES • 915 SOURCES</div>
       </div>
     </div>
-    <div id="beat-2" class="clip" data-start="5" data-end="11.2" data-track-index="1">
+
+    <div id="beat-2" class="clip" data-start="5" data-duration="6" data-track-index="1">
       <div class="beat-content">
         <div class="badge-grade-a">76,6% GRADE A</div>
         <div class="grade-desc">Lois • Journal Officiel • Cour des comptes • Décisions de justice</div>
         <div class="badge-grade-d">ZÉRO RUMEUR (GRADE D)</div>
       </div>
     </div>
-    <div id="beat-3" class="clip" data-start="11" data-end="17.2" data-track-index="1">
+
+    <div id="beat-3" class="clip" data-start="11" data-duration="6" data-track-index="1">
       <div class="beat-content split-view">
         <div class="col col-facts">
           <h3>BASE FACTUELLE</h3>
@@ -40,7 +43,8 @@
       </div>
       <div class="bottom-banner">DEUX COUCHES. SENS UNIQUE.</div>
     </div>
-    <div id="beat-4" class="clip" data-start="17" data-end="24" data-track-index="1">
+
+    <div id="beat-4" class="clip" data-start="17" data-duration="7" data-track-index="1">
       <div class="beat-content cta-view">
         <div class="brand-title">MACRONISME : LE BILAN</div>
         <div class="url-card">macronisme-le-bilan.netlify.app</div>
@@ -48,6 +52,43 @@
       </div>
     </div>
   </div>
-  <script src="./script.js"></script>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    window.__timelines["teaser-data-shock"] = tl;
+
+    const counterObj = { val: 0 };
+    const counterEl = document.getElementById("fiche-counter");
+
+    // Beat 1 (0s to 5s)
+    tl.to(counterObj, {
+      val: 534,
+      duration: 1.8,
+      ease: "power3.out",
+      onUpdate: () => {
+        if (counterEl) counterEl.textContent = Math.round(counterObj.val);
+      }
+    }, 0.2);
+
+    tl.from("#beat-1 .kicker", { opacity: 0, y: -20, duration: 0.5 }, 0.1);
+    tl.from("#beat-1 .subtitle", { opacity: 0, y: 20, duration: 0.5 }, 1.5);
+
+    // Beat 2 (5s to 11s)
+    tl.from("#beat-2 .badge-grade-a", { scale: 0.7, opacity: 0, duration: 0.6, ease: "back.out(1.7)" }, 5.2);
+    tl.from("#beat-2 .grade-desc", { opacity: 0, y: 20, duration: 0.5 }, 5.8);
+    tl.from("#beat-2 .badge-grade-d", { opacity: 0, scale: 0.8, duration: 0.4 }, 7.0);
+
+    // Beat 3 (11s to 17s)
+    tl.from("#beat-3 .col-facts", { x: -100, opacity: 0, duration: 0.6, ease: "power2.out" }, 11.2);
+    tl.from("#beat-3 .col-verdicts", { x: 100, opacity: 0, duration: 0.6, ease: "power2.out" }, 11.2);
+    tl.from("#beat-3 .laser-divider", { scaleY: 0, duration: 0.5 }, 11.0);
+    tl.from("#beat-3 .bottom-banner", { opacity: 0, y: 20, duration: 0.5 }, 12.5);
+
+    // Beat 4 (17s to 24s)
+    tl.from("#beat-4 .brand-title", { opacity: 0, y: -20, duration: 0.5 }, 17.2);
+    tl.from("#beat-4 .url-card", { scale: 0.85, opacity: 0, duration: 0.7, ease: "back.out(1.4)" }, 17.6);
+    tl.from("#beat-4 .tagline", { opacity: 0, y: 20, duration: 0.5 }, 18.5);
+  </script>
 </body>
 </html>

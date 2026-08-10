@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'JetBrains Mono';
-  src: url('../../../atlas/dist/fonts/JetBrainsMono-Medium.ttf') format('truetype');
+  src: url('./fonts/JetBrainsMono-Medium.ttf') format('truetype');
   font-weight: 500;
 }
 @font-face {
   font-family: 'JetBrains Mono';
-  src: url('../../../atlas/dist/fonts/JetBrainsMono-SemiBold.ttf') format('truetype');
+  src: url('./fonts/JetBrainsMono-SemiBold.ttf') format('truetype');
   font-weight: 600;
 }
 

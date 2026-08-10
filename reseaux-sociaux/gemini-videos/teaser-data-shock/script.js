@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+(function initComposition() {
   const tl = gsap.timeline({ paused: true });
   window.__timelines = window.__timelines || {};
   window.__timelines["teaser-data-shock"] = tl;
@@ -34,4 +34,4 @@ document.addEventListener("DOMContentLoaded", () => {
   tl.from("#beat-4 .brand-title", { opacity: 0, y: -20, duration: 0.5 }, 17.2);
   tl.from("#beat-4 .url-card", { scale: 0.85, opacity: 0, duration: 0.7, ease: "back.out(1.4)" }, 17.6);
   tl.from("#beat-4 .tagline", { opacity: 0, y: 20, duration: 0.5 }, 18.5);
-});
+})();
