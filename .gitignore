@@ -9,6 +9,7 @@
 _memory_/
 .claude/notes/
 .claude/settings.local.json
+.claude/settings.local.json*
 
 # ------------------------------------------------------------------ build
 # Intégralement régénérable depuis base/ et jugement/ : voir atlas/CLAUDE.md
@@ -35,3 +36,4 @@ reseaux-sociaux/tests/
 
 # Maquettes de brainstorm (compagnon visuel), local
 .superpowers/
+reseaux-sociaux/grok-videos/
