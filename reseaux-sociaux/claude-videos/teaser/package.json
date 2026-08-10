@@ -1,0 +1,23 @@
+{
+  "name": "teaser-bilan",
+  "private": true,
+  "description": "Teaser « La première pièce » : composition Remotion du dossier Macronisme, le bilan",
+  "scripts": {
+    "studio": "remotion studio --no-open",
+    "build-cards": "bun scripts/build-cards.ts",
+    "render": "remotion render Teaser ../teaser-la-premiere-piece.mp4",
+    "still": "remotion still Teaser"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.507",
+    "@remotion/fonts": "4.0.507",
+    "@remotion/media": "4.0.507",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.507"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0",
+    "typescript": "^5.8.0"
+  }
+}
