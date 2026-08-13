@@ -37,3 +37,4 @@ reseaux-sociaux/tests/
 # Maquettes de brainstorm (compagnon visuel), local
 .superpowers/
 reseaux-sociaux/grok-videos/
+*.mp4
