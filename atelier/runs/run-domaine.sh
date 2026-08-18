@@ -41,7 +41,7 @@ SUJET="$(cat "$SUJET_FILE")"
 
 PROMPT="Dossier documentaire sur les deux quinquennats Macron. Le lancement de ce run est validé en amont : ne pose AUCUNE question, n'attends aucune validation, applique l'option sûre en cas d'ambiguïté et note-la dans ton rapport final.
 
-Tâche unique : invoque la skill erom-research:agy via le tool Skill, avec exactement ces arguments (le --yes est obligatoire, il saute le gate de plan qui bloquerait un run sans humain) :
+Tâche unique : invoque la skill erom-research:deep-gemini via le tool Skill, avec exactement ces arguments (le --yes est obligatoire, il saute le gate de plan qui bloquerait un run sans humain) :
 
 --depth H --yes ${SUJET}
 

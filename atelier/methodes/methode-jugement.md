@@ -211,7 +211,7 @@ d'`international` ; la méthode complète de la synthèse vit dans
 Le jugement porte sur le socle clos au 30/07/2026. Par défaut, rien ne rouvre.
 Si un événement paraît majeur à Romain d'ici mai 2027 (censure, dissolution...),
 il décide explicitement une session de mise à jour ciblée : quelques fiches dans
-le domaine concerné (régime v0 : sondage manuel, pas de run erom-research:agy), puis
+le domaine concerné (régime v0 : sondage manuel, pas de run erom-research:deep-gemini), puis
 révision de la seule pièce de jugement du domaine, verdict et
 `date_verdict` compris. Le grain par domaine rend l'opération chirurgicale.
 
@@ -220,7 +220,7 @@ révision de la seule pièce de jugement du domaine, verdict et
 - Pas de veille continue, pas de routine automatisee.
 - Jamais de jugement dans les fiches ; jamais de modification de fiche depuis
   une séance de jugement (§5, sens unique).
-- Pas de run erom-research:agy : le socle est clos, les rattrapages éventuels passent par
+- Pas de run erom-research:deep-gemini : le socle est clos, les rattrapages éventuels passent par
   le régime de sondage manuel de la v0.
 - Pas de note chiffrée, pas de moyenne, pas de classement des domaines hors la
   table des verdicts.

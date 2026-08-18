@@ -91,10 +91,10 @@ plugin [`erom-research`](https://github.com/eRom/erom-research).
 /plugin install erom-research@erom-marketplace
 ```
 
-Trois moteurs disponibles : `erom-research:agy` (multi-rounds piloté, matrice
+Trois moteurs disponibles : `erom-research:deep-gemini` (multi-rounds piloté, matrice
 de preuves, passe adversariale ; c'est celui qui a produit quatorze domaines
-sur quinze), `erom-research:grok` (moteur indépendant asynchrone ; a produit
-`international`), `erom-research:nlm` (référentiel persistant réinterrogeable).
+sur quinze), `erom-research:deep-grok` (moteur indépendant asynchrone ; a produit
+`international`), `erom-research:deep-notebook` (référentiel persistant réinterrogeable).
 
 Un run approfondi est coûteux : le workflow ouvre un sous-agent par angle et
 par affirmation à vérifier. Vérifier les quotas avant de lancer, et ne lancer
@@ -114,7 +114,7 @@ directement : `curl` puis `pdftotext -layout`.
 ## Ouvrir un nouveau domaine
 
 1. Choisir le slug et la liste des sous-thèmes à couvrir impérativement.
-2. Lancer `/erom-research:agy` avec ce gabarit :
+2. Lancer `/erom-research:deep-gemini` avec ce gabarit :
 
 ```
 Dossier documentaire factuel sur l'action de l'exécutif français sous Emmanuel

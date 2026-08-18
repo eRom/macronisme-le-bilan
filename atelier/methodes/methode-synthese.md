@@ -216,7 +216,7 @@ rouvre jamais ni pièce ni fiche.
   domaines, pas de classement hors la table des verdicts.
 - Pas de consigne de vote, pas de pronostic, pas de comparaison avec des
   candidats déclarés ou pressentis de 2027.
-- Pas d'instruction nouvelle en séance de synthèse ; pas de run erom-research:agy, pas de
+- Pas d'instruction nouvelle en séance de synthèse ; pas de run erom-research:deep-gemini, pas de
   Grok, pas de sondage web : la synthèse se rend sur pièces, le web n'y entre
   pas.
 - Jamais de modification de fiche ni de pièce depuis la séance de synthèse.

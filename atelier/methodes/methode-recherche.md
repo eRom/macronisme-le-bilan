@@ -17,7 +17,7 @@ politique/
 ├── CLAUDE.md          # contrat du poste : objectif, schéma de fiche, workflow
 ├── methodes/methode-recherche.md      # ce document
 ├── base/              # les fiches, une par pièce, nommées AAAA-MM-JJ-slug.md
-├── research/          # rapports erom-research:agy bruts, un par domaine (sas d'entrée)
+├── research/          # rapports erom-research:deep-gemini bruts, un par domaine (sas d'entrée)
 └── chronologie.md     # index chronologique des fiches, tenu à la main à l'ingestion
 ```
 
@@ -57,7 +57,7 @@ Jamais de jugement dans une fiche.
 
 ## 4. Grille des domaines
 
-Un run erom-research:agy par domaine, instancié depuis le gabarit (§5) avec ces valeurs :
+Un run erom-research:deep-gemini par domaine, instancié depuis le gabarit (§5) avec ces valeurs :
 
 | # | Domaine (slug) | Sous-thèmes à couvrir |
 |---|---|---|
@@ -71,7 +71,7 @@ Un run erom-research:agy par domaine, instancié depuis le gabarit (§5) avec ce
 | 8 | `securite-immigration` | lois immigration et sécurité, chiffres officiels, écarts discours/résultats |
 | 9 | `ecologie-energie` | engagements climat, condamnations de l'État (Affaire du siècle, Grande-Synthe), nucléaire, EPR, glyphosate |
 | 10 | `education-recherche` | réformes scolaires, Parcoursup, crise du recrutement enseignant, université |
-| 11 | `international` | **ANNULÉ le 29/07/2026 puis RÉOUVERT le 31/07/2026 sur décision de Romain** (motivation : complétude du bilan, et le domaine le plus susceptible de produire des décharges). Recherche faite au moteur **Grok** (`erom-research:grok`, hors quota Google). Périmètre : diplomatie (Russie, Sahel, Ukraine), Uber Files, ingérences et influences étrangères, ventes d'armes, budget Ukraine. |
+| 11 | `international` | **ANNULÉ le 29/07/2026 puis RÉOUVERT le 31/07/2026 sur décision de Romain** (motivation : complétude du bilan, et le domaine le plus susceptible de produire des décharges). Recherche faite au moteur **Grok** (`erom-research:deep-grok`, hors quota Google). Périmètre : diplomatie (Russie, Sahel, Ukraine), Uber Files, ingérences et influences étrangères, ventes d'armes, budget Ukraine. |
 | 12 | `institutions` | dissolution 2024, gouvernements successifs et remaniements, conseils de défense, verticalité du pouvoir, rapport au Parlement |
 | 13 | `europe` | tutelle, souveraineté, rapport au Parlement européen, ingérence Ursula von der Leyen, désaccords entre États membres, perte de compétitivité, dépendance énergétique |
 | 14 | `industrie` | privatisations, désindustrialisation, fermetures d'entreprises, suppressions d'emplois, balance commerciale, retard du numérique |
@@ -79,7 +79,7 @@ Un run erom-research:agy par domaine, instancié depuis le gabarit (§5) avec ce
 
 Les sujets sensibles (drogues, dérives autoritaires...) ne font pas de domaine à part : ils tombent dans `justice-affaires` ou `libertes-publiques`, et le grade dit ce que chaque pièce vaut.
 
-## 5. Gabarit de prompt erom-research:agy
+## 5. Gabarit de prompt erom-research:deep-gemini
 
 Instancier `{DOMAINE}` et `{SOUS_THEMES}` depuis la grille du §4 :
 
@@ -125,7 +125,7 @@ avant chaque lancement**. Pas de batch ni de programmation nocturne.
 
 Pour chaque domaine, dans l'ordre choisi par Romain :
 
-1. **Lancer** `/erom-research:agy` avec le prompt instancié. Rapport sauvé puis déposé dans `research/<slug>.md`.
+1. **Lancer** `/erom-research:deep-gemini` avec le prompt instancié. Rapport sauvé puis déposé dans `research/<slug>.md`.
 2. **Ingérer** en session : découpage du rapport en fiches dans `base/`, grade vérifié et éventuellement dégradé (le grade suggéré par la recherche n'est qu'une proposition ; en cas de doute, prendre le grade inférieur), mise à jour de `chronologie.md`.
 3. **Marquer** le domaine comme ingéré (table de suivi dans `chronologie.md`).
 

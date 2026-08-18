@@ -356,6 +356,7 @@ const INTERDITS: [RegExp, string][] = [
   [/(?<![\w-])atelier\//g, "renvoi à l'atelier, hors du périmètre rendu par le site"],
   [/(?<![\w-])agy(?![\w-])/gi, "nom d'outillage brut"],
   [/erom-research:/g, "nom d'outillage interne"],
+  [/(?<![\w-])deep-(gemini|claude|grok|notebook)(?![\w-])/gi, "nom d'outillage interne"],
   [/methode-(recherche|jugement|synthese)/g, "fichier de méthode interne"],
   [/\/Users\/[a-z]/g, "chemin local"],
   [/\.claude\b/g, "arborescence d'outillage"],
